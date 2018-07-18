@@ -1,5 +1,5 @@
 /*!
-Theme Name: Business Click 
+Theme Name: Business Click
 Theme URI: http://evisionthemes.com
 Author: eVision Themes
 Author URI: http://evisionthemes.com
@@ -1008,7 +1008,7 @@ nav#site-navigation ul.menu > li.current-menu-item > a, .slick-slider .slick-arr
 .woocommerce div.product p.price, .woocommerce div.product span.price,
 .woocommerce-message::before,
 .woocommerce-info::before,
-.woocommerce form .form-row .required, .evt-head-search-toggler:hover i, body.head-search-active .evt-head-search-toggler .fa-search, #evt-top-header .evt-head-search-toggler:hover, body.home.transparent-header:not(.small-header) nav#site-navigation ul#menu > li > a:hover, body.home.transparent-header:not(.small-header) nav#site-navigation ul.nav-menu > li > a:hover, body.home.transparent-header:not(.small-header) nav#site-navigation ul.menu > li > a:hover, body.home.transparent-header:not(.small-header) nav#site-navigation ul a:hover, body.home.transparent-header:not(.small-header) nav#site-navigation ul#menu > li.current-menu-item > a, body.home.transparent-header:not(.small-header) nav#site-navigation ul.nav-menu > li.current-menu-item > a, body.home.transparent-header:not(.small-header) nav#site-navigation ul.menu > li.current-menu-item > a, #evt-portfolio #filters button.is-checked, #evt-team .evt-box-item-wrap .evt-box-caption .evt-designation, .elementor-widget-icon-box.elementor-view-framed .elementor-icon, body .elementor-widget-heading .elementor-heading-title > a {
+.woocommerce form .form-row .required, .evt-head-search-toggler:hover i, body.head-search-active .evt-head-search-toggler .fa-search, #evt-top-header .evt-head-search-toggler:hover, body.home.transparent-header:not(.small-header) nav#site-navigation ul#menu > li > a:hover, body.home.transparent-header:not(.small-header) nav#site-navigation ul.nav-menu > li > a:hover, body.home.transparent-header:not(.small-header) nav#site-navigation ul.menu > li > a:hover, body.home.transparent-header:not(.small-header) nav#site-navigation ul a:hover, body.home.transparent-header:not(.small-header) nav#site-navigation ul#menu > li.current-menu-item > a, body.home.transparent-header:not(.small-header) nav#site-navigation ul.nav-menu > li.current-menu-item > a, body.home.transparent-header:not(.small-header) nav#site-navigation ul.menu > li.current-menu-item > a, #evt-portfolio #filters button.is-checked, #evt-team .evt-box-item-wrap .evt-box-caption .evt-designation, #evt-featured.featured-icon-transparent .evt-featured-icon, #evt-featured.featured-icon-framed .evt-featured-icon, #evt-featured.featured-background .evt-featured-icon, .elementor-widget-icon-box.elementor-view-framed .elementor-icon, body .elementor-widget-heading .elementor-heading-title > a {
   color: #578ECF;
 }
 
@@ -1085,7 +1085,7 @@ body .elementor-widget-heading.elementor-widget-heading .elementor-heading-title
 .woocommerce button.button.alt,
 .woocommerce input.button.alt, button, input[type="button"], input[type="reset"], input[type="submit"],
 .btn.btn-reverse:hover, .wp-pagenavi a:hover,
-.wp-pagenavi span.current, .pagination .nav-links ul li span.current, .wp-pagenavi ul li span.current, .woocommerce nav.woocommerce-pagination ul li span.current, .pagination .nav-links ul li span:hover, .wp-pagenavi ul li span:hover, .woocommerce nav.woocommerce-pagination ul li span:hover, .pagination .nav-links ul li a:hover, .wp-pagenavi ul li a:hover, .woocommerce nav.woocommerce-pagination ul li a:hover, header.site-header .evt-header-wrap-nav .evt-menu-toggler-manage #menu-icon.menu-toggler:hover span, ul.slick-dots li button:hover, ul.slick-dots li.slick-active button, .woocommerce span.onsale, .evt-carousel.slick-slider ul.slick-dots li button:hover, .evt-carousel.slick-slider ul.slick-dots li.slick-active button, .evt-featured-item-wrap .evt-featured-item .evt-featured-icon, #evt-top-header, .evt-thumb-holder .evt-thumb-hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons, #evt-testimonials .evt-testimonials-slider, .elementor-widget-button a.elementor-button, .elementor-widget-button .elementor-button, .elementor-slick-slider ul.slick-dots li button, .elementor-widget-icon.elementor-view-stacked .elementor-icon, body .elementor-social-icon, body .elementor-add-new-section .elementor-add-section-button {
+.wp-pagenavi span.current, .pagination .nav-links ul li span.current, .wp-pagenavi ul li span.current, .woocommerce nav.woocommerce-pagination ul li span.current, .pagination .nav-links ul li span:hover, .wp-pagenavi ul li span:hover, .woocommerce nav.woocommerce-pagination ul li span:hover, .pagination .nav-links ul li a:hover, .wp-pagenavi ul li a:hover, .woocommerce nav.woocommerce-pagination ul li a:hover, header.site-header .evt-header-wrap-nav .evt-menu-toggler-manage #menu-icon.menu-toggler:hover span, ul.slick-dots li button:hover, ul.slick-dots li.slick-active button, .woocommerce span.onsale, .evt-carousel.slick-slider ul.slick-dots li button:hover, .evt-carousel.slick-slider ul.slick-dots li.slick-active button, .evt-featured-item-wrap .evt-featured-item .evt-featured-icon, #evt-top-header, .evt-thumb-holder .evt-thumb-hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons, #evt-testimonials .evt-testimonials-slider, #evt-featured.featured-background .evt-featured-item-wrap .evt-featured-item, .elementor-widget-button a.elementor-button, .elementor-widget-button .elementor-button, .elementor-slick-slider ul.slick-dots li button, .elementor-widget-icon.elementor-view-stacked .elementor-icon, body .elementor-social-icon, body .elementor-add-new-section .elementor-add-section-button {
   background-color: #578ECF;
 }
 
@@ -1128,7 +1128,7 @@ body.home #content.site-content > section:nth-child(odd) {
 }
 
 .woocommerce-message,
-.woocommerce-info, .elementor-widget-icon-box.elementor-view-framed .elementor-icon, body .elementor-widget-divider .elementor-divider-separator {
+.woocommerce-info, #evt-featured.featured-icon-framed .evt-featured-item .evt-featured-icon, .elementor-widget-icon-box.elementor-view-framed .elementor-icon, body .elementor-widget-divider .elementor-divider-separator {
   border-color: #578ECF;
 }
 
@@ -1319,7 +1319,7 @@ textarea:focus,
 .woocommerce a.button.alt i,
 .woocommerce button.button.alt i,
 .woocommerce input.button.alt i, button i, input[type="button"] i, input[type="reset"] i, input[type="submit"] i {
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 a.btn.btn-reverse,
@@ -1385,7 +1385,7 @@ input[type=checkbox], input[type=radio] {
 .widget_recent_comments ul li,
 .widget_meta ul li,
 .widget_pages ul li,
-.widget_nav_menu ul li, .post-navigation, .posts-navigation, .entry-meta, header.site-header {
+.widget_nav_menu ul li, .post-navigation, .posts-navigation, body.single .entry-meta, header.site-header {
   border-color: #e0e0e0;
   border-style: solid;
 }
@@ -2097,7 +2097,6 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
-  font-family: Roboto Condensed, sans-serif;
 }
 .evt-mbl-menu ul.menu > li > a {
   padding: 8px 35px 8px 15px;
@@ -2372,6 +2371,11 @@ body.error404 .site-content #primary {
   width: 100%;
 }
 
+body.home #content.site-content > section:nth-child(odd) body.home #content.site-content > section:nth-child(odd) .wpcf7-form label input.wpcf7-form-control,
+body.home #content.site-content > section:nth-child(odd) body.home #content.site-content > section:nth-child(odd) .wpcf7-form label .wpcf7-form-control {
+  background: white;
+}
+
 article.hentry {
   margin-bottom: 40px;
 }
@@ -2465,7 +2469,7 @@ body.boxed .evt-masonry article {
   display: block;
 }
 
-.entry-meta {
+body.single .entry-meta {
   border-width: 0;
   border-top-width: 1px;
   border-bottom-width: 1px;
@@ -2556,7 +2560,7 @@ aside .widget {
   z-index: 1;
   position: absolute;
   top: 0;
-  margin-top: -90px;
+  margin-top: -77px;
   padding-right: 0;
 }
 .slick-slider .slick-arrow.slick-next {
@@ -2623,7 +2627,6 @@ aside .widget {
 @media only screen and (orientation: portrait) {
   #evt-banner .evt-banner-slider .evt-banner-image {
     /* STYLES GO HERE */
-    height: 40vh;
   }
 }
 @media (min-width: 1199px) {
@@ -2638,7 +2641,11 @@ aside .widget {
   line-height: 1.5;
   text-align: center;
   top: 50%;
-  transform: translate(0, -50%) scale(0);
+  -moz-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
   -webkit-transition: 0.4s all ease-in-out;
   -moz-transition: 0.4s all ease-in-out;
   -o-transition: 0.4s all ease-in-out;
@@ -2672,9 +2679,6 @@ aside .widget {
     font-size: 1.125rem;
     margin-bottom: 10px !important;
   }
-}
-#evt-banner .evt-banner-slider .slick-active .evt-banner-caption {
-  transform: translate(0, -50%) scale(1);
 }
 #evt-banner .evt-banner-slider ul.slick-dots {
   display: none !important;
@@ -2772,6 +2776,7 @@ ul.slick-dots li button {
   margin-top: 0;
   padding-left: 15px;
   padding-right: 15px;
+  background: transparent;
   border-top: 0 !important;
   border-bottom: 0;
   box-shadow: none;
@@ -3098,10 +3103,11 @@ body.head-search-active .evt-search-mask {
 
 .evt-featured-item-wrap .evt-featured-item {
   background-color: #ffffff;
-  padding: 50px 20px;
-  box-shadow: 0 0px 6px rgba(0, 0, 0, 0.3);
+  padding: 20px 20px;
 }
 .evt-featured-item-wrap .evt-featured-item .evt-featured-icon {
+  font-size: 20px;
+  font-size: 1.25rem;
   display: inline-block;
   padding: 0px;
   border-radius: 50%;
@@ -3114,7 +3120,6 @@ body.head-search-active .evt-search-mask {
   margin-bottom: 20px;
 }
 .evt-featured-item-wrap .evt-featured-item:hover {
-  background-color: #f7f7f7;
             /* @extend %bg-primary;
             color: $color_white;
 
@@ -3250,24 +3255,26 @@ body.fixed-header .site-header {
   z-index: 9997;
 }
 
-body.fixed-header.logo-center .site-header {
-  position: inherit;
-}
-
-#evt-buy-btn {
+body #evt-buy-btn {
   display: none;
-  margin-top: 2px;
   margin-right: 50px;
 }
 @media (min-width: 992px) {
-  #evt-buy-btn {
-    margin-top: 23px;
+  body #evt-buy-btn {
     margin-right: 0;
   }
 }
 @media (min-width: 480px) {
-  #evt-buy-btn {
+  body #evt-buy-btn {
     display: block;
+  }
+}
+body.logo-right #evt-buy-btn {
+  margin-left: 50px;
+}
+@media (min-width: 992px) {
+  body.logo-right #evt-buy-btn {
+    margin-left: 0;
   }
 }
 
@@ -3282,7 +3289,6 @@ nav#site-navigation ul#menu > li > a, nav#site-navigation ul.nav-menu > li > a, 
 nav#site-navigation {
   width: auto;
   padding-top: 5px;
-  padding-right: 127px;
   padding-bottom: 5px;
   padding-left: 20px;
 }
@@ -3295,9 +3301,12 @@ nav#site-navigation {
   margin-top: -18px;
 }
 
-body.logo-left .evt-header-row .evt-logo-manage .site-branding, body.logo-right .evt-header-row .evt-logo-manage .site-branding {
+body.logo-left .evt-header-row .evt-logo-manage .site-branding, body.logo-right .evt-header-row .evt-logo-manage .site-branding, body.logo-center .evt-header-row .evt-logo-manage .site-branding {
   padding-top: 10px;
   padding-bottom: 10px;
+}
+body.logo-left .evt-logo-left-right-nav, body.logo-right .evt-logo-left-right-nav {
+  display: block !important;
 }
 
 body.logo-left .evt-header-row:before, body.logo-left .evt-header-row:after {
@@ -3315,7 +3324,13 @@ body.logo-left .evt-header-row .evt-menu-toggler-manage {
   width: calc(100% - 270px);
   float: right;
 }
+body.logo-left .evt-header-row #site-navigation {
+  float: right;
+}
 
+body.logo-right #site-navigation {
+  float: left;
+}
 body.logo-right .evt-header-row:before, body.logo-right .evt-header-row:after {
   content: " ";
   display: table;
@@ -3340,16 +3355,26 @@ body.logo-right .evt-header-row .evt-menu-toggler-manage nav#site-navigation ul.
   float: left;
 }
 
+body.logo-right .evt-header-row .evt-logo-manage {
+  order: 2;
+}
+body.logo-right #evt-buy-btn {
+  right: auto;
+}
+
 body.home.transparent-header:not(.small-header) header.site-header {
   background-color: transparent;
   border: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: none;
 }
 
-@media (min-width: 992px) {
-  body.transparent-header #evt-banner .evt-banner-slider .slick-slide .evt-banner-image {
-    height: 100vh;
-  }
+body.transparent-header header.site-header .evt-header-wrap-nav .evt-menu-toggler-manage #menu-icon.menu-toggler:hover {
+  background-color: transparent;
+}
+
+body.transparent-header:not(.small-header) .menu-toggler span {
+  background: white;
 }
 
 body.small-header #evt-top-header {
@@ -3384,6 +3409,68 @@ body.logo-left.small-header .evt-header-row .evt-logo-manage .site-branding .sit
   transform: translate(0, -100%);
 }
 
+@media (min-width: 992px) {
+  /* body.logo-center.logo-left .evt-header-row .evt-logo-manage {
+      float: none !important;
+      width: 100%;
+      text-align: center;
+  }
+  body.logo-center .evt-logo-left-right-nav.evt-menu-toggler-manage.float-right {
+      float: none !important;
+      width: 100% !important;
+  } */
+  .logo-center .evt-logo-manage {
+    width: 100%;
+  }
+
+  .logo-center .site-branding .site-title, .logo-center .site-branding .site-description {
+    text-align: center;
+  }
+
+  .logo-center .evt-logo-center-nav {
+    display: block !important;
+  }
+
+  .logo-center nav#site-navigation {
+    padding-left: 0;
+    padding-right: 0;
+    display: inline-block;
+  }
+  .logo-center nav#site-navigation ul {
+    float: none;
+    width: auto;
+  }
+  .logo-center nav#site-navigation ul:before, .logo-center nav#site-navigation ul:after {
+    content: " ";
+    display: table;
+  }
+  .logo-center nav#site-navigation ul:after {
+    clear: both;
+  }
+
+  .logo-center #evt-buy-btn {
+    position: inherit;
+    margin-top: 0;
+  }
+
+  .logo-center .evt-logo-center-nav {
+    background-color: #eaeaea;
+  }
+
+  .logo-center nav#site-navigation ul#menu > li > a, .logo-center nav#site-navigation ul.nav-menu > li > a, .logo-center nav#site-navigation ul.menu > li > a {
+    font-size: 16px;
+    font-size: 1rem;
+  }
+
+  body.logo-center.transparent-header:not(.small-header) .evt-logo-center-nav {
+    background-color: transparent;
+  }
+}
+@media (max-width: 991px) {
+  body.logo-center .evt-logo-left-right-nav {
+    display: block !important;
+  }
+}
 @media (min-width: 575px) {
   #evt-featured .evt-featured-slider {
     column-count: 2;
@@ -3484,11 +3571,12 @@ body.logo-left.small-header .evt-header-row .evt-logo-manage .site-branding .sit
 }
 
 #evt-call-to-action .widget-title {
+  text-align: center;
   padding-right: 0;
+  margin-bottom: 0px;
 }
 #evt-call-to-action .widget-title:before {
-  left: 50%;
-  margin-left: -35px;
+  display: none;
 }
 
 #evt-team .evt-box-item-wrap .evt-box-image {
@@ -3661,6 +3749,77 @@ body.logo-left.small-header .evt-header-row .evt-logo-manage .site-branding .sit
 }
 .site-footer .widget_contact ul li {
   line-height: 2em;
+}
+
+body.heading-style-left .widget-title, body.heading-style-left .widgettitle, body.heading-style-left .page-title, body.heading-style-left .entry-title {
+  padding-left: 15px;
+  padding-bottom: 0;
+}
+body.heading-style-left .widget-title:before, body.heading-style-left .widgettitle:before, body.heading-style-left .page-title:before, body.heading-style-left .entry-title:before {
+  left: 0;
+  margin-left: 0;
+  width: 4px;
+  height: 100%;
+}
+body.heading-style-left .site-content .widget-title {
+  text-align: left;
+}
+body.heading-style-left.home .widget-title:before, body.heading-style-left.home .widgettitle:before, body.heading-style-left.home .page-title:before, body.heading-style-left.home .entry-title:before {
+  left: 0;
+  margin-left: 0;
+}
+
+#evt-featured.featured-icon-left .evt-featured-item, #evt-featured.featured-icon-right .evt-featured-item {
+  -webkit-box-align: start;
+  align-items: flex-start;
+  flex-direction: row;
+  display: flex;
+}
+#evt-featured.featured-icon-left .evt-featured-item .evt-featured-icon, #evt-featured.featured-icon-right .evt-featured-item .evt-featured-icon {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+#evt-featured.featured-icon-left .evt-featured-item .evt-featured-icon {
+  margin-right: 15px;
+}
+#evt-featured.featured-icon-right .evt-featured-item {
+  text-align: right;
+}
+#evt-featured.featured-icon-right .evt-featured-item .evt-featured-icon {
+  order: 2;
+  margin-left: 15px;
+}
+#evt-featured.featured-icon-transparent .evt-featured-icon, #evt-featured.featured-icon-framed .evt-featured-icon {
+  background-color: transparent;
+}
+#evt-featured.featured-icon-framed .evt-featured-item .evt-featured-icon {
+  border-width: 3px;
+  border-style: solid;
+}
+#evt-featured.featured-background {
+  /* text color */
+  /* icon color */
+}
+#evt-featured.featured-background .evt-featured-item-wrap .evt-featured-item,
+#evt-featured.featured-background .evt-featured-item-wrap .evt-featured-item .evt-featured-title,
+#evt-featured.featured-background .evt-featured-item-wrap .evt-featured-item .evt-featured-title a,
+#evt-featured.featured-background .evt-featured-item-wrap .evt-featured-item a {
+  color: #ffffff;
+}
+#evt-featured.featured-background .evt-featured-icon {
+  background-color: #ffffff;
+}
+#evt-featured.featured-background.featured-icon-framed .evt-featured-icon, #evt-featured.featured-background.featured-icon-transparent .evt-featured-icon {
+  background-color: transparent;
+  color: #ffffff;
+}
+#evt-featured.featured-background.featured-icon-framed .evt-featured-icon {
+  border-color: #ffffff;
+}
+#evt-featured.featured-box-shadow .evt-featured-item {
+  box-shadow: 0 0px 6px rgba(0, 0, 0, 0.1);
 }
 
 .hentry,
