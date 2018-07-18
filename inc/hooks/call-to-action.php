@@ -15,7 +15,6 @@ if( !function_exists('call_to_action_array') ) :
 		$call_to_action_number_of_word				= $business_click_customizer_all_values['business-click-call-excerpt-length'];
 		$call_to_action_button_text					= $business_click_customizer_all_values['business-click-button-text'];
 		$call_to_action_select_page					= $business_click_customizer_all_values['business-click-call-to-action-select-from-page'];
-		$theme_background 							= $business_click_customizer_all_values['business-click-call-action-background-theme'];
 
 		if(  ! $business_click_customizer_all_values['business-click-enable-call-to-action']  )
 		{

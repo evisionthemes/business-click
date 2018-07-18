@@ -90,12 +90,11 @@ if (!function_exists('business_click_feature_slider')) :
   {
     return null;
   }
-  $feature_slider_select_post   = $business_click_customizer_all_values['business-click-post-type-slider'];
-  $feature_slide_arrays         = business_click_feature_slider_array($feature_slider_select_post);
+
+  $feature_slide_arrays         = business_click_feature_slider_array();
   if ( is_array($feature_slide_arrays) )
   {
     $feature_button_text        = esc_html($business_click_customizer_all_values['business-click-slider-button-text']);
-    $feature_post_button        = esc_html($business_click_customizer_all_values['business-click-enable-button']);
     $feature_number_of_slider   = absint($business_click_customizer_all_values['business-click-number-of-slider']); ?>
 
     <section id="evt-banner" class="" style="opacity: 0;">
