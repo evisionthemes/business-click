@@ -4,7 +4,7 @@ global $business_click_panels;
 /*creating panel for theme settings*/
 $business_click_panels['business-click-main-page-options'] =
     array(
-        'title'          => esc_html__( 'Main HomePage', 'business-click' ),
+        'title'          => esc_html__( 'Homepage / Front Page', 'business-click' ),
         'priority'       => 230
     );
 /*top headerbar*/

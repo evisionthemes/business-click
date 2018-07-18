@@ -96,10 +96,6 @@ if ( !function_exists('business_click_feature') ) :
   	if( is_array($feature_post_page_array)  ){
   		$feature_section_title 				= esc_html($business_click_customizer_all_values['business-click-feature-section-title']);
   		$feature_button_text					= esc_html($business_click_customizer_all_values['business-click-feature-button-text']);
-  		$feature_enable_title					= esc_html($business_click_customizer_all_values['business-click-feature-enable-title']);
-  		$feature_enable_content				= esc_html($business_click_customizer_all_values['business-click-feature-enable-content']);
-  		$feature_enable_image					= esc_html($business_click_customizer_all_values['business-click-feature-enable-image']);
-  		$feature_enable_button				= esc_html($business_click_customizer_all_values['business-click-feature-enable-button']);
   		$feature_number_of_post   		= absint($business_click_customizer_all_values['business-click-feature-number-post']);?>
 
   			<section id="evt-featured" class="text-center">	
@@ -125,13 +121,13 @@ if ( !function_exists('business_click_feature') ) :
 											</div>
 										<?php } ?>	
 										<div class="evt-featured-caption">
-											<?php if( 1 == $feature_enable_title && !empty($feature_post_page_arrays['feature-title']) ) { ?>
+											<?php if(  !empty($feature_post_page_arrays['feature-title']) ) { ?>
 												<h2 class="evt-featured-title mb-3 mt-2"><a href="#!"><?php echo esc_html($feature_post_page_arrays['feature-title']);?></a></h2>
 											<?php } ?>
-											<?php if( 1 == $feature_enable_content && !empty($feature_post_page_arrays['feature-content']) ) { ?>	
+											<?php if(  !empty($feature_post_page_arrays['feature-content']) ) { ?>	
 												<p><?php echo wp_kses_post($feature_post_page_arrays['feature-content']);?></p>
 											<?php } ?>
-											<?php if( !empty($feature_button_text) && (1 == $feature_enable_button) ) { ?>
+											<?php if( !empty($feature_button_text)  ) { ?>
 											<a href="<?php echo esc_url($feature_post_page_arrays['feature-url']);?>" class="readmore"><?php echo esc_html($feature_button_text);?></a>
 											<?php } ?>
 										</div>
