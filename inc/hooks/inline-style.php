@@ -160,20 +160,14 @@ if( ! function_exists( 'business_click_inline_style' ) ) :
         <?php }
 
         /*Section heading buttom border*/   
-        if( (1 == $business_click_customizer_all_values['business-click-enable-section-header-bottom'] && !empty($business_click_section_heading_bottom_border) ) )
-        {?>
-            .widget-title:before, .widgettitle:before, .page-title:before, .entry-title:before
-            {
-                background-color: <?php echo esc_attr($business_click_section_heading_bottom_border);?>;
-            }
+            ?>
+           
 
-            <?php } else
-            { ?>
                 .widget-title:before, .widgettitle:before, .page-title:before, .entry-title:before
             {
                 display: none;
             }
-            <?php } ?>
+
 
         <?php 
 
