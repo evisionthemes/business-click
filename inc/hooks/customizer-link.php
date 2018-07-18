@@ -21,7 +21,7 @@ if ( ! function_exists('customizer_link') ) :
     ?>
     <section class="container business-click-no-opton">
         <div class="alert alert-warning alert-dismissible fade show" role="alert">
-            <p><?php echo __('Enable each Section from customizer.<br>For 
+            <p><?php echo esc_html__('Enable each Section from customizer.<br>For 
               Feature Slider: Feature Slider Section -> Show Slider.<br>For other sections, Theme Options' ,'business-click' );?> </p>
             <a href="<?php echo esc_url( admin_url('/customize.php') );?>"><?php esc_html_e( 'Goto Customizer','business-click' );?></a>
 

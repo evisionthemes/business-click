@@ -12,6 +12,7 @@ $business_click_customizer_defaults['business-click-contact-section-contact-form
 /*create a section for contct*/
 $business_click_sections['business-click-contact-section'] = array(
 	'title'							=> esc_html__('Contact us Section','business-click'),
+	'description'           => sprintf( '%1$s <a  href="https://evisionthemes.com/product/business-click-pro/" target="_blank"> %2$s </a> %3$s', esc_html__( 'Note: We have more options for Contact Us,please visit our pro version', 'business-click' ), esc_html__( 'Business Click Pro ', 'business-click' ), esc_html__( 'to get more features', 'business-click' ) ),
 	'panel'							=> 'business-click-main-page-options',
 	'priority'						=> 100
 );

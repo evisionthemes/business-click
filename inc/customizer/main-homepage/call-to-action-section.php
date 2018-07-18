@@ -14,7 +14,7 @@ $business_click_customizer_defaults['business-click-button-text']								= esc_h
 /*create section for call to action*/
 $business_click_sections['business-click-call-to-action-portfolio'] = array(
 	'title'							=> esc_html__('Call To Action','business-click'),
-	'description'         			=> sprintf( '%1$s <a  href="https://pro version"> %2$s </a> %3$s', esc_html__( 'Note: We have more options for Call To Action Section,please visit our pro version', 'business-click' ), esc_html__( 'Business Click Pro ', 'business-click' ), esc_html__( 'to get more features', 'business-click' ) ),
+	'description'         			=> sprintf( '%1$s <a  href="https://evisionthemes.com/product/business-click-pro/" target="_blank"> %2$s </a> %3$s', esc_html__( 'Note: We have more options for Call To Action Section,please visit our pro version', 'business-click' ), esc_html__( 'Business Click Pro ', 'business-click' ), esc_html__( 'to get more features', 'business-click' ) ),
 	'panel'							=> 'business-click-main-page-options',
 	'priority'						=> 70,
 );

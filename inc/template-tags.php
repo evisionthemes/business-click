@@ -28,13 +28,13 @@ function business_click_posted_on() {
 
 	$posted_on = sprintf(
 		/* translators: %s: search term */
-		esc_html_x( '%s', 'post date', 'business-click' ),
+		esc_html_X( '%s', 'post date', 'business-click' ),
 		'<a href="' . esc_url(get_day_link(get_the_time('Y'), get_the_time('m'), get_the_time('d') )) . '" rel="bookmark">' . $time_string . '</a>'
 	);
 
 	$byline = sprintf(
 		/* translators: %s: search term */
-		esc_html_x( 'By %s', 'post author', 'business-click' ),
+		esc_html_X( 'By %s', 'post author', 'business-click' ),
 		'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( $author_id ) ) . '">' . esc_html( get_the_author_meta( 'user_nicename', $author_id ) ) . '</a></span>'
 	);
 

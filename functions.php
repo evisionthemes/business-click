@@ -93,6 +93,16 @@ if ( ! function_exists( 'business_click_setup' ) ) :
 endif;
 add_action( 'after_setup_theme', 'business_click_setup' );
 
+if ( is_admin() ) {
+	// Load about.
+	require_once trailingslashit( get_template_directory() ) . 'inc/theme-info/class-about.php';
+	require_once trailingslashit( get_template_directory() ) . 'inc/theme-info/about.php';
+
+	// Load demo.
+	require_once trailingslashit( get_template_directory() ) . 'inc/demo/class-demo.php';
+	require_once trailingslashit( get_template_directory() ) . 'inc/demo/demo.php';
+}
+
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
  *
@@ -224,6 +234,11 @@ function evt_customizer_control_scripts()
 }
 
 add_action('customize_controls_enqueue_scripts', 'evt_customizer_control_scripts', 0);
+
+
+/*update to pro added*/
+require_once( trailingslashit( get_template_directory() ) . 'trt-customize-pro/business-click/class-customize.php' );
+
 
 /**
  * Implement the Custom Header feature.
