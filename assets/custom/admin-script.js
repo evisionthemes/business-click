@@ -26,12 +26,6 @@ jQuery(window).load(function() {
 	});
 
 
-	// Slider Section - Overlay
-	// evt_slider_overlay('li#customize-control-business_click_options-business-click-slider-overlay-transparency');
-	// evt_slider_overlay('li#customize-control-business_click_options-business-click-slider-hover-overlay-transparency');
-
-
-
 	// Feature Section - Select Number of post
 	jQuery('ul#sub-accordion-section-business-click-feature-section li#customize-control-business_click_options-business-click-feature-number-post select').on('change', function() {
 		var selectedNum = jQuery(this).val();
@@ -68,6 +62,7 @@ function evt_feature_setting_show_hide(value, parent_id) {
 	}
 }
 
+// * Slider Section - Overlay
 function evt_slider_overlay(li_id) {
 	jQuery(li_id).append('<div class="slider-overlay"></div>');
 

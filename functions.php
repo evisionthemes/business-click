@@ -187,9 +187,9 @@ function business_click_scripts() {
 	/*google font*/
 	wp_enqueue_style( 'business-click-google-fonts',business_click_google_fonts() );
 	// thirdparty style file
-	wp_enqueue_style( 'bootstrap-style', get_template_directory_uri() . '/assets/vendor/bootstrap/bootstrap'.$suffix.'.css' );
-	wp_enqueue_style( 'fontawesome', get_template_directory_uri() . '/assets/vendor/font-awesome/css/fontawesome-all'.$suffix.'.css' );
-	wp_enqueue_style( 'slick-style', get_template_directory_uri() . '/assets/vendor/slick/slick'.$suffix.'.css' );
+	wp_enqueue_style( 'bootstrap-style', get_template_directory_uri() . '/assets/frameworks/bootstrap/bootstrap'.$suffix.'.css' );
+	wp_enqueue_style( 'fontawesome', get_template_directory_uri() . '/assets/frameworks/font-awesome/css/fontawesome-all'.$suffix.'.css' );
+	wp_enqueue_style( 'slick-style', get_template_directory_uri() . '/assets/frameworks/slick/slick'.$suffix.'.css' );
 	wp_enqueue_style( 'animate-css', get_template_directory_uri() . '/assets/frameworks/wow/css/animate'.$suffix.'.css' );
 
 	//theme-style
@@ -202,8 +202,8 @@ function business_click_scripts() {
 	
 
 	// thirdparty assets
-	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/assets/vendor/bootstrap/bootstrap'.$suffix.'.js', array('jquery'), true );
-	wp_enqueue_script( 'slick', get_template_directory_uri() . '/assets/vendor/slick/slick'.$suffix.'.js', array('jquery'), true );
+	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/assets/frameworks/bootstrap/bootstrap'.$suffix.'.js', array('jquery'), true );
+	wp_enqueue_script( 'slick', get_template_directory_uri() . '/assets/frameworks/slick/slick'.$suffix.'.js', array('jquery'), true );
 	wp_enqueue_script( 'wow', get_template_directory_uri() . '/assets/frameworks/wow/js/wow'.$suffix.'.js', array('jquery'), true );
 	wp_enqueue_script( 'isotope', get_template_directory_uri() . '/assets/frameworks/isotope/isotope.pkgd'.$suffix.'.js', array('jquery'), true );
 
@@ -225,7 +225,7 @@ add_action( 'wp_enqueue_scripts', 'business_click_scripts', 99 );
 function evt_customizer_control_scripts()
 {
     // for slider overlay
-    wp_enqueue_style('jquery-ui-style', get_template_directory_uri() . '/assets/vendor/jquery-ui/jquery-ui.css');
+    wp_enqueue_style('jquery-ui-style', get_template_directory_uri() . '/assets/frameworks/jquery-ui/jquery-ui.css');
 
     wp_enqueue_style('evt-customize-controls-style', get_template_directory_uri() . '/editor-style.css');
 

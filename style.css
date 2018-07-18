@@ -2736,10 +2736,10 @@ ul.slick-dots li button {
 }
 
 @media (max-width: 991px) {
-  .woocommerce-cart .st-blog-site-content #primary,
-  .woocommerce-cart .st-blog-site-content #secondary,
-  .woocommerce-checkout .st-blog-site-content #primary,
-  .woocommerce-checkout .st-blog-site-content #secondary {
+  .woocommerce-cart .evt-site-content #primary,
+  .woocommerce-cart .evt-site-content #secondary,
+  .woocommerce-checkout .evt-site-content #primary,
+  .woocommerce-checkout .evt-site-content #secondary {
     width: 100%;
   }
 }
