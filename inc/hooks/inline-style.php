@@ -163,9 +163,12 @@ if( ! function_exists( 'business_click_inline_style' ) ) :
             ?>
            
 
-                .widget-title:before, .widgettitle:before, .page-title:before, .entry-title:before
+            .widget-title:before, .widgettitle:before, .page-title:before, .entry-title:before
             {
                 display: none;
+            }
+            .widget-title, .widgettitle, .page-title, body .entry-title {
+                margin-bottom: 0;
             }
 
 

@@ -16,6 +16,7 @@
 				<?php if ( 'post' === get_post_type() ) : ?>
 				<div class="entry-meta">
 					<?php business_click_posted_on(); ?>
+					<?php business_click_entry_footer(); ?>
 				</div><!-- .entry-meta -->
 				<?php endif; ?>
 			</header><!-- .entry-header -->
@@ -23,9 +24,5 @@
 			<div class="entry-summary">
 				<?php the_excerpt(); ?>
 			</div><!-- .entry-summary -->
-
-			<footer class="entry-footer">
-				<?php business_click_entry_footer(); ?>
-			</footer><!-- .entry-footer -->
 		</div>
 	</article><!-- #post-## -->
