@@ -19,10 +19,6 @@ if( !function_exists('business_click_blog') ) :
 		$business_click_number_single_words	= absint( $business_click_customizer_all_values['business-click-blog-excerpt-length'] );
 		$business_click_blog_category		= $business_click_customizer_all_values['business-click-blog-select-category'];
 		$business_click_button_text			= esc_html( $business_click_customizer_all_values['business-click-blog-button-text'] );
-		$business_click_enable_title		= esc_html( $business_click_customizer_all_values['business-click-blog-enable-title'] );
-		$business_click_enable_content		= esc_html( $business_click_customizer_all_values['business-click-blog-enable-content'] );
-		$business_click_enable_image		= esc_html( $business_click_customizer_all_values['business-click-blog-enable-image'] );
-		$business_click_enable_button		= esc_html( $business_click_customizer_all_values['business-click-blog-enable-button'] );
 
 		if(  ! $business_click_customizer_all_values['business-click-blog-section-enable']  ){
 			return null;
@@ -55,16 +51,14 @@ if( !function_exists('business_click_blog') ) :
 									?>
 									<div class="evt-box-item-wrap">
 										<div class="evt-box-item">
-											<?php if( 1 == $business_click_enable_image ) { ?>
-												<div class="evt-box-image image">
-													<img src="<?php echo esc_url($th_image);?>">
-												</div>
-											<?php } ?>	
+											<div class="evt-box-image image">
+												<img src="<?php echo esc_url($th_image);?>">
+											</div>
+	
 
 											<div class="evt-box-caption text-left">
-												<?php if( 1 == $business_click_enable_title ) { ?>
-													<h2 class="evt-box-title mt-3"><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h2>
-												<?php } ?>
+												<h2 class="evt-box-title mt-3"><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h2>
+
 
 												<div class="entry-meta">
                                                         <span class="posted-on ">
@@ -81,7 +75,6 @@ if( !function_exists('business_click_blog') ) :
                                                         </span>                                                       
                                                 </div>
 
-												<?php if(1 == $business_click_enable_content ) { ?>
 													<p>
 														<?php 
 															if ( has_excerpt() ) {
@@ -92,8 +85,6 @@ if( !function_exists('business_click_blog') ) :
 					                                        }
 														?>
 													</p>
-
-												<?php } ?>	
 												<?php if(!empty($business_click_button_text)) { ?>
 													<a href="<?php the_permalink(); ?>" class="readmore"><?php echo esc_html($business_click_button_text);?></a>
 												<?php } ?>	
