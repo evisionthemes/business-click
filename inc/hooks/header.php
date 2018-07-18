@@ -97,34 +97,29 @@ if ( ! function_exists( 'business_click_body_class' ) ) :
  */
 function business_click_body_class( $business_click_body_classes ) {
   global $business_click_customizer_all_values;
-  $business_click_alternate_layout = '';
-    if ($business_click_customizer_all_values['business-click-alternate-layout'] == 1) {
-      $business_click_alternate_layout = " alternate";
-    } else {
-      $business_click_alternate_layout = " non-alternate";
-    }
+  
 
     if(!is_front_page() || ( is_front_page())){
         $business_click_default_layout = business_click_default_layout();
         if( !empty( $business_click_default_layout ) ){
             if( 'left-sidebar' == $business_click_default_layout ){
-                $business_click_body_classes[] = 'evt-left-sidebar'. $business_click_alternate_layout;
+                $business_click_body_classes[] = 'evt-left-sidebar';
             }
             elseif( 'right-sidebar' == $business_click_default_layout ){ 
-                $business_click_body_classes[] = 'evt-right-sidebar'. $business_click_alternate_layout;
+                $business_click_body_classes[] = 'evt-right-sidebar';
             }
             elseif( 'both-sidebar' == $business_click_default_layout ){
-                $business_click_body_classes[] = 'evt-both-sidebar' . $business_click_alternate_layout;
+                $business_click_body_classes[] = 'evt-both-sidebar' ;
             }
             elseif( 'no-sidebar' == $business_click_default_layout ){
-                $business_click_body_classes[] = 'evt-no-sidebar'. $business_click_alternate_layout;
+                $business_click_body_classes[] = 'evt-no-sidebar';
             }
             else{
-                $business_click_body_classes[] = 'evt-right-sidebar'. $business_click_alternate_layout;
+                $business_click_body_classes[] = 'evt-right-sidebar';
             }
         }
         else{
-            $business_click_body_classes[] = 'evt-right-sidebar'. $business_click_alternate_layout;
+            $business_click_body_classes[] = 'evt-right-sidebar';
         }
     }
     return $business_click_body_classes;
