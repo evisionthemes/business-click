@@ -57,7 +57,7 @@ if( !function_exists('business_click_blog') ) :
 	
 
 											<div class="evt-box-caption text-left">
-												<h2 class="evt-box-title mt-3"><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h2>
+												<h2 class="evt-box-title"><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h2>
 
 
 												<div class="entry-meta">

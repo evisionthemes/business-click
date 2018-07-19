@@ -61,4 +61,4 @@ if( !function_exists('call_to_action_array') ) :
 		}
 	}
 endif;
-add_action('business_click_homepage','call_to_action_array',50);
+add_action('business_click_homepage','call_to_action_array',30);

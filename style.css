@@ -2649,11 +2649,12 @@ ul.slick-dots li button {
 }
 .wpcf7-form label input.wpcf7-form-control,
 .wpcf7-form label .wpcf7-form-control {
-  border: 2px solid #cacaca;
+  border: 1px solid #cacaca;
 }
 .wpcf7-form label input.wpcf7-form-control:focus,
 .wpcf7-form label .wpcf7-form-control:focus {
   background-color: #ffffff;
+  border-color: #999;
 }
 .wpcf7-form label textarea.wpcf7-form-control {
   height: 150px;
@@ -2870,7 +2871,7 @@ body.admin-bar.search .readmore {
 }
 
 #evt-social-icons {
-  height: 34px;
+  height: 32px;
 }
 
 .evt-head-search-toggler {
@@ -3563,6 +3564,12 @@ body.logo-left.small-header .evt-header-row .evt-logo-manage .site-branding .sit
 #evt-blog .entry-meta {
   border: 0;
   padding-top: 0;
+}
+#evt-blog .evt-blog-slider .evt-box-caption {
+  background: #fff;
+  padding: 15px;
+  border: 1px solid #d3d3d3;
+  border-top: 0;
 }
 
 #evt-partner .evt-img-overlay .evt-box-image {
