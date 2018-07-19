@@ -8,7 +8,7 @@ global $business_click_customizer_defaults;
 $business_click_customizer_defaults['business-click-enbale-slider']                         = 0;
 $business_click_customizer_defaults['business-click-number-of-slider']                      = 2;
 $business_click_customizer_defaults['business-click-excerpt-length']                        = 30;
-$business_click_customizer_defaults['business-click-select-from-page']                      = '';
+$business_click_customizer_defaults['business-click-select-from-page']                      = 0;
 $business_click_customizer_defaults['business-click-slider-button-text']                    = esc_html__('Learn more','business-click');
 
 
@@ -38,7 +38,7 @@ $business_click_settings_controls['business-click-enbale-slider'] = array(
 /*except length */
 $business_click_settings_controls['business-click-excerpt-length'] = array(
     'setting' => array(
-        'defaults'          => $business_click_customizer_defaults['business-click-excerpt-length'] 
+        'default'          => $business_click_customizer_defaults['business-click-excerpt-length'] 
     ),
     'control' => array(
         'label'             => esc_html__('Excerpt Length','business-click'),
@@ -50,11 +50,10 @@ $business_click_settings_controls['business-click-excerpt-length'] = array(
     )       
 );
 
-
 /*total number slider */
 $business_click_settings_controls['business-click-number-of-slider'] = array(
     'setting' => array(
-        'defaults'          => $business_click_customizer_defaults['business-click-number-of-slider'] 
+        'default'          => $business_click_customizer_defaults['business-click-number-of-slider'] 
     ),
     'control' => array(
         'label'             => esc_html__('Select Number of post for slider','business-click'),
@@ -79,7 +78,7 @@ $business_click_repeated_settings_controls['business-click-select-from-page'] = 
     'repeated'      => 3,
     'business-click-page-id' => array(
         'setting' => array(
-        'defaults'              => $business_click_customizer_defaults['business-click-select-from-page'] 
+        'default'              => $business_click_customizer_defaults['business-click-select-from-page'] 
         ),
         'control' => array(
             /* translators: %s: search slider page */
@@ -96,7 +95,7 @@ $business_click_repeated_settings_controls['business-click-select-from-page'] = 
 /*Button text */
 $business_click_settings_controls['business-click-slider-button-text'] = array(
     'setting' => array(
-        'defaults'          => $business_click_customizer_defaults['business-click-slider-button-text'] 
+        'default'          => $business_click_customizer_defaults['business-click-slider-button-text'] 
     ),
     'control' => array(
         'label'             => esc_html__('Slider button text','business-click'),

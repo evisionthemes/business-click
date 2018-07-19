@@ -7,7 +7,7 @@ global $business_click_customizer_defaults;
 /*defaults values*/
 $business_click_customizer_defaults['business-click-enable-call-to-action'] 					= 0;
 $business_click_customizer_defaults['business-click-call-excerpt-length']						= 30;
-$business_click_customizer_defaults['business-click-call-to-action-select-from-page']			= '';
+$business_click_customizer_defaults['business-click-call-to-action-select-from-page']			= 0;
 $business_click_customizer_defaults['business-click-button-text']								= esc_html__('Learn more','business-click');
 
 

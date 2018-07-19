@@ -54,6 +54,6 @@ if ( 'posts' == get_option( 'show_on_front' ) )
             </div>
         <?php }
 
-        // do_action('business_click_customizer_link');
+        do_action('business_click_link');
     }
 get_footer();

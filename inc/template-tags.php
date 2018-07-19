@@ -34,7 +34,7 @@ function business_click_posted_on() {
 
 	$byline = sprintf(
 		/* translators: %s: search term */
-		esc_html_X( 'By %s', 'post author', 'business-click' ),
+		esc_html_X( ' %s', 'post author', 'business-click' ),
 		'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( $author_id ) ) . '">' . esc_html( get_the_author_meta( 'user_nicename', $author_id ) ) . '</a></span>'
 	);
 
@@ -54,14 +54,15 @@ function business_click_entry_footer() {
 		$categories_list = get_the_category_list( esc_html( ' ') );
 		if ( $categories_list && business_click_categorized_blog() ) {
 			/* translators: %s: search term */
-			printf( '<span class="cat-links">' . esc_html__( 'Categories : %1$s', 'business-click' ) . '</span>', $categories_list ); // WPCS: XSS OK.
+			printf( '<span class="cat-links">' . esc_html__( ' %1$s', 'business-click' ) . '</span>', $categories_list ); // WPCS: XSS OK.
 		}
 
 		/* translators: used between list items, there is a space after the comma */
-		$tags_list = get_the_tag_list( esc_html( '') );
+		$tags_list = get_the_tag_list(  );
 		if ( $tags_list ) {
 			/* translators: %s: search term */
-			printf( '<span class="tags-links">' . esc_html__( 'Tags : %1$s', 'business-click' ) . '</span>', $tags_list ); // WPCS: XSS OK.
+			printf( '<span class="tags-links">' .  get_the_tag_list( sprintf( ' ', esc_html__( '', 'business-click' ) ), ', ' ) . '</span>', $tags_list ); // WPCS: XSS OK.
+			
 		}
 	}
 

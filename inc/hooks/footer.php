@@ -14,7 +14,7 @@ if ( ! function_exists( 'business_click_before_footer' ) ) :
         </div><!-- #content -->
     </div>
     </section>
-    <?php do_action( 'business_click_show_message_if_no_option_selected' );?>
+    
         <!-- *****************************************
              Footer section starts
     ****************************************** -->
