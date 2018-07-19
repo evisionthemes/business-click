@@ -36,3 +36,5 @@ require get_template_directory().'/inc/customizer/main-homepage/contact-us.php';
 
 /*footer options */
 require get_template_directory().'/inc/customizer/main-homepage/footer.php';
+
+

@@ -265,7 +265,7 @@ if ( !function_exists('business_click_social_menu') ) :
 	function business_click_social_menu()
 	{ ?>
 		<ul id="menu">
-			<li><a href="#" target="_tab"><?php echo esc_html_e('WordPress', 'business-click' );?></a></li>
+			<li><a href="#" target="_tab"><?php echo esc_html_e('', 'business-click' );?></a></li>
 		</ul>
 		<?php
 	}

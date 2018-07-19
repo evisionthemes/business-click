@@ -16,9 +16,9 @@ if ( !function_exists('business_click_feature_slider_array') ) :
       $slider_excerpt_length      = absint($business_click_customizer_all_values['business-click-excerpt-length']);
       // $feature_slideer_array      = array();
 
-      $feature_slideer_array[0]['business-click-feature-title']     = esc_html__('Well-Come To Business Click !','business-click');
-      $feature_slideer_array[0]['business-click-feature-content']   = esc_html__('Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.','business-click');
-      $feature_slideer_array[0]['business-click-feature-image']     = get_template_directory_uri()."/assets/img/slider.jpg";
+      $feature_slideer_array[0]['business-click-feature-title']     = '';
+      $feature_slideer_array[0]['business-click-feature-content']   = '';
+      $feature_slideer_array[0]['business-click-feature-image']     = '';
       $feature_slideer_array[0]['business-click-feature-url']       = '';
       
       $reapeated_pages      = array('business-click-page-id');
@@ -109,7 +109,7 @@ if (!function_exists('business_click_feature_slider')) :
             }
             if ( empty($feature_slide_array['business-click-feature-image'] ))
             {
-              $feature_slider_image = get_template_directory_uri()."/assets/img/slider.jpg";
+              $feature_slider_image = '';
             }
             else
             {

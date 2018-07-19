@@ -10,7 +10,7 @@ $business_click_customizer_defaults['business-click-testimonila-enable']				= 0;
 $business_click_customizer_defaults['business-click-testimonial-section-title']			= esc_html__('Testimonial','business-click');
 $business_click_customizer_defaults['business-click-number-of-testimonial']				= 2;
 $business_click_customizer_defaults['business-click-testimonial-excerpt-length']		= 30;
-$business_click_customizer_defaults['business-click-testimonial-select-for-page']		= '';
+$business_click_customizer_defaults['business-click-testimonial-select-for-page']		= 0;
 $business_click_customizer_defaults['business-click-testimonial-designation']			= esc_html__('C.E.O','business-click');
 $business_click_customizer_defaults['business-click-testimonial-background-image']		= '';
 
@@ -25,7 +25,7 @@ $business_click_sections['business-click-testimonial-section'] = array(
 
 /*Enable Testimonial*/
 $business_click_settings_controls['business-click-testimonila-enable'] = array(
-	'settings' => array(
+	'setting' => array(
 		'default'					=> $business_click_customizer_defaults['business-click-testimonila-enable']
 	),
 	'control' => array(
@@ -39,7 +39,7 @@ $business_click_settings_controls['business-click-testimonila-enable'] = array(
 
 /*Section Title*/
 $business_click_settings_controls['business-click-testimonial-section-title'] = array(
-	'settings' => array(
+	'setting' => array(
 		'default'					=> $business_click_customizer_defaults['business-click-testimonial-section-title']
 	),
 	'control' => array(
@@ -53,7 +53,7 @@ $business_click_settings_controls['business-click-testimonial-section-title'] = 
 
 /*Section Title*/
 $business_click_settings_controls['business-click-number-of-testimonial'] = array(
-	'settings' => array(
+	'setting' => array(
 		'default'					=> $business_click_customizer_defaults['business-click-number-of-testimonial']
 	),
 	'control' => array(
@@ -69,9 +69,10 @@ $business_click_settings_controls['business-click-number-of-testimonial'] = arra
 	)
 );
 
+
 /*Excerpt Length*/
 $business_click_settings_controls['business-click-testimonial-excerpt-length'] = array(
-	'settings' => array(
+	'setting' => array(
 		'default'					=> $business_click_customizer_defaults['business-click-testimonial-excerpt-length']
 	),
 	'control' => array(
@@ -88,7 +89,7 @@ $business_click_settings_controls['business-click-testimonial-excerpt-length'] =
 $business_click_repeated_settings_controls['business-click-testimonial-designation'] = array(
 	'repeated'					   => 2,
 	'testimonial-designation-ids' => array(
-		'settings' => array(
+		'setting' => array(
 			'default'					=> $business_click_customizer_defaults['business-click-testimonial-designation']
 		),
 		'control' => array(
@@ -101,7 +102,7 @@ $business_click_repeated_settings_controls['business-click-testimonial-designati
 		)
 	),
 	'testimonial-page-ids' => array(
-		'settings' => array(
+		'setting' => array(
 			'default'					=> $business_click_customizer_defaults['business-click-testimonial-select-for-page']
 		),
 		'control' => array(
@@ -117,7 +118,7 @@ $business_click_repeated_settings_controls['business-click-testimonial-designati
 
 /*Background image upload*/
 $business_click_settings_controls['business-click-testimonial-background-image'] = array(
-	'settings' => array(
+	'setting' => array(
 		'default'					=> $business_click_customizer_defaults['business-click-testimonial-background-image']
 	),
 	'control' => array(

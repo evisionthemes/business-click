@@ -10,7 +10,7 @@ $business_click_customizer_defaults['business-click-blog-section-enable'] 					=
 $business_click_customizer_defaults['business-click-blog-section-title-text']				= esc_html__('Latest Blog','business-click');
 $business_click_customizer_defaults['business-click-blog-select-number-post']				= 3;
 $business_click_customizer_defaults['business-click-blog-excerpt-length']					= 30;
-$business_click_customizer_defaults['business-click-blog-select-category']					= '';
+$business_click_customizer_defaults['business-click-blog-select-category']					=  0;
 $business_click_customizer_defaults['business-click-blog-button-text']						= esc_html__('Read More','business-click');
 
 

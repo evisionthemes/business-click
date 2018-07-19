@@ -10,9 +10,9 @@ $business_click_customizer_defaults['business-click-feature-enable']					= 0;
 $business_click_customizer_defaults['business-click-feature-section-title']				= esc_html__('Awesome Features','business-click');
 $business_click_customizer_defaults['business-click-feature-number-post']				= 3;
 $business_click_customizer_defaults['business-click-feature-excerpt-length']			= 30;
-$business_click_customizer_defaults['business-click-feature-from-page']					= '';
+$business_click_customizer_defaults['business-click-feature-from-page']					= 0;
 $business_click_customizer_defaults['business-click-feature-page-icon']					= esc_html__(' fa-wrench','business-click');
-$business_click_customizer_defaults['business-click-feature-button-text']	    		= esc_html__('Read More','business-click');
+$business_click_customizer_defaults['business-click-feature-button-text']	    		= '';
 
 
 /*create section for feature*/
