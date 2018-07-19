@@ -42,9 +42,10 @@
 		// evt mobile menu
 		$('#site-navigation').evtMobileMenu ();
 
-		page_padding_top();
 		
 		nav_padding_right();
+		
+		page_padding_top();
 
 
 		// show hide header contact info

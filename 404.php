@@ -10,8 +10,21 @@
 get_header();
 ?>
 
+<section id="evt-page-banner" class="">
 
-<div class="container">
+	<div class="evt-banner-image evt-overlay position-relative" style="background-image: url('<?php echo get_template_directory_uri();?>/assets/img/404.jpg');">
+		<div class="evt-banner-caption">
+			<h2 class="evt-title text-white mb-4">Oops! That page can&rsquo;t be found.</h2>
+			<p>It looks like nothing was found at this location.</p>
+			<?php
+			get_search_form();
+			?>			
+		</div>
+	</div>
+
+</section>
+
+<div class="container d-none">
 	<div class="row">
 		<div id="primary" class="content-area text-center">
 			<main id="main" class="site-main">
@@ -26,33 +39,6 @@ get_header();
 
 						<?php
 						get_search_form();
-
-						/*
-						the_widget( 'WP_Widget_Recent_Posts' );
-						?>
-
-						<div class="widget widget_categories">
-							<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'business-click' ); ?></h2>
-							<ul>
-								<?php
-								wp_list_categories( array(
-									'orderby'    => 'count',
-									'order'      => 'DESC',
-									'show_count' => 1,
-									'title_li'   => '',
-									'number'     => 10,
-								) );
-								?>
-							</ul>
-						</div><!-- .widget -->
-
-						<?php
-						// translators: %1$s: smiley 
-						$business_click_archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'business-click' ), convert_smilies( ':)' ) ) . '</p>';
-						the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$business_click_archive_content" );
-
-						the_widget( 'WP_Widget_Tag_Cloud' );
-						*/
 						?>
 
 					</div><!-- .page-content -->

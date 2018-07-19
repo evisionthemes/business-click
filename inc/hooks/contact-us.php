@@ -22,9 +22,9 @@ if( !function_exists('contact_us_section') ) :
 		<section id="evt-contact">
 			<div class="container">
 				<h2 class="widget-title text-left- evision-animate slideInDown"><?php echo esc_html($business_contact_section_title);?></h2>
-				<div class="row">
+				<div class="row justify-content-center">
 					<div class="w-100 d-block d-md-none"></div>
-					<div class="col evision-animate fadeInUp">
+					<div class="col col-md-8 evision-animate fadeInUp">
 						<?php 
 							if(function_exists( 'wpcf7' ) && isset( $business_click_customizer_all_values['business-click-contact-section-contact-form-short-code'] )){
 								

@@ -1,14 +1,14 @@
 /*!
 Theme Name: Business Click
-Theme URI: http://evisionthemes.com
+Theme URI: http://evisionthemes.com/product/business-click/
 Author: eVision Themes
-Author URI: http://evisionthemes.com
+Author URI: http://evisionthemes.com/
 Description: Description
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: business-click
-Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready, left-sidebar, right-sidebar, custom-header, blog, e-commerce, theme-options
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
@@ -983,7 +983,7 @@ object {
   transition: 0.4s all ease-in-out;
 }
 
-.img-cover, #evt-banner .evt-banner-slider .evt-banner-image, #evt-page-banner .evt-banner-image {
+.img-cover, .evt-banner-image, #evt-page-banner .evt-banner-image {
   background-size: cover;
   background-position: center center;
 }
@@ -1008,7 +1008,7 @@ nav#site-navigation ul.menu > li.current-menu-item > a, .slick-slider .slick-arr
 .woocommerce div.product p.price, .woocommerce div.product span.price,
 .woocommerce-message::before,
 .woocommerce-info::before,
-.woocommerce form .form-row .required, .evt-head-search-toggler:hover i, body.head-search-active .evt-head-search-toggler .fa-search, #evt-top-header .evt-head-search-toggler:hover, body.home.transparent-header:not(.small-header) nav#site-navigation ul#menu > li > a:hover, body.home.transparent-header:not(.small-header) nav#site-navigation ul.nav-menu > li > a:hover, body.home.transparent-header:not(.small-header) nav#site-navigation ul.menu > li > a:hover, body.home.transparent-header:not(.small-header) nav#site-navigation ul a:hover, body.home.transparent-header:not(.small-header) nav#site-navigation ul#menu > li.current-menu-item > a, body.home.transparent-header:not(.small-header) nav#site-navigation ul.nav-menu > li.current-menu-item > a, body.home.transparent-header:not(.small-header) nav#site-navigation ul.menu > li.current-menu-item > a, #evt-portfolio #filters button.is-checked, #evt-team .evt-box-item-wrap .evt-box-caption .evt-designation, #evt-featured.featured-icon-transparent .evt-featured-icon, #evt-featured.featured-icon-framed .evt-featured-icon, #evt-featured.featured-background .evt-featured-icon, .elementor-widget-icon-box.elementor-view-framed .elementor-icon, body .elementor-widget-heading .elementor-heading-title > a {
+.woocommerce form .form-row .required, .evt-head-search-toggler:hover i, body.head-search-active .evt-head-search-toggler .fa-search, #evt-top-header .evt-head-search-toggler:hover, body.home.transparent-header:not(.small-header) nav#site-navigation ul#menu > li > a:hover, body.home.transparent-header:not(.small-header) nav#site-navigation ul.nav-menu > li > a:hover, body.home.transparent-header:not(.small-header) nav#site-navigation ul.menu > li > a:hover, body.home.transparent-header:not(.small-header) nav#site-navigation ul a:hover, body.home.transparent-header:not(.small-header) nav#site-navigation ul#menu > li.current-menu-item > a, body.home.transparent-header:not(.small-header) nav#site-navigation ul.nav-menu > li.current-menu-item > a, body.home.transparent-header:not(.small-header) nav#site-navigation ul.menu > li.current-menu-item > a, #evt-portfolio #filters button.is-checked, #evt-team .evt-box-item-wrap .evt-box-caption .evt-designation, #evt-featured.featured-icon-transparent .evt-featured-icon, #evt-featured.featured-icon-framed .evt-featured-icon, #evt-featured.featured-background .evt-featured-icon {
   color: #578ECF;
 }
 
@@ -1028,48 +1028,8 @@ a {
   color: #ffffff;
 }
 
-#evt-portfolio #filters button, #evt-contact a, body .elementor-widget-icon-box .elementor-icon-box-content .elementor-icon-box-title, body .elementor-widget-heading.elementor-widget-heading .elementor-heading-title,
-body .elementor-image-box-title,
-body .elementor-widget-icon-list .elementor-icon-list-text,
-body .elementor-widget-counter .elementor-counter-title,
-body caption,
-body .elementor-widget .elementor-testimonial-job,
-body .elementor-background-overlay + .elementor-container .elementor-widget-testimonial .elementor-testimonial-content,
-body .elementor-background-overlay + .elementor-container .elementor-widget-heading.elementor-widget-heading .elementor-heading-title,
-body .elementor-background-overlay + .elementor-container .elementor-widget-testimonial .elementor-testimonial-name,
-body .elementor-background-overlay + .elementor-container .elementor-widget-testimonial .elementor-testimonial-job,
-body .elementor-background-overlay + .elementor-container .elementor-widget-tabs .elementor-tab-content,
-body .elementor-background-overlay + .elementor-container .elementor-widget-tabs .elementor-tab-title, body:not(.dark-theme) .elementor-widget-image .widget-image-caption,
-body:not(.dark-theme) .elementor-widget-text-editor,
-body:not(.dark-theme) .elementor-widget-divider .elementor-divider-separator,
-body:not(.dark-theme) .elementor-widget-image-box .elementor-image-box-content .elementor-image-box-description,
-body:not(.dark-theme) .elementor-widget-icon-box .elementor-icon-box-content .elementor-icon-box-description,
-body:not(.dark-theme) .elementor-widget-icon-list .elementor-icon-list-item:not(:last-child):after,
-body:not(.dark-theme) .elementor-widget-testimonial .elementor-testimonial-content,
-body:not(.dark-theme) .elementor-widget-tabs .elementor-tab-content,
-body:not(.dark-theme) .elementor-widget-accordion .elementor-accordion .elementor-tab-content,
-body:not(.dark-theme) .elementor-widget-toggle .elementor-toggle .elementor-tab-content {
+#evt-portfolio #filters button, #evt-contact a {
   color: #3e3e3e;
-}
-
-body.dark-theme .elementor-widget-heading.elementor-widget-heading .elementor-heading-title,
-body.dark-theme .elementor-widget-icon-box .elementor-icon-box-content .elementor-icon-box-title,
-body.dark-theme .elementor-image-box-title,
-body.dark-theme .elementor-widget-icon-list .elementor-icon-list-text,
-body.dark-theme .elementor-widget-counter .elementor-counter-title,
-body.dark-theme caption,
-body.dark-theme .elementor-widget .elementor-testimonial-job,
-body.dark-theme .elementor-background-overlay + .elementor-container .elementor-widget-testimonial .elementor-testimonial-content,
-body.dark-theme .elementor-background-overlay + .elementor-container .elementor-widget-heading.elementor-widget-heading .elementor-heading-title,
-body.dark-theme .elementor-background-overlay + .elementor-container .elementor-widget-testimonial .elementor-testimonial-name,
-body.dark-theme .elementor-background-overlay + .elementor-container .elementor-widget-testimonial .elementor-testimonial-job,
-body.dark-theme .elementor-background-overlay + .elementor-container .elementor-widget-tabs .elementor-tab-content,
-body.dark-theme .elementor-background-overlay + .elementor-container .elementor-widget-tabs .elementor-tab-title {
-  color: #3e3e3e;
-}
-
-body .elementor-widget-heading.elementor-widget-heading .elementor-heading-title {
-  color: #000;
 }
 
 .widget-title:before, .widgettitle:before, .page-title:before, body .entry-title:before, .widget_search form .search-submit, .evt-head-search form .search-submit, .pagination .nav-links a, .wp-pagenavi a, .woocommerce nav.woocommerce-pagination a,
@@ -1085,12 +1045,8 @@ body .elementor-widget-heading.elementor-widget-heading .elementor-heading-title
 .woocommerce button.button.alt,
 .woocommerce input.button.alt, button, input[type="button"], input[type="reset"], input[type="submit"],
 .btn.btn-reverse:hover, .wp-pagenavi a:hover,
-.wp-pagenavi span.current, .pagination .nav-links ul li span.current, .wp-pagenavi ul li span.current, .woocommerce nav.woocommerce-pagination ul li span.current, .pagination .nav-links ul li span:hover, .wp-pagenavi ul li span:hover, .woocommerce nav.woocommerce-pagination ul li span:hover, .pagination .nav-links ul li a:hover, .wp-pagenavi ul li a:hover, .woocommerce nav.woocommerce-pagination ul li a:hover, header.site-header .evt-header-wrap-nav .evt-menu-toggler-manage #menu-icon.menu-toggler:hover span, ul.slick-dots li button:hover, ul.slick-dots li.slick-active button, .woocommerce span.onsale, .evt-carousel.slick-slider ul.slick-dots li button:hover, .evt-carousel.slick-slider ul.slick-dots li.slick-active button, .evt-featured-item-wrap .evt-featured-item .evt-featured-icon, #evt-top-header, .evt-thumb-holder .evt-thumb-hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons, #evt-testimonials .evt-testimonials-slider, #evt-featured.featured-background .evt-featured-item-wrap .evt-featured-item, .elementor-widget-button a.elementor-button, .elementor-widget-button .elementor-button, .elementor-slick-slider ul.slick-dots li button, .elementor-widget-icon.elementor-view-stacked .elementor-icon, body .elementor-social-icon, body .elementor-add-new-section .elementor-add-section-button {
+.wp-pagenavi span.current, .pagination .nav-links ul li span.current, .wp-pagenavi ul li span.current, .woocommerce nav.woocommerce-pagination ul li span.current, .pagination .nav-links ul li span:hover, .wp-pagenavi ul li span:hover, .woocommerce nav.woocommerce-pagination ul li span:hover, .pagination .nav-links ul li a:hover, .wp-pagenavi ul li a:hover, .woocommerce nav.woocommerce-pagination ul li a:hover, header.site-header .evt-header-wrap-nav .evt-menu-toggler-manage #menu-icon.menu-toggler:hover span, ul.slick-dots li button:hover, ul.slick-dots li.slick-active button, .woocommerce span.onsale, .evt-carousel.slick-slider ul.slick-dots li button:hover, .evt-carousel.slick-slider ul.slick-dots li.slick-active button, .evt-featured-item-wrap .evt-featured-item .evt-featured-icon, #evt-top-header, .evt-thumb-holder .evt-thumb-hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons, #evt-testimonials .evt-testimonials-slider, #evt-featured.featured-background .evt-featured-item-wrap .evt-featured-item {
   background-color: #578ECF;
-}
-
-body .content_countdown .time_left {
-  background-color: #578ECF !important;
 }
 
 header.site-header .evt-header-wrap-nav .evt-menu-toggler-manage #menu-icon.menu-toggler:hover {
@@ -1116,25 +1072,23 @@ body.home #content.site-content > section:nth-child(odd) {
   background-color: #F1F1F1;
 }
 
-#evt-featured, #evt-why-us, #evt-portfolio .evt-img-overlay, #evt-call-to-action .evt-img-overlay, #evt-team, #evt-testimonials .evt-img-overlay, #evt-blog, #evt-partner .evt-img-overlay, #evt-contact, body .elementor-section-wrap > section, body.dark-theme .elementor-section-wrap > section {
+#evt-featured, #evt-why-us, #evt-portfolio .evt-img-overlay, #evt-call-to-action .evt-img-overlay, #evt-team, #evt-testimonials .evt-img-overlay, #evt-blog, #evt-partner .evt-img-overlay, #evt-contact {
   padding-top: 50px;
   padding-bottom: 50px;
 }
 @media (min-width: 1199px) {
-  #evt-featured, #evt-why-us, #evt-portfolio .evt-img-overlay, #evt-call-to-action .evt-img-overlay, #evt-team, #evt-testimonials .evt-img-overlay, #evt-blog, #evt-partner .evt-img-overlay, #evt-contact, body .elementor-section-wrap > section, body.dark-theme .elementor-section-wrap > section {
+  #evt-featured, #evt-why-us, #evt-portfolio .evt-img-overlay, #evt-call-to-action .evt-img-overlay, #evt-team, #evt-testimonials .evt-img-overlay, #evt-blog, #evt-partner .evt-img-overlay, #evt-contact {
     padding-top: 80px;
     padding-bottom: 80px;
   }
 }
 
 .woocommerce-message,
-.woocommerce-info, #evt-featured.featured-icon-framed .evt-featured-item .evt-featured-icon, .elementor-widget-icon-box.elementor-view-framed .elementor-icon, body .elementor-widget-divider .elementor-divider-separator {
+.woocommerce-info, #evt-featured.featured-icon-framed .evt-featured-item .evt-featured-icon {
   border-color: #578ECF;
 }
 
-h1, h2, h3, h4, h5, h6, .evt-title, .readmore, nav#site-navigation ul a, body .elementor-widget-heading.elementor-widget-heading .elementor-heading-title,
-body .elementor-widget-icon-box .elementor-icon-box-content .elementor-icon-box-title,
-body .elementor-widget-counter .elementor-counter-title {
+h1, h2, h3, h4, h5, h6, .evt-title, .readmore, nav#site-navigation ul a {
   font-family: "Catamaran", sans-serif;
 }
 
@@ -1165,7 +1119,6 @@ body {
 }
 
 .evt-featured-item-wrap .evt-featured-item .evt-featured-title, .evt-box-title {
-  font-size: 20px;
   font-size: 1.25rem;
   color: #000;
 }
@@ -1175,7 +1128,6 @@ body {
 
 .evt-item article .entry-title {
   color: #000;
-  font-size: 24px;
   font-size: 1.5rem;
   font-weight: 700;
 }
@@ -1184,7 +1136,6 @@ body {
 }
 
 .widget-title, .widgettitle, .page-title, body .entry-title {
-  font-size: 24px;
   font-size: 1.5rem;
   font-weight: 700;
   margin-top: 0;
@@ -1196,8 +1147,7 @@ body {
 }
 @media (min-width: 575px) {
   .widget-title, .widgettitle, .page-title, body .entry-title {
-    font-size: 30px;
-    font-size: 1.875rem;
+    font-size: 2rem;
   }
 }
 .widget-title:before, .widgettitle:before, .page-title:before, body .entry-title:before {
@@ -1688,13 +1638,12 @@ body a:focus {
   outline: none;
 }
 
-html {
-  font-size: 16px;
-}
-
 body {
   color: #3e3e3e;
-  font-size: 16px;
+}
+
+body, html {
+  font-size: 15px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -1729,11 +1678,15 @@ textarea:focus,
 }
 
 .evt-img-overlay {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.5);
   content: "";
 }
 
 /* import all the components */
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  margin-bottom: 1rem;
+}
+
 blockquote {
   margin: 0 0 1.5em;
   padding: 0 20px;
@@ -1758,13 +1711,16 @@ li > ul {
   margin: 0;
 }
 
+table {
+  border: 1px solid #d3d3d3;
+}
+table thead tr td {
+  background-color: #f2f2f2;
+  font-weight: 600;
+}
 table tr td {
   border-top: 1px solid #d3d3d3;
   padding: 3px 8px;
-}
-
-table {
-  border: 1px solid #d3d3d3;
 }
 
 header ul,
@@ -1959,7 +1915,6 @@ nav#site-navigation ul#menu > li,
 nav#site-navigation ul.nav-menu > li,
 nav#site-navigation ul.menu > li {
   display: inline-block;
-  font-size: 16px;
   font-size: 1rem;
   font-weight: normal;
 }
@@ -1968,7 +1923,6 @@ nav#site-navigation ul.nav-menu > li > a,
 nav#site-navigation ul.menu > li > a {
   display: inline-block;
   padding: 28px 1rem;
-  font-size: 20px;
   font-size: 1.25rem;
   font-weight: 600;
 }
@@ -2005,7 +1959,6 @@ nav#site-navigation ul.nav-menu ul li a,
 nav#site-navigation ul.menu ul li a {
   padding: 10px 1em;
   display: block;
-  font-size: 16px;
   font-size: 1rem;
   font-weight: 600;
   width: 100%;
@@ -2274,7 +2227,7 @@ nav#site-navigation {
   }
 }
 
-body:not(.home):not(.blog) .site-content
+body:not(.home):not(.blog):not(.error404) .site-content
  {
   padding-top: 30px;
   padding-bottom: 20px;
@@ -2343,9 +2296,8 @@ body.error404 .site-content #primary {
   width: 100%;
 }
 
-body.home #content.site-content > section:nth-child(odd) body.home #content.site-content > section:nth-child(odd) .wpcf7-form label input.wpcf7-form-control,
-body.home #content.site-content > section:nth-child(odd) body.home #content.site-content > section:nth-child(odd) .wpcf7-form label .wpcf7-form-control {
-  background: white;
+body.home #content.site-content > section:nth-child(odd) {
+  background-color: rgba(0, 0, 0, 0.05);
 }
 
 article.hentry {
@@ -2423,8 +2375,8 @@ body.boxed .evt-masonry article {
 }
 
 .entry-meta {
-  font-size: 14px;
   font-size: 0.875rem;
+  margin-bottom: 15px;
 }
 .entry-meta .comments-link:before {
   content: "\f075";
@@ -2534,7 +2486,6 @@ aside .widget {
 .slick-slider .slick-arrow {
   background: none;
   color: #3e3e3e;
-  font-size: 30px;
   font-size: 1.875rem;
   z-index: 1;
   position: absolute;
@@ -2553,7 +2504,6 @@ aside .widget {
 }
 .slick-slider.evt-banner-slider .slick-arrow {
   color: #ffffff;
-  font-size: 40px;
   font-size: 2.5rem;
   top: 50%;
   margin-top: -40px;
@@ -2579,7 +2529,7 @@ aside .widget {
   transform: translate(0px, 0);
 }
 .slick-slider.evt-testimonials-slider .slick-arrow {
-  color: #ffffff;
+  color: #ffffff !important;
   opacity: 0.7;
 }
 .slick-slider.evt-testimonials-slider .slick-arrow:hover {
@@ -2593,27 +2543,21 @@ aside .widget {
   }
 }
 
-#evt-banner .evt-banner-slider .slick-slide {
-  position: relative;
-}
-#evt-banner .evt-banner-slider .slick-slide > div {
-  line-height: 0;
-}
-#evt-banner .evt-banner-slider .evt-banner-image {
+.evt-banner-image {
   height: calc(100vh - 138px - 50px);
   /* iPad in portrait */
 }
 @media only screen and (orientation: portrait) {
-  #evt-banner .evt-banner-slider .evt-banner-image {
+  .evt-banner-image {
     /* STYLES GO HERE */
   }
 }
 @media (min-width: 1199px) {
-  #evt-banner .evt-banner-slider .evt-banner-image {
+  .evt-banner-image {
     height: calc(100vh - 138px - 50px);
   }
 }
-#evt-banner .evt-banner-slider .evt-banner-image .evt-banner-caption {
+.evt-banner-image .evt-banner-caption {
   color: #ffffff;
   position: absolute;
   left: 0;
@@ -2637,27 +2581,30 @@ aside .widget {
   z-index: 99;
 }
 @media (max-width: 479px) {
-  #evt-banner .evt-banner-slider .evt-banner-image .evt-banner-caption {
-    font-size: 14px;
+  .evt-banner-image .evt-banner-caption {
     font-size: 0.875rem;
   }
 }
-#evt-banner .evt-banner-slider .evt-banner-image .evt-banner-caption .evt-title {
-  font-size: 24px;
+.evt-banner-image .evt-banner-caption .evt-title {
   font-size: 1.5rem;
 }
 @media (min-width: 575px) {
-  #evt-banner .evt-banner-slider .evt-banner-image .evt-banner-caption .evt-title {
-    font-size: 36px;
+  .evt-banner-image .evt-banner-caption .evt-title {
     font-size: 2.25rem;
   }
 }
 @media (max-width: 479px) {
-  #evt-banner .evt-banner-slider .evt-banner-image .evt-banner-caption .evt-title {
-    font-size: 18px;
+  .evt-banner-image .evt-banner-caption .evt-title {
     font-size: 1.125rem;
     margin-bottom: 10px !important;
   }
+}
+
+#evt-banner .evt-banner-slider .slick-slide {
+  position: relative;
+}
+#evt-banner .evt-banner-slider .slick-slide > div {
+  line-height: 0;
 }
 #evt-banner .evt-banner-slider ul.slick-dots {
   display: none !important;
@@ -2702,7 +2649,11 @@ ul.slick-dots li button {
 }
 .wpcf7-form label input.wpcf7-form-control,
 .wpcf7-form label .wpcf7-form-control {
-  border: 2px solid #ffffff;
+  border: 2px solid #cacaca;
+}
+.wpcf7-form label input.wpcf7-form-control:focus,
+.wpcf7-form label .wpcf7-form-control:focus {
+  background-color: #ffffff;
 }
 .wpcf7-form label textarea.wpcf7-form-control {
   height: 150px;
@@ -2895,13 +2846,11 @@ body.admin-bar.search .readmore {
   font-weight: 700;
   margin-top: 5px;
   margin-bottom: 5px;
-  font-size: 26px;
   font-size: 1.625rem;
   padding-right: 30px;
 }
 @media (min-width: 575px) {
   .site-branding .site-title {
-    font-size: 32px;
     font-size: 2rem;
   }
 }
@@ -3046,7 +2995,6 @@ body.head-search-active .evt-search-mask {
   }
 }
 #evt-head-list-item ul li {
-  font-size: 15px;
   font-size: 0.9375rem;
   margin-right: 30px;
 }
@@ -3085,7 +3033,6 @@ body.head-search-active .evt-search-mask {
   padding: 20px 20px;
 }
 .evt-featured-item-wrap .evt-featured-item .evt-featured-icon {
-  font-size: 20px;
   font-size: 1.25rem;
   display: inline-block;
   padding: 0px;
@@ -3406,7 +3353,6 @@ body.logo-left.small-header .evt-header-row .evt-logo-manage .site-branding .sit
   }
 
   .logo-center nav#site-navigation ul#menu > li > a, .logo-center nav#site-navigation ul.nav-menu > li > a, .logo-center nav#site-navigation ul.menu > li > a {
-    font-size: 16px;
     font-size: 1rem;
   }
 
@@ -3558,7 +3504,6 @@ body.logo-left.small-header .evt-header-row .evt-logo-manage .site-branding .sit
 }
 #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons ul li a {
   color: #ffffff;
-  font-size: 18px;
   font-size: 1.125rem;
 }
 #evt-team .evt-box-item-wrap:hover .evt-box-social-icons {
@@ -3699,6 +3644,27 @@ body.logo-left.small-header .evt-header-row .evt-logo-manage .site-branding .sit
   line-height: 2em;
 }
 
+body.error404 #breadcrumb {
+  display: none;
+}
+body.error404 #evt-page-banner {
+  margin-bottom: 0;
+}
+body.error404 #evt-page-banner .evt-banner-image .evt-banner-caption {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+body.error404 #evt-page-banner .evt-banner-image .evt-banner-caption .search-form {
+  display: inline-block;
+}
+body.error404 #evt-page-banner .evt-banner-image .evt-banner-caption .search-form label {
+  float: left;
+  margin: 0;
+}
+body.error404 #evt-page-banner .evt-banner-image .evt-banner-caption .search-form .search-submit {
+  height: 36px;
+}
+
 body.heading-style-left .widget-title, body.heading-style-left .widgettitle, body.heading-style-left .page-title, body.heading-style-left .entry-title {
   padding-left: 15px;
   padding-bottom: 0;
@@ -3768,115 +3734,6 @@ body.heading-style-left.home .widget-title:before, body.heading-style-left.home 
 }
 #evt-featured.featured-box-shadow .evt-featured-item {
   box-shadow: 0 0px 6px rgba(0, 0, 0, 0.1);
-}
-
-.hentry,
-.entry-content {
-  margin: 0;
-}
-
-/* globals */
-body {
-  /* section */
-  /* section title */
-}
-body .elementor-section-wrap > section:nth-child(even) {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-body.dark-theme {
-  /* section */
-}
-body.dark-theme .elementor-section-wrap > section:nth-child(even) {
-  background-color: rgba(0, 0, 0, 0.2);
-}
-body #elementor .elementor-element > .elementor-element-populated,
-body .elementor-element-populated {
-  margin: 0 !important;
-}
-
-body .elementor-widget-icon-box .elementor-icon-box-content .elementor-icon-box-title,
-body .elementor-image-box-title {
-  font-size: 20px;
-  font-size: 1.25rem;
-}
-
-/* button */
-.elementor-widget-button a.elementor-button, .elementor-widget-button .elementor-button {
-  border-radius: 0;
-}
-
-.elementor-widget-image-carousel .elementor-image-carousel-caption {
-  padding-top: 10px;
-}
-
-/* elementor slick dots css */
-.elementor-slick-slider .slick-dotted.slick-slider {
-  margin-bottom: 0;
-}
-
-.elementor-slick-slider ul.slick-dots li {
-  margin-right: 5px;
-  margin-left: 5px;
-}
-
-.elementor-widget-icon-box > .elementor-widget-container {
-  padding: 10px;
-}
-
-.elementor-icon-list-items:not(.elementor-inline-items) .elementor-icon-list-item:not(:last-child) {
-  padding-bottom: calc(10px/2);
-}
-
-.elementor-icon-list-items:not(.elementor-inline-items) .elementor-icon-list-item:not(:first-child) {
-  margin-top: calc(10px/2);
-}
-
-body .elementor-social-icon {
-  font-size: 18px;
-  font-size: 1.125rem;
-}
-
-.elementor-element.elementor-widget-divider .elementor-divider-separator {
-  border-top-width: 5px;
-  border-top-style: solid;
-  width: 10%;
-}
-@media (max-width: 767px) {
-  .elementor-element.elementor-widget-divider .elementor-divider-separator {
-    width: 20%;
-  }
-}
-
-.diverse-newsletter label {
-  display: none;
-}
-.diverse-newsletter input[type="submit"] {
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 100%;
-}
-
-body .content_countdown .time_left,
-body .content_countdown .time_description {
-  border-radius: 0 !important;
-  font-family: "Open Sans", sans-serif !important;
-}
-body .content_countdown .time_left {
-  color: #ffffff !important;
-  padding: 10px;
-  display: block;
-}
-body.dark-theme .content_countdown .time_description {
-  color: #3e3e3e !important;
-}
-
-.element_conteiner {
-  display: inline-block;
-  margin-right: 20px;
-}
-.element_conteiner:last-child {
-  margin-right: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

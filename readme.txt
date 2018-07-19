@@ -1,10 +1,10 @@
 === business-click ===
 
 Contributors: automattic
-Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready, left-sidebar, right-sidebar, custom-header, blog, e-commerce, theme-options
 
 Requires at least: 4.5
-Tested up to: 4.8
+Tested up to: 4.9.7
 Stable tag: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
@@ -34,5 +34,115 @@ business-click includes support for Infinite Scroll in Jetpack.
 
 == Credits ==
 
-* Based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
-* normalize.css https://necolas.github.io/normalize.css/, (C) 2012-2016 Nicolas Gallagher and Jonathan Neal, [MIT](https://opensource.org/licenses/MIT)
+Underscores:
+Author: 2012-2017 Automattic, Inc.
+Source: http://underscores.me
+License: GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
+
+normalize:
+Author: 2012-2016 Nicolas Gallagher and Jonathan Neal
+Source: http://necolas.github.io/normalize.css
+License: [MIT](https://opensource.org/licenses/MIT)
+
+bootstrap:
+Author: The Bootstrap Authors
+Source: http://getbootstrap.com
+License: Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+
+slick:
+Author: Ken Wheeler
+Source: http://github.com/kenwheeler/slick
+License: Licensed MIT
+
+Font Icons:
+* Font Awesome 5.0.13 by @fontawesome - http://fontawesome.io - @fontawesome *  License - https://fontawesome.com/license (Fonts: SIL OFL 1.1, Code: MIT License) 
+
+Google font:
+Roboto
+https://fonts.google.com/specimen/Roboto
+License: Apache License, Version 2.0
+
+Archivo Narrow
+https://fonts.google.com/specimen/Archivo+Narrow
+License: Open Font License
+
+Bitter
+https://fonts.google.com/specimen/Bitter
+License: Open Font License
+
+Cookie
+https://fonts.google.com/specimen/Cookie
+License: Open Font License
+
+Exo
+https://fonts.google.com/specimen/Exo
+License: Open Font License
+
+Kreon
+https://fonts.google.com/specimen/Kreon
+License: Open Font License
+
+Lato
+https://fonts.google.com/specimen/Lato
+License: Open Font License
+
+Merriweather
+https://fonts.google.com/specimen/Merriweather
+License: Open Font License
+
+Merriweather
+https://fonts.google.com/specimen/Merriweather
+License: Open Font License
+
+News Cycle
+https://fonts.google.com/specimen/News+Cycle
+License: Open Font License
+
+Oxygen
+https://fonts.google.com/specimen/Playball
+License: Open Font License
+
+Playball
+https://fonts.google.com/specimen/Playball
+License: Open Font License
+
+Tangerine
+https://fonts.google.com/specimen/Tangerine
+License: Open Font License
+
+Ropa Sans
+https://fonts.google.com/specimen/Ropa+Sans
+License: Open Font License
+
+Yanone Kaffeesatz
+https://fonts.google.com/specimen/Yanone+Kaffeesatz
+License: Open Font License
+
+Raleway
+https://fonts.google.com/specimen/Raleway
+License: Open Font License
+
+Ubuntu
+https://fonts.google.com/specimen/Ubuntu
+License: Ubuntu Font License
+
+Breadcrumb Trail:
+Author: Justin Tadlock, 
+Source: http://themehybrid.com/plugins/breadcrumb-trail/
+License: [GPLv2](https://www.gnu.org/licenses/gpl-2.0.html)
+
+Note:
+	If your Image is not align properly, then you can try regenerate thumbnails. So that it can fit on required image size.
+
+== Image used in screenshot ==
+* All images are licensed under [CC0](http://creativecommons.org/publicdomain/zero/1.0/legalcode.txt)
+
+== main slider ==
+1) https://www.pexels.com/photo/ballpen-blur-close-up-computer-461077/
+
+== woocommerce ==
+Business Click themes includes support for WooCommerce.
+
+== Changelog ==
+= - 1.0.0 - =
+* Initial release.

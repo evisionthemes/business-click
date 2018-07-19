@@ -151,24 +151,28 @@ if( ! function_exists( 'business_click_inline_style' ) ) :
 
         /*h1-h6 color*/   
         if( !empty($business_click_h1_h6) )
-        {?>
+        {
+        ?>
             .widget-title, .widgettitle, .page-title, .entry-title, .widget-title a, .widgettitle a, .page-title a, .entry-title a
             {
                 color: <?php echo esc_attr($business_click_h1_h6);?>;
             }
 
-        <?php }
+        <?php 
+        }
 
-        /*Section heading buttom border*/   
-            ?>
-           
-
+        /*Free Section heading buttom border*/   
+        ?>
             .widget-title:before, .widgettitle:before, .page-title:before, .entry-title:before
             {
                 display: none;
             }
             .widget-title, .widgettitle, .page-title, body .entry-title {
                 margin-bottom: 0;
+            }
+
+            .slick-slider .slick-arrow {
+                margin-top: -52px;
             }
 
 
