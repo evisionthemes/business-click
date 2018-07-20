@@ -3,7 +3,7 @@
 /**
  * About class
  *
- * @package eCommerce_Gem
+ * @package BusinessClick
  */
 
 if ( ! class_exists( 'business_click_About' ) ) {
