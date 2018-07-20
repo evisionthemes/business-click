@@ -2,7 +2,7 @@
 /**
  * About configuration
  *
- * @package eCommerce_Gem
+ * @package BusinessClick
  */
 
 $config = array(
@@ -83,7 +83,7 @@ $config = array(
 
 		array(
 			'title'        			=> esc_html__( 'Youtube Video Tutorials', 'business-click' ),
-			'text'         			=> esc_html__( 'Please check our youtube channel for video instructions of eCommerce Gem setup and customization.', 'business-click' ),
+			'text'         			=> esc_html__( 'Please check our youtube channel for video instructions of Business Click setup and customization.', 'business-click' ),
 			'button_label' 			=> esc_html__( 'Video Tutorials', 'business-click' ),
 			 'button_link'  			=> 'https://evisionthemes.com/',
 
@@ -180,7 +180,7 @@ $config = array(
 		'fourth' => array(
 			'title'        => esc_html__( 'Youtube Video Tutorials', 'business-click' ),
 			'icon'         => 'dashicons dashicons-video-alt3',
-			'text'         => esc_html__( 'Please check our youtube channel for video instructions of eCommerce Gem setup and customization.', 'business-click' ),
+			'text'         => esc_html__( 'Please check our youtube channel for video instructions of Business Click setup and customization.', 'business-click' ),
 			'button_label' => esc_html__( 'Video Tutorials', 'business-click' ),
 			'button_link'  => 'https://evisionthemes.com/',
 			'is_button'    => false,

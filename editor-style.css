@@ -143,8 +143,8 @@ li#customize-control-business_click_options-business-click-slider-overlay-transp
   display: none !important;
 }
 
-/*.from-category-selected .customize-control-dropdown-pages {
+.from-category-selected .customize-control-dropdown-pages {
   display: none !important;
 }
-*/
+
 /*# sourceMappingURL=editor-style.css.map */

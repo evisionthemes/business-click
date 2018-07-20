@@ -3,7 +3,7 @@
 /**
  * About class
  *
- * @package eCommerce_Gem
+ * @package BusinessClick
  */
 
 if ( ! class_exists( 'business_click_About' ) ) {
@@ -415,12 +415,10 @@ if ( ! class_exists( 'business_click_About' ) ) {
 				wp_enqueue_script( 'plugin-install' );
 				wp_enqueue_script( 'updates' );
 
-				wp_enqueue_style( 'business-click-about', get_template_directory_uri() . '/includes/theme-info/css/about.css', array(), '1.0.0' );
-				wp_enqueue_script( 'business-click-about', get_template_directory_uri() . '/includes/theme-info/js/about.js', array( 'jquery' ), '1.0.0' );
+				wp_enqueue_style( 'business-click-about', get_template_directory_uri() . '/inc/theme-info/css/about.css', array(), '1.0.0' );
 				$js_vars = array(
 					'ajaxurl' => esc_url( admin_url( 'admin-ajax.php' ) ),
 				);
-				wp_localize_script( 'business-click-about', 'eCommerceGemAboutObject', $js_vars );
 			}
 		}
 
@@ -816,7 +814,7 @@ if ( ! class_exists( 'business_click_About' ) ) {
 
 		            echo '<tr class="pt-theme-info-text-center">';
 		            echo '<td></td>';
-		            echo '<td colspan="2"><a href="https://evisionthemes.com/" target="_blank" class="button button-primary button-hero">Business Clcik Pro</a></td>';
+		            echo '<td colspan="2"><a href="http://evisionthemes.com/product/business-click-pro/" target="_blank" class="button button-primary button-hero">Business Click Pro</a></td>';
 		            echo '</tr>';
 
 		            echo '</tbody>';
