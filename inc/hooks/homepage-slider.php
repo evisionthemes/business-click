@@ -55,15 +55,15 @@ if ( !function_exists('business_click_feature_slider_array') ) :
                       $thumb = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'slider-banner-image' );
                       $url = $thumb['0'];
                   }
-                  $feature_slideer_array[$i]['business-click-feature-title'] = get_the_title();
+                  $feature_slideer_array[$i]['business-click-feature-title']         = get_the_title();
                   if (has_excerpt()){
-                      $feature_slideer_array[$i]['business-click-feature-content'] = get_the_excerpt();
+                      $feature_slideer_array[$i]['business-click-feature-content']   = get_the_excerpt();
                   }
                   else{
-                      $feature_slideer_array[$i]['business-click-feature-content'] = business_click_words_count( $slider_excerpt_length ,get_the_content());
+                      $feature_slideer_array[$i]['business-click-feature-content']   = business_click_words_count( $slider_excerpt_length ,get_the_content());
                   }
-                  $feature_slideer_array[$i]['business-click-feature-url'] = esc_url( get_permalink() );
-                  $feature_slideer_array[$i]['business-click-feature-image'] = $url;
+                  $feature_slideer_array[$i]['business-click-feature-url']           = esc_url( get_permalink() );
+                  $feature_slideer_array[$i]['business-click-feature-image']         = $url;
                   $i++;
               endwhile;
               wp_reset_postdata();
