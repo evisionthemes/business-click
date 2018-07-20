@@ -6,18 +6,6 @@ jQuery(window).load(function() {
 		wp.customize.section( 'menu_locations' ).focus();
 	});
 
-	// Feature Section - Select Number of post
-	jQuery('ul#sub-accordion-section-business-click-feature-section li#customize-control-business_click_options-business-click-feature-number-post select').on('change', function() {
-		var selectedNum = jQuery(this).val();
-
-		jQuery('ul#sub-accordion-section-business-click-feature-section li[id*="customize-control-business_click_options-feature-page-ids_"], ul#sub-accordion-section-business-click-feature-section li[id*="customize-control-business_click_options-feature-icons-ids_"]').hide();
-
-		for(var i = 1; i <= selectedNum; i++) {
-			jQuery('.customize-control-dropdown-pages#customize-control-business_click_options-feature-page-ids_'+i).show();
-			jQuery('.customize-control-text#customize-control-business_click_options-feature-icons-ids_'+i).show();
-		}
-	});
-
 
 	// Testimonial Section - Select Number of post
 	jQuery('ul#sub-accordion-section-business-click-testimonial-section li#customize-control-business_click_options-business-click-number-of-testimonial select').on('change', function() {
