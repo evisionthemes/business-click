@@ -6,14 +6,14 @@
  * @package eCommerce_Gem
  */
 
-if ( ! class_exists( 'St_blog_About' ) ) {
+if ( ! class_exists( 'business_click_About' ) ) {
 
 	/**
 	 * Main class.
 	 *
 	 * @since 1.0.0
 	 */
-	class St_blog_About {
+	class business_click_About {
 
 		/**
 		 * Class version.
@@ -114,22 +114,22 @@ if ( ! class_exists( 'St_blog_About' ) ) {
 		private $notification;
 
 		/**
-		 * Singleton instance of St_blog_About.
+		 * Singleton instance of business_click_About.
 		 *
-		 * @var St_blog_About $instance St_blog_About instance.
+		 * @var business_click_About $instance business_click_About instance.
 		 */
 		private static $instance;
 
 		/**
-		 * Main St_blog_About instance.
+		 * Main business_click_About instance.
 		 *
 		 * @since 1.0.0
 		 *
 		 * @param array $config Configuration array.
 		 */
 		public static function init( $config ) {
-			if ( ! isset( self::$instance ) && ! ( self::$instance instanceof St_blog_About ) ) {
-				self::$instance = new St_blog_About;
+			if ( ! isset( self::$instance ) && ! ( self::$instance instanceof business_click_About ) ) {
+				self::$instance = new business_click_About;
 				if ( ! empty( $config ) && is_array( $config ) ) {
 					self::$instance->config = $config;
 					self::$instance->setup_config();
@@ -761,8 +761,8 @@ if ( ! class_exists( 'St_blog_About' ) ) {
 		            echo '<thead>';
 		            echo '<tr>';
 		            echo '<th></th>';
-		            echo '<th>' . esc_html__( 'ST Blog','business-click' ) . '</th>';
-		            echo '<th>' . esc_html__( 'ST Blog Pro','business-click' ) . '</th>';
+		            echo '<th>' . esc_html__( 'Business Click','business-click' ) . '</th>';
+		            echo '<th>' . esc_html__( 'Business Click Pro','business-click' ) . '</th>';
 		            echo '</tr>';
 		            echo '</thead>';
 		            echo '<tbody>';
@@ -816,7 +816,7 @@ if ( ! class_exists( 'St_blog_About' ) ) {
 
 		            echo '<tr class="pt-theme-info-text-center">';
 		            echo '<td></td>';
-		            echo '<td colspan="2"><a href="https://evisionthemes.com/" target="_blank" class="button button-primary button-hero">ST Blog Pro</a></td>';
+		            echo '<td colspan="2"><a href="https://evisionthemes.com/" target="_blank" class="button button-primary button-hero">Business Clcik Pro</a></td>';
 		            echo '</tr>';
 
 		            echo '</tbody>';

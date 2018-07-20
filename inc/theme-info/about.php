@@ -13,7 +13,7 @@ $config = array(
 	'welcome_title' => sprintf( esc_html__( 'Welcome to %s - ', 'business-click' ), 'Business-Click' ),
 
 	/* translators: 1: theme name */
-	'welcome_content' => sprintf( esc_html__( 'We hope this page will help you to setup %1$s with few clicks. We believe you will find it easy to use and perfect for your website development.', 'business-click' ), 'St-blog' ),
+	'welcome_content' => sprintf( esc_html__( 'We hope this page will help you to setup %1$s with few clicks. We believe you will find it easy to use and perfect for your website development.', 'business-click' ), 'business-click' ),
 
 	// Quick links.
 	'quick_links' => array(
@@ -274,4 +274,4 @@ $config = array(
     ),
 
 );
-St_blog_About::init( apply_filters( 'st_blog_about_filter', $config ) );
+business_click_About::init( apply_filters( 'business_click_about_filter', $config ) );

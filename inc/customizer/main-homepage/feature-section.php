@@ -11,7 +11,7 @@ $business_click_customizer_defaults['business-click-feature-section-title']				=
 $business_click_customizer_defaults['business-click-feature-number-post']				= 3;
 $business_click_customizer_defaults['business-click-feature-excerpt-length']			= 30;
 $business_click_customizer_defaults['business-click-feature-from-page']					= 0;
-$business_click_customizer_defaults['business-click-feature-page-icon']					= esc_html__(' fa-wrench','business-click');
+$business_click_customizer_defaults['business-click-feature-page-icon']					= '';
 $business_click_customizer_defaults['business-click-feature-button-text']	    		= '';
 
 
