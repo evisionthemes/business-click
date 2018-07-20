@@ -3332,6 +3332,11 @@ body.home.transparent-header:not(.small-header) header.site-header {
   box-shadow: none;
 }
 
+@media (min-width: 992px) {
+  body.transparent-header #evt-banner .evt-banner-slider .slick-slide .evt-banner-image {
+    height: 100vh;
+  }
+}
 body.transparent-header header.site-header .evt-header-wrap-nav .evt-menu-toggler-manage #menu-icon.menu-toggler:hover {
   background-color: transparent;
 }
