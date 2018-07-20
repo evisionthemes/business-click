@@ -816,7 +816,7 @@ if ( ! class_exists( 'business_click_About' ) ) {
 
 		            echo '<tr class="pt-theme-info-text-center">';
 		            echo '<td></td>';
-		            echo '<td colspan="2"><a href="https://evisionthemes.com/" target="_blank" class="button button-primary button-hero">Business Clcik Pro</a></td>';
+		            echo '<td colspan="2"><a href="https://evisionthemes.com/" target="_blank" class="button button-primary button-hero">Business Click Pro</a></td>';
 		            echo '</tr>';
 
 		            echo '</tbody>';
