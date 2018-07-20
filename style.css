@@ -1069,10 +1069,6 @@ header.site-header .evt-header-wrap-nav .evt-menu-toggler-manage #menu-icon.menu
   background-color: #000;
 }
 
-body.home #content.site-content > section:nth-child(odd) {
-  background-color: #F1F1F1;
-}
-
 #evt-featured, #evt-why-us, #evt-portfolio .evt-img-overlay, #evt-call-to-action .evt-img-overlay, #evt-team, #evt-testimonials .evt-img-overlay, #evt-blog, #evt-partner .evt-img-overlay, #evt-contact {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -2297,19 +2293,20 @@ body.error404 .site-content #primary {
   width: 100%;
 }
 
-body.home #content.site-content > section:nth-child(odd) {
-  background-color: rgba(0, 0, 0, 0.05);
-}
-
 body.custom-background .container {
   background-color: #ffffff;
   padding-top: 30px;
   padding-bottom: 30px;
 }
+body.custom-background #evt-featured .container {
+  padding-bottom: 0;
+}
+body.custom-background header.site-header .container,
 body.custom-background footer.site-footer .container,
 body.custom-background #evt-testimonials .container,
 body.custom-background #evt-call-to-action .container,
-body.custom-background #evt-top-header .container {
+body.custom-background #evt-top-header .container,
+body.custom-background #breadcrumb .container {
   background-color: transparent;
   padding-top: 0;
   padding-bottom: 0;
@@ -3046,7 +3043,7 @@ body.head-search-active .evt-search-mask {
 
 .evt-featured-item-wrap .evt-featured-item {
   background-color: #ffffff;
-  padding: 20px 20px;
+  padding: 20px 0px;
 }
 .evt-featured-item-wrap .evt-featured-item .evt-featured-icon {
   font-size: 1.25rem;
@@ -3393,8 +3390,12 @@ body.logo-left.small-header .evt-header-row .evt-logo-manage .site-branding .sit
   }
 }
 #evt-featured .evt-featured-slider .evt-featured-item-wrap {
-  margin-bottom: 30px;
-  padding: 3px;
+  margin-bottom: 0px;
+}
+@media (max-width: 991px) {
+  #evt-featured .evt-featured-slider .evt-featured-item-wrap {
+    display: inline-block;
+  }
 }
 #evt-featured .evt-featured-slider.slick-slider {
   column-count: 1;
@@ -3579,6 +3580,23 @@ body.logo-left.small-header .evt-header-row .evt-logo-manage .site-branding .sit
 #evt-blog .entry-meta {
   border: 0;
   padding-top: 0;
+}
+@media (min-width: 575px) {
+  #evt-blog .evt-blog-slider {
+    column-count: 2;
+    column-gap: 30px;
+  }
+}
+@media (min-width: 992px) {
+  #evt-blog .evt-blog-slider {
+    column-count: 3;
+  }
+}
+@media (max-width: 991px) {
+  #evt-blog .evt-blog-slider .evt-box-item-wrap {
+    display: inline-block;
+    margin-bottom: 30px;
+  }
 }
 #evt-blog .evt-blog-slider .evt-box-caption {
   background: #fff;

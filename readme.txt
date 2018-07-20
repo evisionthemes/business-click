@@ -55,7 +55,8 @@ Source: http://github.com/kenwheeler/slick
 License: Licensed MIT
 
 Font Icons:
-* Font Awesome 5.0.13 by @fontawesome - http://fontawesome.io - @fontawesome *  License - https://fontawesome.com/license (Fonts: SIL OFL 1.1, Code: MIT License) 
+* Font Awesome 5.0.13 by @fontawesome - http://fontawesome.io - @fontawesome 
+* License - https://fontawesome.com/license (Fonts: SIL OFL 1.1, Code: MIT License) 
 
 Google font:
 Roboto
