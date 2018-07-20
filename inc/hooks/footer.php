@@ -44,19 +44,7 @@ if ( ! function_exists( 'business_click_widget_before_footer' ) ) :
         <!-- *****************************************
              Footer before section
         ****************************************** -->
-        <!-- full width footer -->
-        <section class="wrapper block-section wrap-contact footer-widget full-width">
-            <div class="container full-width-footer">
-                <div class="row">
-                    <div id="full-width-footer">
-                    <?php
-                    if(is_active_sidebar('full-width-footer')){
-                    dynamic_sidebar('full-width-footer');
-                    }
-                    ?>
-                </div>
-            </div>
-        </section><!-- full width widget ended -->
+
         <!-- footer widget -->
 
         <section class="evt-footer-widget">

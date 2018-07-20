@@ -102,7 +102,7 @@ $business_click_repeated_settings_controls['business-click-feature-from-page'] =
             /* translators: %s: search page icon */
             'label'                 =>    esc_html__( 'Select Page for feature page icon %s', 'business-click' ),
             /* translators: %s: search page icon describe */
-            'description'           =>   sprintf( esc_html__( 'Use font awesome icon: Eg: %1$s . %2$s  See more here %3$s', 'business-click' ), "<b>".'fa-wrench'."</b>",'<a href="'.esc_url('http://fontawesome.io/cheatsheet/').'" target="_blank">','</a>' ),
+            'description'           =>   sprintf( esc_html__( 'Use font awesome icon: Eg: %1$s . %2$s  See more here %3$s', 'business-click' ), "<b>".'fa-wrench'."</b>",'<a href="'.esc_url('http://fontawesome.io/cheatsheet/').'" target="_blank">','</a>'. '-' .'Note : If you not select any awesome icon it dispaly the feature image ' ),
             'section'               =>   'business-click-feature-section',
             'type'                  =>   'text',
             'priority'              =>   30,

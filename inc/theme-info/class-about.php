@@ -163,7 +163,7 @@ if ( ! class_exists( 'St_blog_About' ) ) {
 			$this->logo_link     = isset( $this->config['logo_link'] ) ? $this->config['logo_link'] : 'https://evisionthemes.com/';
 			$this->tabs          = isset( $this->config['tabs'] ) ? $this->config['tabs'] : array();
 			/* translators: %s:  notification */
-			$this->notification  = isset( $this->config['notification'] ) ? $this->config['notification'] : ( '<p>' . sprintf( esc_html__( 'Welcome! Thank you for choosing %1$s! To fully take advantage of the best our theme can offer please make sure you visit our %2$swelcome page%3$s.', 'st-blog' ), $this->theme_name, '<a href="' . esc_url( admin_url( 'themes.php?page=' . $this->page_slug ) ) . '">', '</a>' ) . '</p><p><a href="' . esc_url( admin_url( 'themes.php?page=' . $this->page_slug ) ) . '" class="button button-primary" style="text-decoration: none;">' . sprintf( esc_html__( 'Get started with %s', 'st-blog' ), $this->theme_name ) . '</a></p>' );
+			$this->notification  = isset( $this->config['notification'] ) ? $this->config['notification'] : ( '<p>' . sprintf( esc_html__( 'Welcome! Thank you for choosing %1$s! To fully take advantage of the best our theme can offer please make sure you visit our %2$swelcome page%3$s.', 'business-click' ), $this->theme_name, '<a href="' . esc_url( admin_url( 'themes.php?page=' . $this->page_slug ) ) . '">', '</a>' ) . '</p><p><a href="' . esc_url( admin_url( 'themes.php?page=' . $this->page_slug ) ) . '" class="button button-primary" style="text-decoration: none;">' . sprintf( esc_html__( 'Get started with %s', 'business-click' ), $this->theme_name ) . '</a></p>' );
 		}
 
 		/**
@@ -415,12 +415,12 @@ if ( ! class_exists( 'St_blog_About' ) ) {
 				wp_enqueue_script( 'plugin-install' );
 				wp_enqueue_script( 'updates' );
 
-				wp_enqueue_style( 'st-blog-about', get_template_directory_uri() . '/includes/theme-info/css/about.css', array(), '1.0.0' );
-				wp_enqueue_script( 'st-blog-about', get_template_directory_uri() . '/includes/theme-info/js/about.js', array( 'jquery' ), '1.0.0' );
+				wp_enqueue_style( 'business-click-about', get_template_directory_uri() . '/includes/theme-info/css/about.css', array(), '1.0.0' );
+				wp_enqueue_script( 'business-click-about', get_template_directory_uri() . '/includes/theme-info/js/about.js', array( 'jquery' ), '1.0.0' );
 				$js_vars = array(
 					'ajaxurl' => esc_url( admin_url( 'admin-ajax.php' ) ),
 				);
-				wp_localize_script( 'st-blog-about', 'eCommerceGemAboutObject', $js_vars );
+				wp_localize_script( 'business-click-about', 'eCommerceGemAboutObject', $js_vars );
 			}
 		}
 
@@ -560,15 +560,15 @@ if ( ! class_exists( 'St_blog_About' ) ) {
 
 								case 'install':
 									$class = 'install-now button';
-									$label = esc_html__( 'Install', 'st-blog' );
+									$label = esc_html__( 'Install', 'business-click' );
 									break;
 								case 'activate':
 									$class = 'activate-now button button-primary';
-									$label = esc_html__( 'Activate', 'st-blog' );
+									$label = esc_html__( 'Activate', 'business-click' );
 									break;
 								case 'deactivate':
 									$class = 'deactivate-now button';
-									$label = esc_html__( 'Deactivate', 'st-blog' );
+									$label = esc_html__( 'Deactivate', 'business-click' );
 									break;
 							}
 							?>
@@ -602,7 +602,7 @@ if ( ! class_exists( 'St_blog_About' ) ) {
 			}
 
 			if ( isset( $upgrade_to_pro['button_link'] ) && ! empty( $upgrade_to_pro['button_link'] ) ) {
-				$button_text = esc_html__( 'Upgrade to Pro', 'st-blog' );
+				$button_text = esc_html__( 'Upgrade to Pro', 'business-click' );
 
 				if ( isset( $upgrade_to_pro['button_label'] ) && ! empty( $upgrade_to_pro['button_label'] ) ) {
 					$button_text = $upgrade_to_pro['button_label'];
@@ -637,7 +637,7 @@ if ( ! class_exists( 'St_blog_About' ) ) {
 				$all_plugins    = $tgmpa->plugins;
 
 				if ( true === $complete ) {
-					echo '<div class="all-active"><span class="dashicons dashicons-yes"></span>&nbsp;' . esc_html__( 'Great, all recommended plugins are intalled and active.', 'st-blog' ) . '</div>';
+					echo '<div class="all-active"><span class="dashicons dashicons-yes"></span>&nbsp;' . esc_html__( 'Great, all recommended plugins are intalled and active.', 'business-click' ) . '</div>';
 				}
 
 				if ( isset( $useful_plugins['description'] ) && ! empty( $useful_plugins['description'] ) ) {
@@ -645,7 +645,7 @@ if ( ! class_exists( 'St_blog_About' ) ) {
 				}
 
 				if ( true !== $complete ) {
-					echo '<div class="button-wrap"><a href="' . esc_url( $url ) . '" class="button button-primary">' . esc_html__( 'Manage Plugins', 'st-blog' ) . '</a></div>';
+					echo '<div class="button-wrap"><a href="' . esc_url( $url ) . '" class="button button-primary">' . esc_html__( 'Manage Plugins', 'business-click' ) . '</a></div>';
 				}
 
 				if ( ! empty( $all_plugins ) ) {
@@ -761,8 +761,8 @@ if ( ! class_exists( 'St_blog_About' ) ) {
 		            echo '<thead>';
 		            echo '<tr>';
 		            echo '<th></th>';
-		            echo '<th>' . esc_html__( 'ST Blog','st-blog' ) . '</th>';
-		            echo '<th>' . esc_html__( 'ST Blog Pro','st-blog' ) . '</th>';
+		            echo '<th>' . esc_html__( 'ST Blog','business-click' ) . '</th>';
+		            echo '<th>' . esc_html__( 'ST Blog Pro','business-click' ) . '</th>';
 		            echo '</tr>';
 		            echo '</thead>';
 		            echo '<tbody>';

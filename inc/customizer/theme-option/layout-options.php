@@ -11,6 +11,7 @@ $business_click_customizer_defaults['business-click-single-post-image-align']   
 $business_click_customizer_defaults['business-click-archive-image-align']           = 'full';
 $business_click_customizer_defaults['business-click-archive-layout']                = 'thumbnail-and-excerpt';
 $business_click_customizer_defaults['business-click-number-of-words']               = 35;
+$business_click_customizer_defaults['business-click-conatiner-width-layout']        = 1140;
 
 $business_click_sections['business-click-layout-options'] =
     array(
@@ -98,3 +99,19 @@ $business_click_settings_controls['business-click-single-post-image-align'] =
                     'priority'              => 55,
                 )
             );
+
+
+/*container size*/
+$business_click_settings_controls['business-click-conatiner-width-layout'] =
+    array(
+        'setting' =>     array(
+            'default'              => $business_click_customizer_defaults['business-click-conatiner-width-layout'],
+        ),
+        'control' => array(
+            'label'                 =>  esc_html__( 'Container Width', 'business-click' ),
+            'description'           => esc_html__('Value in px','business-click'),
+            'section'               => 'business-click-layout-options',
+            'type'                  => 'number',
+            'priority'              => 60,
+        )
+    );

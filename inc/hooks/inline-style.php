@@ -39,6 +39,8 @@ if( ! function_exists( 'business_click_inline_style' ) ) :
         $business_click_h1_h6                                   = $business_click_customizer_all_values['business-click-business-clcik-h1-h6'];
         $business_click_section_heading_bottom_border           = $business_click_customizer_all_values['business-click-section-heading-bottom-border-color'];
         $business_click_footer_background                       = $business_click_customizer_all_values['business-click-footer-background-color'];
+        $business_click_contaner_width = $business_click_customizer_all_values['business-click-conatiner-width-layout'];
+        // var_dump($try);die();
        
         ?>
       
@@ -139,6 +141,18 @@ if( ! function_exists( 'business_click_inline_style' ) ) :
 
         <?php }
 
+        /*container*/
+        if( !empty($business_click_contaner_width) ){?>
+            @media (min-width: 1200px) {
+                .container {
+                    max-width: <?php echo esc_attr($business_click_contaner_width);?>px;
+                }
+            }
+
+        <?php }
+
+
+
         /*menu-background color*/
         if( !empty($business_click_menu_header_background_color) )
         {?>
@@ -182,7 +196,19 @@ if( ! function_exists( 'business_click_inline_style' ) ) :
                 background-color: <?php echo esc_attr($business_click_footer_background);?>;
             }
 
-        <?php } ?>
+        <?php } 
+
+        /*header extra-button */
+        if(empty($business_click_customizer_defaults['business-click-text-extra-button-text']) )
+        {?>
+            #site-navigation {
+                padding-right: 0 !important;
+            }
+            
+
+        <?php } 
+
+        ?>
        </style>
     <?php
 
