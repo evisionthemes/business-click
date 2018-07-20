@@ -26,7 +26,7 @@ if ( ! function_exists('customizer_link') ) :
             <?php
            /* translators: %s: all enable custom link */
             printf(esc_html__('Enable each Section from customizer. %1$s For 
-              Feature Slider: Homepage / Front Page -> Feature Slider Section -> Show Slider. %2$s For other sections: Homepage / Front Page','business-craft'), '<br />','<br />');
+              Feature Slider: Homepage / Front Page > Feature Slider Section > Show Slider. %2$s For other sections: Homepage / Front Page','business-craft'), '<br />','<br />');
             ?>
             </p>
             <a class="btn" href="<?php echo esc_url( admin_url( 'customize.php' ) );?>">Customize Now</a>

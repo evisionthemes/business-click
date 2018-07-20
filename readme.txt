@@ -1,7 +1,7 @@
 === business-click ===
 
 Contributors: automattic
-Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready, left-sidebar, right-sidebar, custom-header, blog, e-commerce, theme-options
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready, left-sidebar, right-sidebar, custom-header, blog, e-commerce, theme-options, custom-colors, rtl-language-support, full-width-template, one-column
 
 Requires at least: 4.5
 Tested up to: 4.9.7
@@ -13,7 +13,7 @@ A starter theme called business-click.
 
 == Description ==
 
-Description
+Business Click is a modern and flexible WordPress Business Theme that suits for agency, blog, business, corporate, eCommerce, magazines, portfolios and many more. It’s created by using the latest Bootstrap Framework with HTML5 and CSS3 techniques in accordance with the latest WordPress Coding Standards. Suitable all popular mobile devices and tablets. In order to create a professional website, you can easily customize the sections like Theme Customizer, Custom Container width options, Sticky Primary Menu - Hide Menu on Scroll Down, Top header bar,  Featured Slider, Services, About us, Testimonial, Call to Action,  News & Updates, Portfolio, Team, Multiple Footer Widgets,  drag and drop widgets, Social Links, Custom Headers, Navigation, Contact us, Subscribe section, Font options,  and many more. This creative theme supports popular plugins like Jetpack, WP page navi, Contact form 7, Elementor page builder, W3 Total Cache, Social Pug, All in One SEO Pack etc. If you are a non-techy person, you can easily modify the theme and design using live customizer in Dashboard > Appearance> Customize. You can change the color and the font of each and every text, link in the theme. We won’t bind you to settle for a dull background; you can choose a color or a cool image instead. This theme is translation ready. Check out Theme Instructions at http://doc.evisionthemes.com/business-click and Demo att https://demo.evisionthemes.com/business-click/ . For support: https://evisionthemes.com/supports
 
 == Installation ==
 
