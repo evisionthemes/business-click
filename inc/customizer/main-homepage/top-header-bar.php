@@ -16,8 +16,8 @@ $business_click_customizer_defaults['bussiness-click-top-bar-social-menu'] 	= ''
 
 //create a section for top header bar
 $business_click_sections['business-click-top-header-bar-sections'] = array(
-	'title'				=> esc_html__('Top-Header-Bar','business-click'),
-	'description'       => sprintf( '%1$s <a class="menu_locations" href="#"> %2$s </a> %3$s', esc_html__( 'Note: To show social menu.', 'business-click' ), esc_html__( 'Click Here', 'business-click' ), esc_html__( 'to create menu.', 'business-click' ) ),
+	'title'				=> esc_html__('Top Header Bar','business-click'),
+	'description'       => sprintf( '%1$s <a class="menu_locations" href="#"> %2$s </a> %3$s', esc_html__( 'Note: ', 'business-click' ), esc_html__( 'Click Here', 'business-click' ), esc_html__( 'to create Menu for Social icons.', 'business-click' ) ),
 	'panel'				=>'business-click-main-page-options',
 	'priority'			=> 10
 ); 

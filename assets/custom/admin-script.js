@@ -6,26 +6,6 @@ jQuery(window).load(function() {
 		wp.customize.section( 'menu_locations' ).focus();
 	});
 
-	// Slider Section - Select post type for slider
-	evt_feature_setting_show_hide( jQuery('ul#sub-accordion-section-business-click-slider-section li#customize-control-business_click_options-business-click-post-type-slider select').val(), 'ul#sub-accordion-section-business-click-slider-section' );
-
-	// on change
-	jQuery('ul#sub-accordion-section-business-click-slider-section li#customize-control-business_click_options-business-click-post-type-slider select').on('change', function() {
-		evt_feature_setting_show_hide(this.value, 'ul#sub-accordion-section-business-click-slider-section');
-	});
-
-
-	// Slider Section - Select Number of post for slider
-	jQuery('ul#sub-accordion-section-business-click-slider-section li#customize-control-business_click_options-business-click-number-of-slider select').on('change', function() {
-		var selectedNum = jQuery(this).val();
-		jQuery('ul#sub-accordion-section-business-click-slider-section .customize-control-dropdown-pages').hide();
-
-		for(var i = 1; i <= selectedNum; i++) {
-			jQuery('.customize-control-dropdown-pages#customize-control-business_click_options-business-click-page-id_'+i).show();	
-		}
-	});
-
-
 	// Feature Section - Select Number of post
 	jQuery('ul#sub-accordion-section-business-click-feature-section li#customize-control-business_click_options-business-click-feature-number-post select').on('change', function() {
 		var selectedNum = jQuery(this).val();
