@@ -6,7 +6,7 @@ global $business_click_repeated_settings_controls;
 global $business_click_customizer_defaults;
 
 // defaults value
-$business_click_customizer_defaults['business-click-enbale-top-bar-header'] = 1;
+$business_click_customizer_defaults['business-click-enbale-top-bar-header'] = 0;
 $business_click_customizer_defaults['business-click-top-bar-phone'] 		= '';
 $business_click_customizer_defaults['bussiness-click-top-bar-email'] 		= '';
 $business_click_customizer_defaults['bussiness-click-top-bar-location'] 	= '';

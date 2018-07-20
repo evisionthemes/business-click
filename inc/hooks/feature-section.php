@@ -23,8 +23,8 @@ if( !function_exists('business_click_feature_array') ) :
 		$repeated_page		= array('feature-page-ids');
 		$repeated_icon		= array('feature-icons-ids');
 
-		$feature_post_page 	=  evision_customizer_get_repeated_all_value(7,$repeated_page);
-		$feature_post_icon	=  evision_customizer_get_repeated_all_value(7,$repeated_icon);
+		$feature_post_page 	=  evision_customizer_get_repeated_all_value(3,$repeated_page);
+		$feature_post_icon	=  evision_customizer_get_repeated_all_value(3,$repeated_icon);
 
 		$feature_page_id	= array();
 		if( null != $feature_post_page) {

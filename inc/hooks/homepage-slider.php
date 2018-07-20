@@ -24,7 +24,7 @@ if ( !function_exists('business_click_feature_slider_array') ) :
       $reapeated_pages      = array('business-click-page-id');
       $feature_slider_args  = array(); 
 
-      $feature_slider_post_page = evision_customizer_get_repeated_all_value(7,$reapeated_pages);
+      $feature_slider_post_page = evision_customizer_get_repeated_all_value(3,$reapeated_pages);
       if (null !=$feature_slider_post_page ){
         foreach ($feature_slider_post_page as $feature_slider_post_pages){
           if ( 0 !=  $feature_slider_post_pages['business-click-page-id']){
