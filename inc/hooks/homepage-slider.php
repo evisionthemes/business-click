@@ -12,7 +12,6 @@ if ( !function_exists('business_click_feature_slider_array') ) :
     function business_click_feature_slider_array()
     {
       global $business_click_customizer_all_values;
-      $feature_number_of_slider   = absint($business_click_customizer_all_values['business-click-number-of-slider']);
       $slider_excerpt_length      = absint($business_click_customizer_all_values['business-click-excerpt-length']);
       // $feature_slideer_array      = array();
 
@@ -24,7 +23,7 @@ if ( !function_exists('business_click_feature_slider_array') ) :
       $reapeated_pages      = array('business-click-page-id');
       $feature_slider_args  = array(); 
 
-      $feature_slider_post_page = evision_customizer_get_repeated_all_value(7,$reapeated_pages);
+      $feature_slider_post_page = evision_customizer_get_repeated_all_value(3,$reapeated_pages);
       if (null !=$feature_slider_post_page ){
         foreach ($feature_slider_post_page as $feature_slider_post_pages){
           if ( 0 !=  $feature_slider_post_pages['business-click-page-id']){
@@ -35,7 +34,7 @@ if ( !function_exists('business_click_feature_slider_array') ) :
           $feature_slider_args = array(
             'post_type'             => 'page',
             'post__in'              => $feature_slider_page_ids,
-            'posts_per_page'        => $feature_number_of_slider,
+            // 'posts_per_page'        => $feature_number_of_slider,
             'order_by'              => 'post__in',
             'order'                 => 'ASC' 
           );
@@ -95,7 +94,7 @@ if (!function_exists('business_click_feature_slider')) :
   if ( is_array($feature_slide_arrays) )
   {
     $feature_button_text        = esc_html($business_click_customizer_all_values['business-click-slider-button-text']);
-    $feature_number_of_slider   = absint($business_click_customizer_all_values['business-click-number-of-slider']); ?>
+    // $feature_number_of_slider   = absint($business_click_customizer_all_values['business-click-number-of-slider']); ?>
 
     <section id="evt-banner" class="" style="opacity: 0;">
       <div class="evt-banner-slider">
@@ -103,10 +102,7 @@ if (!function_exists('business_click_feature_slider')) :
           $i = 0;
           foreach ($feature_slide_arrays as $feature_slide_array)
           {
-            if ( $feature_number_of_slider < $i )
-            {
-              break;
-            }
+            
             if ( empty($feature_slide_array['business-click-feature-image'] ))
             {
               $feature_slider_image = '';

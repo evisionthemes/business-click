@@ -10,7 +10,6 @@ if( !function_exists('business_click_feature_array') ) :
      */
 	function business_click_feature_array(){
 		global $business_click_customizer_all_values;
-		$feature_number_of_post   		= absint($business_click_customizer_all_values['business-click-feature-number-post']);
 		$feasute_single_number_words 	= absint($business_click_customizer_all_values['business-click-feature-excerpt-length']);
 		$feature_page_array 			= array();
 
@@ -23,8 +22,8 @@ if( !function_exists('business_click_feature_array') ) :
 		$repeated_page		= array('feature-page-ids');
 		$repeated_icon		= array('feature-icons-ids');
 
-		$feature_post_page 	=  evision_customizer_get_repeated_all_value(7,$repeated_page);
-		$feature_post_icon	=  evision_customizer_get_repeated_all_value(7,$repeated_icon);
+		$feature_post_page 	=  evision_customizer_get_repeated_all_value(3,$repeated_page);
+		$feature_post_icon	=  evision_customizer_get_repeated_all_value(3,$repeated_icon);
 
 		$feature_page_id	= array();
 		if( null != $feature_post_page) {
@@ -37,7 +36,7 @@ if( !function_exists('business_click_feature_array') ) :
 				$business_click_feature_arg 	= array(
 					'post_type'				=> 'page',
 					'post__in'				=> $feature_page_id,
-					'posts_per_page'		=> $feature_number_of_post,
+					// 'posts_per_page'		=> $feature_number_of_post,
 					'order_by'				=> 'post__in',
 					'order'					=> 'ASC'
 				); 
@@ -102,8 +101,7 @@ if ( !function_exists('business_click_feature') ) :
   	$feature_post_page_array = business_click_feature_array($feature_select_of_page);
   	if( is_array($feature_post_page_array)  ){
   		$feature_section_title 				= esc_html($business_click_customizer_all_values['business-click-feature-section-title']);
-  		$feature_button_text					= esc_html($business_click_customizer_all_values['business-click-feature-button-text']);
-  		$feature_number_of_post   		= absint($business_click_customizer_all_values['business-click-feature-number-post']);?>
+  		$feature_button_text					= esc_html($business_click_customizer_all_values['business-click-feature-button-text']);?>
 
   			<section id="evt-featured" class="text-center">	
 					<div class="container">
@@ -116,9 +114,7 @@ if ( !function_exists('business_click_feature') ) :
 								<?php
 								$i = 1;
 								foreach( $feature_post_page_array as $feature_post_page_arrays  ){
-									if ( $feature_number_of_post < $i ){
-										break;
-									}
+									
 									if ( empty($feature_post_page_arrays['feature-image'] ))
 						            {
 						              $feature_sec_image = '';
