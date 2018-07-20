@@ -42,7 +42,7 @@ if( !function_exists('business_click_blog') ) :
 							while( $business_click_blog_query->have_posts() ) :
 								$business_click_blog_query->the_post();
 								if(has_post_thumbnail()){
-                                    $thumb = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID(),'latebusiness-click-image' ), 'medium' );
+                                    $thumb = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID(),'latebusiness-click-image' ), 'latebusiness-click-image' );
                                     $th_image = $thumb['0'];
                                     }
                                     else{
