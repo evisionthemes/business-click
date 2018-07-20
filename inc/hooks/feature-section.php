@@ -110,7 +110,7 @@ if ( !function_exists('business_click_feature') ) :
 						<?php } ?>	
 						<!-- .evt-carousel -->
 						
-							<div class="evt-featured-slider evt-carousel evision-animate fadeIn">	
+							<div class="row evt-featured-slider evt-carousel evision-animate fadeIn">	
 								<?php
 								$i = 1;
 								foreach( $feature_post_page_array as $feature_post_page_arrays  ){
@@ -126,7 +126,7 @@ if ( !function_exists('business_click_feature') ) :
 						            // var_dump($feature_sec_image);die();
 								?>
 								<?php if(!empty($feature_post_page_arrays['feature-icons-ids']) || !empty($feature_post_page_arrays['feature-title']) || !empty($feature_post_page_arrays['feature-content']) || !empty($feature_button_text) ) {?>			
-								<div class="evt-featured-item-wrap evision-animate">
+								<div class="col-12 col-sm-6 col-lg-4 evt-featured-item-wrap evision-animate">
 									<div class="evt-featured-item">
 										
 										<?php if(($feature_post_page_arrays['feature-icons-ids']  != null)  ) { ?>

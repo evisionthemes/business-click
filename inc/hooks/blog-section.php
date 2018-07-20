@@ -29,7 +29,7 @@ if( !function_exists('business_click_blog') ) :
 					<h2 class="widget-title evision-animate slideInDown"><?php echo esc_html($business_click_section_title);?></h2>
 				<?php } ?>	
 				
-				<div class="evt-blog-slider evt-carousel evision-animate fadeIn">
+				<div class="row evt-blog-slider evt-carousel evision-animate fadeIn">
 					<?php 
 						$business_click_blog_arg = array(
 							'post_type'				=> 'post',
@@ -49,7 +49,7 @@ if( !function_exists('business_click_blog') ) :
                                         $th_image = '';
                                     }
 									?>
-									<div class="evt-box-item-wrap">
+									<div class="col-12 col-sm-6 col-lg-4 evt-box-item-wrap">
 										<div class="evt-box-item">
 											<div class="evt-box-image image">
 												<img src="<?php echo esc_url($th_image);?>">
