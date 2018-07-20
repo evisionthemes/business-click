@@ -7,15 +7,13 @@ global $business_click_customizer_defaults;
 /*defaults values*/
 $business_click_customizer_defaults['business-click-enable-back-to-top'] = 1;
 
-$business_click_sections['business-click-back-to-top-options'] =
-    array(
+$business_click_sections['business-click-back-to-top-options'] = array(
         'priority'       => 800,
         'title'          => esc_html__( 'Back To Top Options', 'business-click' ),
         'panel'          => 'business-click-theme-options'
     );
 
-$business_click_settings_controls['business-click-enable-back-to-top'] =
-    array(
+$business_click_settings_controls['business-click-enable-back-to-top'] = array(
         'setting' =>     array(
             'default'              => $business_click_customizer_defaults['business-click-enable-back-to-top'],
         ),

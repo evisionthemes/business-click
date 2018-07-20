@@ -13,16 +13,14 @@ $business_click_customizer_defaults['business-click-archive-layout']            
 $business_click_customizer_defaults['business-click-number-of-words']               = 35;
 $business_click_customizer_defaults['business-click-conatiner-width-layout']        = 1140;
 
-$business_click_sections['business-click-layout-options'] =
-    array(
+$business_click_sections['business-click-layout-options'] = array(
         'priority'       => 200,
         'title'          => esc_html__( 'Layout Options', 'business-click' ),
         'panel'          => 'business-click-theme-options',
     );
 
     /*home page static page display*/
-$business_click_settings_controls['business-click-enable-static-page'] =
-    array(
+$business_click_settings_controls['business-click-enable-static-page'] = array(
         'setting' =>     array(
             'default'              => $business_click_customizer_defaults['business-click-enable-static-page'],
         ),
@@ -38,8 +36,7 @@ $business_click_settings_controls['business-click-enable-static-page'] =
 
 /*layout-options option responsive lodader start*/
 
-$business_click_settings_controls['business-click-default-layout'] =
-    array(
+$business_click_settings_controls['business-click-default-layout'] = array(
         'setting' =>     array(
             'default'              => $business_click_customizer_defaults['business-click-default-layout'],
         ),
@@ -48,7 +45,7 @@ $business_click_settings_controls['business-click-default-layout'] =
             'description'           =>  esc_html__( 'Please note that this section can be overridden for individual page/posts', 'business-click' ),
             'section'               => 'business-click-layout-options',
             'type'                  => 'select',
-            'choices'               => array(
+            'choices' => array(
                 'right-sidebar' => esc_html__( 'Content - Primary Sidebar', 'business-click' ),
                 'left-sidebar'  => esc_html__( 'Primary Sidebar - Content', 'business-click' ),
                 'no-sidebar'    => esc_html__( 'No Sidebar', 'business-click' )
@@ -68,7 +65,7 @@ $business_click_settings_controls['business-click-single-post-image-align'] =
             'label'                 =>  esc_html__( 'Alignment Of Image In Single Post/Page', 'business-click' ),
             'section'               => 'business-click-layout-options',
             'type'                  => 'select',
-            'choices'               => array(
+            'choices' => array(
                 'full'      => esc_html__( 'Full', 'business-click' ),
                 'right'     => esc_html__( 'Right', 'business-click' ),
                 'left'      => esc_html__( 'Left', 'business-click' ),
@@ -83,7 +80,7 @@ $business_click_settings_controls['business-click-single-post-image-align'] =
    
            $business_click_settings_controls['business-click-archive-layout'] =
             array(
-                'setting' =>     array(
+                'setting' => array(
                     'default'              => $business_click_customizer_defaults['business-click-archive-layout'],
                 ),
                 'control' => array(
@@ -104,7 +101,7 @@ $business_click_settings_controls['business-click-single-post-image-align'] =
 /*container size*/
 $business_click_settings_controls['business-click-conatiner-width-layout'] =
     array(
-        'setting' =>     array(
+        'setting' => array(
             'default'              => $business_click_customizer_defaults['business-click-conatiner-width-layout'],
         ),
         'control' => array(

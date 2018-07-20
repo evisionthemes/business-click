@@ -7,6 +7,7 @@ $business_click_panels['business-click-main-page-options'] =
         'title'          => esc_html__( 'Homepage / Front Page', 'business-click' ),
         'priority'       => 230
     );
+    
 /*top headerbar*/
 require get_template_directory().'/inc/customizer/main-homepage/top-header-bar.php';
 

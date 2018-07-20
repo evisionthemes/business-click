@@ -28,7 +28,7 @@ $business_click_sections['business-click-feature-section'] = array(
 $business_click_settings_controls['business-click-feature-enable'] =
     array(
         'setting' =>       array(
-            'default'              =>   $business_click_customizer_defaults['business-click-feature-enable']
+            'default'               =>   $business_click_customizer_defaults['business-click-feature-enable']
         ),
         'control' =>   array(
             'label'                 =>    esc_html__( 'Show Feature Section', 'business-click' ),
@@ -80,7 +80,7 @@ $business_click_settings_controls['business-click-feature-number-post'] =
 $business_click_settings_controls['business-click-feature-excerpt-length'] =
     array(
         'setting' =>       array(
-            'default'              =>   $business_click_customizer_defaults['business-click-feature-excerpt-length']
+            'default'               =>   $business_click_customizer_defaults['business-click-feature-excerpt-length']
         ),
         'control' =>   array(
             'label'                 =>    esc_html__( 'Excerpt Length', 'business-click' ),
@@ -96,7 +96,7 @@ $business_click_repeated_settings_controls['business-click-feature-from-page'] =
 	'repeated' 		=> 3,
 	'feature-icons-ids' => array(
         'setting' => array(
-            'default'              =>   $business_click_customizer_defaults['business-click-feature-page-icon']
+            'default'               =>   $business_click_customizer_defaults['business-click-feature-page-icon']
         ),
         'control' =>   array(
             /* translators: %s: search page icon */
@@ -129,7 +129,7 @@ $business_click_repeated_settings_controls['business-click-feature-from-page'] =
 $business_click_settings_controls['business-click-feature-button-text'] =
     array(
         'setting' =>       array(
-            'default'              =>   $business_click_customizer_defaults['business-click-feature-button-text']
+            'default'               =>   $business_click_customizer_defaults['business-click-feature-button-text']
         ),
         'control' =>   array(
             'label'                 =>    esc_html__( 'Button Text', 'business-click' ),
