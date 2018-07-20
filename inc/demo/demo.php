@@ -23,4 +23,4 @@ $config = array(
 	),
 );
 
-st_blog_Demo::init( apply_filters( 'st_blog_Demo_filter', $config ) );
+business_click_Demo::init( apply_filters( 'business_click_Demo_filter', $config ) );

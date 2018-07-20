@@ -146,7 +146,7 @@ if ( !function_exists('business_click_feature') ) :
 											
 										<div class="evt-featured-caption">
 											<?php if(  !empty($feature_post_page_arrays['feature-title']) ) { ?>
-												<h2 class="evt-featured-title mb-3 mt-2"><a href="#!"><?php echo esc_html($feature_post_page_arrays['feature-title']);?></a></h2>
+												<h2 class="evt-featured-title mb-3 mt-2"><a href="<?php echo esc_url($feature_post_page_arrays['feature-url']);?>"><?php echo esc_html($feature_post_page_arrays['feature-title']);?></a></h2>
 											<?php } ?>
 											<?php if(  !empty($feature_post_page_arrays['feature-content']) ) { ?>	
 												<p><?php echo wp_kses_post($feature_post_page_arrays['feature-content']);?></p>
