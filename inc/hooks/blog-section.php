@@ -52,7 +52,9 @@ if( !function_exists('business_click_blog') ) :
 									<div class="col-12 col-sm-6 col-lg-4 evt-box-item-wrap">
 										<div class="evt-box-item">
 											<div class="evt-box-image image">
-												<img src="<?php echo esc_url($th_image);?>">
+												<a href="<?php the_permalink(); ?>">
+													<img src="<?php echo esc_url($th_image);?>">
+												</a>
 											</div>
 	
 
