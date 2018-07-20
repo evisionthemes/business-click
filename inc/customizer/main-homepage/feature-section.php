@@ -8,7 +8,6 @@ global $business_click_customizer_defaults;
 /*default values*/
 $business_click_customizer_defaults['business-click-feature-enable']					= 0;
 $business_click_customizer_defaults['business-click-feature-section-title']				= esc_html__('Awesome Features','business-click');
-$business_click_customizer_defaults['business-click-feature-number-post']				= 3;
 $business_click_customizer_defaults['business-click-feature-excerpt-length']			= 30;
 $business_click_customizer_defaults['business-click-feature-from-page']					= 0;
 $business_click_customizer_defaults['business-click-feature-page-icon']					= '';
@@ -53,28 +52,6 @@ $business_click_settings_controls['business-click-feature-section-title'] =
         )
     );
 
-
-/*enable feature section*/
-$business_click_settings_controls['business-click-feature-number-post'] =
-    array(
-        'setting' =>       array(
-            'default'              =>   $business_click_customizer_defaults['business-click-feature-number-post']
-        ),
-        'control' =>   array(
-            'label'                 =>    esc_html__( 'Show Feature Section', 'business-click' ),
-            'section'               =>   'business-click-feature-section',
-            'type'                  =>   'select',
-            'choices'  => array(
-            	1					=> esc_html__('1','business-click'),
-            	2					=> esc_html__('2','business-click'),
-            	3					=> esc_html__('3','business-click'),
-            	
-            	
-            ),				
-            'priority'              =>   20,
-            'active_callback'       =>   ''
-        )
-    );
 
 /*Excerpt length */
 $business_click_settings_controls['business-click-feature-excerpt-length'] =

@@ -6,7 +6,6 @@ global $business_click_customizer_defaults;
 
 /*defaults value*/
 $business_click_customizer_defaults['business-click-enbale-slider']                         = 0;
-$business_click_customizer_defaults['business-click-number-of-slider']                      = 2;
 $business_click_customizer_defaults['business-click-excerpt-length']                        = 30;
 $business_click_customizer_defaults['business-click-select-from-page']                      = 0;
 $business_click_customizer_defaults['business-click-slider-button-text']                    = esc_html__('Learn more','business-click');
@@ -49,29 +48,6 @@ $business_click_settings_controls['business-click-excerpt-length'] = array(
 
     )       
 );
-
-/*total number slider */
-$business_click_settings_controls['business-click-number-of-slider'] = array(
-    'setting' => array(
-        'default'          => $business_click_customizer_defaults['business-click-number-of-slider'] 
-    ),
-    'control' => array(
-        'label'             => esc_html__('Select Number of post for slider','business-click'),
-        'section'           => 'business-click-slider-section',
-        'type'              => 'select',
-        'choices' => array(
-            1               => esc_html__('1','business-click'),
-            2               => esc_html__('2','business-click'),
-            3               => esc_html__('3','business-click'),
-
-        ),
-        'priority'          => 30,
-        'acticve_callback'  => ''
-
-    )       
-);
-
-
 
 /*post type slider from page */
 $business_click_repeated_settings_controls['business-click-select-from-page'] = array(
