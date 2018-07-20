@@ -12,7 +12,7 @@ $business_click_customizer_defaults['business-click-contact-section-contact-form
 /*create a section for contct*/
 $business_click_sections['business-click-contact-section'] = array(
 	'title'							=> esc_html__('Contact us Section','business-click'),
-	'description'           		=> sprintf( '%1$s <a  href="https://evisionthemes.com/product/business-click-pro/" target="_blank"> %2$s </a> %3$s', esc_html__( 'Note: We have more options for Contact Us,please visit our pro version', 'business-click' ), esc_html__( 'Business Click Pro ', 'business-click' ), esc_html__( 'to get more features', 'business-click' ) ),
+	'description'           		=> sprintf( '%1$s <a  href="https://evisionthemes.com/product/business-click-pro/" target="_blank"> %2$s </a> %3$s', esc_html__( 'Note: For more options, please ', 'business-click' ), esc_html__( 'Upgrade to Pro ', 'business-click' ), esc_html__( '', 'business-click' ) ),
 	'panel'							=> 'business-click-main-page-options',
 	'priority'						=> 100
 );
@@ -38,7 +38,7 @@ $business_click_settings_controls['business-click-contact-section-title'] = arra
 		'default'					=> $business_click_customizer_defaults['business-click-contact-section-title']
 	),
 	'control' => array(
-		'label'						=> esc_html__('Contact Us Title','business-click'),
+		'label'						=> esc_html__('Title Section','business-click'),
 		'section'					=> 'business-click-contact-section',
 		'type'						=> 'text',
 		'priority'					=> 20,
@@ -53,8 +53,8 @@ $business_click_settings_controls['business-click-contact-section-contact-form-s
 		'default'					=> $business_click_customizer_defaults['business-click-contact-section-contact-form-short-code']
 	),
 	'control' => array(
-		'label'						=> esc_html__('Shortcode for Contact From','business-click'),
-		'description'       		=> sprintf( '%1$s <a href="https://wordpress.org/plugins/contact-form-7" target="_blank"> %2$s </a> %3$s',  esc_html__( 'Note: To get Contact Form 7', 'business-click' ), esc_html__( 'Click Here', 'business-click' ), esc_html__( 'You should put a shortcode otherwise contact form not appear', 'business-click' ) ),
+		'label'						=> esc_html__('Shortcode for Contact From 7','business-click'),
+		'description'       		=> sprintf( '%1$s <a href="https://wordpress.org/plugins/contact-form-7" target="_blank"> %2$s </a> %3$s',  esc_html__( 'Note: To get Contact Form 7', 'business-click' ), esc_html__( 'Click Here', 'business-click' ), esc_html__( '', 'business-click' ) ),
 		'section'					=> 'business-click-contact-section',
 		'type'						=> 'text',
 		'priority'					=> 60,

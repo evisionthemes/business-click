@@ -14,7 +14,7 @@ $business_click_customizer_defaults['business-click-slider-button-text']        
 /*create section for feature slider*/
 $business_click_sections['business-click-slider-section']  = array(
     'title'                 => esc_html__('Feature Slider Section','business-click'),
-    'description'           => sprintf( '%1$s <a  href="https://evisionthemes.com/product/business-click-pro/" target="_blank"> %2$s </a> %3$s', esc_html__( 'Note: We have more options for slider,please visit our pro version', 'business-click' ), esc_html__( 'Business Click Pro ', 'business-click' ), esc_html__( 'to get more features', 'business-click' ) ),
+    'description'           => sprintf( '%1$s <a  href="https://evisionthemes.com/product/business-click-pro/" target="_blank"> %2$s </a> %3$s', esc_html__( 'Note: For more options, please ', 'business-click' ), esc_html__( 'Upgrade to Pro', 'business-click' ), esc_html__( '', 'business-click' ) ),
     'panel'                 => 'business-click-main-page-options',
     'priority'              => 20
 );
@@ -58,7 +58,7 @@ $business_click_repeated_settings_controls['business-click-select-from-page'] = 
         ),
         'control' => array(
             /* translators: %s: search slider page */
-            'label'                 => esc_html__('Post type for slider from page %s','business-click'),
+            'label'                 => esc_html__('Slider %s','business-click'),
             'section'               => 'business-click-slider-section',
             'type'                  => 'dropdown-pages',            
             'priority'              => 60,
@@ -74,7 +74,7 @@ $business_click_settings_controls['business-click-slider-button-text'] = array(
         'default'           => $business_click_customizer_defaults['business-click-slider-button-text'] 
     ),
     'control' => array(
-        'label'             => esc_html__('Slider button text','business-click'),
+        'label'             => esc_html__('Button text','business-click'),
         'section'           => 'business-click-slider-section',
         'type'              => 'text',
         'priority'          => 70,

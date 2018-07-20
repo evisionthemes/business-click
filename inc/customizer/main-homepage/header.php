@@ -22,8 +22,8 @@ $business_click_settings_controls['business-click-enable-extra-button']  =  arra
 		'defaults'		  => $business_click_customizer_defaults['business-click-enable-extra-button']
 	),
 	'control' => array(
-		'label'			  => esc_html__('Show Button(Like Buy Now)','business-click'),
-		'description'	  => esc_html__('If you put any link in that extra button thene only its appear in menu section','business-click'),
+		'label'			  => esc_html__('Show Button','business-click'),
+		'description'	  => esc_html__('Appears to the right of Primary Menu section','business-click'),
 		'section'		  => 'business-click-header-section',	
 		'type'			  => 'checkbox',
 		'priority'		  => 10,

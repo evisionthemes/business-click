@@ -139,12 +139,4 @@ li#customize-control-business_click_options-business-click-slider-overlay-transp
   border: 1px solid #3498DB;
 }
 
-.from-page-selected .customize-control-category_dropdown {
-  display: none !important;
-}
-
-.from-category-selected .customize-control-dropdown-pages {
-  display: none !important;
-}
-
 /*# sourceMappingURL=editor-style.css.map */

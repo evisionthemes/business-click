@@ -122,7 +122,7 @@ $business_click_settings_controls['business-click-customizer-reset-settings'] =
         ),
         'control' => array(
             'label'                 =>  esc_html__( 'Reset All Options', 'business-click' ),
-            'description'           =>  esc_html__( 'Caution: Reset all options settings to default. Refresh the page after save to view the effects. ', 'business-click' ),
+            'description'           =>  esc_html__( 'Caution: This will reset all options to default. Publish the changes and Refresh the page to view the changes. ', 'business-click' ),
             'section'               => 'business-click-customizer-reset',
             'type'                  => 'checkbox',
             'priority'              => 10,

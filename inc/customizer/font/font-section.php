@@ -140,18 +140,19 @@ $business_click_google_fonts = array(
     'Cherry+Cream+Soda'                             => 'Cherry Cream Soda',
     'Aldrich'                                       => 'Aldrich',
     'Alex+Brush'                                    => 'Alex Brush',
-    'Fredericka+the+Great'                          => 'Fredericka the Great'
+    'Fredericka+the+Great'                          => 'Fredericka the Great',
+    'Catamaran:400,600,700'                         => 'Catamaran'
 );
 
 /*defaults values*/
-$business_click_customizer_defaults['business-click-font-family-site-identity']     = 'Raleway:400,300,500,600,700,900';
-$business_click_customizer_defaults['business-click-font-family-menu']              = 'Raleway:400,300,500,600,700,900';
-$business_click_customizer_defaults['business-click-font-family-h1-h6']             = 'Raleway:400,300,500,600,700,900';
+$business_click_customizer_defaults['business-click-font-family-site-identity']     = 'Catamaran:400,600,700';
+$business_click_customizer_defaults['business-click-font-family-menu']              = 'Catamaran:400,600,700';
+$business_click_customizer_defaults['business-click-font-family-h1-h6']             = 'Catamaran:400,600,700';
 $business_click_customizer_defaults['business-click-font-family-title-size']        = 30;
 $business_click_customizer_defaults['business-click-font-family-content-size']      = 16;
-$business_click_customizer_defaults['business-click-font-family-body-p']            = 'Raleway:400,300,500,600,700,900';
-$business_click_customizer_defaults['business-click-font-family-button-text']        = 'Raleway:400,300,500,600,700,900';
-$business_click_customizer_defaults['business-click-footer-copy-right-text']        = 'Raleway:400,300,500,600,700,900';
+$business_click_customizer_defaults['business-click-font-family-body-p']            = 'Open+Sans:400,400italic,600,700';
+$business_click_customizer_defaults['business-click-font-family-button-text']        = 'Open+Sans:400,400italic,600,700';
+$business_click_customizer_defaults['business-click-footer-copy-right-text']        = 'Open+Sans:400,400italic,600,700';
 
 /*section*/
 $business_click_sections['business-click-family'] =

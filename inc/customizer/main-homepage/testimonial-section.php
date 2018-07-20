@@ -18,7 +18,7 @@ $business_click_customizer_defaults['business-click-testimonial-background-image
 /*create a section */
 $business_click_sections['business-click-testimonial-section'] = array(
 	'title'							=> esc_html__('Testimonial Section','business-click'),
-	'description'         			=> sprintf( '%1$s <a  href="https://evisionthemes.com/product/business-click-pro/" target="_blank"> %2$s </a> %3$s', esc_html__( 'Note: We have more options for Testimonial Section,please visit our pro version', 'business-click' ), esc_html__( 'Business Click Pro ', 'business-click' ), esc_html__( 'to get more features', 'business-click' ) ),
+	'description'         			=> sprintf( '%1$s <a  href="https://evisionthemes.com/product/business-click-pro/" target="_blank"> %2$s </a> %3$s', esc_html__( 'Note: For more options, please ', 'business-click' ), esc_html__( 'Upgrade to Pro ', 'business-click' ), esc_html__( '', 'business-click' ) ),
 	'panel'							=> 'business-click-main-page-options',
 	'priority'						=> 80
 );
@@ -43,7 +43,7 @@ $business_click_settings_controls['business-click-testimonial-section-title'] = 
 		'default'					=> $business_click_customizer_defaults['business-click-testimonial-section-title']
 	),
 	'control' => array(
-		'label'						=> esc_html__('Testimonial Section Title','business-click'),
+		'label'						=> esc_html__('Section Title','business-click'),
 		'section'					=> 'business-click-testimonial-section',
 		'type'						=> 'text',
 		'priority'					=> 20,
@@ -57,7 +57,7 @@ $business_click_settings_controls['business-click-number-of-testimonial'] = arra
 		'default'					=> $business_click_customizer_defaults['business-click-number-of-testimonial']
 	),
 	'control' => array(
-		'label'						=> esc_html__('Select Number of post for Testimonial','business-click'),
+		'label'						=> esc_html__('Number of Testimonials','business-click'),
 		'section'					=> 'business-click-testimonial-section',
 		'type'						=> 'select',
 		'choices' => array(
@@ -94,7 +94,7 @@ $business_click_repeated_settings_controls['business-click-testimonial-designati
 		),
 		'control' => array(
 			/* translators: %s: search testimonila designation */
-			'label'						=> esc_html__('Text Field for Designation %s','business-click'),
+			'label'						=> esc_html__('Designation %s','business-click'),
 			'section'					=> 'business-click-testimonial-section',
 			'type'						=> 'text',
 			'priority'					=> 50,
@@ -107,7 +107,7 @@ $business_click_repeated_settings_controls['business-click-testimonial-designati
 		),
 		'control' => array(
 			/* translators: %s: search testimonial page */
-			'label'						=> esc_html__('Select page for testimonial %s','business-click'),
+			'label'						=> esc_html__('Testimonial %s','business-click'),
 			'section'					=> 'business-click-testimonial-section',
 			'type'						=> 'dropdown-pages',
 			'priority'					=> 50,

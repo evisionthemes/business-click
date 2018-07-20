@@ -16,8 +16,8 @@ $business_click_customizer_defaults['business-click-feature-button-text']	    		
 
 /*create section for feature*/
 $business_click_sections['business-click-feature-section'] = array(
-	'title'		          => esc_html__('Feature Section','business-click'),
-    'description'         => sprintf( '%1$s <a  href="https://evisionthemes.com/product/business-click-pro/" target="_blank"> %2$s </a> %3$s', esc_html__( 'Note: We have more options for Feature Section,please visit our pro version', 'business-click' ), esc_html__( 'Business Click Pro ', 'business-click' ), esc_html__( 'to get more features', 'business-click' ) ),
+	'title'		          => esc_html__('Features Section','business-click'),
+    'description'         => sprintf( '%1$s <a  href="https://evisionthemes.com/product/business-click-pro/" target="_blank"> %2$s </a> %3$s', esc_html__( 'Note: For more options, please ', 'business-click' ), esc_html__( 'Upgrade to Pro', 'business-click' ), esc_html__( '', 'business-click' ) ),
 	'panel'		          => 'business-click-main-page-options',	
 	'priority'	          => 30,
 
@@ -30,7 +30,7 @@ $business_click_settings_controls['business-click-feature-enable'] =
             'default'               =>   $business_click_customizer_defaults['business-click-feature-enable']
         ),
         'control' =>   array(
-            'label'                 =>    esc_html__( 'Show Feature Section', 'business-click' ),
+            'label'                 =>    esc_html__( 'Show Features Section', 'business-click' ),
             'section'               =>   'business-click-feature-section',
             'type'                  =>   'checkbox',
             'priority'              =>   10,
@@ -77,9 +77,9 @@ $business_click_repeated_settings_controls['business-click-feature-from-page'] =
         ),
         'control' =>   array(
             /* translators: %s: search page icon */
-            'label'                 =>    esc_html__( 'Select Page for feature page icon %s', 'business-click' ),
+            'label'                 =>    esc_html__( 'Icon for Page %s', 'business-click' ),
             /* translators: %s: search page icon describe */
-            'description'           =>   sprintf( esc_html__( 'Use font awesome icon: Eg: %1$s . %2$s  See more here %3$s', 'business-click' ), "<b>".'fa-wrench'."</b>",'<a href="'.esc_url('http://fontawesome.io/cheatsheet/').'" target="_blank">','</a>'. '-' .'Note : If you not select any awesome icon it dispaly the feature image ' ),
+            'description'           =>   sprintf( esc_html__( 'Eg: %1$s. %2$s View Font Awesome Cheatsheet. %3$s', 'business-click' ), "<b>".'fa-wrench'."</b>",'<a href="'.esc_url('http://fontawesome.io/cheatsheet/').'" target="_blank">','</a>'. '' .'Removing icons will display the featured image.' ),
             'section'               =>   'business-click-feature-section',
             'type'                  =>   'text',
             'priority'              =>   30,
@@ -92,7 +92,7 @@ $business_click_repeated_settings_controls['business-click-feature-from-page'] =
         ),
         'control' =>   array(
             /* translators: %s: search feature page */
-            'label'                 =>    esc_html__( 'Select Page for feature page %s', 'business-click' ),
+            'label'                 =>    esc_html__( 'Page %s', 'business-click' ),
             'section'               =>   'business-click-feature-section',
             'type'                  =>   'dropdown-pages',
             'priority'              =>   30,
