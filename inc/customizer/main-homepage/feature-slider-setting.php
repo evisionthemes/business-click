@@ -78,7 +78,7 @@ $business_click_repeated_settings_controls['business-click-select-from-page'] = 
     'repeated'      => 3,
     'business-click-page-id' => array(
         'setting' => array(
-        'default'              => $business_click_customizer_defaults['business-click-select-from-page'] 
+        'default'                   => $business_click_customizer_defaults['business-click-select-from-page'] 
         ),
         'control' => array(
             /* translators: %s: search slider page */
@@ -95,7 +95,7 @@ $business_click_repeated_settings_controls['business-click-select-from-page'] = 
 /*Button text */
 $business_click_settings_controls['business-click-slider-button-text'] = array(
     'setting' => array(
-        'default'          => $business_click_customizer_defaults['business-click-slider-button-text'] 
+        'default'           => $business_click_customizer_defaults['business-click-slider-button-text'] 
     ),
     'control' => array(
         'label'             => esc_html__('Slider button text','business-click'),

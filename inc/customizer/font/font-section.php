@@ -7,8 +7,7 @@ global $business_click_repeated_settings_controls;
 global $business_click_customizer_defaults;
 
 /*creating panel for fonts-setting*/
-$business_click_panels['business-click-fonts'] =
-    array(
+$business_click_panels['business-click-fonts'] = array(
         'title'          => esc_html__( 'Font Setting', 'business-click' ),
         'panel'          => 'business-click-theme-options',
         'priority'       => 120
@@ -154,9 +153,6 @@ $business_click_customizer_defaults['business-click-font-family-body-p']        
 $business_click_customizer_defaults['business-click-font-family-button-text']        = 'Raleway:400,300,500,600,700,900';
 $business_click_customizer_defaults['business-click-footer-copy-right-text']        = 'Raleway:400,300,500,600,700,900';
 
-
-
-
 /*section*/
 $business_click_sections['business-click-family'] =
     array(
@@ -270,7 +266,6 @@ $business_click_settings_controls['business-click-font-family-title-size'] =
             'label'                 => esc_html__( 'Post/Page Title Font Family Size', 'business-click' ),
             'section'               => 'business-click-family',
             'type'                  => 'number',
-            // 'choices'               => $business_click_google_fonts,
             'priority'              => 70,
             'active_callback'       => ''
         )
@@ -286,7 +281,6 @@ $business_click_settings_controls['business-click-font-family-content-size'] =
             'label'                 => esc_html__( 'Post/Page Content Font Family Size', 'business-click' ),
             'section'               => 'business-click-family',
             'type'                  => 'number',
-            // 'choices'               => $business_click_google_fonts,
             'priority'              => 80,
             'active_callback'       => ''
         )

@@ -16,17 +16,17 @@ $business_click_customizer_defaults['bussiness-click-top-bar-social-menu'] 	= ''
 
 //create a section for top header bar
 $business_click_sections['business-click-top-header-bar-sections'] = array(
-	'title'		=> esc_html__('Top-Header-Bar','business-click'),
+	'title'				=> esc_html__('Top-Header-Bar','business-click'),
 	'description'       => sprintf( '%1$s <a class="menu_locations" href="#"> %2$s </a> %3$s', esc_html__( 'Note: To show social menu.', 'business-click' ), esc_html__( 'Click Here', 'business-click' ), esc_html__( 'to create menu.', 'business-click' ) ),
-	'panel'		=>'business-click-main-page-options',
-	'priority'	=> 10
+	'panel'				=>'business-click-main-page-options',
+	'priority'			=> 10
 ); 
 
 
 // cretae a enable top header
 $business_click_settings_controls['business-click-enbale-top-bar-header']  = array(
 	'setting' => array(
-		'defaults' 		=> $business_click_customizer_defaults['business-click-enbale-top-bar-header']	
+		'defaults' 		    => $business_click_customizer_defaults['business-click-enbale-top-bar-header']	
 	),
 	'control' => array(
 		'label'				=> esc_html__('Show Top Header','business-click'),
@@ -42,7 +42,7 @@ $business_click_settings_controls['business-click-enbale-top-bar-header']  = arr
 // create text field for phone  number
 $business_click_settings_controls['business-click-top-bar-phone']  = array(
 	'setting' => array(
-		'defaults' 		=> $business_click_customizer_defaults['business-click-top-bar-phone']	
+		'defaults' 		    => $business_click_customizer_defaults['business-click-top-bar-phone']	
 	),
 	'control' => array(
 		'label'				=> esc_html__('Phone Number','business-click'),
