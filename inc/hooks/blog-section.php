@@ -42,7 +42,7 @@ if( !function_exists('business_click_blog') ) :
 							while( $business_click_blog_query->have_posts() ) :
 								$business_click_blog_query->the_post();
 								if(has_post_thumbnail()){
-                                    $thumb = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID(),'latebusiness-click-image' ), 'medium' );
+                                    $thumb = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID(),'latebusiness-click-image' ), 'latebusiness-click-image' );
                                     $th_image = $thumb['0'];
                                     }
                                     else{
@@ -57,7 +57,7 @@ if( !function_exists('business_click_blog') ) :
 	
 
 											<div class="evt-box-caption text-left">
-												<h2 class="evt-box-title mt-3"><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h2>
+												<h2 class="evt-box-title"><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h2>
 
 
 												<div class="entry-meta">

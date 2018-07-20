@@ -68,4 +68,4 @@ if( !function_exists('about_us_sections') ) :
 
     }
 endif;
-add_action( 'business_click_homepage', 'about_us_sections', 30 );
+add_action( 'business_click_homepage', 'about_us_sections', 50 );

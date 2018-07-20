@@ -16,7 +16,7 @@ $business_click_sections['busiess-click-about-us-section'] = array(
 	'title'					=> esc_html__(' About Us Section','business-click'),
 	'description'         	=> sprintf( '%1$s <a  href="https://evisionthemes.com/product/business-click-pro/" target="_blank"> %2$s </a> %3$s', esc_html__( 'Note: We have more options for About Us Section,please visit our pro version', 'business-click' ), esc_html__( 'Business Click Pro ', 'business-click' ), esc_html__( 'to get more features', 'business-click' ) ),
 	'panel'					=> 'business-click-main-page-options',
-	'priority'				=> 50
+	'priority'				=> 70
 );
 
 /*enable about us*/
