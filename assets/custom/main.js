@@ -34,7 +34,7 @@
 
 	$(window).load(function() {
 		// fixed header, boxed for archive page, enable-scroll-animations
-		$('body').addClass('fixed-header logo-left hide-header-on-scroll-down enable-scroll-animations');
+		$('body').addClass('fixed-header transparent-header logo-left hide-header-on-scroll-down enable-scroll-animations');
 
 		// preloader
 		$('#evt-preloader').hide();
