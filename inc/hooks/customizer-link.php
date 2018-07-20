@@ -24,17 +24,12 @@ if ( ! function_exists('customizer_link') ) :
             
             <p>
             <?php
-<<<<<<< HEAD
-                   /* translators: %s: all enable custom link */
-                printf(esc_html__('All Section are based on page/post. Enable each Section from customizer for %1$s slider: Home page->slider->Enable feature slider. likewise to other sections %2$s %3$s click here %4$s ','business-click'), '<br />','<br />','<a class="btn" href="' . esc_url( admin_url( 'customize.php' ) ) . '">', '</a>');
-                    ?>
-=======
+           /* translators: %s: all enable custom link */
             printf(esc_html__('Enable each Section from customizer. %1$s For 
               Feature Slider: Homepage / Front Page -> Feature Slider Section -> Show Slider. %2$s For other sections: Homepage / Front Page','business-craft'), '<br />','<br />');
             ?>
             </p>
             <a class="btn" href="<?php echo esc_url( admin_url( 'customize.php' ) );?>">Customize Now</a>
->>>>>>> bee6ecd8139ba8715c5e220c7ed1244217c7a978
 
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
