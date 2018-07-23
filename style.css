@@ -2357,6 +2357,11 @@ body.custom-background #breadcrumb .container {
   padding-bottom: 0;
 }
 
+body.search #primary article, body.archive #primary article {
+  border-bottom: 1px solid #d3d3d3;
+  padding-bottom: 20px;
+}
+
 article.hentry {
   margin-bottom: 40px;
 }

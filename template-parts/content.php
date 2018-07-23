@@ -42,7 +42,7 @@ global $business_click_customizer_all_values;
 				else{
 					echo "<div class='image-full post-image'>";
 					echo '<a href="'.esc_url(get_permalink()).'">';
-					the_post_thumbnail('full');
+					the_post_thumbnail('slider-banner-image');
 				}
 				echo "</a>";
 				echo "</div>";/*div end*/ 
