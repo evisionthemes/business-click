@@ -2545,6 +2545,21 @@ aside .widget {
   padding: 3px 5px;
 }
 
+.evt-footer-widget li {
+  line-height: 2.47;
+}
+
+.widget_categories ul,
+.widget_product_categories ul,
+.widget_archive ul {
+  text-align: right;
+}
+.widget_categories ul li a,
+.widget_product_categories ul li a,
+.widget_archive ul li a {
+  float: left;
+}
+
 .slick-slider .slick-arrow {
   background: none;
   color: #3e3e3e;
@@ -3669,6 +3684,11 @@ body.logo-left.small-header .evt-header-row .evt-logo-manage .site-branding .sit
   .site-footer .evt-footer-widget .evt-footer-widget-col {
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
+  }
+}
+@media screen and (min-width: 48em) {
+  .site-footer .evt-footer-widget .evt-footer-widget-col {
+    padding: 28px 35px;
   }
 }
 .site-footer .widget {
