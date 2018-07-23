@@ -209,7 +209,7 @@ add_action( 'business_click_action_before_header', 'business_click_skip_to_conte
         <header id="masthead" class="site-header">
         <div class="evt-header-wrap">
 
-            <?php if (1 != $business_click_customizer_all_values['business-click-enbale-top-bar-header']) { ?>
+            <?php if (1 == $business_click_customizer_all_values['business-click-enbale-top-bar-header']) { ?>
             <div id="evt-top-header" class="">
                 <div class="container">
                     <div class="row">
