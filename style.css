@@ -970,6 +970,7 @@ object {
 
 /* MIXINS */
 /*prifix */
+.widget_product_categories ul li,
 .widget_categories ul li,
 .widget_archive ul li,
 .widget_recent_entries ul li,
@@ -1134,13 +1135,7 @@ body .elementor-widget-counter .elementor-counter-title {
   font-family: "Catamaran", sans-serif;
 }
 
-.widget_categories ul li:before,
-.widget_archive ul li:before,
-.widget_recent_entries ul li:before,
-.widget_recent_comments ul li:before,
-.widget_meta ul li:before,
-.widget_pages ul li:before,
-.widget_nav_menu ul li:before, .post-navigation .nav-previous a:before, .posts-navigation .nav-previous a:before, .post-navigation .nav-next a:after, .posts-navigation .nav-next a:after, .readmore:after, .breadcrumbs .trail-items .trail-item + .trail-item::before {
+.post-navigation .nav-previous a:before, .posts-navigation .nav-previous a:before, .post-navigation .nav-next a:after, .posts-navigation .nav-next a:after, .readmore:after, .breadcrumbs .trail-items .trail-item + .trail-item::before {
   font-family: Font Awesome\ 5 Free;
   font-weight: 900;
 }
@@ -1223,6 +1218,7 @@ body {
   margin-left: 0;
 }
 
+.widget_product_categories ul li,
 .widget_categories ul li,
 .widget_archive ul li,
 .widget_recent_entries ul li,
@@ -1230,13 +1226,13 @@ body {
 .widget_meta ul li,
 .widget_pages ul li,
 .widget_nav_menu ul li {
-  padding-bottom: 5px;
   border-width: 0;
   border-bottom-width: 1px;
   list-style: none;
   line-height: 28px;
   margin-bottom: 8px;
 }
+.widget_product_categories ul li:hover,
 .widget_categories ul li:hover,
 .widget_archive ul li:hover,
 .widget_recent_entries ul li:hover,
@@ -1246,15 +1242,27 @@ body {
 .widget_nav_menu ul li:hover {
   padding-left: 20px;
 }
-.widget_categories ul li:before,
-.widget_archive ul li:before,
-.widget_recent_entries ul li:before,
-.widget_recent_comments ul li:before,
-.widget_meta ul li:before,
-.widget_pages ul li:before,
-.widget_nav_menu ul li:before {
-  content: "\f105";
-  margin-right: 5px;
+.widget_product_categories ul li a,
+.widget_categories ul li a,
+.widget_archive ul li a,
+.widget_recent_entries ul li a,
+.widget_recent_comments ul li a,
+.widget_meta ul li a,
+.widget_pages ul li a,
+.widget_nav_menu ul li a {
+  padding-bottom: 8px;
+  display: inline-block;
+}
+.widget_product_categories ul li.recentcomments span,
+.widget_categories ul li.recentcomments span,
+.widget_archive ul li.recentcomments span,
+.widget_recent_entries ul li.recentcomments span,
+.widget_recent_comments ul li.recentcomments span,
+.widget_meta ul li.recentcomments span,
+.widget_pages ul li.recentcomments span,
+.widget_nav_menu ul li.recentcomments span {
+  display: inline-block;
+  padding-bottom: 8px !important;
 }
 
 a:focus,
@@ -1369,6 +1377,7 @@ input[type=checkbox], input[type=radio] {
   justify-content: center;
 }
 
+.widget_product_categories ul li,
 .widget_categories ul li,
 .widget_archive ul li,
 .widget_recent_entries ul li,
@@ -2495,21 +2504,16 @@ aside .widget {
   margin-bottom: 40px;
 }
 
-.widget_recent_entries ul li:before,
-.widget_pages ul li:before {
-  content: "\f15c";
-}
-
-.widget_categories ul li:before {
-  content: "\f07c";
-}
-
-.widget_archive ul li:before {
-  content: "\f187";
-}
-
-.widget_recent_comments ul li:before {
-  content: "\f075";
+footer.site-footer .widget_product_categories ul li,
+footer.site-footer .widget_categories ul li,
+footer.site-footer .widget_archive ul li,
+footer.site-footer .widget_recent_entries ul li,
+footer.site-footer .widget_recent_comments ul li,
+footer.site-footer .widget_meta ul li,
+footer.site-footer .widget_pages ul li,
+footer.site-footer .widget_nav_menu ul li {
+  border: 0;
+  margin-bottom: 0;
 }
 
 .widget_calendar caption {
@@ -2554,10 +2558,33 @@ aside .widget {
 .widget_archive ul {
   text-align: right;
 }
+.widget_categories ul li:before, .widget_categories ul li:after,
+.widget_product_categories ul li:before,
+.widget_product_categories ul li:after,
+.widget_archive ul li:before,
+.widget_archive ul li:after {
+  content: " ";
+  display: table;
+}
+.widget_categories ul li:after,
+.widget_product_categories ul li:after,
+.widget_archive ul li:after {
+  clear: both;
+}
+.widget_categories ul li:before,
+.widget_product_categories ul li:before,
+.widget_archive ul li:before {
+  float: left;
+}
 .widget_categories ul li a,
 .widget_product_categories ul li a,
 .widget_archive ul li a {
   float: left;
+}
+.widget_categories ul li ul,
+.widget_product_categories ul li ul,
+.widget_archive ul li ul {
+  clear: left;
 }
 
 .slick-slider .slick-arrow {
