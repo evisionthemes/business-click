@@ -31,16 +31,7 @@ get_header();
 				/* Start the Loop */
 				while ( have_posts() ) :
 					the_post(); ?>
-
-				<div class="entry-summary">
-					<?php if ( has_post_thumbnail() ): ?>
-			          <a href="<?php echo get_permalink();?>">
-			          <?php the_post_thumbnail( 'medium', array( 'class' => 'aligncenter' ) ); ?>
-			        </a>
-			        <?php endif ?>
-
-					<?php the_excerpt(); ?>
-				</div><!-- .entry-summary --><?php
+				<?php
 
 				/**
 				 * Run the loop for the search to output the results.

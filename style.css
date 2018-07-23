@@ -2357,6 +2357,11 @@ body.custom-background #breadcrumb .container {
   padding-bottom: 0;
 }
 
+body.search #primary article, body.archive #primary article {
+  border-bottom: 1px solid #d3d3d3;
+  padding-bottom: 20px;
+}
+
 article.hentry {
   margin-bottom: 40px;
 }
@@ -2538,6 +2543,21 @@ aside .widget {
   margin-right: 5px;
   margin-bottom: 5px;
   padding: 3px 5px;
+}
+
+.evt-footer-widget li {
+  line-height: 2.47;
+}
+
+.widget_categories ul,
+.widget_product_categories ul,
+.widget_archive ul {
+  text-align: right;
+}
+.widget_categories ul li a,
+.widget_product_categories ul li a,
+.widget_archive ul li a {
+  float: left;
 }
 
 .slick-slider .slick-arrow {
@@ -3664,6 +3684,11 @@ body.logo-left.small-header .evt-header-row .evt-logo-manage .site-branding .sit
   .site-footer .evt-footer-widget .evt-footer-widget-col {
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
+  }
+}
+@media screen and (min-width: 48em) {
+  .site-footer .evt-footer-widget .evt-footer-widget-col {
+    padding: 28px 35px;
   }
 }
 .site-footer .widget {
