@@ -14,18 +14,22 @@
 
 get_header(); ?>
 
-<div id="primary" class="content-area">
-	<main id="main" class="site-main" role="main">
+<div class="container">
+	<div class="row">
+		<div id="primary" class="content-area">
+			<main id="main" class="site-main" role="main">
 
-		<?php if ( have_posts() ) :
-			woocommerce_content();
-		endif;
-		?>
+				<?php if ( have_posts() ) :
+					woocommerce_content();
+				endif;
+				?>
 
-	</main><!-- #main -->
-</div><!-- #primary -->
+			</main><!-- #main -->
+		</div><!-- #primary -->
 
+		<?php get_sidebar();?>
+	</div>
+</div>
 
 <?php
-get_sidebar(); 
 get_footer(); 
