@@ -8,6 +8,7 @@ global $business_click_customizer_defaults;
 $business_click_customizer_defaults['business-click-enable-extra-button'] 				= 1;
 $business_click_customizer_defaults['business-click-text-extra-button-text'] 			= esc_html__('Buy Now','business-click');
 $business_click_customizer_defaults['business-click-link-extra-button']					= '#';
+$business_click_customizer_defaults['business-click-enable-transparent-header'] 		= 0;
 
 /*create a header section */
 $business_click_sections['business-click-header-section'] = array(
@@ -63,5 +64,19 @@ $business_click_settings_controls['business-click-link-extra-button']  =  array(
 
 );
 
+/*transparent-header*/
+$business_click_settings_controls['business-click-enable-transparent-header']  =  array(
+	'setting'  => array(
+		'defaults'		=> $business_click_customizer_defaults['business-click-enable-transparent-header']
+	),
+	'control' => array(
+		'label'			  => esc_html__('Show Transparent Header','business-click'),
+		'section'		  => 'business-click-header-section',
+		'type'			  => 'checkbox',
+		'priority'		  => 40,
+		'active_callback' => ''
+	)		
+
+);
 
 

@@ -97,29 +97,36 @@ if ( ! function_exists( 'business_click_body_class' ) ) :
  */
 function business_click_body_class( $business_click_body_classes ) {
   global $business_click_customizer_all_values;
-  
+  $business_click_transparent_header = '';
+    $transparant_header = $business_click_customizer_all_values['business-click-enable-transparent-header'];
+    if($transparant_header == 1 &&  ($business_click_customizer_all_values['business-click-enbale-slider'] == 1) ){
+        $business_click_transparent_header = "transparent-header";
+    }
+    else{
+        $business_click_transparent_header = "non-tarnsparent";
+    }
 
     if(!is_front_page() || ( is_front_page())){
         $business_click_default_layout = business_click_default_layout();
         if( !empty( $business_click_default_layout ) ){
             if( 'left-sidebar' == $business_click_default_layout ){
-                $business_click_body_classes[] = 'evt-left-sidebar';
+                $business_click_body_classes[] = 'evt-left-sidebar'.' '. $business_click_transparent_header;
             }
             elseif( 'right-sidebar' == $business_click_default_layout ){ 
-                $business_click_body_classes[] = 'evt-right-sidebar';
+                $business_click_body_classes[] = 'evt-right-sidebar'.' '. $business_click_transparent_header;
             }
             elseif( 'both-sidebar' == $business_click_default_layout ){
-                $business_click_body_classes[] = 'evt-both-sidebar' ;
+                $business_click_body_classes[] = 'evt-both-sidebar'.' '. $business_click_transparent_header ;
             }
             elseif( 'no-sidebar' == $business_click_default_layout ){
-                $business_click_body_classes[] = 'evt-no-sidebar';
+                $business_click_body_classes[] = 'evt-no-sidebar'.' '. $business_click_transparent_header;
             }
             else{
-                $business_click_body_classes[] = 'evt-right-sidebar';
+                $business_click_body_classes[] = 'evt-right-sidebar'.' '. $business_click_transparent_header;
             }
         }
         else{
-            $business_click_body_classes[] = 'evt-right-sidebar';
+            $business_click_body_classes[] = 'evt-right-sidebar'.' '. $business_click_transparent_header;
         }
     }
     return $business_click_body_classes;
