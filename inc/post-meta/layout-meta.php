@@ -16,7 +16,7 @@ function business_click_add_layout_metabox() {
     global $post;
     $frontpage_id = get_option( 'page_on_front' );
     if ( $post->ID == $frontpage_id ) {
-        return;
+        // return;
     }
 
     global $business_click_post_types;

@@ -3853,14 +3853,8 @@ body {
   /* section */
   /* section title */
 }
-body .elementor-section-wrap > section:nth-child(even) {
-  background-color: rgba(0, 0, 0, 0.1);
-}
 body.dark-theme {
   /* section */
-}
-body.dark-theme .elementor-section-wrap > section:nth-child(even) {
-  background-color: rgba(0, 0, 0, 0.2);
 }
 body #elementor .elementor-element > .elementor-element-populated,
 body .elementor-element-populated {
