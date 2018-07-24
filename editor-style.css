@@ -139,4 +139,9 @@ li#customize-control-business_click_options-business-click-slider-overlay-transp
   border: 1px solid #3498DB;
 }
 
+.customize-control-checkbox .customize-control-description {
+  margin-left: -24px;
+  margin-top: 8px;
+}
+
 /*# sourceMappingURL=editor-style.css.map */
