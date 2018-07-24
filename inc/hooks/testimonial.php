@@ -24,8 +24,8 @@ if( !function_exists('testimonial_arrays') ) :
 		$reapeted_page	  				= array('testimonial-page-ids');
 		$repeated_designation 			= array('testimonial-designation-ids');
 		$testimonial_args 				= array();
-		$testimonial_post_page 			= evision_customizer_get_repeated_all_value(5,$reapeted_page);
-		$testimonial_post_designation 	= evision_customizer_get_repeated_all_value(5,$repeated_designation);
+		$testimonial_post_page 			= evision_customizer_get_repeated_all_value(2,$reapeted_page);
+		$testimonial_post_designation 	= evision_customizer_get_repeated_all_value(2,$repeated_designation);
 		// var_dump($testimonial_post_designation);die('hello');
 
 		if(  null != $testimonial_post_page ){
@@ -40,7 +40,7 @@ if( !function_exists('testimonial_arrays') ) :
 					'posts_per_page'	=> $testimonial_number_of_post,
 					'post__in'			=> $testimonial_page_id,
 					'order_by'			=> 'post__in',
-					'order'				=> 'ASC'	
+					'order'				=> 'DES'	
 
 				);
 			}
