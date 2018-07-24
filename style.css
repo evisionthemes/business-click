@@ -2968,9 +2968,6 @@ body.admin-bar.search .readmore {
 .site-branding a {
   color: #000;
 }
-.site-branding p {
-  color: #ffffff;
-}
 .site-branding .site-description {
   margin-bottom: 0;
 }
@@ -3388,8 +3385,11 @@ body.transparent-header header.site-header .evt-header-wrap-nav .evt-menu-toggle
   background-color: transparent;
 }
 
-body.transparent-header:not(.small-header) .menu-toggler span {
-  background: white;
+body.home.transparent-header:not(.small-header) .site-branding .site-description {
+  color: #ffffff;
+}
+body.home.transparent-header:not(.small-header) .menu-toggler span {
+  background: #ffffff;
 }
 
 body.small-header #evt-top-header {
@@ -3405,23 +3405,25 @@ body.logo-left.small-header .evt-header-row .evt-logo-manage .site-branding .sit
   display: none;
 }
 
-.hide-header-on-scroll-down.fixed-header .site-header {
-  -moz-transform: translate(0, 0);
-  -o-transform: translate(0, 0);
-  -ms-transform: translate(0, 0);
-  -webkit-transform: translate(0, 0);
-  transform: translate(0, 0);
-  -webkit-transition: 0.4s all ease-in-out;
-  -moz-transition: 0.4s all ease-in-out;
-  -o-transition: 0.4s all ease-in-out;
-  transition: 0.4s all ease-in-out;
-}
-.hide-header-on-scroll-down.fixed-header .site-header.nav-up {
-  -moz-transform: translate(0, -100%);
-  -o-transform: translate(0, -100%);
-  -ms-transform: translate(0, -100%);
-  -webkit-transform: translate(0, -100%);
-  transform: translate(0, -100%);
+@media (min-width: 601px) {
+  .hide-header-on-scroll-down.fixed-header .site-header {
+    -moz-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    -webkit-transition: 0.4s all ease-in-out;
+    -moz-transition: 0.4s all ease-in-out;
+    -o-transition: 0.4s all ease-in-out;
+    transition: 0.4s all ease-in-out;
+  }
+  .hide-header-on-scroll-down.fixed-header .site-header.nav-up {
+    -moz-transform: translate(0, -100%);
+    -o-transform: translate(0, -100%);
+    -ms-transform: translate(0, -100%);
+    -webkit-transform: translate(0, -100%);
+    transform: translate(0, -100%);
+  }
 }
 
 @media (min-width: 992px) {
@@ -3665,6 +3667,10 @@ body.logo-left.small-header .evt-header-row .evt-logo-manage .site-branding .sit
   padding: 15px;
   border: 1px solid #d3d3d3;
   border-top: 0;
+}
+#evt-blog .evt-box-item {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 #evt-partner .evt-img-overlay .evt-box-image {

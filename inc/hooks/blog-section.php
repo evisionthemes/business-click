@@ -29,7 +29,7 @@ if( !function_exists('business_click_blog') ) :
 					<h2 class="widget-title evision-animate slideInDown"><?php echo esc_html($business_click_section_title);?></h2>
 				<?php } ?>	
 				
-				<div class="row evt-blog-slider evt-carousel evision-animate fadeIn">
+				<div class="row evt-blog-slider evt-carousel justify-content-center evision-animate fadeIn">
 					<?php 
 						$business_click_blog_arg = array(
 							'post_type'				=> 'post',
