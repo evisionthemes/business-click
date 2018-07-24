@@ -55,7 +55,7 @@ function business_click_before_wp_head() {
 <?php
 }
 endif;
-// add_action( 'business_click_action_before_wp_head', 'business_click_before_wp_head', 10 );
+add_action( 'business_click_action_before_wp_head', 'business_click_before_wp_head', 10 );
 
 if( ! function_exists( 'business_click_default_layout' ) ) :
     /**

@@ -40,7 +40,7 @@ if( !function_exists('call_to_action_array') ) :
 		            {
 		                $thumb[0] = '';
 		            }?>
-		            <section id="evt-call-to-action" class="text-center dark-background" style="background-image: url('<?php  echo esc_url($thumb[0]); ?>');">
+		            <section id="evt-call-to-action" class="text-center img-cover dark-background" style="background-image: url('<?php  echo esc_url($thumb[0]); ?>');">
 					    <div class="evt-img-overlay">
 					        <div class="container">
 					            <div class="row justify-content-center">
