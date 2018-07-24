@@ -20,7 +20,7 @@ if ( ! function_exists('customizer_link') ) :
     
     ?>
 
-    <section class="container business-click-no-opton">
+    <section class="container business-click-no-opton mt-4">
         <div class="alert alert-warning alert-dismissible fade show" role="alert">
             
             <p>
