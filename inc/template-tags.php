@@ -51,7 +51,7 @@ function business_click_entry_footer() {
 	// Hide category and tag text for pages.
 	if ( 'post' === get_post_type() ) {
 		/* translators: used between list items, there is a space after the comma */
-		$categories_list = get_the_category_list( esc_html_x( ', ', 'business-click') );
+		$categories_list = get_the_category_list( esc_html_x( ', ','list item separator', 'business-click') );
 		if ( $categories_list && business_click_categorized_blog() ) {
 			/* translators: %s: search term */
 			printf( '<span class="cat-links">' . esc_html__( ' %1$s', 'business-click' ) . '</span>', $categories_list ); // WPCS: XSS OK.

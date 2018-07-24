@@ -38,7 +38,7 @@ if ( ! function_exists( 'business_click_implement_read_more' ) ) :
         }
 
         $output = $more;
-        $read_more_text = esc_html__('continue reading','trade-hub');
+        $read_more_text = esc_html__('continue reading','business-click');
         if ( ! empty( $read_more_text ) ) {
             $output = ' <div class="read-more-text"><a href="' . esc_url( get_permalink() ) . '" class="read-more">' . $read_more_text . '</a></div>';
             $output = apply_filters( 'business_click_filter_read_more_link' , $output );

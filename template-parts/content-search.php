@@ -13,7 +13,7 @@
 			<div class="entry-summary">
 				<?php if ( has_post_thumbnail() ): ?>
 				<div class='image-full post-image'>
-		        	<a href="<?php echo get_permalink();?>">
+		        	<a href="<?php echo esc_url(get_permalink() );?>">
 		        		<?php the_post_thumbnail( 'slider-banner-image', array( 'class' => 'aligncenter' ) ); ?>
 		        	</a>
 		        </div>

@@ -135,7 +135,11 @@ function business_click_google_fonts()
 	$business_click_fonts 	= array();
 	$business_click_fonts[] = $business_click_font_family_site_identity;
 	$business_click_fonts[] = $business_click_font_family_h1_h6;
+	$business_click_fonts[] = $business_click_font_family_menu_text;
 	$business_click_fonts[] = $business_click_font_family_button_text;
+	$business_click_fonts[] = $business_click_font_family_body_paragraph;
+	$business_click_fonts[] = $business_click_font_family_footer_copyright_text;
+
 
 	$business_click_fonts_stylesheet = '//fonts.googleapis.com/css?family=';
 
@@ -259,7 +263,7 @@ if ( !function_exists('business_click_social_menu') ) :
 	function business_click_social_menu()
 	{ ?>
 		<ul id="menu" class="d-none">
-			<li><a href="#" target="_tab"><?php echo esc_html_e('wordpress', 'business-click' );?></a></li>
+			<li><a href="https://wordpress.org" target="_tab"><?php echo esc_html_e('wordpress', 'business-click' );?></a></li>
 		</ul>
 		<?php
 	}

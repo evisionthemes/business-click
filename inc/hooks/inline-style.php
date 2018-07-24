@@ -82,7 +82,7 @@ if( ! function_exists( 'business_click_inline_style' ) ) :
             /*font family footer copyright  text*/
             .evt-copyright 
             {
-                font-family: '<?php echo esc_attr( $business_click_font_family_footer_copyright_text ); ?>'!important;
+                font-family: '<?php echo esc_attr( $business_click_font_family_footer_copyright_text ); ?>';
             }
 
 

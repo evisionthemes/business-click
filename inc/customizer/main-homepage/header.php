@@ -8,7 +8,7 @@ global $business_click_customizer_defaults;
 $business_click_customizer_defaults['business-click-enable-extra-button'] 				= 1;
 $business_click_customizer_defaults['business-click-text-extra-button-text'] 			= esc_html__('Buy Now','business-click');
 $business_click_customizer_defaults['business-click-link-extra-button']					= '#';
-$business_click_customizer_defaults['business-click-enable-transparent-header'] 		= 0;
+$business_click_customizer_defaults['business-click-enable-transparent-header'] 		= 1;
 
 /*create a header section */
 $business_click_sections['business-click-header-section'] = array(

@@ -9,7 +9,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package Trade Hub
+ * @package Business Click
  */
 
 get_header(); ?>
