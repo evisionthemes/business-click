@@ -20,7 +20,7 @@ global $business_click_customizer_all_values;
 		<h2><?php echo get_the_title(); ?></h2> 
 		<div class="entry-meta">
 			<?php business_click_posted_on(); ?>
-			<?php business_click_entry_footer(); ?>
+			<?php //business_click_entry_footer(); ?>
 		</div><!-- .entry-meta -->
 		<?php 
 		if( 'excerpt-only' == $business_click_archive_layout ){ 
@@ -90,7 +90,7 @@ global $business_click_customizer_all_values;
 				else{
 					echo "<div class='image-full post-image'>";
 					echo '<a href="'.esc_url(get_permalink()).'">';
-					the_post_thumbnail('full');
+					the_post_thumbnail('slider-banner-image');
 				}
 				echo "</a>";
 				echo "</div>";/*div end*/
