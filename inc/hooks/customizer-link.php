@@ -43,4 +43,4 @@ endif;
  }
 
 endif;
-add_action('business_click_link','customizer_link',10);
+add_action('business_click_link','customizer_link',9);

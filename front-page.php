@@ -24,6 +24,7 @@ if ( 'posts' == get_option( 'show_on_front' ) )
         do_action( 'business_click_homepage' );
 
         $business_click_static_page = absint($business_click_customizer_all_values['business-click-enable-static-page']);
+        do_action('business_click_link');
         // $business_click_static_page = 1;
         if (0 != $business_click_static_page ) { ?>
             <div class="container pt-4">
@@ -54,6 +55,6 @@ if ( 'posts' == get_option( 'show_on_front' ) )
             </div>
         <?php }
 
-        // do_action('business_click_link');
+        
     }
 get_footer();

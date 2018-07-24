@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @packagebusiness-click
+ * @package business-click
  */
 
 if ( ! is_active_sidebar( 'sidebar-1' ) ) {

@@ -255,10 +255,10 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 
 
 if ( !function_exists('business_click_social_menu') ) :
-/**
+	/**
 	 * Fallback menu to primary menu 
 	 * 
-	 * @since business-click 1.0.1
+	 * @since business-click 1.0.0
 	 */
 	function business_click_social_menu()
 	{ ?>
@@ -269,6 +269,22 @@ if ( !function_exists('business_click_social_menu') ) :
 	}
 endif;
 
+if( !function_exists('busienss_click_primary_menu_mobile_callback') ) :
+	/**
+	 * Fallback menu to primary menu 
+	 * 
+	 * @since business-click 1.0.0
+	 */
+
+function busienss_click_primary_menu_mobile_callback() {
+	?>
+		<ul id="mobile-menu">
+			<li><a href="<?php echo esc_url( home_url( '/' ) );?>"><?php esc_html_e('Home','business-click');?></a></li>
+			<li><a href="<?php echo esc_url( admin_url( '/nav-menus.php' ) );?>"><?php esc_html_e('Set Primary Menu','business-click');?></a></li>
+		</ul>
+	<?php
+}
+endif;
 
 /*breadcrum function*/
 

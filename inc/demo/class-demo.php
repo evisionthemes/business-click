@@ -2,7 +2,7 @@
 /**
  * Demo class
  *
- * @package eCommerce_Gem
+ * @package business_click
  */
 
 if ( ! class_exists( 'business_click_Demo' ) ) {

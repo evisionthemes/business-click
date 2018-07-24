@@ -326,6 +326,7 @@ add_action( 'business_click_action_before_header', 'business_click_skip_to_conte
                                 wp_nav_menu( array(
                                     'theme_location' => 'menu-1',
                                     'menu_id'        => 'primary-menu',
+                                    'fallback_cb'    => 'busienss_click_primary_menu_mobile_callback'
                                 ) );
                                 ?>
 

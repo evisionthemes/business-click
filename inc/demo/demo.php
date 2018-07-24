@@ -2,7 +2,7 @@
 /**
  * Demo configuration
  *
- * @package eCommerce_Gem
+ * @package business_click
  */
 
 $config = array(

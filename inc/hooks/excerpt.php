@@ -3,7 +3,7 @@ if ( !function_exists('business_click_excerpt_length') ) :
      /**
      * Excerpt length
      *
-     * @since trade_hub 0.0.1
+     * @since business-click 1.0.0
      *
      * @param null
      * @return int

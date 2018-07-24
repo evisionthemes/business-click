@@ -14,7 +14,7 @@ if ( ! function_exists( 'business_click_before_footer' ) ) :
         </div><!-- #content -->
     </div>
     </section>
-    <?php do_action( 'business_click_link' );?>
+    
     
         <!-- *****************************************
              Footer section starts
