@@ -110,7 +110,7 @@ if ( !function_exists('business_click_feature') ) :
 						<?php } ?>	
 						<!-- .evt-carousel -->
 						
-							<div class="row evt-featured-slider evt-carousel evision-animate fadeIn">	
+							<div class="row evt-featured-slider evt-carousel justify-content-center evision-animate fadeIn">	
 								<?php
 								$i = 1;
 								foreach( $feature_post_page_array as $feature_post_page_arrays  ){
