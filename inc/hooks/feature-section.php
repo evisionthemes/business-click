@@ -38,7 +38,7 @@ if( !function_exists('business_click_feature_array') ) :
 					'post__in'				=> $feature_page_id,
 					// 'posts_per_page'		=> $feature_number_of_post,
 					'order_by'				=> 'post__in',
-					'order'					=> 'ASC'
+					'order'					=> 'DES'
 				); 
 			}
 		}
