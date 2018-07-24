@@ -138,11 +138,14 @@ Note:
 == Image used in screenshot ==
 * All images are licensed under [CC0](http://creativecommons.org/publicdomain/zero/1.0/legalcode.txt)
 
-== main slider ==
+== Main Slider ==
 1) https://www.pexels.com/photo/ballpen-blur-close-up-computer-461077/
 
-== woocommerce ==
+== WooCommerce ==
 Business Click themes includes support for WooCommerce.
+
+== Contact Form 7 ==
+Business Click themes includes support for Contact Form 7.
 
 == Changelog ==
 = - 1.0.0 - =
