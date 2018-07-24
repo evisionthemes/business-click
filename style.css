@@ -2441,7 +2441,6 @@ body.boxed .evt-masonry article {
 
 .byline:before {
   content: "\f007";
-  padding-left: 10px;
 }
 
 .entry-meta {
@@ -2450,7 +2449,6 @@ body.boxed .evt-masonry article {
 }
 .entry-meta .comments-link:before {
   content: "\f075";
-  padding-left: 10px;
 }
 
 .author-link a:before {
@@ -2462,8 +2460,10 @@ body.boxed .evt-masonry article {
   padding-left: 10px;
 }
 
-.author-link, .date-link, .byline, .posted-on, .tags-links {
-  margin-right: 10px;
+.author-link, .date-link, .byline, .posted-on, .tags-links, .cat-links {
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 5px;
 }
 
 .entry-footer span {
@@ -2478,21 +2478,17 @@ body.single .entry-meta {
   padding-bottom: 10px;
 }
 
-.tags-links {
-  margin-bottom: 1em;
-}
 .tags-links:before {
   content: "\f02c";
   font-weight: 900;
-  padding-left: 10px;
 }
 
 .cat-links {
-  margin-bottom: 1em;
+  display: inline-block;
 }
 .cat-links:before {
   content: "\f07c";
-  padding-left: 10px;
+  padding-left: 0px;
 }
 
 #dpsp-content-bottom {

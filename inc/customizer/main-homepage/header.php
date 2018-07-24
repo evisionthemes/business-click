@@ -71,6 +71,7 @@ $business_click_settings_controls['business-click-enable-transparent-header']  =
 	),
 	'control' => array(
 		'label'			  => esc_html__('Show Transparent Header','business-click'),
+		'description'	  => esc_html__('Transparent Header works only when Feature Slider Section is enabled.','business-click'),
 		'section'		  => 'business-click-header-section',
 		'type'			  => 'checkbox',
 		'priority'		  => 40,
