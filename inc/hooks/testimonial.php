@@ -10,8 +10,6 @@ if( !function_exists('testimonial_arrays') ) :
      */
 	function testimonial_arrays(){
 		global $business_click_customizer_all_values;
-
-		$testimonial_number_of_post 				= absint( $business_click_customizer_all_values['business-click-number-of-testimonial'] );
 		$testimonila_number_of_word					= absint( $business_click_customizer_all_values['business-click-testimonial-excerpt-length'] );
 
 		$testimonial_arrays	= array();
@@ -37,7 +35,7 @@ if( !function_exists('testimonial_arrays') ) :
 			if( !empty($testimonial_page_id) ){
 				$testimonial_args = array(
 					'post_type'			=> 'page',
-					'posts_per_page'	=> $testimonial_number_of_post,
+					// 'posts_per_page'	=> $testimonial_number_of_post,
 					'post__in'			=> $testimonial_page_id,
 					'order_by'			=> 'post__in',
 					'order'				=> 'DES'	
@@ -96,7 +94,6 @@ if( !function_exists('testimonial_section') ) :
 		if( ! $business_click_customizer_all_values['business-click-testimonila-enable'] ){
 			return null;
 		}
-		$testimonial_number_of_post 				= absint($business_click_customizer_all_values['business-click-number-of-testimonial'] );
 		$testimonial_select_post					= esc_html($business_click_customizer_all_values['business-click-testimonial-select-for-page'] );
 		$tesimonial_pages_array						= testimonial_arrays($testimonial_select_post);		
 
@@ -117,9 +114,7 @@ if( !function_exists('testimonial_section') ) :
 									<?php 
 									$i = 1;
 									foreach( $tesimonial_pages_array as $tesimonial_pages_arrays ){
-										if( $testimonial_number_of_post < $i ){
-											break;
-										}
+										
 										if ( !empty($tesimonial_pages_arrays['testimonial-image'] )){
 							              $testimonial_image = $tesimonial_pages_arrays['testimonial-image'];
 							            }

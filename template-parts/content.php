@@ -16,11 +16,19 @@ global $business_click_customizer_all_values;
 	<div class="entry-content <?php if (!has_post_thumbnail( )) { echo 'non-image';}?>">
 		<?php
 		$business_click_archive_layout = $business_click_customizer_all_values['business-click-archive-layout'];
-		$business_click_archive_image_align = $business_click_customizer_all_values['business-click-archive-image-align'];
-		if( 'excerpt-only' == $business_click_archive_layout ){
+		$business_click_archive_image_align = $business_click_customizer_all_values['business-click-archive-image-align']; ?>
+		<h2><?php echo get_the_title(); ?></h2> 
+		<div class="entry-meta">
+			<?php business_click_posted_on(); ?>
+			<?php business_click_entry_footer(); ?>
+		</div><!-- .entry-meta -->
+		<?php 
+		if( 'excerpt-only' == $business_click_archive_layout ){ 
 			echo wp_trim_excerpt( get_the_excerpt() );
+
 		}
-		elseif( 'full-post' == $business_click_archive_layout ){
+		elseif( 'full-post' == $business_click_archive_layout ){ 
+			
 			the_content( sprintf(
 			/* translators: %s: Name of current post. */
 				wp_kses( __( 'Read More %s <span class="meta-nav">&rarr;</span>', 'business-click' ), array( 'span' => array( 'class' => array() ) ) ),
@@ -55,15 +63,9 @@ global $business_click_customizer_all_values;
 				<?php
 				if ( is_single() ) {
 				} else {
-					the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+					/*the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );*/
 				}
-				if ( 'post' === get_post_type() ) : ?>
-					<div class="entry-meta">
-						<?php business_click_posted_on(); ?>
-						<?php business_click_entry_footer(); ?>
-					</div><!-- .entry-meta -->
-				<?php
-				endif;
+				
 				 ?>
 			</header><!-- .entry-header -->
 			<?php the_content( sprintf(
@@ -102,16 +104,8 @@ global $business_click_customizer_all_values;
 				<?php
 				if ( is_single() ) {
 					the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-				} else {
-					the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-				}
-				if ( 'post' === get_post_type() ) : ?>
-					<div class="entry-meta">
-						<?php business_click_posted_on(); ?>
-						<?php business_click_entry_footer(); ?>
-					</div><!-- .entry-meta -->
-				<?php
-				endif; 
+				} 
+				
 				?>
 			</header><!-- .entry-header -->
 			<?php the_excerpt();

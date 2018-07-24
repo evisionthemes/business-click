@@ -8,7 +8,6 @@ global $business_click_customizer_defaults;
 /*defaults value*/
 $business_click_customizer_defaults['business-click-testimonila-enable']				= 0;
 $business_click_customizer_defaults['business-click-testimonial-section-title']			= esc_html__('Testimonial','business-click');
-$business_click_customizer_defaults['business-click-number-of-testimonial']				= 2;
 $business_click_customizer_defaults['business-click-testimonial-excerpt-length']		= 30;
 $business_click_customizer_defaults['business-click-testimonial-select-for-page']		= 0;
 $business_click_customizer_defaults['business-click-testimonial-designation']			= esc_html__('C.E.O','business-click');
@@ -50,25 +49,6 @@ $business_click_settings_controls['business-click-testimonial-section-title'] = 
 		'active_callback'			=> ''
 	)
 );
-
-/*Section Title*/
-$business_click_settings_controls['business-click-number-of-testimonial'] = array(
-	'setting' => array(
-		'default'					=> $business_click_customizer_defaults['business-click-number-of-testimonial']
-	),
-	'control' => array(
-		'label'						=> esc_html__('Number of Testimonials','business-click'),
-		'section'					=> 'business-click-testimonial-section',
-		'type'						=> 'select',
-		'choices' => array(
-			1						=> esc_html__('1','business-click'),
-			2						=> esc_html__('2','business-click'),
-		),	
-		'priority'					=> 30,
-		'active_callback'			=> ''
-	)
-);
-
 
 /*Excerpt Length*/
 $business_click_settings_controls['business-click-testimonial-excerpt-length'] = array(

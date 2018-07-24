@@ -8,7 +8,6 @@ global $business_click_customizer_defaults;
 /*defaults value*/
 $business_click_customizer_defaults['business-click-blog-section-enable'] 					= 0;
 $business_click_customizer_defaults['business-click-blog-section-title-text']				= esc_html__('Latest Blog','business-click');
-$business_click_customizer_defaults['business-click-blog-select-number-post']				= 3;
 $business_click_customizer_defaults['business-click-blog-excerpt-length']					= 30;
 $business_click_customizer_defaults['business-click-blog-select-category']					=  0;
 $business_click_customizer_defaults['business-click-blog-button-text']						= esc_html__('Read More','business-click');
@@ -46,26 +45,6 @@ $business_click_settings_controls['business-click-blog-section-title-text']  = a
 		'section'					=> 'business-click-blog-section',
 		'type'						=> 'text',
 		'priority'					=> 20,
-		'active_callback'			=> ''
-	)
-);
-
-/*Number  of post*/
-$business_click_settings_controls['business-click-blog-select-number-post']  = array(
-	'setting' => array(
-		'default'					=> $business_click_customizer_defaults['business-click-blog-select-number-post']
-	),
-	'control' => array(
-		'label'						=> esc_html__('Number of Blog Posts','business-click'),
-		'section'					=> 'business-click-blog-section',
-		'type'						=> 'select',
-		'choices' => array(
-			1						=> esc_html__('1','business-click'),
-			2						=> esc_html__('2','business-click'),
-			3						=> esc_html__('3','business-click'),
-
-		),
-		'priority'					=> 30,
 		'active_callback'			=> ''
 	)
 );

@@ -15,7 +15,6 @@ if( !function_exists('business_click_blog') ) :
 		global $post;
 		$author_id = $post->post_author;
 		$business_click_section_title		= esc_html( $business_click_customizer_all_values['business-click-blog-section-title-text'] );
-		$business_click_number_post			= absint( $business_click_customizer_all_values['business-click-blog-select-number-post'] );
 		$business_click_number_single_words	= absint( $business_click_customizer_all_values['business-click-blog-excerpt-length'] );
 		$business_click_blog_category		= $business_click_customizer_all_values['business-click-blog-select-category'];
 		$business_click_button_text			= esc_html( $business_click_customizer_all_values['business-click-blog-button-text'] );
@@ -33,7 +32,7 @@ if( !function_exists('business_click_blog') ) :
 					<?php 
 						$business_click_blog_arg = array(
 							'post_type'				=> 'post',
-							'posts_per_page'		=> $business_click_number_post,
+							'posts_per_page'		=> 3,
 							'cat'					=> $business_click_blog_category,
 							'ignore_sticky_posts'	=> 1
 						);

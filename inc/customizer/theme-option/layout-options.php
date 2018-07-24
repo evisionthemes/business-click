@@ -79,24 +79,24 @@ $business_click_settings_controls['business-click-single-post-image-align'] =
 
 
    
-           $business_click_settings_controls['business-click-archive-layout'] =
-            array(
-                'setting' => array(
-                    'default'              => $business_click_customizer_defaults['business-click-archive-layout'],
-                ),
-                'control' => array(
-                    'label'                 =>  esc_html__( 'Archive Layout', 'business-click' ),
-                    'section'               => 'business-click-layout-options',
-                    'type'                  => 'select',
-                    'choices'               => array(
-                        'excerpt-only' => esc_html__( 'Excerpt Only', 'business-click' ),
-                        'thumbnail-and-excerpt' => esc_html__( 'Thumbnail and Excerpt', 'business-click' ),
-                        'full-post' => esc_html__( 'Full Post', 'business-click' ),
-                        'thumbnail-and-full-post' => esc_html__( 'Thumbnail and Full Post', 'business-click' ),
-                    ),
-                    'priority'              => 55,
-                )
-            );
+$business_click_settings_controls['business-click-archive-layout'] =
+array(
+    'setting' => array(
+        'default'              => $business_click_customizer_defaults['business-click-archive-layout'],
+    ),
+    'control' => array(
+        'label'                 =>  esc_html__( 'Archive Layout', 'business-click' ),
+        'section'               => 'business-click-layout-options',
+        'type'                  => 'select',
+        'choices'               => array(
+            'excerpt-only' => esc_html__( 'Excerpt Only', 'business-click' ),
+            'thumbnail-and-excerpt' => esc_html__( 'Thumbnail and Excerpt', 'business-click' ),
+            'full-post' => esc_html__( 'Full Post', 'business-click' ),
+            'thumbnail-and-full-post' => esc_html__( 'Thumbnail and Full Post', 'business-click' ),
+        ),
+        'priority'              => 55,
+    )
+);
 
 
 /*container size*/
