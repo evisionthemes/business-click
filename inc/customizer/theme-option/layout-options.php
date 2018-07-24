@@ -107,7 +107,7 @@ $business_click_settings_controls['business-click-conatiner-width-layout'] =
         ),
         'control' => array(
             'label'                 =>  esc_html__( 'Container Width', 'business-click' ),
-            'description'           => esc_html__('Value in px','business-click'),
+            'description'           => esc_html__('Value in px. This width is for the larger screen size greater than 1200px.','business-click'),
             'section'               => 'business-click-layout-options',
             'type'                  => 'number',
             'priority'              => 60,
