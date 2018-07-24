@@ -2325,9 +2325,8 @@ body:not(.home):not(.blog):not(.error404) .site-content
   }
 }
 
-body.evt-left-sidebar #primary,
-body.evt-left-sidebar #secondary {
-  float: right;
+body.evt-left-sidebar #primary {
+  order: 1;
 }
 @media (min-width: 768px) {
   body.evt-left-sidebar #secondary {
