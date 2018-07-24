@@ -17,7 +17,7 @@ $business_click_customizer_defaults['business-click-color-reset']               
 /*Default color*/
 $business_click_sections['colors'] = array(
         'priority'       => 110,
-        'title'          => esc_html__( 'Colors Options', 'business-click' ),
+        'title'          => esc_html__( 'Colors', 'business-click' ),
         'panel'          => 'business-click-theme-options'
     );
 

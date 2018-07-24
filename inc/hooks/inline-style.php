@@ -28,6 +28,9 @@ if( ! function_exists( 'business_click_inline_style' ) ) :
         $business_click_font_family_body_paragraph          = $business_click_google_fonts[$business_click_customizer_all_values['business-click-font-family-body-p']];
         $business_click_font_family_button_text             = $business_click_google_fonts[$business_click_customizer_all_values['business-click-font-family-button-text']];
         $business_click_font_family_footer_copyright_text   = $business_click_google_fonts[$business_click_customizer_all_values['business-click-footer-copy-right-text']];
+        // size
+        $business_click_font_title_size              = $business_click_customizer_all_values['business-click-font-family-title-size'];
+        $business_click_font_content_size              = $business_click_customizer_all_values['business-click-font-family-content-size'];
 
         
         //*color options*/
@@ -83,6 +86,16 @@ if( ! function_exists( 'business_click_inline_style' ) ) :
             .evt-copyright 
             {
                 font-family: '<?php echo esc_attr( $business_click_font_family_footer_copyright_text ); ?>';
+            }
+
+
+             
+            .widget-title, .widgettitle, .page-title, body .entry-title,
+            .elementor-heading-title {
+                font-size: <?php echo esc_attr( $business_click_font_title_size ); ?>px;
+            }
+            body, html {
+                font-size: <?php echo esc_attr( $business_click_font_content_size ); ?>px;
             }
 
 
