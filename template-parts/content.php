@@ -18,7 +18,7 @@ global $business_click_customizer_all_values;
 		$business_click_archive_layout = $business_click_customizer_all_values['business-click-archive-layout'];
 		$business_click_archive_image_align = $business_click_customizer_all_values['business-click-archive-image-align'];
 		if( 'excerpt-only' == $business_click_archive_layout ){
-			echo wp_kses( get_the_excerpt() );
+			echo wp_trim_excerpt( get_the_excerpt() );
 		}
 		elseif( 'full-post' == $business_click_archive_layout ){
 			the_content( sprintf(

@@ -45,7 +45,11 @@ $business_click_default_layout_options = array(
     'no-sidebar' => array(
         'value'     => 'no-sidebar',
         'thumbnail' => get_template_directory_uri() . '/inc/images/no-sidebar.png'
-    )
+    ),
+    'default' => array(
+        'value' => 'default',
+        'thumbnail' => get_template_directory_uri() . '/inc/images/no-sidebar.png'
+    ),
 );
 /* business-click featured layout */
 $business_click_single_post_image_align_options = array(

@@ -121,8 +121,9 @@ function business_click_body_class( $business_click_body_classes ) {
             elseif( 'no-sidebar' == $business_click_default_layout ){
                 $business_click_body_classes[] = 'evt-no-sidebar'.' '. $business_click_transparent_header;
             }
+            
             else{
-                $business_click_body_classes[] = 'evt-right-sidebar'.' '. $business_click_transparent_header;
+                $business_click_body_classes[] = 'evt-'. $business_click_customizer_all_values['business-click-default-layout'].' '. $business_click_transparent_header;
             }
         }
         else{

@@ -6,7 +6,7 @@ global $business_click_customizer_defaults;
 
 /*defaults values*/
 $business_click_customizer_defaults['business-click-enable-static-page']            = 1;
-$business_click_customizer_defaults['business-click-default-layout']                = 'right-sidebar';
+$business_click_customizer_defaults['business-click-default-layout']                = esc_html('default','business-click');
 $business_click_customizer_defaults['business-click-single-post-image-align']       = 'full';
 $business_click_customizer_defaults['business-click-archive-image-align']           = 'full';
 $business_click_customizer_defaults['business-click-archive-layout']                = 'thumbnail-and-excerpt';
@@ -48,7 +48,8 @@ $business_click_settings_controls['business-click-default-layout'] = array(
             'choices' => array(
                 'right-sidebar' => esc_html__( 'Content - Primary Sidebar', 'business-click' ),
                 'left-sidebar'  => esc_html__( 'Primary Sidebar - Content', 'business-click' ),
-                'no-sidebar'    => esc_html__( 'No Sidebar', 'business-click' )
+                'no-sidebar'    => esc_html__( 'No Sidebar', 'business-click' ),
+                'default'       => esc_html__('Default','business-click')
             ),
             'priority'              => 10,
             'active_callback'       => ''
