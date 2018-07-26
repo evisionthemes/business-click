@@ -210,15 +210,15 @@ $config = array(
     'free_pro' => array(
 
 	    array(
-		    'title'     => esc_html__( 'Slider Support', 'business-click' ),
-		    'desc'      => esc_html__( 'Supports Slider Revolution, Layer Slider, Hero Slider, etc.', 'business-click' ),
-		    'free'      => esc_html__('no','business-click'),
+		    'title'     => esc_html__( 'Feature Slider', 'business-click' ),
+		    'desc'      => esc_html__( 'Fully customizable', 'business-click' ),
+		    'free'      => esc_html__('Limited','business-click'),
 		    'pro'       => esc_html__('yes','business-click'),
 	    ),
 	    array(
 		    'title'     => esc_html__( 'Google Fonts', 'business-click' ),
 		    'desc' 		=> esc_html__( 'Google fonts options for changing the overall site fonts', 'business-click' ),
-		    'free'  	=> 'no',
+		    'free'  	=> esc_html__('20+','business-click'),
 		    'pro'   	=> esc_html__('100+','business-click'),
 	    ),
 	    array(
@@ -230,25 +230,32 @@ $config = array(
         array(
     	    'title'     => esc_html__( 'Advance Color Options', 'business-click' ),
     	    'desc'      => esc_html__( 'Options to change color of individual sections like top header, site title, menu, footer, etc of the site', 'business-click' ),
-    	    'free'      => esc_html__('no','business-click'),
+    	    'free'      => esc_html__('Limited','business-click'),
     	    'pro'       => esc_html__('yes','business-click'),
         ),
         array(
-    	    'title'     => esc_html__( 'Latest Product Carousel', 'business-click' ),
-    	    'desc'      => esc_html__( 'Widget to display latest products in carousel mode', 'business-click' ),
-    	    'free'      => esc_html__('yes','business-click'),
+    	    'title'     => esc_html__( 'Carousel Section', 'business-click' ),
+    	    'desc'      => esc_html__( 'Display Features Section, Blog Section in carousel mode', 'business-click' ),
+    	    'free'      => esc_html__('no','business-click'),
     	    'pro'       => esc_html__('yes','business-click'),
         ),
 
         array(
-    	    'title'     => esc_html__( 'Featured Product Carousel', 'business-click' ),
-    	    'desc'      => esc_html__( 'Widget to display featured products in carousel mode', 'business-click' ),
-    	    'free'      => esc_html__('yes','business-click'),
+    	    'title'     => esc_html__( 'Testimonial Carousel', 'business-click' ),
+    	    'desc'      => esc_html__( 'Display testimonial in carousel mode', 'business-click' ),
+    	    'free'      => esc_html__('2','business-click'),
+    	    'pro'       => esc_html__('5+','business-click'),
+        ),
+
+        array(
+    	    'title'     => esc_html__( 'Other Sections', 'business-click' ),
+    	    'desc'      => esc_html__( 'Team, Brands Section', 'business-click' ),
+    	    'free'      => esc_html__('no','business-click'),
     	    'pro'       => esc_html__('yes','business-click'),
         ),
         array(
     	    'title'     => esc_html__( 'Hide Footer Credit', 'business-click' ),
-    	    'desc'      => esc_html__( 'Option to enable/disable Powerby(Designer) credit in footer', 'business-click' ),
+    	    'desc'      => esc_html__( 'Option to enable/disable Powerby (Designer) credit in footer', 'business-click' ),
     	    'free'      => esc_html__('no','business-click'),
     	    'pro'       => esc_html__('yes','business-click'),
         ),
@@ -260,7 +267,7 @@ $config = array(
         ),
 	    array(
 		    'title'     => esc_html__( 'SEO', 'business-click' ),
-		    'desc' 		=> esc_html__( 'Developed with high skilled SEO tools.', 'business-click' ),
+		    'desc' 		=> esc_html__( 'Developed with SEO Friendly.', 'business-click' ),
 		    'free'  	=> 'yes',
 		    'pro'   	=> 'yes',
 	    ),

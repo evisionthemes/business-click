@@ -1,7 +1,7 @@
 === business-click ===
 
 Contributors: automattic
-Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready, left-sidebar, right-sidebar, custom-header, blog, e-commerce, theme-options, custom-colors, rtl-language-support, full-width-template, one-column
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready, left-sidebar, right-sidebar, blog, e-commerce, theme-options, custom-colors, rtl-language-support, full-width-template, one-column, grid-layout, footer-widgets, portfolio
 
 Requires at least: 4.5
 Tested up to: 4.9.7

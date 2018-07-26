@@ -8,7 +8,7 @@ Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: business-click
-Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready, left-sidebar, right-sidebar, custom-header, blog, e-commerce, theme-options, custom-colors, rtl-language-support, full-width-template, one-column
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready, left-sidebar, right-sidebar, blog, e-commerce, theme-options, custom-colors, rtl-language-support, full-width-template, one-column, grid-layout, footer-widgets, portfolio
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
@@ -1009,7 +1009,7 @@ nav#site-navigation ul.menu > li.current-menu-item > a, .slick-slider .slick-arr
 .woocommerce div.product p.price, .woocommerce div.product span.price,
 .woocommerce-message::before,
 .woocommerce-info::before,
-.woocommerce form .form-row .required, .evt-head-search-toggler:hover i, body.head-search-active .evt-head-search-toggler .fa-search, #evt-top-header .evt-head-search-toggler:hover, body.home.transparent-header:not(.small-header) nav#site-navigation ul#menu > li > a:hover, body.home.transparent-header:not(.small-header) nav#site-navigation ul.nav-menu > li > a:hover, body.home.transparent-header:not(.small-header) nav#site-navigation ul.menu > li > a:hover, body.home.transparent-header:not(.small-header) nav#site-navigation ul a:hover, body.home.transparent-header:not(.small-header) nav#site-navigation ul#menu > li.current-menu-item > a, body.home.transparent-header:not(.small-header) nav#site-navigation ul.nav-menu > li.current-menu-item > a, body.home.transparent-header:not(.small-header) nav#site-navigation ul.menu > li.current-menu-item > a, #evt-portfolio #filters button.is-checked, #evt-team .evt-box-item-wrap .evt-box-caption .evt-designation, #evt-featured.featured-icon-transparent .evt-featured-icon, #evt-featured.featured-icon-framed .evt-featured-icon, #evt-featured.featured-background .evt-featured-icon, .elementor-widget-icon-box.elementor-view-framed .elementor-icon, body .elementor-widget-heading .elementor-heading-title > a {
+.woocommerce form .form-row .required, .evt-head-search-toggler:hover i, body.head-search-active .evt-head-search-toggler .fa-search, #evt-top-header .evt-head-search-toggler:hover, body.home.transparent-header:not(.small-header) nav#site-navigation ul#menu > li > a:hover, body.home.transparent-header:not(.small-header) nav#site-navigation ul.nav-menu > li > a:hover, body.home.transparent-header:not(.small-header) nav#site-navigation ul.menu > li > a:hover, body.home.transparent-header:not(.small-header) nav#site-navigation ul a:hover, body.home.transparent-header:not(.small-header) nav#site-navigation ul#menu > li.current-menu-item > a, body.home.transparent-header:not(.small-header) nav#site-navigation ul.nav-menu > li.current-menu-item > a, body.home.transparent-header:not(.small-header) nav#site-navigation ul.menu > li.current-menu-item > a, #evt-portfolio #filters button.is-checked, #evt-team .evt-box-item-wrap .evt-box-caption .evt-designation, .elementor-widget-icon-box.elementor-view-framed .elementor-icon, body .elementor-widget-heading .elementor-heading-title > a {
   color: #578ECF;
 }
 
@@ -1086,7 +1086,7 @@ body .elementor-widget-heading.elementor-widget-heading .elementor-heading-title
 .woocommerce button.button.alt,
 .woocommerce input.button.alt, button, input[type="button"], input[type="reset"], input[type="submit"],
 .btn.btn-reverse:hover, .wp-pagenavi a:hover,
-.wp-pagenavi span.current, .pagination .nav-links ul li span.current, .wp-pagenavi ul li span.current, .woocommerce nav.woocommerce-pagination ul li span.current, .pagination .nav-links ul li span:hover, .wp-pagenavi ul li span:hover, .woocommerce nav.woocommerce-pagination ul li span:hover, .pagination .nav-links ul li a:hover, .wp-pagenavi ul li a:hover, .woocommerce nav.woocommerce-pagination ul li a:hover, header.site-header .evt-header-wrap-nav .evt-menu-toggler-manage #menu-icon.menu-toggler:hover span, ul.slick-dots li button:hover, ul.slick-dots li.slick-active button, .woocommerce span.onsale, .evt-carousel.slick-slider ul.slick-dots li button:hover, .evt-carousel.slick-slider ul.slick-dots li.slick-active button, .evt-featured-item-wrap .evt-featured-item .evt-featured-icon, #evt-top-header, .evt-thumb-holder .evt-thumb-hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons, #evt-testimonials .evt-testimonials-slider, #evt-featured.featured-background .evt-featured-item-wrap .evt-featured-item, .elementor-widget-button a.elementor-button, .elementor-widget-button .elementor-button, .elementor-slick-slider ul.slick-dots li button, .elementor-widget-icon.elementor-view-stacked .elementor-icon, body .elementor-social-icon, body .elementor-add-new-section .elementor-add-section-button {
+.wp-pagenavi span.current, .pagination .nav-links ul li span.current, .wp-pagenavi ul li span.current, .woocommerce nav.woocommerce-pagination ul li span.current, .pagination .nav-links ul li span:hover, .wp-pagenavi ul li span:hover, .woocommerce nav.woocommerce-pagination ul li span:hover, .pagination .nav-links ul li a:hover, .wp-pagenavi ul li a:hover, .woocommerce nav.woocommerce-pagination ul li a:hover, header.site-header .evt-header-wrap-nav .evt-menu-toggler-manage #menu-icon.menu-toggler:hover span, ul.slick-dots li button:hover, ul.slick-dots li.slick-active button, .woocommerce span.onsale, .evt-carousel.slick-slider ul.slick-dots li button:hover, .evt-carousel.slick-slider ul.slick-dots li.slick-active button, .evt-featured-item-wrap .evt-featured-item .evt-featured-icon, #evt-top-header, .evt-thumb-holder .evt-thumb-hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons, #evt-testimonials .evt-testimonials-slider, .elementor-widget-button a.elementor-button, .elementor-widget-button .elementor-button, .elementor-slick-slider ul.slick-dots li button, .elementor-widget-icon.elementor-view-stacked .elementor-icon, body .elementor-social-icon, body .elementor-add-new-section .elementor-add-section-button {
   background-color: #578ECF;
 }
 
@@ -1125,7 +1125,7 @@ header.site-header .evt-header-wrap-nav .evt-menu-toggler-manage #menu-icon.menu
 }
 
 .woocommerce-message,
-.woocommerce-info, #evt-featured.featured-icon-framed .evt-featured-item .evt-featured-icon, .elementor-widget-icon-box.elementor-view-framed .elementor-icon, body .elementor-widget-divider .elementor-divider-separator {
+.woocommerce-info, .elementor-widget-icon-box.elementor-view-framed .elementor-icon, body .elementor-widget-divider .elementor-divider-separator {
   border-color: #578ECF;
 }
 
@@ -3771,77 +3771,6 @@ body.error404 #evt-page-banner .evt-banner-image .evt-banner-caption .search-for
 }
 body.error404 #evt-page-banner .evt-banner-image .evt-banner-caption .search-form .search-submit {
   height: 36px;
-}
-
-body.heading-style-left .widget-title, body.heading-style-left .widgettitle, body.heading-style-left .page-title, body.heading-style-left .entry-title {
-  padding-left: 15px;
-  padding-bottom: 0;
-}
-body.heading-style-left .widget-title:before, body.heading-style-left .widgettitle:before, body.heading-style-left .page-title:before, body.heading-style-left .entry-title:before {
-  left: 0;
-  margin-left: 0;
-  width: 4px;
-  height: 100%;
-}
-body.heading-style-left .site-content .widget-title {
-  text-align: left;
-}
-body.heading-style-left.home .widget-title:before, body.heading-style-left.home .widgettitle:before, body.heading-style-left.home .page-title:before, body.heading-style-left.home .entry-title:before {
-  left: 0;
-  margin-left: 0;
-}
-
-#evt-featured.featured-icon-left .evt-featured-item, #evt-featured.featured-icon-right .evt-featured-item {
-  -webkit-box-align: start;
-  align-items: flex-start;
-  flex-direction: row;
-  display: flex;
-}
-#evt-featured.featured-icon-left .evt-featured-item .evt-featured-icon, #evt-featured.featured-icon-right .evt-featured-item .evt-featured-icon {
-  -webkit-box-flex: 0;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-}
-#evt-featured.featured-icon-left .evt-featured-item .evt-featured-icon {
-  margin-right: 15px;
-}
-#evt-featured.featured-icon-right .evt-featured-item {
-  text-align: right;
-}
-#evt-featured.featured-icon-right .evt-featured-item .evt-featured-icon {
-  order: 2;
-  margin-left: 15px;
-}
-#evt-featured.featured-icon-transparent .evt-featured-icon, #evt-featured.featured-icon-framed .evt-featured-icon {
-  background-color: transparent;
-}
-#evt-featured.featured-icon-framed .evt-featured-item .evt-featured-icon {
-  border-width: 3px;
-  border-style: solid;
-}
-#evt-featured.featured-background {
-  /* text color */
-  /* icon color */
-}
-#evt-featured.featured-background .evt-featured-item-wrap .evt-featured-item,
-#evt-featured.featured-background .evt-featured-item-wrap .evt-featured-item .evt-featured-title,
-#evt-featured.featured-background .evt-featured-item-wrap .evt-featured-item .evt-featured-title a,
-#evt-featured.featured-background .evt-featured-item-wrap .evt-featured-item a {
-  color: #ffffff;
-}
-#evt-featured.featured-background .evt-featured-icon {
-  background-color: #ffffff;
-}
-#evt-featured.featured-background.featured-icon-framed .evt-featured-icon, #evt-featured.featured-background.featured-icon-transparent .evt-featured-icon {
-  background-color: transparent;
-  color: #ffffff;
-}
-#evt-featured.featured-background.featured-icon-framed .evt-featured-icon {
-  border-color: #ffffff;
-}
-#evt-featured.featured-box-shadow .evt-featured-item {
-  box-shadow: 0 0px 6px rgba(0, 0, 0, 0.1);
 }
 
 .hentry,
