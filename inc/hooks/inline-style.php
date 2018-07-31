@@ -216,7 +216,7 @@ if( ! function_exists( 'business_click_inline_style' ) ) :
         <?php } 
 
         /*header extra-button */
-        if(empty($business_click_customizer_all_values['business-click-text-extra-button-text']) )
+        if(isset($business_click_customizer_all_values['business-click-text-extra-button-text']) )
         {?>
             #site-navigation {
                 padding-right: 0 !important;
