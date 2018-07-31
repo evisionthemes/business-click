@@ -216,10 +216,10 @@ if( ! function_exists( 'business_click_inline_style' ) ) :
         <?php } 
 
         /*header extra-button */
-        if(isset($business_click_customizer_all_values['business-click-text-extra-button-text']) )
+        if( $business_click_customizer_all_values['business-click-text-extra-button-text'] == 1 )
         {?>
             #site-navigation {
-                padding-right: 0 !important;
+                /*padding-right: 0 !important;*/
             }
 
         <?php } 
