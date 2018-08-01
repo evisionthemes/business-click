@@ -1143,7 +1143,7 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-.site-footer a, .site-footer .evt-footer-widget .evt-popular-posts-item .evt-popular-posts-content .evt-popular-posts-title a, .site-footer, .site-footer .evt-footer-widget .btn, .site-footer .evt-footer-widget .readmore,
+.site-footer a, .site-footer .evt-footer-widget .evt-popular-posts-item .evt-popular-posts-content .evt-popular-posts-title a, .site-footer, .site-footer table, .site-footer .evt-footer-widget .btn, .site-footer .evt-footer-widget .readmore,
 .site-footer .evt-footer-widget .nav-tabs .nav-item .nav-link.active, .site-footer .evt-footer-widget .btn:hover, .site-footer .evt-footer-widget .readmore:hover,
 .site-footer .evt-footer-widget .nav-tabs .nav-item .nav-link.active:hover,
 .site-footer .evt-footer-widget .evt-popular-posts-item .evt-popular-posts-content .evt-popular-posts-title a:hover, .site-footer .evt-footer-widget, .site-footer .evt-footer-widget .widget-title, .site-footer .widget_calendar caption {
@@ -1445,7 +1445,7 @@ input[type=checkbox], input[type=radio] {
   transform: scale(1.05);
 }
 
-#evt-social-icons ul li, .site-footer .widget_nav_menu > div ul li, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons ul li {
+#evt-social-icons li, .site-footer .widget_nav_menu > div ul#menu-social li, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li {
   display: inline-block;
   list-style: none;
   margin-right: 14px;
@@ -1453,204 +1453,204 @@ input[type=checkbox], input[type=radio] {
   overflow: hidden;
   /*social links hover effect */
 }
-#evt-social-icons ul li a, .site-footer .widget_nav_menu > div ul li a, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons ul li a {
+#evt-social-icons li a, .site-footer .widget_nav_menu > div ul#menu-social li a, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a {
   display: inline-block;
   text-transform: capitalize;
 }
-#evt-social-icons ul li a:before, .site-footer .widget_nav_menu > div ul li a:before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons ul li a:before {
+#evt-social-icons li a:before, .site-footer .widget_nav_menu > div ul#menu-social li a:before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a:before {
   font-family: Font Awesome\ 5 Brands;
   margin-right: 10px;
 }
-#evt-social-icons ul li a[href*="facebook.com"]::before, .site-footer .widget_nav_menu > div ul li a[href*="facebook.com"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons ul li a[href*="facebook.com"]::before {
+#evt-social-icons li a[href*="facebook.com"]::before, .site-footer .widget_nav_menu > div ul#menu-social li a[href*="facebook.com"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="facebook.com"]::before {
   content: "\f09a";
 }
-#evt-social-icons ul li a[href*="twitter.com"]::before, .site-footer .widget_nav_menu > div ul li a[href*="twitter.com"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons ul li a[href*="twitter.com"]::before {
+#evt-social-icons li a[href*="twitter.com"]::before, .site-footer .widget_nav_menu > div ul#menu-social li a[href*="twitter.com"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="twitter.com"]::before {
   content: "\f099";
 }
-#evt-social-icons ul li a[href*="linkedin.com"]::before, .site-footer .widget_nav_menu > div ul li a[href*="linkedin.com"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons ul li a[href*="linkedin.com"]::before {
+#evt-social-icons li a[href*="linkedin.com"]::before, .site-footer .widget_nav_menu > div ul#menu-social li a[href*="linkedin.com"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="linkedin.com"]::before {
   content: "\f0e1";
 }
-#evt-social-icons ul li a[href*="plus.google.com"]::before, .site-footer .widget_nav_menu > div ul li a[href*="plus.google.com"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons ul li a[href*="plus.google.com"]::before {
+#evt-social-icons li a[href*="plus.google.com"]::before, .site-footer .widget_nav_menu > div ul#menu-social li a[href*="plus.google.com"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="plus.google.com"]::before {
   content: "\f0d5";
 }
-#evt-social-icons ul li a[href*="youtube.com"]::before, .site-footer .widget_nav_menu > div ul li a[href*="youtube.com"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons ul li a[href*="youtube.com"]::before {
+#evt-social-icons li a[href*="youtube.com"]::before, .site-footer .widget_nav_menu > div ul#menu-social li a[href*="youtube.com"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="youtube.com"]::before {
   content: "\f167";
 }
-#evt-social-icons ul li a[href*="dribbble.com"]::before, .site-footer .widget_nav_menu > div ul li a[href*="dribbble.com"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons ul li a[href*="dribbble.com"]::before {
+#evt-social-icons li a[href*="dribbble.com"]::before, .site-footer .widget_nav_menu > div ul#menu-social li a[href*="dribbble.com"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="dribbble.com"]::before {
   content: "\f17d";
 }
-#evt-social-icons ul li a[href*="pinterest.com"]::before, .site-footer .widget_nav_menu > div ul li a[href*="pinterest.com"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons ul li a[href*="pinterest.com"]::before {
+#evt-social-icons li a[href*="pinterest.com"]::before, .site-footer .widget_nav_menu > div ul#menu-social li a[href*="pinterest.com"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="pinterest.com"]::before {
   content: "\f0d2";
 }
-#evt-social-icons ul li a[href*="bitbucket.org"]::before, .site-footer .widget_nav_menu > div ul li a[href*="bitbucket.org"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons ul li a[href*="bitbucket.org"]::before {
+#evt-social-icons li a[href*="bitbucket.org"]::before, .site-footer .widget_nav_menu > div ul#menu-social li a[href*="bitbucket.org"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="bitbucket.org"]::before {
   content: "\f171";
 }
-#evt-social-icons ul li a[href*="github.com"]::before, .site-footer .widget_nav_menu > div ul li a[href*="github.com"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons ul li a[href*="github.com"]::before {
+#evt-social-icons li a[href*="github.com"]::before, .site-footer .widget_nav_menu > div ul#menu-social li a[href*="github.com"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="github.com"]::before {
   content: "\f113";
 }
-#evt-social-icons ul li a[href*="codepen.io"]::before, .site-footer .widget_nav_menu > div ul li a[href*="codepen.io"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons ul li a[href*="codepen.io"]::before {
+#evt-social-icons li a[href*="codepen.io"]::before, .site-footer .widget_nav_menu > div ul#menu-social li a[href*="codepen.io"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="codepen.io"]::before {
   content: "\f1cb";
 }
-#evt-social-icons ul li a[href*="flickr.com"]::before, .site-footer .widget_nav_menu > div ul li a[href*="flickr.com"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons ul li a[href*="flickr.com"]::before {
+#evt-social-icons li a[href*="flickr.com"]::before, .site-footer .widget_nav_menu > div ul#menu-social li a[href*="flickr.com"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="flickr.com"]::before {
   content: "\f16e";
 }
-#evt-social-icons ul li a[href$="/feed/"]::before, .site-footer .widget_nav_menu > div ul li a[href$="/feed/"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons ul li a[href$="/feed/"]::before {
+#evt-social-icons li a[href$="/feed/"]::before, .site-footer .widget_nav_menu > div ul#menu-social li a[href$="/feed/"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href$="/feed/"]::before {
   content: "\f09e";
   font-family: Font Awesome\ 5 Free;
   font-weight: 900;
 }
-#evt-social-icons ul li a[href*="foursquare.com"]::before, .site-footer .widget_nav_menu > div ul li a[href*="foursquare.com"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons ul li a[href*="foursquare.com"]::before {
+#evt-social-icons li a[href*="foursquare.com"]::before, .site-footer .widget_nav_menu > div ul#menu-social li a[href*="foursquare.com"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="foursquare.com"]::before {
   content: "\f180";
 }
-#evt-social-icons ul li a[href*="instagram.com"]::before, .site-footer .widget_nav_menu > div ul li a[href*="instagram.com"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons ul li a[href*="instagram.com"]::before {
+#evt-social-icons li a[href*="instagram.com"]::before, .site-footer .widget_nav_menu > div ul#menu-social li a[href*="instagram.com"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="instagram.com"]::before {
   content: "\f16d";
 }
-#evt-social-icons ul li a[href*="tumblr.com"]::before, .site-footer .widget_nav_menu > div ul li a[href*="tumblr.com"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons ul li a[href*="tumblr.com"]::before {
+#evt-social-icons li a[href*="tumblr.com"]::before, .site-footer .widget_nav_menu > div ul#menu-social li a[href*="tumblr.com"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="tumblr.com"]::before {
   content: "\f173";
 }
-#evt-social-icons ul li a[href*="reddit.com"]::before, .site-footer .widget_nav_menu > div ul li a[href*="reddit.com"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons ul li a[href*="reddit.com"]::before {
+#evt-social-icons li a[href*="reddit.com"]::before, .site-footer .widget_nav_menu > div ul#menu-social li a[href*="reddit.com"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="reddit.com"]::before {
   content: "\f1a1";
 }
-#evt-social-icons ul li a[href*="vimeo.com"]::before, .site-footer .widget_nav_menu > div ul li a[href*="vimeo.com"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons ul li a[href*="vimeo.com"]::before {
+#evt-social-icons li a[href*="vimeo.com"]::before, .site-footer .widget_nav_menu > div ul#menu-social li a[href*="vimeo.com"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="vimeo.com"]::before {
   content: "\f194";
 }
-#evt-social-icons ul li a[href*="digg.com"]::before, .site-footer .widget_nav_menu > div ul li a[href*="digg.com"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons ul li a[href*="digg.com"]::before {
+#evt-social-icons li a[href*="digg.com"]::before, .site-footer .widget_nav_menu > div ul#menu-social li a[href*="digg.com"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="digg.com"]::before {
   content: "\f1a6";
 }
-#evt-social-icons ul li a[href*="twitch.tv"]::before, .site-footer .widget_nav_menu > div ul li a[href*="twitch.tv"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons ul li a[href*="twitch.tv"]::before {
+#evt-social-icons li a[href*="twitch.tv"]::before, .site-footer .widget_nav_menu > div ul#menu-social li a[href*="twitch.tv"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="twitch.tv"]::before {
   content: "\f1e8";
 }
-#evt-social-icons ul li a[href*="stumbleupon.com"]::before, .site-footer .widget_nav_menu > div ul li a[href*="stumbleupon.com"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons ul li a[href*="stumbleupon.com"]::before {
+#evt-social-icons li a[href*="stumbleupon.com"]::before, .site-footer .widget_nav_menu > div ul#menu-social li a[href*="stumbleupon.com"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="stumbleupon.com"]::before {
   content: "\f1a4";
 }
-#evt-social-icons ul li a[href*="delicious.com"]::before, .site-footer .widget_nav_menu > div ul li a[href*="delicious.com"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons ul li a[href*="delicious.com"]::before {
+#evt-social-icons li a[href*="delicious.com"]::before, .site-footer .widget_nav_menu > div ul#menu-social li a[href*="delicious.com"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="delicious.com"]::before {
   content: "\f1a5";
 }
-#evt-social-icons ul li a[href*="mailto:"]::before, .site-footer .widget_nav_menu > div ul li a[href*="mailto:"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons ul li a[href*="mailto:"]::before {
+#evt-social-icons li a[href*="mailto:"]::before, .site-footer .widget_nav_menu > div ul#menu-social li a[href*="mailto:"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="mailto:"]::before {
   content: "\f0e0";
   font-family: Font Awesome\ 5 Free;
 }
-#evt-social-icons ul li a[href*="soundcloud.com"]::before, .site-footer .widget_nav_menu > div ul li a[href*="soundcloud.com"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons ul li a[href*="soundcloud.com"]::before {
+#evt-social-icons li a[href*="soundcloud.com"]::before, .site-footer .widget_nav_menu > div ul#menu-social li a[href*="soundcloud.com"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="soundcloud.com"]::before {
   content: "\f1be";
 }
-#evt-social-icons ul li a[href*="wordpress.org"]::before, .site-footer .widget_nav_menu > div ul li a[href*="wordpress.org"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons ul li a[href*="wordpress.org"]::before {
+#evt-social-icons li a[href*="wordpress.org"]::before, .site-footer .widget_nav_menu > div ul#menu-social li a[href*="wordpress.org"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="wordpress.org"]::before {
   content: "\f19a";
 }
-#evt-social-icons ul li a[href*="wordpress.com"]::before, .site-footer .widget_nav_menu > div ul li a[href*="wordpress.com"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons ul li a[href*="wordpress.com"]::before {
+#evt-social-icons li a[href*="wordpress.com"]::before, .site-footer .widget_nav_menu > div ul#menu-social li a[href*="wordpress.com"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="wordpress.com"]::before {
   content: "\f19a";
 }
-#evt-social-icons ul li a[href*="jsfiddle.net"]::before, .site-footer .widget_nav_menu > div ul li a[href*="jsfiddle.net"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons ul li a[href*="jsfiddle.net"]::before {
+#evt-social-icons li a[href*="jsfiddle.net"]::before, .site-footer .widget_nav_menu > div ul#menu-social li a[href*="jsfiddle.net"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="jsfiddle.net"]::before {
   content: "\f1cc";
 }
-#evt-social-icons ul li a[href*="tripadvisor.com"]::before, .site-footer .widget_nav_menu > div ul li a[href*="tripadvisor.com"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons ul li a[href*="tripadvisor.com"]::before {
+#evt-social-icons li a[href*="tripadvisor.com"]::before, .site-footer .widget_nav_menu > div ul#menu-social li a[href*="tripadvisor.com"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="tripadvisor.com"]::before {
   content: "\f262";
 }
-#evt-social-icons ul li a[href*="angel.co"]::before, .site-footer .widget_nav_menu > div ul li a[href*="angel.co"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons ul li a[href*="angel.co"]::before {
+#evt-social-icons li a[href*="angel.co"]::before, .site-footer .widget_nav_menu > div ul#menu-social li a[href*="angel.co"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="angel.co"]::before {
   content: "\f209";
 }
-#evt-social-icons ul li a[href*="slack.com"]::before, .site-footer .widget_nav_menu > div ul li a[href*="slack.com"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons ul li a[href*="slack.com"]::before {
+#evt-social-icons li a[href*="slack.com"]::before, .site-footer .widget_nav_menu > div ul#menu-social li a[href*="slack.com"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="slack.com"]::before {
   content: "\f198";
 }
-#evt-social-icons ul li a[href*="facebook.com"]:hover, .site-footer .widget_nav_menu > div ul li a[href*="facebook.com"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons ul li a[href*="facebook.com"]:hover {
+#evt-social-icons li a[href*="facebook.com"]:hover, .site-footer .widget_nav_menu > div ul#menu-social li a[href*="facebook.com"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="facebook.com"]:hover {
   color: #3b5998;
 }
-#evt-social-icons ul li a[href*="twitter.com"]:hover, .site-footer .widget_nav_menu > div ul li a[href*="twitter.com"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons ul li a[href*="twitter.com"]:hover {
+#evt-social-icons li a[href*="twitter.com"]:hover, .site-footer .widget_nav_menu > div ul#menu-social li a[href*="twitter.com"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="twitter.com"]:hover {
   color: #00aced;
 }
-#evt-social-icons ul li a[href*="plus.google.com"]:hover, .site-footer .widget_nav_menu > div ul li a[href*="plus.google.com"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons ul li a[href*="plus.google.com"]:hover {
+#evt-social-icons li a[href*="plus.google.com"]:hover, .site-footer .widget_nav_menu > div ul#menu-social li a[href*="plus.google.com"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="plus.google.com"]:hover {
   color: #dd4b39;
 }
-#evt-social-icons ul li a[href*="/feed/"]:hover, .site-footer .widget_nav_menu > div ul li a[href*="/feed/"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons ul li a[href*="/feed/"]:hover {
+#evt-social-icons li a[href*="/feed/"]:hover, .site-footer .widget_nav_menu > div ul#menu-social li a[href*="/feed/"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="/feed/"]:hover {
   color: #dc622c;
 }
-#evt-social-icons ul li a[href*="wordpress.org"]:hover, .site-footer .widget_nav_menu > div ul li a[href*="wordpress.org"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons ul li a[href*="wordpress.org"]:hover,
-#evt-social-icons ul li a[href*="wordpress.com"]:hover,
-.site-footer .widget_nav_menu > div ul li a[href*="wordpress.com"]:hover,
-#evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons ul li a[href*="wordpress.com"]:hover {
+#evt-social-icons li a[href*="wordpress.org"]:hover, .site-footer .widget_nav_menu > div ul#menu-social li a[href*="wordpress.org"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="wordpress.org"]:hover,
+#evt-social-icons li a[href*="wordpress.com"]:hover,
+.site-footer .widget_nav_menu > div ul#menu-social li a[href*="wordpress.com"]:hover,
+#evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="wordpress.com"]:hover {
   color: #45bbe6;
 }
-#evt-social-icons ul li a[href*="github.com"]:hover, .site-footer .widget_nav_menu > div ul li a[href*="github.com"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons ul li a[href*="github.com"]:hover {
+#evt-social-icons li a[href*="github.com"]:hover, .site-footer .widget_nav_menu > div ul#menu-social li a[href*="github.com"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="github.com"]:hover {
   color: #4183c4;
 }
-#evt-social-icons ul li a[href*="linkedin.com"]:hover, .site-footer .widget_nav_menu > div ul li a[href*="linkedin.com"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons ul li a[href*="linkedin.com"]:hover {
+#evt-social-icons li a[href*="linkedin.com"]:hover, .site-footer .widget_nav_menu > div ul#menu-social li a[href*="linkedin.com"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="linkedin.com"]:hover {
   color: #007bb6;
 }
-#evt-social-icons ul li a[href*="pinterest.com"]:hover, .site-footer .widget_nav_menu > div ul li a[href*="pinterest.com"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons ul li a[href*="pinterest.com"]:hover {
+#evt-social-icons li a[href*="pinterest.com"]:hover, .site-footer .widget_nav_menu > div ul#menu-social li a[href*="pinterest.com"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="pinterest.com"]:hover {
   color: #cb2027;
 }
-#evt-social-icons ul li a[href*="flickr.com"]:hover, .site-footer .widget_nav_menu > div ul li a[href*="flickr.com"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons ul li a[href*="flickr.com"]:hover {
+#evt-social-icons li a[href*="flickr.com"]:hover, .site-footer .widget_nav_menu > div ul#menu-social li a[href*="flickr.com"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="flickr.com"]:hover {
   color: #ff0084;
 }
-#evt-social-icons ul li a[href*="vimeo.com"]:hover, .site-footer .widget_nav_menu > div ul li a[href*="vimeo.com"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons ul li a[href*="vimeo.com"]:hover {
+#evt-social-icons li a[href*="vimeo.com"]:hover, .site-footer .widget_nav_menu > div ul#menu-social li a[href*="vimeo.com"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="vimeo.com"]:hover {
   color: #aad450;
 }
-#evt-social-icons ul li a[href*="youtube.com"]:hover, .site-footer .widget_nav_menu > div ul li a[href*="youtube.com"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons ul li a[href*="youtube.com"]:hover {
+#evt-social-icons li a[href*="youtube.com"]:hover, .site-footer .widget_nav_menu > div ul#menu-social li a[href*="youtube.com"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="youtube.com"]:hover {
   color: #bb0000;
 }
-#evt-social-icons ul li a[href*="instagram.com"]:hover, .site-footer .widget_nav_menu > div ul li a[href*="instagram.com"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons ul li a[href*="instagram.com"]:hover {
+#evt-social-icons li a[href*="instagram.com"]:hover, .site-footer .widget_nav_menu > div ul#menu-social li a[href*="instagram.com"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="instagram.com"]:hover {
   color: #517fa4;
 }
-#evt-social-icons ul li a[href*="dribbble.com"]:hover, .site-footer .widget_nav_menu > div ul li a[href*="dribbble.com"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons ul li a[href*="dribbble.com"]:hover {
+#evt-social-icons li a[href*="dribbble.com"]:hover, .site-footer .widget_nav_menu > div ul#menu-social li a[href*="dribbble.com"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="dribbble.com"]:hover {
   color: #ea4c89;
 }
-#evt-social-icons ul li a[href*="skype.com"]:hover, .site-footer .widget_nav_menu > div ul li a[href*="skype.com"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons ul li a[href*="skype.com"]:hover {
+#evt-social-icons li a[href*="skype.com"]:hover, .site-footer .widget_nav_menu > div ul#menu-social li a[href*="skype.com"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="skype.com"]:hover {
   color: #12a5f4;
 }
-#evt-social-icons ul li a[href*="digg.com"]:hover, .site-footer .widget_nav_menu > div ul li a[href*="digg.com"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons ul li a[href*="digg.com"]:hover {
+#evt-social-icons li a[href*="digg.com"]:hover, .site-footer .widget_nav_menu > div ul#menu-social li a[href*="digg.com"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="digg.com"]:hover {
   color: #333;
 }
-#evt-social-icons ul li a[href*="codepen.io"]:hover, .site-footer .widget_nav_menu > div ul li a[href*="codepen.io"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons ul li a[href*="codepen.io"]:hover {
+#evt-social-icons li a[href*="codepen.io"]:hover, .site-footer .widget_nav_menu > div ul#menu-social li a[href*="codepen.io"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="codepen.io"]:hover {
   color: #000;
 }
-#evt-social-icons ul li a[href*="reddit.com"]:hover, .site-footer .widget_nav_menu > div ul li a[href*="reddit.com"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons ul li a[href*="reddit.com"]:hover {
+#evt-social-icons li a[href*="reddit.com"]:hover, .site-footer .widget_nav_menu > div ul#menu-social li a[href*="reddit.com"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="reddit.com"]:hover {
   color: #ff4500;
 }
-#evt-social-icons ul li a[href*="mailto:"]:hover, .site-footer .widget_nav_menu > div ul li a[href*="mailto:"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons ul li a[href*="mailto:"]:hover {
+#evt-social-icons li a[href*="mailto:"]:hover, .site-footer .widget_nav_menu > div ul#menu-social li a[href*="mailto:"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="mailto:"]:hover {
   color: #1d62f0;
 }
-#evt-social-icons ul li a[href*="foursquare.com"]:hover, .site-footer .widget_nav_menu > div ul li a[href*="foursquare.com"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons ul li a[href*="foursquare.com"]:hover {
+#evt-social-icons li a[href*="foursquare.com"]:hover, .site-footer .widget_nav_menu > div ul#menu-social li a[href*="foursquare.com"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="foursquare.com"]:hover {
   color: #f94877;
 }
-#evt-social-icons ul li a[href*="stumbleupon.com"]:hover, .site-footer .widget_nav_menu > div ul li a[href*="stumbleupon.com"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons ul li a[href*="stumbleupon.com"]:hover {
+#evt-social-icons li a[href*="stumbleupon.com"]:hover, .site-footer .widget_nav_menu > div ul#menu-social li a[href*="stumbleupon.com"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="stumbleupon.com"]:hover {
   color: #eb4924;
 }
-#evt-social-icons ul li a[href*="twitch.tv"]:hover, .site-footer .widget_nav_menu > div ul li a[href*="twitch.tv"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons ul li a[href*="twitch.tv"]:hover {
+#evt-social-icons li a[href*="twitch.tv"]:hover, .site-footer .widget_nav_menu > div ul#menu-social li a[href*="twitch.tv"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="twitch.tv"]:hover {
   color: #6441a5;
 }
-#evt-social-icons ul li a[href*="tumblr.com"]:hover, .site-footer .widget_nav_menu > div ul li a[href*="tumblr.com"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons ul li a[href*="tumblr.com"]:hover {
+#evt-social-icons li a[href*="tumblr.com"]:hover, .site-footer .widget_nav_menu > div ul#menu-social li a[href*="tumblr.com"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="tumblr.com"]:hover {
   color: #32506d;
 }
-#evt-social-icons ul li a[href*="stumbleupon.com"]:hover, .site-footer .widget_nav_menu > div ul li a[href*="stumbleupon.com"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons ul li a[href*="stumbleupon.com"]:hover {
+#evt-social-icons li a[href*="stumbleupon.com"]:hover, .site-footer .widget_nav_menu > div ul#menu-social li a[href*="stumbleupon.com"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="stumbleupon.com"]:hover {
   color: #eb4924;
 }
-#evt-social-icons ul li a[href*="twitch.tv"]:hover, .site-footer .widget_nav_menu > div ul li a[href*="twitch.tv"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons ul li a[href*="twitch.tv"]:hover {
+#evt-social-icons li a[href*="twitch.tv"]:hover, .site-footer .widget_nav_menu > div ul#menu-social li a[href*="twitch.tv"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="twitch.tv"]:hover {
   color: #6441a5;
 }
-#evt-social-icons ul li a[href*="tumblr.com"]:hover, .site-footer .widget_nav_menu > div ul li a[href*="tumblr.com"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons ul li a[href*="tumblr.com"]:hover {
+#evt-social-icons li a[href*="tumblr.com"]:hover, .site-footer .widget_nav_menu > div ul#menu-social li a[href*="tumblr.com"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="tumblr.com"]:hover {
   color: #32506d;
 }
-#evt-social-icons ul li a[href*="soundcloud.com"]:hover, .site-footer .widget_nav_menu > div ul li a[href*="soundcloud.com"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons ul li a[href*="soundcloud.com"]:hover {
+#evt-social-icons li a[href*="soundcloud.com"]:hover, .site-footer .widget_nav_menu > div ul#menu-social li a[href*="soundcloud.com"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="soundcloud.com"]:hover {
   color: #ff5500;
 }
-#evt-social-icons ul li a[href*="wordpress.org"]:hover, .site-footer .widget_nav_menu > div ul li a[href*="wordpress.org"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons ul li a[href*="wordpress.org"]:hover {
+#evt-social-icons li a[href*="wordpress.org"]:hover, .site-footer .widget_nav_menu > div ul#menu-social li a[href*="wordpress.org"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="wordpress.org"]:hover {
   color: #45bbe6;
 }
-#evt-social-icons ul li a[href*="jsfiddle.net"]:hover, .site-footer .widget_nav_menu > div ul li a[href*="jsfiddle.net"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons ul li a[href*="jsfiddle.net"]:hover {
+#evt-social-icons li a[href*="jsfiddle.net"]:hover, .site-footer .widget_nav_menu > div ul#menu-social li a[href*="jsfiddle.net"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="jsfiddle.net"]:hover {
   color: #4679bd;
 }
-#evt-social-icons ul li a[href*="tripadvisor.com"]:hover, .site-footer .widget_nav_menu > div ul li a[href*="tripadvisor.com"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons ul li a[href*="tripadvisor.com"]:hover {
+#evt-social-icons li a[href*="tripadvisor.com"]:hover, .site-footer .widget_nav_menu > div ul#menu-social li a[href*="tripadvisor.com"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="tripadvisor.com"]:hover {
   color: #86c171;
 }
-#evt-social-icons ul li a[href*="foursquare.com"]:hover, .site-footer .widget_nav_menu > div ul li a[href*="foursquare.com"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons ul li a[href*="foursquare.com"]:hover {
+#evt-social-icons li a[href*="foursquare.com"]:hover, .site-footer .widget_nav_menu > div ul#menu-social li a[href*="foursquare.com"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="foursquare.com"]:hover {
   color: #2d5be3;
 }
-#evt-social-icons ul li a[href*="angel.co"]:hover, .site-footer .widget_nav_menu > div ul li a[href*="angel.co"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons ul li a[href*="angel.co"]:hover {
+#evt-social-icons li a[href*="angel.co"]:hover, .site-footer .widget_nav_menu > div ul#menu-social li a[href*="angel.co"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="angel.co"]:hover {
   color: #000;
 }
-#evt-social-icons ul li a[href*="slack.com"]:hover, .site-footer .widget_nav_menu > div ul li a[href*="slack.com"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons ul li a[href*="slack.com"]:hover {
+#evt-social-icons li a[href*="slack.com"]:hover, .site-footer .widget_nav_menu > div ul#menu-social li a[href*="slack.com"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="slack.com"]:hover {
   color: #56b68b;
 }
-#evt-social-icons ul li:last-child, .site-footer .widget_nav_menu > div ul li:last-child, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons ul li:last-child {
+#evt-social-icons li:last-child, .site-footer .widget_nav_menu > div ul#menu-social li:last-child, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li:last-child {
   margin-right: 0;
 }
 
@@ -1694,7 +1694,8 @@ body {
 }
 
 body, html {
-  font-size: 15px;
+  font-size: 16px;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -2630,7 +2631,7 @@ body.admin-bar.search .readmore {
   height: 32px;
 }
 
-.site-footer .widget_nav_menu > div ul li:hover {
+.site-footer .widget_nav_menu > div ul#menu-social li:hover {
   padding-left: 0;
 }
 
@@ -3520,6 +3521,9 @@ body.logo-left.small-header .evt-header-row .evt-logo-manage .site-branding .sit
 .site-footer {
   background: #1f1f1f;
 }
+.site-footer .post-date {
+  color: #bfbfbf;
+}
 .site-footer .widget-title {
   margin-bottom: 1em;
 }
@@ -3572,10 +3576,6 @@ body.logo-left.small-header .evt-header-row .evt-logo-manage .site-branding .sit
 .site-footer .widget_pages ul li:hover,
 .site-footer .widget_nav_menu ul li:hover {
   padding-left: 10px;
-}
-.site-footer .widget_nav_menu .menu {
-  column-count: 2;
-  column-gap: 30px;
 }
 .site-footer .widget_contact ul {
   margin-bottom: 1.5em;
