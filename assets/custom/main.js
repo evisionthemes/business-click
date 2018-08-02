@@ -36,9 +36,6 @@
 		// fixed header, boxed for archive page, enable-scroll-animations
 		$('body').addClass('fixed-header  logo-left hide-header-on-scroll-down enable-scroll-animations');
 
-		// preloader
-		$('#evt-preloader').hide();
-
 		// evt mobile menu
 		$('#site-navigation').evtMobileMenu ();
 
@@ -191,6 +188,9 @@
 			    lastScrollTop = st;
 			}
 		}
+
+		// preloader
+		$('#evt-preloader').hide();
 		
 	});
 })(jQuery);
