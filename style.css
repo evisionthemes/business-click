@@ -983,7 +983,7 @@ object {
   transition: 0.4s all ease-in-out;
 }
 
-.img-cover, .evt-banner-image, #evt-page-banner .evt-banner-image {
+.img-cover, #evt-banner .coin-slider, .evt-banner-image, #evt-page-banner .evt-banner-image {
   background-size: cover;
   background-position: center center;
 }
@@ -1183,7 +1183,7 @@ body {
 }
 @media (min-width: 575px) {
   .widget-title, .widgettitle, .page-title, body .entry-title {
-    font-size: 2rem;
+    font-size: 1.625rem;
   }
 }
 .widget-title:before, .widgettitle:before, .page-title:before, body .entry-title:before {
@@ -1715,7 +1715,7 @@ textarea:focus,
   outline: none;
 }
 
-.evt-overlay:after {
+.evt-overlay:after, #evt-banner .coin-slider:after {
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.4);
@@ -1810,6 +1810,13 @@ footer ul li,
 }
 #evt-preloader #status i {
   font-size: 30px;
+}
+
+.title-description {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 @media (min-width: 575px) {
@@ -2302,21 +2309,7 @@ footer.site-footer .widget_nav_menu ul li {
   }
 }
 
-.evt-banner-image {
-  height: calc(100vh - 138px - 50px);
-  /* iPad in portrait */
-}
-@media only screen and (orientation: portrait) {
-  .evt-banner-image {
-    /* STYLES GO HERE */
-  }
-}
-@media (min-width: 1199px) {
-  .evt-banner-image {
-    height: calc(100vh - 138px - 50px);
-  }
-}
-.evt-banner-image .evt-banner-caption {
+#evt-banner .nivoSlider .nivo-caption, #evt-banner .metaslider .caption-wrap, #evt-banner .coin-slider .cs-title, .evt-banner-image .evt-banner-caption {
   color: #ffffff;
   position: absolute;
   left: 0;
@@ -2340,24 +2333,93 @@ footer.site-footer .widget_nav_menu ul li {
   z-index: 99;
 }
 @media (max-width: 479px) {
-  .evt-banner-image .evt-banner-caption {
+  #evt-banner .nivoSlider .nivo-caption, #evt-banner .metaslider .caption-wrap, #evt-banner .coin-slider .cs-title, .evt-banner-image .evt-banner-caption {
     font-size: 0.875rem;
   }
 }
-.evt-banner-image .evt-banner-caption .evt-title {
+
+#evt-banner .nivoSlider .nivo-caption h1, #evt-banner .metaslider .caption-wrap .caption h1, .evt-banner-image .evt-banner-caption .evt-title {
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
   font-size: 1.5rem;
 }
 @media (min-width: 575px) {
-  .evt-banner-image .evt-banner-caption .evt-title {
+  #evt-banner .nivoSlider .nivo-caption h1, #evt-banner .metaslider .caption-wrap .caption h1, .evt-banner-image .evt-banner-caption .evt-title {
     font-size: 2.5rem;
   }
 }
 @media (max-width: 479px) {
-  .evt-banner-image .evt-banner-caption .evt-title {
+  #evt-banner .nivoSlider .nivo-caption h1, #evt-banner .metaslider .caption-wrap .caption h1, .evt-banner-image .evt-banner-caption .evt-title {
     font-size: 1.125rem;
     margin-bottom: 10px !important;
   }
+}
+
+.evt-banner-image {
+  height: calc(100vh - 138px - 50px);
+  min-height: 400px;
+  /* iPad in portrait */
+}
+@media only screen and (orientation: portrait) {
+  .evt-banner-image {
+    /* STYLES GO HERE */
+  }
+}
+@media (min-width: 1199px) {
+  .evt-banner-image {
+    height: calc(100vh - 138px - 50px);
+  }
+}
+
+#evt-banner {
+  /* .coin-slider {
+      height: 100vh !important;
+      width: 100% !important;
+      img {
+          width: 100% !important;
+      }
+      .cs-title {
+      }
+  } */
+}
+#evt-banner .metaslider .caption-wrap {
+  opacity: 1;
+}
+#evt-banner .nivoSlider {
+  background-color: #000;
+}
+#evt-banner .nivoSlider img {
+  opacity: 0.5;
+}
+#evt-banner .nivoSlider .nivo-caption {
+  background: transparent !important;
+}
+#evt-banner .nivoSlider .nivo-caption p {
+  margin: 1.5em !important;
+}
+#evt-banner .metaslider {
+  max-width: 100% !important;
+}
+#evt-banner .metaslider li {
+  background-color: #000;
+}
+#evt-banner .metaslider li img {
+  opacity: 0.5;
+}
+#evt-banner .metaslider .caption-wrap {
+  background: transparent;
+}
+#evt-banner .metaslider .caption-wrap .caption p {
+  margin-bottom: 1.5em !important;
+}
+#evt-banner .metaslider .caption-wrap .caption a {
+  color: #ffffff;
+}
+#evt-banner .metaslider .caption-wrap .caption a:hover {
+  color: inherit;
+}
+#evt-banner .coin-slider .cs-title {
+  background: transparent !important;
+  opacity: 1 !important;
 }
 
 #evt-banner .evt-banner-slider .slick-slide {
@@ -2379,11 +2441,11 @@ footer.site-footer .widget_nav_menu ul li {
   }
 }
 
-#evt-banner .evt-banner-slider .evt-overlay:after {
-  background-color: rgba(0, 0, 0, 0.2);
+#evt-banner .evt-banner-slider .evt-overlay:after, #evt-banner .evt-banner-slider .coin-slider:after {
+  background-color: rgba(0, 0, 0, 0.5);
 }
-#evt-banner .evt-banner-slider:hover .evt-overlay:after {
-  background-color: rgba(0, 0, 0, 0.4);
+#evt-banner .evt-banner-slider:hover .evt-overlay:after, #evt-banner .evt-banner-slider:hover .coin-slider:after {
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 ul.slick-dots {
@@ -2607,12 +2669,12 @@ body.admin-bar.search .readmore {
   font-weight: 700;
   margin-top: 5px;
   margin-bottom: 5px;
-  font-size: 1.625rem;
+  font-size: 1.25rem;
   padding-right: 30px;
 }
 @media (min-width: 575px) {
   .site-branding .site-title {
-    font-size: 2rem;
+    font-size: 1.625rem;
   }
 }
 @media (min-width: 360px) {
@@ -3220,6 +3282,10 @@ body.home.transparent-header:not(.small-header) .menu-toggler span {
   background: #ffffff;
 }
 
+body.home.transparent-header:not(.small-header) nav#site-navigation ul.nav-menu > li.current-menu-item > a {
+  color: #ffffff;
+}
+
 body.small-header #evt-top-header {
   height: 0;
 }
@@ -3501,6 +3567,12 @@ body.logo-left.small-header .evt-header-row .evt-logo-manage .site-branding .sit
   padding-bottom: 20px;
 }
 
+#evt-partner .evt-img-overlay {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+#evt-partner .evt-img-overlay .title-description {
+  color: #ffffff;
+}
 #evt-partner .evt-img-overlay .evt-box-image {
   text-align: center;
 }
