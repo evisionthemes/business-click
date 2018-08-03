@@ -2644,7 +2644,7 @@ body.admin-bar.search .readmore {
 }
 
 @media screen and (max-width: 600px) {
-  html body.admin-bar {
+  html body.admin-bar #wpadminbar {
     position: fixed;
   }
 }
