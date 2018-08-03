@@ -99,13 +99,17 @@ function business_click_body_class( $business_click_body_classes ) {
   global $business_click_customizer_all_values;
   $business_click_transparent_header = '';
     $transparant_header = $business_click_customizer_all_values['business-click-enable-transparent-header'];
-    if($transparant_header == 1 &&  ($business_click_customizer_all_values['business-click-enbale-slider'] == 1) ){
-        $business_click_transparent_header = "transparent-header";
+    if ( is_home() &&  is_front_page() ) {
     }
-    else{
-        $business_click_transparent_header = "non-tarnsparent";
+    else
+    {
+        if($transparant_header == 1 &&  ($business_click_customizer_all_values['business-click-enbale-slider'] == 1) ){
+            $business_click_transparent_header = "transparent-header";
+        }
+        else{
+            $business_click_transparent_header = "non-tarnsparent";
+        }
     }
-
     if(!is_front_page() || ( is_front_page())){
         $business_click_default_layout = business_click_default_layout();
         if( !empty( $business_click_default_layout ) ){
