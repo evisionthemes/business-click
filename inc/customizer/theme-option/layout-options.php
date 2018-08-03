@@ -26,7 +26,7 @@ $business_click_settings_controls['business-click-enable-static-page'] = array(
         ),
         'control' => array(
             'label'                 =>  esc_html__( 'Enable Static Front Page', 'business-click' ),
-            'description'           =>  esc_html__( 'If you disable this the static page will be disappera form the home page and other section from customizer will reamin as it is', 'business-click' ),
+            'description'           =>  esc_html__( 'If you disable this, the static page will be disappeared form the front page and other section will remain as it is', 'business-click' ),
             'section'               => 'business-click-layout-options',
             'type'                  => 'checkbox',
             'priority'              => 10,
@@ -42,7 +42,7 @@ $business_click_settings_controls['business-click-default-layout'] = array(
         ),
         'control' => array(
             'label'                 =>  esc_html__( 'Default Layout', 'business-click' ),
-            'description'           =>  esc_html__( 'Please note that this section can be overridden for individual page/posts', 'business-click' ),
+            'description'           =>  esc_html__( 'Please note that this section can be overridden by individual page/posts settings', 'business-click' ),
             'section'               => 'business-click-layout-options',
             'type'                  => 'select',
             'choices' => array(
@@ -63,7 +63,7 @@ $business_click_settings_controls['business-click-single-post-image-align'] =
             'default'              => $business_click_customizer_defaults['business-click-single-post-image-align'],
         ),
         'control' => array(
-            'label'                 =>  esc_html__( 'Alignment Of Image In Single Post/Page', 'business-click' ),
+            'label'                 =>  esc_html__( 'Alignment of Image in Single Post/Page', 'business-click' ),
             'section'               => 'business-click-layout-options',
             'type'                  => 'select',
             'choices' => array(
@@ -73,7 +73,7 @@ $business_click_settings_controls['business-click-single-post-image-align'] =
                 'no-image'  => esc_html__( 'No image', 'business-click' )
             ),
             'priority'              => 40,
-            'description'           =>  esc_html__( 'Please note that this setting can be override from individual post/page', 'business-click' ),
+            'description'           =>  esc_html__( 'Please note that this setting can be overridden by individual post/page settings', 'business-click' ),
         )
     );
 

@@ -21,7 +21,7 @@
 
 	function nav_padding_right() {
 		var padding_right = 0;
-		if($('#evt-buy-btn').width() != '') {
+		if($('#evt-buy-btn').width() != null) {
 			padding_right = $('#evt-buy-btn').width() + 40 + 20 + 'px';
 		}
 		$('nav#site-navigation').css({'padding-right': padding_right});
