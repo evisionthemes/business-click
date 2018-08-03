@@ -2433,7 +2433,7 @@ footer.site-footer .widget_nav_menu ul li {
 }
 @media (min-width: 575px) {
   #evt-banner .evt-banner-slider ul.slick-dots {
-    display: block;
+    display: inline-block !important;
     position: absolute;
     bottom: 20px;
     right: 50px;
