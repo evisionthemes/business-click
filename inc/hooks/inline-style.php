@@ -121,6 +121,9 @@ if( ! function_exists( 'business_click_inline_style' ) ) :
         a:hover, .evt-item article .entry-title a:hover, a.readmore, .readmore, .breadcrumbs .trail-items .trail-item a, nav#site-navigation ul li:hover > a, nav#site-navigation ul#menu > li.current-menu-item > a, nav#site-navigation ul.nav-menu > li.current-menu-item > a, nav#site-navigation ul.menu > li.current-menu-item > a, .slick-slider .slick-arrow:hover, .woocommerce ul.products li.product .price, .woocommerce div.product p.price, .woocommerce div.product span.price, .woocommerce-message::before, .woocommerce-info::before, .woocommerce form .form-row .required, .evt-head-search-toggler:hover i, body.head-search-active .evt-head-search-toggler .fa-search, #evt-top-header .evt-head-search-toggler:hover, body.home.transparent-header:not(.small-header) nav#site-navigation ul#menu > li > a:hover, body.home.transparent-header:not(.small-header) nav#site-navigation ul.nav-menu > li > a:hover, body.home.transparent-header:not(.small-header) nav#site-navigation ul.menu > li > a:hover, body.home.transparent-header:not(.small-header) nav#site-navigation ul a:hover, body.home.transparent-header:not(.small-header) nav#site-navigation ul#menu > li.current-menu-item > a, body.home.transparent-header:not(.small-header) nav#site-navigation ul.nav-menu > li.current-menu-item > a, body.home.transparent-header:not(.small-header) nav#site-navigation ul.menu > li.current-menu-item > a, #evt-portfolio #filters button.is-checked, #evt-team .evt-box-item-wrap .evt-box-caption .evt-designation {
           color: <?php echo esc_attr( $business_click_primary_color_option );?>;
         }
+        body.home.transparent-header:not(.small-header) nav#site-navigation ul.nav-menu > li.current-menu-item > a {
+            color: #ffffff;
+        }  
         .readmore:hover, a.readmore:hover {
             background: none;
         }
