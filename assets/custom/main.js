@@ -21,7 +21,7 @@
 
 	function nav_padding_right() {
 		var padding_right = 0;
-		if($('#evt-buy-btn').width() != '') {
+		if($('#evt-buy-btn').width() != null) {
 			padding_right = $('#evt-buy-btn').width() + 40 + 20 + 'px';
 		}
 		$('nav#site-navigation').css({'padding-right': padding_right});
@@ -35,9 +35,6 @@
 	$(window).load(function() {
 		// fixed header, boxed for archive page, enable-scroll-animations
 		$('body').addClass('fixed-header  logo-left hide-header-on-scroll-down enable-scroll-animations');
-
-		// preloader
-		$('#evt-preloader').hide();
 
 		// evt mobile menu
 		$('#site-navigation').evtMobileMenu ();
@@ -191,6 +188,9 @@
 			    lastScrollTop = st;
 			}
 		}
+
+		// preloader
+		$('#evt-preloader').hide();
 		
 	});
 })(jQuery);

@@ -207,7 +207,7 @@ add_action( 'business_click_action_before_header', 'business_click_skip_to_conte
        global $business_click_customizer_all_values; 
        ?>
         <!-- preloader -->
-        <div id="evt-preloader" style="display: none;">
+        <div id="evt-preloader" style="">
             <div id="status" style=""><i class="fa fa-spinner fa-spin"></i></div>
         </div>
 

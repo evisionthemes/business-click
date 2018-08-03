@@ -108,7 +108,7 @@ if( !function_exists('testimonial_section') ) :
 					<div class="container">
 						<h2 class="widget-title evision-animate slideInDown"><?php echo esc_html($testimonila_section_title);?></h2>	
 					
-						<div class="row">
+						<div class="row justify-content-center justify-content-lg-start">
 							<div class="col-md-10 col-lg-8">
 								<div class="evt-testimonials-slider evt-carousel slidesToShow-one evision-animate fadeIn">
 									<?php 
