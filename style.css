@@ -2620,13 +2620,14 @@ body.admin-bar.logo-center.big-logo-disable #big-logo-site-nav {
 @media screen and (max-width: 782px) {
   body.admin-bar.fixed-header .site-header,
   body.admin-bar.logo-center.big-logo-disable #big-logo-site-nav {
-    top: 0;
+    top: 46px;
   }
 }
 @media screen and (max-width: 600px) {
   body.admin-bar.fixed-header .site-header,
   body.admin-bar.logo-center.big-logo-disable #big-logo-site-nav {
     position: absolute;
+    top: 0;
   }
 }
 
