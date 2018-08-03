@@ -2620,7 +2620,7 @@ body.admin-bar.logo-center.big-logo-disable #big-logo-site-nav {
 @media screen and (max-width: 782px) {
   body.admin-bar.fixed-header .site-header,
   body.admin-bar.logo-center.big-logo-disable #big-logo-site-nav {
-    top: 46px;
+    top: 0;
   }
 }
 @media screen and (max-width: 600px) {
@@ -2643,6 +2643,11 @@ body.admin-bar.search .readmore {
   margin-bottom: 10px;
 }
 
+@media screen and (max-width: 600px) {
+  html body.admin-bar {
+    position: fixed;
+  }
+}
 .image-full {
   margin-bottom: 15px;
 }
@@ -3376,6 +3381,11 @@ body.logo-left.small-header .evt-header-row .evt-logo-manage .site-branding .sit
   column-count: 1;
 }
 
+@media (max-width: 768px) {
+  #evt-why-us {
+    text-align: center;
+  }
+}
 #evt-why-us figure {
   max-height: 360px;
   overflow: hidden;
@@ -3677,6 +3687,49 @@ body.error404 #evt-page-banner .evt-banner-image .evt-banner-caption .search-for
   height: 36px;
 }
 
+@media (max-width: 575px) {
+  .home .widget-title {
+    text-align: center;
+    padding-right: 0;
+  }
+
+  .home .widget-title:before {
+    left: 50%;
+    margin-left: -35px;
+  }
+
+  .home .site-footer .widget-title {
+    text-align: left;
+  }
+
+  .home .site-footer .widget-title:before {
+    left: 0;
+    margin-left: 0px;
+  }
+}
+@media (max-width: 991px) {
+  #evt-featured .slick-slider .slick-arrow, #evt-testimonials .slick-slider .slick-arrow, #evt-blog .slick-slider .slick-arrow {
+    top: auto;
+    bottom: -40px;
+  }
+  #evt-featured .slick-slider .slick-arrow.slick-prev, #evt-testimonials .slick-slider .slick-arrow.slick-prev, #evt-blog .slick-slider .slick-arrow.slick-prev {
+    left: 50%;
+    right: auto;
+    margin-left: -35px;
+  }
+  #evt-featured .slick-slider .slick-arrow.slick-next, #evt-testimonials .slick-slider .slick-arrow.slick-next, #evt-blog .slick-slider .slick-arrow.slick-next {
+    margin-right: -35px;
+    right: 50%;
+  }
+
+  .evt-testimonials-slider {
+    margin-bottom: 20px;
+  }
+
+  #evt-testimonials .slick-slider.evt-testimonials-slider .slick-arrow {
+    bottom: -55px;
+  }
+}
 .hentry,
 .entry-content {
   margin: 0;
