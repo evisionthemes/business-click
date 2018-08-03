@@ -3296,11 +3296,6 @@ body.small-header #evt-top-header {
   height: 0;
 }
 
-body.logo-left.small-header .evt-header-row .evt-logo-manage .site-branding, body.logo-right.small-header .evt-header-row .evt-logo-manage .site-branding {
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
 body.logo-left.small-header .evt-header-row .evt-logo-manage .site-branding .site-description, body.logo-right.small-header .evt-header-row .evt-logo-manage .site-branding .site-description {
   display: none;
 }
