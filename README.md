@@ -28,7 +28,7 @@ You can fork and contribute to Business Click by visiting [our public repo on Gi
 4. In your admin panel, navigate to **Appearance > Customize**.
 5. Put the finishing touches on your website by adding a logo and custom colors.  
 
-Check full documentation at [https://tinyurl.com/ybtq6jzu](https://tinyurl.com/ybtq6jzu)  
+Check full documentation at [https://evisionthemes.com/product/business-click/](https://evisionthemes.com/product/business-click/)  
 
 For more features, [Upgrade to Pro](https://evisionthemes.com/product/business-click-pro/)
 
