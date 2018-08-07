@@ -10,6 +10,7 @@
 
 Business Click is a modern and flexible WordPress Business Theme that suits for agency, blog, business, corporate, eCommerce, magazines, portfolios and many more.  
 
+
 ## Description ##
 
 Business Click is a modern and flexible WordPress Business Theme that suits for agency, blog, business, corporate, eCommerce, magazines, portfolios and many more. It's created by using the latest Bootstrap Framework with HTML5 and CSS3 techniques in accordance with the latest WordPress Coding Standards. Suitable all popular mobile devices and tablets. In order to create a professional website, you can easily customize the sections like Theme Customizer, Custom Container width options, Sticky Primary Menu - Hide Menu on Scroll Down, Top header bar,  Featured Slider, Services, About us, Testimonial, Call to Action,  News & Updates, Portfolio, Team, Multiple Footer Widgets,  drag and drop widgets, Social Links, Custom Headers, Navigation, Contact us, Subscribe section, Font options,  and many more. This creative theme supports popular plugins like Jetpack, WP page navi, Contact form 7, Elementor page builder, W3 Total Cache, Social Pug, All in One SEO Pack, MailChimp, WooCommerce etc. If you are a non-techy person, you can easily modify the theme and design using live customizer in Dashboard > Appearance> Customize. You can change the color and the font of each and every text, link in the theme. We won't bind you to settle for a dull background; you can choose a color or a cool image instead. This theme is translation ready. Check out Demo at [https://demo.evisionthemes.com/business-click/](https://demo.evisionthemes.com/business-click/) . For support: [https://evisionthemes.com/supports](https://evisionthemes.com/supports)  
@@ -18,15 +19,18 @@ Business Click is a modern and flexible WordPress Business Theme that suits for 
 
 You can fork and contribute to Business Click by visiting [our public repo on GitHub](https://github.com/evisionthemes/business-click).
 
+
 ## Installation ##
 
 1. In your admin panel, navigate to **Appearance > Themes** and click the **Add New** button.
-2. Click on Upload Theme. Select the business-click.zip file.
-3. Click the Install Now button and then **Activate** button to start using Business Click on your website.
+2. Click on Upload Theme. Select the **business-click.zip** file.
+3. Click the **Install Now** button and then click the **Activate** button to start using Business Click on your website.
 4. In your admin panel, navigate to **Appearance > Customize**.
 5. Put the finishing touches on your website by adding a logo and custom colors.  
 
 Check full documentation at [https://tinyurl.com/ybtq6jzu](https://tinyurl.com/ybtq6jzu)  
+
+For more features, [Upgrade to Pro](https://evisionthemes.com/product/business-click-pro/)
 
 
 ## Frequently Asked Questions ##
