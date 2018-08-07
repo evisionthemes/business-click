@@ -9,11 +9,12 @@ Stable tag: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
 
-A starter theme called business-click.
+Business Click is a modern and flexible WordPress Business Theme that suits for agency, blog, business, corporate, eCommerce, magazines, portfolios and many more.
 
 == Description ==
 
 Business Click is a modern and flexible WordPress Business Theme that suits for agency, blog, business, corporate, eCommerce, magazines, portfolios and many more. It’s created by using the latest Bootstrap Framework with HTML5 and CSS3 techniques in accordance with the latest WordPress Coding Standards. Suitable all popular mobile devices and tablets. In order to create a professional website, you can easily customize the sections like Theme Customizer, Custom Container width options, Sticky Primary Menu - Hide Menu on Scroll Down, Top header bar,  Featured Slider, Services, About us, Testimonial, Call to Action,  News & Updates, Portfolio, Team, Multiple Footer Widgets,  drag and drop widgets, Social Links, Custom Headers, Navigation, Contact us, Subscribe section, Font options,  and many more. This creative theme supports popular plugins like Jetpack, WP page navi, Contact form 7, Elementor page builder, W3 Total Cache, Social Pug, All in One SEO Pack, MailChimp, WooCommerce etc. If you are a non-techy person, you can easily modify the theme and design using live customizer in Dashboard > Appearance> Customize. You can change the color and the font of each and every text, link in the theme. We won’t bind you to settle for a dull background; you can choose a color or a cool image instead. This theme is translation ready. Check out Theme Instructions at http://doc.evisionthemes.com/business-click and Demo att https://demo.evisionthemes.com/business-click/ . For support: https://evisionthemes.com/supports
+
 
 == Installation ==
 
@@ -21,23 +22,20 @@ Business Click is a modern and flexible WordPress Business Theme that suits for 
 2. Click Upload Theme and Choose File, then select the theme's .zip file. Click Install Now.
 3. Click Activate to use your new theme right away.
 
+
 == Frequently Asked Questions ==
 
 = Does this theme support any plugins? =
 
-business-click includes support for Infinite Scroll in Jetpack.
+Business Click includes support for Infinite Scroll in Jetpack.
 
-== Changelog ==
-
-= 1.0 - May 12 2015 =
-* Initial release
 
 == Credits ==
 
 Underscores:
 Author: 2012-2017 Automattic, Inc.
 Source: http://underscores.me
-License: GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
+License: [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
 
 normalize:
 Author: 2012-2016 Nicolas Gallagher and Jonathan Neal
