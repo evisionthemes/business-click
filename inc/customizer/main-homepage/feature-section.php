@@ -6,8 +6,8 @@ global $business_click_repeated_settings_controls;
 global $business_click_customizer_defaults;
 
 /*default values*/
-$business_click_customizer_defaults['business-click-feature-enable']					= 0;
-$business_click_customizer_defaults['business-click-feature-section-title']				= esc_html__('Awesome Features','business-click');
+$business_click_customizer_defaults['business-click-feature-enable']					= 1;
+$business_click_customizer_defaults['business-click-feature-section-title']				= '';
 $business_click_customizer_defaults['business-click-feature-excerpt-length']			= 30;
 $business_click_customizer_defaults['business-click-feature-from-page']					= 0;
 $business_click_customizer_defaults['business-click-feature-page-icon']					= '';

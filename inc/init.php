@@ -21,7 +21,7 @@ require trailingslashit(get_template_directory() ).'/inc/hooks/blog-section.php'
 
 require trailingslashit(get_template_directory() ).'/inc/hooks/contact-us.php';
 
-require trailingslashit(get_template_directory() ) .'/inc/hooks/customizer-link.php';
+// require trailingslashit(get_template_directory() ) .'/inc/hooks/customizer-link.php';
 
 require trailingslashit(get_template_directory() ) . '/inc/hooks/inline-style.php';
 

@@ -15,7 +15,7 @@ if ( !function_exists('business_click_feature_slider_array') ) :
       $slider_excerpt_length      = absint($business_click_customizer_all_values['business-click-excerpt-length']);
       // $feature_slideer_array      = array();
 
-      $feature_slideer_array[0]['business-click-feature-title']     = '';
+      $feature_slideer_array[0]['business-click-feature-title']     = esc_html('Featured Slider','business-click');
       $feature_slideer_array[0]['business-click-feature-content']   = '';
       $feature_slideer_array[0]['business-click-feature-image']     = '';
       $feature_slideer_array[0]['business-click-feature-url']       = '';

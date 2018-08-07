@@ -5,7 +5,7 @@ global $business_click_repeated_settings_controls;
 global $business_click_customizer_defaults;
 
 /*default value*/
-$business_click_customizer_defaults['business-click-enable-about-us']   			= 0;
+$business_click_customizer_defaults['business-click-enable-about-us']   			= 1;
 $business_click_customizer_defaults['business-clcik-excerpt-length']				= 30;
 $business_click_customizer_defaults['business-click-about-us-select-page']			= 0;
 $business_click_customizer_defaults['business-click-about-us-button-text']			= esc_html__('Details','business-click');

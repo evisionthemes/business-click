@@ -6,10 +6,10 @@ global $business_click_repeated_settings_controls;
 global $business_click_customizer_defaults;
 
 /*defaults value*/
-$business_click_customizer_defaults['business-click-blog-section-enable'] 					= 0;
-$business_click_customizer_defaults['business-click-blog-section-title-text']				= esc_html__('Latest Blog','business-click');
+$business_click_customizer_defaults['business-click-blog-section-enable'] 					= 1;
+$business_click_customizer_defaults['business-click-blog-section-title-text']				= '';
 $business_click_customizer_defaults['business-click-blog-excerpt-length']					= 30;
-$business_click_customizer_defaults['business-click-blog-select-category']					=  0;
+$business_click_customizer_defaults['business-click-blog-select-category']					=  1;
 $business_click_customizer_defaults['business-click-blog-button-text']						= esc_html__('Read More','business-click');
 
 
@@ -27,7 +27,7 @@ $business_click_settings_controls['business-click-blog-section-enable']  = array
 		'default'					=> $business_click_customizer_defaults['business-click-blog-section-enable']
 	),
 	'control' => array(
-		'label'						=> esc_html__('Show Blog Section','business-click'),
+		'label'						=> esc_html__('Show Blog Section ','business-click'),
 		'section'					=> 'business-click-blog-section',
 		'type'						=> 'checkbox',
 		'priority'					=> 10,

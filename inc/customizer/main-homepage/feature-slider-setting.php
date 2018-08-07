@@ -5,7 +5,7 @@ global $business_click_repeated_settings_controls;
 global $business_click_customizer_defaults;
 
 /*defaults value*/
-$business_click_customizer_defaults['business-click-enbale-slider']                         = 0;
+$business_click_customizer_defaults['business-click-enbale-slider']                         = 1;
 $business_click_customizer_defaults['business-click-excerpt-length']                        = 30;
 $business_click_customizer_defaults['business-click-select-from-page']                      = 0;
 $business_click_customizer_defaults['business-click-slider-button-text']                    = esc_html__('Learn more','business-click');
