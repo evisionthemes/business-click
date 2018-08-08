@@ -317,7 +317,7 @@ add_action( 'business_click_action_before_header', 'business_click_skip_to_conte
                                   $extra_button_url  = esc_url($business_click_customizer_all_values['business-click-link-extra-button']);
                                   // var_dump($extra_button_url);die();
                              ?>
-                                <a href="<?php echo esc_url($extra_button_url); ?>" id="evt-buy-btn" class="btn btn-reverse d-none d-sm-block float-right"><?php echo esc_html($extra_button_name) ?></a>
+                                <a href="<?php echo esc_url($extra_button_url); ?>" id="evt-buy-btn" class="btn btn-reverse d-none d-sm-block float-right" target="_blank"><?php echo esc_html($extra_button_name) ?></a>
                             <?php }?>    
 
                             <button class="menu-toggler" id="menu-icon">
