@@ -41,13 +41,6 @@ do_action( 'business_click_action_before_head' );?>
 	 */
 	do_action( 'business_click_action_after_wp_head' );
 	?>
-	<style>
-	@media (max-width: 600px) {
-        html {
-            margin-top: 0 !important;
-        }
-    }
-    </style>
 </head>
 
 <body <?php body_class(); ?>>

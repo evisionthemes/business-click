@@ -3912,7 +3912,6 @@ body.dark-theme .content_countdown .time_description {
 }
 
 body {
-  position: relative;
   right: 0;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
