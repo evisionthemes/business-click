@@ -16,7 +16,7 @@
 <!-- 7. WordPress will then import each of the posts, pages, comments, categories, etc. -->
 <!--    contained in this file into your site. -->
 
-<!-- generator="WordPress/4.9.5" created="2018-08-08 03:58" -->
+<!-- generator="WordPress/4.9.5" created="2018-08-08 09:00" -->
 <rss version="2.0"
 	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
 	xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -29,7 +29,7 @@
 	<title>check-wordpress</title>
 	<link>http://localhost/check-wordpress</link>
 	<description>Just another WordPress site</description>
-	<pubDate>Wed, 08 Aug 2018 03:58:26 +0000</pubDate>
+	<pubDate>Wed, 08 Aug 2018 09:00:46 +0000</pubDate>
 	<language>en-US</language>
 	<wp:wxr_version>1.2</wp:wxr_version>
 	<wp:base_site_url>http://localhost/check-wordpress</wp:base_site_url>
@@ -1861,6 +1861,7 @@ As a new WordPress user, you should go to <a href="http://localhost/check-wordpr
 		<category domain="category" nicename="et-post"><![CDATA[ET-Post]]></category>
 		<category domain="post_tag" nicename="f"><![CDATA[f]]></category>
 		<category domain="post_tag" nicename="s"><![CDATA[s]]></category>
+		<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
 			<wp:meta_value><![CDATA[1]]></wp:meta_value>

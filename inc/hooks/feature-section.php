@@ -12,13 +12,6 @@ if( !function_exists('business_click_feature_array') ) :
 		global $business_click_customizer_all_values;
 		$feasute_single_number_words 	= absint($business_click_customizer_all_values['business-click-feature-excerpt-length']);
 		$feature_page_array 			= array();
-
-		$feature_page_array[1]['feature-title']			= '';
-		$feature_page_array[1]['feature-content']		= '';
-		$feature_page_array[1]['feature-icons-ids']		= '';
-		$feature_page_array[1]['feature-image']     	= '';
-		$feature_page_array[1]['feature-url']			= '';
-
 		$repeated_page		= array('feature-page-ids');
 		$repeated_icon		= array('feature-icons-ids');
 
@@ -54,25 +47,14 @@ if( !function_exists('business_click_feature_array') ) :
 	                    $thumb = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'latebusiness-click-image' );
 	                    $th_image = $thumb['0'];
 	                }
-					$feature_page_array[$i]['feature-title']				= get_the_title();
-					if( has_excerpt() )
-					{
-						$feature_page_array[$i]['feature-content']			= the_excerpt();
-					}
-					else
-					{
-						$feature_page_array[$i]['feature-content']			= business_click_words_count($feasute_single_number_words,get_the_content());
-					}
-					$feature_page_array[$i]['feature-url']					= esc_url(get_the_permalink());
-					$feature_page_array[$i]['feature-image']				= $th_image;
+	                $feature_page_array[] = array(
+	                	'feature-title'				=> get_the_title(),
+	                	'feature-content' 			=> has_excerpt() ? the_excerpt() : business_click_words_count($feasute_single_number_words,get_the_content() ) ,
+	                	'feature-url'				=> esc_url(get_the_permalink()),
+	                	'feature-image'				=> $th_image,
+	                	'feature-icons-ids'			=> isset($feature_post_icon[$i]['feature-icons-ids']) ? $feature_post_icon[$i]['feature-icons-ids'] : ''
+	                );
 
-					if( isset($feature_post_icon[$i]['feature-icons-ids']) ){
-						$feature_page_array[$i]['feature-icons-ids']		= $feature_post_icon[$i]['feature-icons-ids'];
-					}
-					else
-					{
-						$feature_page_array[$i]['feature-icons-ids']		= '';
-					}
 					$i++;
 				endwhile;
 				wp_reset_postdata();
@@ -95,76 +77,76 @@ if ( !function_exists('business_click_feature') ) :
   	global $business_click_customizer_all_values;
 
   	if (  ! $business_click_customizer_all_values['business-click-feature-enable'] ){
-  		// return null;
+  		return null;
   	}
   	$feature_select_of_page  = $business_click_customizer_all_values['business-click-feature-from-page'];
   	$feature_post_page_array = business_click_feature_array($feature_select_of_page);
   	if( is_array($feature_post_page_array)  ){
   		$feature_section_title 				= esc_html($business_click_customizer_all_values['business-click-feature-section-title']);
   		$feature_button_text					= esc_html($business_click_customizer_all_values['business-click-feature-button-text']);?>
-
+  			<?php if(!empty($feature_section_title) || count($feature_post_page_array) > 0 ) { ?>
   			<section id="evt-featured" class="text-center">	
 					<div class="container">
 						<?php if(!empty($feature_section_title)) { ?>
 							<h2 class="widget-title evision-animate slideInDown"><?php echo esc_html($feature_section_title);?></h2>
 						<?php } ?>	
 						<!-- .evt-carousel -->
-						
-							<div class="row evt-featured-slider evt-carousel justify-content-center evision-animate fadeIn">	
-								<?php
-								$i = 1;
-								foreach( $feature_post_page_array as $feature_post_page_arrays  ){
-									
-									if ( empty($feature_post_page_arrays['feature-image'] ))
-						            {
-						              $feature_sec_image = '';
-						            }
-						            else
-						            {
-						              $feature_sec_image = $feature_post_page_arrays['feature-image'];
-						            }
-						            // var_dump($feature_sec_image);die();
-								?>
-								<?php if(!empty($feature_post_page_arrays['feature-icons-ids']) || !empty($feature_post_page_arrays['feature-title']) || !empty($feature_post_page_arrays['feature-content']) || !empty($feature_button_text) ) {?>			
-								<div class="col-12 col-sm-6 col-lg-4 evt-featured-item-wrap evision-animate">
-									<div class="evt-featured-item">
+							<?php if(count($feature_post_page_array) > 0 ) { ?>
+								<div class="row evt-featured-slider evt-carousel justify-content-center evision-animate fadeIn">	
+									<?php
+									$i = 1;
+									foreach( $feature_post_page_array as $feature_post_page_arrays  ){
 										
-										<?php if(($feature_post_page_arrays['feature-icons-ids']  != null)  ) { ?>
-											<div class="evt-featured-icon">
-											  	<i class="fa <?php echo esc_attr($feature_post_page_arrays['feature-icons-ids'])?>"></i>
-											</div>
-										<?php }
-										else{ ?>
-											<div class="evt-featured-img">
-											  	<img src="<?php echo esc_url($feature_sec_image);?>">
-											</div>
-										<?php } ?>
+										if ( empty($feature_post_page_arrays['feature-image'] ))
+							            {
+							              $feature_sec_image = '';
+							            }
+							            else
+							            {
+							              $feature_sec_image = $feature_post_page_arrays['feature-image'];
+							            }
+							            // var_dump($feature_sec_image);die();
+									?>
+									<?php if(!empty($feature_post_page_arrays['feature-icons-ids']) || !empty($feature_post_page_arrays['feature-title']) || !empty($feature_post_page_arrays['feature-content']) || !empty($feature_button_text) ) {?>			
+									<div class="col-12 col-sm-6 col-lg-4 evt-featured-item-wrap evision-animate">
+										<div class="evt-featured-item">
 											
-										<div class="evt-featured-caption">
-											<?php if(  !empty($feature_post_page_arrays['feature-title']) ) { ?>
-												<h2 class="evt-featured-title mb-3 mt-2"><a href="<?php echo esc_url($feature_post_page_arrays['feature-url']);?>"><?php echo esc_html($feature_post_page_arrays['feature-title']);?></a></h2>
+											<?php if(($feature_post_page_arrays['feature-icons-ids']  != '')  ) { ?>
+												<div class="evt-featured-icon">
+												  	<i class="fa <?php echo esc_attr($feature_post_page_arrays['feature-icons-ids'])?>"></i>
+												</div>
+											<?php }
+											else{ ?>
+												<div class="evt-featured-img">
+												  	<img src="<?php echo esc_url($feature_sec_image);?>">
+												</div>
 											<?php } ?>
-											<?php if(  !empty($feature_post_page_arrays['feature-content']) ) { ?>	
-												<p><?php echo wp_kses_post($feature_post_page_arrays['feature-content']);?></p>
-											<?php } ?>
-											<?php if( !empty($feature_button_text)  ) { ?>
-											<a href="<?php echo esc_url($feature_post_page_arrays['feature-url']);?>" class="readmore"><?php echo esc_html($feature_button_text);?></a>
-											<?php } ?>
+												
+											<div class="evt-featured-caption">
+												<?php if(  !empty($feature_post_page_arrays['feature-title']) ) { ?>
+													<h2 class="evt-featured-title mb-3 mt-2"><a href="<?php echo esc_url($feature_post_page_arrays['feature-url']);?>"><?php echo esc_html($feature_post_page_arrays['feature-title']);?></a></h2>
+												<?php } ?>
+												<?php if(  !empty($feature_post_page_arrays['feature-content']) ) { ?>	
+													<p><?php echo wp_kses_post($feature_post_page_arrays['feature-content']);?></p>
+												<?php } ?>
+												<?php if( !empty($feature_button_text)  ) { ?>
+												<a href="<?php echo esc_url($feature_post_page_arrays['feature-url']);?>" class="readmore"><?php echo esc_html($feature_button_text);?></a>
+												<?php } ?>
+											</div>
 										</div>
+										
 									</div>
+									<?php } ?>		
+									<?php 
 									
+									$i++;
+									}  ?>	  
 								</div>
-								<?php } ?>		
-								<?php 
-								
-								$i++;
-								}  ?>	  
-							</div>
-							
+							<?php } ?>
 					</div>
 				</section>
-
-  	<?php }
+			<?php }		
+  	 	}
   }
 endif;
 

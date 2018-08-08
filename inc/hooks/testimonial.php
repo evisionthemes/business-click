@@ -13,18 +13,12 @@ if( !function_exists('testimonial_arrays') ) :
 		$testimonila_number_of_word					= absint( $business_click_customizer_all_values['business-click-testimonial-excerpt-length'] );
 
 		$testimonial_arrays	= array();
-		$testimonial_arrays[1]['testimonial-title']				= '';
-		$testimonial_arrays[1]['testimonial-content']			= '';
-		$testimonial_arrays[1]['testimonial-image']				= '';
-		$testimonial_arrays[1]['testimonial-url']				= '';
-		$testimonial_arrays[1]['testimonial-designation-ids']	= '';
 		$testimonial_page_id			= array();
 		$reapeted_page	  				= array('testimonial-page-ids');
 		$repeated_designation 			= array('testimonial-designation-ids');
 		$testimonial_args 				= array();
 		$testimonial_post_page 			= evision_customizer_get_repeated_all_value(2,$reapeted_page);
 		$testimonial_post_designation 	= evision_customizer_get_repeated_all_value(2,$repeated_designation);
-		// var_dump($testimonial_post_designation);die('hello');
 
 		if(  null != $testimonial_post_page ){
 			foreach($testimonial_post_page as $testimonial_post_pages){
@@ -50,26 +44,21 @@ if( !function_exists('testimonial_arrays') ) :
 				$i = 1;
 				while( $testimonial_ars_query->have_posts() ) :
 					$testimonial_ars_query->the_post();
-					$th_image ='';
+					$th_image = false;
 		            if(has_post_thumbnail()){
 	                    $thumb = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'thumbnail' );
 	                    $th_image = $thumb['0'];
 		            }
-		            $testimonial_arrays[$i]['testimonial-title']			= get_the_title();
-		            if( has_excerpt()  ){
-		            	$testimonial_arrays[$i]['testimonial-content']		= get_the_excerpt();	
-		            }
-		            else{
-		            	$testimonial_arrays[$i]['testimonial-content']		= business_click_words_count($testimonila_number_of_word,get_the_content() );
-		            }
-		            $testimonial_arrays[$i]['testimonial-url']				= esc_url(get_the_permalink());
-		            $testimonial_arrays[$i]['testimonial-image']			= $th_image;
-		            if( isset($testimonial_post_designation[$i]['testimonial-designation-ids']) ){
-		            	$testimonial_arrays[$i]['testimonial-designation-ids']	= $testimonial_post_designation[$i]['testimonial-designation-ids'];
-		            }
-		            else{
-		            	$testimonial_arrays[$i]['testimonial-designation-ids']	= 'C.E.O';
-		            }
+
+		            $testimonial_arrays[] = array(
+		            	'testimonial-title' 			=> get_the_title(),
+		            	'testimonial-content' 			=> has_excerpt() ? get_the_excerpt() : business_click_words_count($testimonila_number_of_word,get_the_content() ) ,
+		            	'testimonial-url' 				=> esc_url(get_the_permalink()),
+		            	'testimonial-image' 			=> $th_image,
+		            	'testimonial-designation-ids' 	=> isset( $testimonial_post_designation[$i]['testimonial-designation-ids'] ) ?  $testimonial_post_designation[$i]['testimonial-designation-ids'] : '',
+		            	
+		            );
+
 		            $i++;
 				endwhile;
 				wp_reset_postdata();
@@ -92,7 +81,7 @@ if( !function_exists('testimonial_section') ) :
 		global $business_click_customizer_all_values;
 
 		if( ! $business_click_customizer_all_values['business-click-testimonila-enable'] ){
-			// return null;
+			return null;
 		}
 		$testimonial_select_post					= esc_html($business_click_customizer_all_values['business-click-testimonial-select-for-page'] );
 		$tesimonial_pages_array						= testimonial_arrays($testimonial_select_post);		
@@ -103,54 +92,59 @@ if( !function_exists('testimonial_section') ) :
 			$testimonila_background_image			= esc_url($business_click_customizer_all_values['business-click-testimonial-background-image'] );
 			
 			?>
-			<section id="evt-testimonials" class="img-cover dark-background" style="background-image: url('<?php echo esc_url($testimonila_background_image);?>');">	
-				<div class="evt-img-overlay">
-					<div class="container">
-						<h2 class="widget-title evision-animate slideInDown"><?php echo esc_html($testimonila_section_title);?></h2>	
-					
-						<div class="row justify-content-center justify-content-lg-start">
-							<div class="col-md-10 col-lg-8">
-								<div class="evt-testimonials-slider evt-carousel slidesToShow-one evision-animate fadeIn">
-									<?php 
-									$i = 1;
-									foreach( $tesimonial_pages_array as $tesimonial_pages_arrays ){
-										
-										if ( !empty($tesimonial_pages_arrays['testimonial-image'] )){
-							              $testimonial_image = $tesimonial_pages_arrays['testimonial-image'];
-							            }
-							            else{
-							              $testimonial_image = '';
-							            } ?>
-							            <?php if( !empty($tesimonial_pages_arrays['testimonial-image']) || !empty($tesimonial_pages_arrays['testimonial-content']) || !empty($tesimonial_pages_arrays['testimonial-title']) || !empty($tesimonial_pages_arrays['testimonial-designation-ids'])) { ?>
-											<div class="evt-box-item-wrap">
-												<div class="evt-box-item">
-													
-													<div class="evt-box-caption text-left">
-														<!-- <h2 class="evt-box-title mb-3 mt-2"><a href="#!">Photography tips</a></h2> -->
+			<?php if( '' != $testimonila_section_title || count( $tesimonial_pages_array ) > 0 ) { ?>			
+				<section id="evt-testimonials" class="img-cover dark-background" style="background-image: url('<?php echo esc_url($testimonila_background_image);?>');">	
+					<div class="evt-img-overlay">
+						<div class="container">
+							<h2 class="widget-title evision-animate slideInDown"><?php echo esc_html($testimonila_section_title);?></h2>	
+						<?php if( count( $tesimonial_pages_array ) > 0 ) {?>
+							<div class="row justify-content-center justify-content-lg-start">
+								<div class="col-md-10 col-lg-8">
+									<div class="evt-testimonials-slider evt-carousel slidesToShow-one evision-animate fadeIn">
+										<?php 
+										$i = 1;
+										foreach( $tesimonial_pages_array as $tesimonial_pages_arrays ){
+											
+											
+											if ( !empty($tesimonial_pages_arrays['testimonial-image'] )){
+								              $testimonial_image = $tesimonial_pages_arrays['testimonial-image'];
+								            }
+								            else{
+								              $testimonial_image = '';
+								            } ?>
+								            <?php if( !empty($tesimonial_pages_arrays['testimonial-image']) || !empty($tesimonial_pages_arrays['testimonial-content']) || !empty($tesimonial_pages_arrays['testimonial-title']) || !empty($tesimonial_pages_arrays['testimonial-designation-ids'])) { ?>
+												<div class="evt-box-item-wrap">
+													<div class="evt-box-item">
+														
+														<div class="evt-box-caption text-left">
+															<!-- <h2 class="evt-box-title mb-3 mt-2"><a href="#!">Photography tips</a></h2> -->
 
-														<p><?php echo wp_kses_post($tesimonial_pages_arrays['testimonial-content']); ?></p>
-														<div class="evt-testimonials-author">
-															<div class="profile-img">
-																<img src="<?php echo esc_url($testimonial_image);?>">
-															</div>	
-															<div class="profile-info">
-																<h3 class="profile-name"><?php echo esc_html($tesimonial_pages_arrays['testimonial-title']);?></h3>	
-																<p class="designation"><?php echo esc_html($tesimonial_pages_arrays['testimonial-designation-ids']); ?></p>
+															<p><?php echo wp_kses_post($tesimonial_pages_arrays['testimonial-content']); ?></p>
+															<div class="evt-testimonials-author">
+																<div class="profile-img">
+																	<img src="<?php echo esc_url($testimonial_image);?>">
+																</div>	
+																<div class="profile-info">
+																	<h3 class="profile-name"><?php echo esc_html($tesimonial_pages_arrays['testimonial-title']);?></h3>	
+																	<p class="designation"><?php echo esc_html($tesimonial_pages_arrays['testimonial-designation-ids']); ?></p>
+																</div>
 															</div>
 														</div>
 													</div>
 												</div>
-											</div>
-											<?php } ?>
-										<?php
-										$i++;
-								    } ?>
+												<?php } ?>
+											<?php
+											$i++;
+									    } ?>
+									</div>
 								</div>
 							</div>
+							<?php } ?>
 						</div>
 					</div>
-				</div>
-			</section>
+				</section>
+			<?php } ?>
+
 		<?php }
 	}
 endif;
