@@ -1,6 +1,6 @@
 # Business Click
 
-**Contributors:** [evisionthemes](https://github.com/evisionthemes/), [nikeshulak](https://github.com/nikeshulak/), [kabirajlamichhane](https://github.com/kabirajlamichhane)  
+**Contributors:** [evisionthemes](https://github.com/evisionthemes/)  
 **Tags:**              [custom-background](https://wordpress.org/themes/tags/custom-background/), [custom-logo](https://wordpress.org/themes/tags/custom-logo/), [custom-menu](https://wordpress.org/themes/tags/custom-menu/), [featured-images](https://wordpress.org/themes/tags/featured-images/), [threaded-comments](https://wordpress.org/themes/tags/threaded-comments/), [translation-ready](https://wordpress.org/themes/tags/translation-ready/), [left-sidebar](https://wordpress.org/themes/tags/left-sidebar/), [right-sidebar](https://wordpress.org/themes/tags/right-sidebar), [blog](https://wordpress.org/themes/tags/blog/), [e-commerce](https://wordpress.org/themes/tags/e-commerce/), [theme-options](https://wordpress.org/themes/tags/theme-options/), [custom-colors](https://wordpress.org/themes/tags/custom-colors/), [rtl-language-support](https://wordpress.org/themes/tags/rtl-language-support/), [full-width-template](https://wordpress.org/themes/tags/full-width-template/), [one-column](https://wordpress.org/themes/tags/one-column/), [grid-layout](https://wordpress.org/themes/tags/grid-layout/), [footer-widgets](https://wordpress.org/themes/tags/footer-widgets/), [portfolio](https://wordpress.org/themes/tags/portfolio)  
 **Requires at least:** 4.5  
 **Tested up to:**      4.9.7  
