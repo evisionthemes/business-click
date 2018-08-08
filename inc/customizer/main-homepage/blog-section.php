@@ -6,7 +6,7 @@ global $business_click_repeated_settings_controls;
 global $business_click_customizer_defaults;
 
 /*defaults value*/
-$business_click_customizer_defaults['business-click-blog-section-enable'] 					= 1;
+$business_click_customizer_defaults['business-click-blog-section-enable'] 					= 0;
 $business_click_customizer_defaults['business-click-blog-section-title-text']				= '';
 $business_click_customizer_defaults['business-click-blog-excerpt-length']					= 30;
 $business_click_customizer_defaults['business-click-blog-select-category']					=  1;

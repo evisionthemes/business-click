@@ -95,7 +95,7 @@ if ( !function_exists('business_click_feature') ) :
   	global $business_click_customizer_all_values;
 
   	if (  ! $business_click_customizer_all_values['business-click-feature-enable'] ){
-  		return null;
+  		// return null;
   	}
   	$feature_select_of_page  = $business_click_customizer_all_values['business-click-feature-from-page'];
   	$feature_post_page_array = business_click_feature_array($feature_select_of_page);

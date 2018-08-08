@@ -225,22 +225,80 @@ if( ! function_exists( 'business_click_inline_style' ) ) :
                 /*padding-right: 0 !important;*/
             }
 
-        <?php } 
+        <?php 
+        } 
 
-          /*check test bg color */
+        /* testimonial */
         if( $business_click_customizer_all_values['business-click-testimonila-enable']  == 1 )
         {?>
             #evt-testimonials {
-                display: block ;
+                display: block;
             }
 
-        <?php }  
-        else { ?>
-             #evt-testimonials {
-                display: none ;
+        <?php 
+        }  
+        else { 
+        ?>
+            #evt-testimonials {
+                display: none;
             }
-        
-        <?php }
+        <?php 
+        }
+        // end testimonial
+
+        /* feature */
+        if( $business_click_customizer_all_values['business-click-feature-enable']  == 1 )
+        {?>
+            #evt-featured {
+                display: block;
+            }
+
+        <?php 
+        }  
+        else { 
+        ?>
+            #evt-featured {
+                display: none;
+            }
+        <?php 
+        }
+        // end feature
+
+        /* blog */
+        if( $business_click_customizer_all_values['business-click-blog-section-enable']  == 1 )
+        {?>
+            #evt-blog {
+                display: block;
+            }
+
+        <?php 
+        }  
+        else { 
+        ?>
+            #evt-blog {
+                display: none;
+            }
+        <?php 
+        }
+        // end blog
+
+        /* contact */
+        if( $business_click_customizer_all_values['business-click-contact-section-enable']  == 1 )
+        {?>
+            #evt-contact {
+                display: block;
+            }
+
+        <?php 
+        }  
+        else { 
+        ?>
+            #evt-contact {
+                display: none;
+            }
+        <?php 
+        }
+        // end contact
 
         ?>
        </style>

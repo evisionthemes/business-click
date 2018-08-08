@@ -16,7 +16,7 @@ if( !function_exists('contact_us_section') ) :
         $business_click_contact_form		= esc_attr($business_click_customizer_all_values['business-click-contact-section-contact-form-short-code']  );
 
         if(  ! $business_click_customizer_all_values['business-click-contact-section-enable'] ){
-        	return null;
+        	// return null;
         }
 		?>
 		<section id="evt-contact">

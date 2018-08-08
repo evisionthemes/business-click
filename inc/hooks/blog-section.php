@@ -20,7 +20,7 @@ if( !function_exists('business_click_blog') ) :
 		$business_click_button_text			= esc_html( $business_click_customizer_all_values['business-click-blog-button-text'] );
 
 		if(  ! $business_click_customizer_all_values['business-click-blog-section-enable']  ){
-			return null;
+			// return null;
 		} ?>
 		<section id="evt-blog" class="text-center">	
 			<div class="container">

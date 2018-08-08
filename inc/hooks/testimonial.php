@@ -92,7 +92,7 @@ if( !function_exists('testimonial_section') ) :
 		global $business_click_customizer_all_values;
 
 		if( ! $business_click_customizer_all_values['business-click-testimonila-enable'] ){
-			return null;
+			// return null;
 		}
 		$testimonial_select_post					= esc_html($business_click_customizer_all_values['business-click-testimonial-select-for-page'] );
 		$tesimonial_pages_array						= testimonial_arrays($testimonial_select_post);		

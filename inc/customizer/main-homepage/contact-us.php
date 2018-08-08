@@ -5,7 +5,7 @@ global $business_click_repeated_settings_controls;
 global $business_click_customizer_defaults;
 
 /*defaults values*/
-$business_click_customizer_defaults['business-click-contact-section-enable']					= 1;
+$business_click_customizer_defaults['business-click-contact-section-enable']					= 0;
 $business_click_customizer_defaults['business-click-contact-section-title']						= '';
 $business_click_customizer_defaults['business-click-contact-section-contact-form-short-code']	= '';
 
