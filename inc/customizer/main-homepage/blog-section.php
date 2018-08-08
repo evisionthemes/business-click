@@ -77,6 +77,7 @@ $business_click_settings_controls['business-click-blog-select-category']  = arra
 	)
 );
 
+
 /*Button Text*/
 $business_click_settings_controls['business-click-blog-button-text']  = array(
 	'setting' => array(

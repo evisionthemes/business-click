@@ -87,7 +87,7 @@ if (!function_exists('business_click_feature_slider')) :
   global $business_click_customizer_all_values;
   if(  ! $business_click_customizer_all_values['business-click-enbale-slider'] )
   {
-    return null;
+    // return null;
   }
 
   $feature_slide_arrays         = business_click_feature_slider_array();

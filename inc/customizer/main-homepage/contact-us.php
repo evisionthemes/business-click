@@ -6,7 +6,7 @@ global $business_click_customizer_defaults;
 
 /*defaults values*/
 $business_click_customizer_defaults['business-click-contact-section-enable']					= 1;
-$business_click_customizer_defaults['business-click-contact-section-title']						= esc_html__('Stay connected','business-click');
+$business_click_customizer_defaults['business-click-contact-section-title']						= '';
 $business_click_customizer_defaults['business-click-contact-section-contact-form-short-code']	= '';
 
 /*create a section for contct*/

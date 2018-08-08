@@ -227,6 +227,21 @@ if( ! function_exists( 'business_click_inline_style' ) ) :
 
         <?php } 
 
+          /*check test bg color */
+        if( $business_click_customizer_all_values['business-click-testimonila-enable']  == 1 )
+        {?>
+            #evt-testimonials {
+                display: block ;
+            }
+
+        <?php }  
+        else { ?>
+             #evt-testimonials {
+                display: none ;
+            }
+        
+        <?php }
+
         ?>
        </style>
     <?php

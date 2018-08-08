@@ -6,7 +6,7 @@ global $business_click_repeated_settings_controls;
 global $business_click_customizer_defaults;
 
 /*defaults value*/
-$business_click_customizer_defaults['business-click-testimonila-enable']				= 1;
+$business_click_customizer_defaults['business-click-testimonila-enable']				= 0;
 $business_click_customizer_defaults['business-click-testimonial-section-title']			= '';
 $business_click_customizer_defaults['business-click-testimonial-excerpt-length']		= 30;
 $business_click_customizer_defaults['business-click-testimonial-select-for-page']		= 0;
