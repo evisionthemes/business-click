@@ -232,7 +232,7 @@ add_action( 'business_click_action_before_header', 'business_click_skip_to_conte
                                     <li><span><i class="fa fa-phone"></i><?php echo esc_html($business_click_phone_number);?></span></li>
                                     <?php } ?>
                                     <?php if (!empty($business_click_email_address)) { ?>
-                                    <li><a href=""><i class="fa fa-envelope"></i><?php echo esc_html($business_click_email_address);?></a></li>
+                                    <li><a href="mailto:<?php echo esc_html($business_click_email_address);?>"><i class="fa fa-envelope"></i><?php echo esc_html($business_click_email_address);?></a></li>
                                     <?php } ?>
                                     <?php if (!empty($business_click_location)) { ?>
                                     <li><span><i class="fas fa-map-marker-alt"></i><?php echo esc_html($business_click_location);?></span></li>
