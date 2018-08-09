@@ -85,7 +85,7 @@ if (!function_exists('business_click_feature_slider')) :
  function business_click_feature_slider()
  {
   global $business_click_customizer_all_values;
-  if(  ! $business_click_customizer_all_values['business-click-enbale-slider'] )
+  if(  !$business_click_customizer_all_values['business-click-enbale-slider'] )
   {
     return null;
   }

@@ -10,7 +10,6 @@ $business_click_customizer_defaults['business-click-excerpt-length']            
 $business_click_customizer_defaults['business-click-select-from-page']                      = 0;
 $business_click_customizer_defaults['business-click-slider-button-text']                    = esc_html__('Learn more','business-click');
 
-
 /*create section for feature slider*/
 $business_click_sections['business-click-slider-section']  = array(
     'title'                 => esc_html__('Feature Slider Section','business-click'),
@@ -22,7 +21,7 @@ $business_click_sections['business-click-slider-section']  = array(
 /*slider enable */
 $business_click_settings_controls['business-click-enbale-slider'] = array(
     'setting' => array(
-        'defaults'          => $business_click_customizer_defaults['business-click-enbale-slider'] 
+        'default'          => $business_click_customizer_defaults['business-click-enbale-slider'] 
     ),
     'control' => array(
         'label'             => esc_html__('Show Slider','business-click'),

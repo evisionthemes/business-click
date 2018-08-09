@@ -7,6 +7,8 @@
  * @since business-click 1.0.0
  */
 
+
+
 require trailingslashit(get_template_directory() ).'/inc/hooks/homepage-slider.php';
 
 require trailingslashit(get_template_directory() ).'/inc/hooks/feature-section.php';

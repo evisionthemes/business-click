@@ -20,7 +20,7 @@ $business_click_sections['business-click-header-section'] = array(
 /*enable option for extar button*/
 $business_click_settings_controls['business-click-enable-extra-button']  =  array(
 	'setting'  => array(
-		'defaults'		  => $business_click_customizer_defaults['business-click-enable-extra-button']
+		'default'		  => $business_click_customizer_defaults['business-click-enable-extra-button']
 	),
 	'control' => array(
 		'label'			  => esc_html__('Show Button','business-click'),
@@ -37,7 +37,7 @@ $business_click_settings_controls['business-click-enable-extra-button']  =  arra
 /*button text*/
 $business_click_settings_controls['business-click-text-extra-button-text']  =  array(
 	'setting'  => array(
-		'defaults'		  => $business_click_customizer_defaults['business-click-text-extra-button-text']
+		'default'		  => $business_click_customizer_defaults['business-click-text-extra-button-text']
 	),
 	'control' => array(
 		'label'			  => esc_html__('Button Text','business-click'),
@@ -52,7 +52,7 @@ $business_click_settings_controls['business-click-text-extra-button-text']  =  a
 /*button-link*/
 $business_click_settings_controls['business-click-link-extra-button']  =  array(
 	'setting'  => array(
-		'defaults'		=> $business_click_customizer_defaults['business-click-link-extra-button']
+		'default'		=> $business_click_customizer_defaults['business-click-link-extra-button']
 	),
 	'control' => array(
 		'label'			  => esc_html__('Button Link','business-click'),
@@ -67,7 +67,7 @@ $business_click_settings_controls['business-click-link-extra-button']  =  array(
 /*transparent-header*/
 $business_click_settings_controls['business-click-enable-transparent-header']  =  array(
 	'setting'  => array(
-		'defaults'		=> $business_click_customizer_defaults['business-click-enable-transparent-header']
+		'default'		=> $business_click_customizer_defaults['business-click-enable-transparent-header']
 	),
 	'control' => array(
 		'label'			  => esc_html__('Show Transparent Header','business-click'),
