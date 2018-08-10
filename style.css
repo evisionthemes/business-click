@@ -983,14 +983,15 @@ object {
 .widget_recent_comments ul li,
 .widget_meta ul li,
 .widget_pages ul li,
-.widget_nav_menu ul li {
+.widget_nav_menu ul li, .widget_products ul li,
+.woocommerce-MyAccount-navigation ul li {
   -webkit-transition: 0.4s all ease-in-out;
   -moz-transition: 0.4s all ease-in-out;
   -o-transition: 0.4s all ease-in-out;
   transition: 0.4s all ease-in-out;
 }
 
-.img-cover, #evt-banner .coin-slider, .evt-banner-image, #evt-page-banner .evt-banner-image {
+.img-cover, #evt-banner .coin-slider, .evt-banner-image, #evt-page-banner .evt-banner-image, #evt-call-to-action {
   background-size: cover;
   background-position: center center;
 }
@@ -1099,7 +1100,8 @@ body .elementor-widget-heading.elementor-widget-heading .elementor-heading-title
 .woocommerce button.button.alt,
 .woocommerce input.button.alt, button, input[type="button"], input[type="reset"], input[type="submit"],
 .btn.btn-reverse:hover, .wp-pagenavi a:hover,
-.wp-pagenavi span.current, .pagination .nav-links ul li span.current, .wp-pagenavi ul li span.current, .woocommerce nav.woocommerce-pagination ul li span.current, .pagination .nav-links ul li span:hover, .wp-pagenavi ul li span:hover, .woocommerce nav.woocommerce-pagination ul li span:hover, .pagination .nav-links ul li a:hover, .wp-pagenavi ul li a:hover, .woocommerce nav.woocommerce-pagination ul li a:hover, header.site-header .evt-header-wrap-nav .evt-menu-toggler-manage #menu-icon.menu-toggler:hover span, ul.slick-dots li button:hover, ul.slick-dots li.slick-active button, .woocommerce span.onsale, .evt-carousel.slick-slider ul.slick-dots li button:hover, .evt-carousel.slick-slider ul.slick-dots li.slick-active button, .evt-featured-item-wrap .evt-featured-item .evt-featured-icon, #evt-top-header, .evt-thumb-holder .evt-thumb-hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons, #evt-testimonials .evt-testimonials-slider, .elementor-widget-button a.elementor-button, .elementor-widget-button .elementor-button, .elementor-slick-slider ul.slick-dots li button, .elementor-widget-icon.elementor-view-stacked .elementor-icon, body .elementor-social-icon, body .elementor-add-new-section .elementor-add-section-button {
+.wp-pagenavi span.current, .pagination .nav-links ul li span.current, .wp-pagenavi ul li span.current, .woocommerce nav.woocommerce-pagination ul li span.current, .pagination .nav-links ul li span:hover, .wp-pagenavi ul li span:hover, .woocommerce nav.woocommerce-pagination ul li span:hover, .pagination .nav-links ul li a:hover, .wp-pagenavi ul li a:hover, .woocommerce nav.woocommerce-pagination ul li a:hover, header.site-header .evt-header-wrap-nav .evt-menu-toggler-manage #menu-icon.menu-toggler:hover span, ul.slick-dots li button:hover, ul.slick-dots li.slick-active button, .woocommerce span.onsale, .woocommerce .widget_price_filter .ui-slider .ui-slider-range,
+.woocommerce .widget_price_filter .ui-slider .ui-slider-handle, .evt-carousel.slick-slider ul.slick-dots li button:hover, .evt-carousel.slick-slider ul.slick-dots li.slick-active button, .evt-featured-item-wrap .evt-featured-item .evt-featured-icon, #evt-top-header, .evt-thumb-holder .evt-thumb-hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons, #evt-testimonials .evt-testimonials-slider, .elementor-widget-button a.elementor-button, .elementor-widget-button .elementor-button, .elementor-slick-slider ul.slick-dots li button, .elementor-widget-icon.elementor-view-stacked .elementor-icon, body .elementor-social-icon, body .elementor-add-new-section .elementor-add-section-button {
   background-color: #578ECF;
 }
 
@@ -1212,10 +1214,6 @@ body {
     padding-right: 0;
   }
 }
-.text-center.widget-title:before, .text-center.widgettitle:before, .text-center.page-title:before, body .text-center.entry-title:before {
-  left: 50% !important;
-  margin-left: -35px !important;
-}
 
 .text-left.widget-title, .text-left.widgettitle, .text-left.page-title, body .text-left.entry-title, #secondary .entry-title,
 #secondary .widget-title,
@@ -1231,6 +1229,14 @@ body {
   margin-left: 0;
 }
 
+.text-center.widget-title, .text-center.widgettitle, .text-center.page-title, body .text-center.entry-title {
+  text-align: center;
+}
+.text-center.widget-title:before, .text-center.widgettitle:before, .text-center.page-title:before, body .text-center.entry-title:before {
+  left: 50% !important;
+  margin-left: -35px !important;
+}
+
 .widget_product_categories ul li,
 .widget_categories ul li,
 .widget_archive ul li,
@@ -1238,12 +1244,15 @@ body {
 .widget_recent_comments ul li,
 .widget_meta ul li,
 .widget_pages ul li,
-.widget_nav_menu ul li {
+.widget_nav_menu ul li, .widget_products ul li,
+.woocommerce-MyAccount-navigation ul li {
   border-width: 0;
   border-bottom-width: 1px;
   list-style: none;
   line-height: 28px;
-  margin-bottom: 8px;
+  margin-left: 0;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 .widget_product_categories ul li:hover,
 .widget_categories ul li:hover,
@@ -1252,7 +1261,8 @@ body {
 .widget_recent_comments ul li:hover,
 .widget_meta ul li:hover,
 .widget_pages ul li:hover,
-.widget_nav_menu ul li:hover {
+.widget_nav_menu ul li:hover, .widget_products ul li:hover,
+.woocommerce-MyAccount-navigation ul li:hover {
   padding-left: 20px;
 }
 .widget_product_categories ul li a,
@@ -1262,8 +1272,8 @@ body {
 .widget_recent_comments ul li a,
 .widget_meta ul li a,
 .widget_pages ul li a,
-.widget_nav_menu ul li a {
-  padding-bottom: 8px;
+.widget_nav_menu ul li a, .widget_products ul li a,
+.woocommerce-MyAccount-navigation ul li a {
   display: inline-block;
 }
 .widget_product_categories ul li.recentcomments span,
@@ -1273,7 +1283,8 @@ body {
 .widget_recent_comments ul li.recentcomments span,
 .widget_meta ul li.recentcomments span,
 .widget_pages ul li.recentcomments span,
-.widget_nav_menu ul li.recentcomments span {
+.widget_nav_menu ul li.recentcomments span, .widget_products ul li.recentcomments span,
+.woocommerce-MyAccount-navigation ul li.recentcomments span {
   display: inline-block;
   padding-bottom: 8px !important;
 }
@@ -1397,7 +1408,8 @@ input[type=checkbox], input[type=radio] {
 .widget_recent_comments ul li,
 .widget_meta ul li,
 .widget_pages ul li,
-.widget_nav_menu ul li, .post-navigation, .posts-navigation, body.single .entry-meta, header.site-header {
+.widget_nav_menu ul li, .widget_products ul li,
+.woocommerce-MyAccount-navigation ul li, .post-navigation, .posts-navigation, body.single .entry-meta, header.site-header {
   border-color: #e0e0e0;
   border-style: solid;
 }
@@ -2051,18 +2063,16 @@ body.search #primary article, body.archive #primary article {
   padding-bottom: 20px;
 }
 
-article.hentry {
+body.blog article.hentry {
   margin-bottom: 40px;
 }
+
 article .image {
   overflow: hidden;
   margin-bottom: 25px;
 }
 article .image .post-thumbnail {
   display: block;
-}
-article span.cat-links {
-  margin-right: 10px;
 }
 article .entry-content {
   margin-top: 0;
@@ -2178,6 +2188,19 @@ body.single .entry-meta {
 
 aside .widget {
   margin-bottom: 40px;
+}
+
+ul.children li {
+  margin-left: 20px;
+}
+ul.children li:last-child {
+  border-bottom: 0;
+}
+
+.woocommerce ul.cart_list li,
+.woocommerce ul.product_list_widget li {
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 footer.site-footer .widget_product_categories ul li,
@@ -2559,6 +2582,46 @@ ul.slick-dots li button {
     width: 100%;
   }
 }
+.woocommerce mark {
+  background: transparent;
+}
+
+.tagcloud a {
+  border: 1px dashed;
+  font-size: inherit !important;
+  display: inline-block;
+  margin-bottom: 4px;
+  padding: 3px 6px;
+}
+
+.woocommerce .widget_price_filter .price_slider_wrapper .ui-widget-content {
+  background-color: #cccccc;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.widget_products,
+.woocommerce-MyAccount-navigation {
+  padding-right: 20px;
+}
+
+.woocommerce-Addresses {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+fieldset {
+  padding: 0;
+}
+
+.woocommerce form.checkout_coupon, .woocommerce form.login, .woocommerce form.register {
+  border-radius: 0;
+}
+
+.woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button {
+  margin-right: 20px;
+}
+
 .tmm .tmm_wrap {
   margin-left: -15px;
   margin-right: -15px;
@@ -2910,6 +2973,12 @@ body.head-search-active .evt-search-mask {
   line-height: 60px;
   text-align: center;
   margin-bottom: 20px;
+}
+.evt-featured-item-wrap .evt-featured-item .evt-featured-img {
+  margin-bottom: 20px;
+}
+.evt-featured-item-wrap .evt-featured-item .evt-featured-img img {
+  display: inline-block;
 }
 
 .fa-phone {
@@ -3736,7 +3805,7 @@ body.error404 #evt-page-banner .evt-banner-image .evt-banner-caption .search-for
   margin: 0;
 }
 body.error404 #evt-page-banner .evt-banner-image .evt-banner-caption .search-form .search-submit {
-  height: 36px;
+  height: 38px;
 }
 
 @media (max-width: 575px) {
