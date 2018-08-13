@@ -37,7 +37,7 @@ For more features, [Upgrade to Pro](https://evisionthemes.com/product/business-c
 
 ### Does this theme support any plugins? ###
 
-Business Click includes support for [Jetpack](https://wordpress.org/plugins/jetpack/), [WP-PageNavi](https://wordpress.org/plugins/wp-pagenavi/), [Contact form 7](https://wordpress.org/plugins/contact-form-7/), [Elementor Page Builder](https://wordpress.org/plugins/elementor/), [W3 Total Cache](https://wordpress.org/plugins/w3-total-cache/), [Social Sharing WordPress Plugin – Social Pug](https://wordpress.org/plugins/social-pug/), [All in One SEO Pack](https://wordpress.org/plugins/all-in-one-seo-pack/), [MailChimp for WordPress](https://wordpress.org/plugins/mailchimp-for-wp/), [WooCommerce](https://wordpress.org/plugins/woocommerce/).
+Business Click includes support for [Jetpack](https://wordpress.org/plugins/jetpack/), [WP-PageNavi](https://wordpress.org/plugins/wp-pagenavi/), [Contact form 7](https://wordpress.org/plugins/contact-form-7/), [Elementor Page Builder](https://wordpress.org/plugins/elementor/), [Page Builder by SiteOrigin](https://wordpress.org/plugins/siteorigin-panels/), [W3 Total Cache](https://wordpress.org/plugins/w3-total-cache/), [Social Sharing WordPress Plugin – Social Pug](https://wordpress.org/plugins/social-pug/), [All in One SEO Pack](https://wordpress.org/plugins/all-in-one-seo-pack/), [MailChimp for WordPress](https://wordpress.org/plugins/mailchimp-for-wp/), [WooCommerce](https://wordpress.org/plugins/woocommerce/).
 
 
 ## Credits ##
