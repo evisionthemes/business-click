@@ -1128,12 +1128,14 @@ header.site-header .evt-header-wrap-nav .evt-menu-toggler-manage #menu-icon.menu
   background-color: #000;
 }
 
-#evt-featured, #evt-why-us, #evt-portfolio .evt-img-overlay, #evt-call-to-action .evt-img-overlay, #evt-team, #evt-testimonials .evt-img-overlay, #evt-blog, #evt-partner .evt-img-overlay, #evt-contact, body .elementor-section-wrap > section, body.dark-theme .elementor-section-wrap > section {
+#evt-featured .evt-img-overlay, #evt-why-us, #evt-portfolio .evt-img-overlay, #evt-call-to-action .evt-img-overlay, #evt-team, #evt-testimonials .evt-img-overlay, #evt-blog .evt-img-overlay, #evt-partner .evt-img-overlay, #evt-contact, #evt-short-code1,
+#evt-short-code2, body .elementor-section-wrap > section, body.dark-theme .elementor-section-wrap > section {
   padding-top: 50px;
   padding-bottom: 50px;
 }
 @media (min-width: 1199px) {
-  #evt-featured, #evt-why-us, #evt-portfolio .evt-img-overlay, #evt-call-to-action .evt-img-overlay, #evt-team, #evt-testimonials .evt-img-overlay, #evt-blog, #evt-partner .evt-img-overlay, #evt-contact, body .elementor-section-wrap > section, body.dark-theme .elementor-section-wrap > section {
+  #evt-featured .evt-img-overlay, #evt-why-us, #evt-portfolio .evt-img-overlay, #evt-call-to-action .evt-img-overlay, #evt-team, #evt-testimonials .evt-img-overlay, #evt-blog .evt-img-overlay, #evt-partner .evt-img-overlay, #evt-contact, #evt-short-code1,
+  #evt-short-code2, body .elementor-section-wrap > section, body.dark-theme .elementor-section-wrap > section {
     padding-top: 80px;
     padding-bottom: 80px;
   }
@@ -1454,16 +1456,16 @@ input[type=checkbox], input[type=radio] {
   position: absolute;
 }
 
-.widget_media_gallery figure.gallery-item, .image {
+.widget_media_gallery figure.gallery-item, .woocommerce ul.products li.product a, .image {
   overflow: hidden;
 }
-.widget_media_gallery figure.gallery-item img, .image img {
+.widget_media_gallery figure.gallery-item img, .woocommerce ul.products li.product a img, .image img {
   -webkit-transition: 0.4s all ease-in-out;
   -moz-transition: 0.4s all ease-in-out;
   -o-transition: 0.4s all ease-in-out;
   transition: 0.4s all ease-in-out;
 }
-.widget_media_gallery figure.gallery-item:hover img, .image:hover img {
+.widget_media_gallery figure.gallery-item:hover img, .woocommerce ul.products li.product a:hover img, .image:hover img {
   -moz-transform: scale(1.05);
   -o-transform: scale(1.05);
   -ms-transform: scale(1.05);
@@ -2959,7 +2961,6 @@ body.head-search-active .evt-search-mask {
 }
 
 .evt-featured-item-wrap .evt-featured-item {
-  background-color: #ffffff;
   padding: 20px 15px;
 }
 .evt-featured-item-wrap .evt-featured-item .evt-featured-icon {
@@ -3397,7 +3398,7 @@ body.home.transparent-header:not(.small-header) .menu-toggler span {
 }
 
 body.home.transparent-header:not(.small-header) nav#site-navigation ul.nav-menu > li.current-menu-item > a {
-  color: #ffffff;
+  color: #ffffff !important;
 }
 
 body.small-header #evt-top-header {
@@ -3735,10 +3736,11 @@ body.logo-left.small-header .evt-header-row .evt-logo-manage .site-branding .sit
 .site-footer .evt-footer-widget .widget_tag_cloud .tagcloud a {
   background: none;
 }
-@media (max-width: 991px) {
+@media (max-width: 1199px) and (min-width: 576px) {
   .site-footer .evt-footer-widget .evt-footer-widget-col {
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
+    max-width: 50%;
   }
 }
 @media (max-width: 575px) {
@@ -3747,7 +3749,7 @@ body.logo-left.small-header .evt-header-row .evt-logo-manage .site-branding .sit
     flex: 0 0 100%;
   }
 }
-@media screen and (min-width: 48em) {
+@media (min-width: 1200px) {
   .site-footer .evt-footer-widget .evt-footer-widget-col {
     padding: 28px 35px;
   }
@@ -3836,10 +3838,10 @@ body.error404 #evt-page-banner .evt-banner-image .evt-banner-caption .search-for
   #evt-featured .slick-slider .slick-arrow.slick-prev, #evt-testimonials .slick-slider .slick-arrow.slick-prev, #evt-blog .slick-slider .slick-arrow.slick-prev {
     left: 50%;
     right: auto;
-    margin-left: -35px;
+    margin-left: -50px;
   }
   #evt-featured .slick-slider .slick-arrow.slick-next, #evt-testimonials .slick-slider .slick-arrow.slick-next, #evt-blog .slick-slider .slick-arrow.slick-next {
-    margin-right: -35px;
+    margin-right: -30px;
     right: 50%;
   }
 
@@ -4132,6 +4134,10 @@ body {
 .evt-close-wrapper .evt-inner-box .evt-inner:before {
   -webkit-transform: translate(-50%, -50%) rotate(-45deg);
   transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+#evt-blog + #evt-contact {
+  padding-top: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
