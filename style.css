@@ -3484,6 +3484,9 @@ body.logo-left.small-header .evt-header-row .evt-logo-manage .site-branding .sit
     display: block !important;
   }
 }
+#evt-featured .evt-img-overlay {
+  background-color: transparent;
+}
 #evt-featured .evt-featured-slider.slick-slider {
   column-count: 1;
 }
@@ -3678,6 +3681,9 @@ body.logo-left.small-header .evt-header-row .evt-logo-manage .site-branding .sit
   font-size: 18px;
 }
 
+#evt-blog .evt-img-overlay {
+  background-color: transparent;
+}
 #evt-blog .entry-meta {
   border: 0;
   padding-top: 0;
