@@ -86,6 +86,7 @@ if ( !function_exists('business_click_feature') ) :
   		$feature_button_text					= esc_html($business_click_customizer_all_values['business-click-feature-button-text']);?>
   			<?php if(!empty($feature_section_title) || count($feature_post_page_array) > 0 ) { ?>
   			<section id="evt-featured" class="text-center">	
+				<div class="evt-img-overlay">
 					<div class="container">
 						<?php if(!empty($feature_section_title)) { ?>
 							<h2 class="widget-title evision-animate slideInDown"><?php echo esc_html($feature_section_title);?></h2>
@@ -144,7 +145,8 @@ if ( !function_exists('business_click_feature') ) :
 								</div>
 							<?php } ?>
 					</div>
-				</section>
+				</div>
+			</section>
 			<?php }		
   	 	}
   }

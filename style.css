@@ -3,7 +3,7 @@ Theme Name: Business Click
 Theme URI: http://evisionthemes.com/product/business-click/
 Author: eVision Themes
 Author URI: http://evisionthemes.com/
-Description: Business Click is a modern and flexible WordPress Business Theme that suits for agency, blog, business, corporate, eCommerce, magazines, portfolios and many more. It's created by using the latest Bootstrap Framework with HTML5 and CSS3 techniques in accordance with the latest WordPress Coding Standards. Suitable all popular mobile devices and tablets. In order to create a professional website, you can easily customize the sections like Theme Customizer, Custom Container width options, Sticky Primary Menu - Hide Menu on Scroll Down, Top header bar,  Featured Slider, Services, About us, Testimonial, Call to Action,  News & Updates, Portfolio, Team, Multiple Footer Widgets,  drag and drop widgets, Social Links, Custom Headers, Navigation, Contact us, Subscribe section, Font options,  and many more. This creative theme supports popular plugins like Jetpack, WP page navi, Contact form 7, Elementor page builder, W3 Total Cache, Social Pug, All in One SEO Pack, MailChimp, WooCommerce etc. If you are a non-techy person, you can easily modify the theme and design using live customizer in Dashboard > Appearance> Customize. You can change the color and the font of each and every text, link in the theme. We won't bind you to settle for a dull background; you can choose a color or a cool image instead. This theme is translation ready. Check out Theme Instructions at http://doc.evisionthemes.com/business-click and Demo at https://demo.evisionthemes.com/business-click/ . For support: https://evisionthemes.com/supports
+Description: Business Click is a modern and flexible WordPress Business Theme that suits for agency, blog, business, corporate, eCommerce, magazines, portfolios and many more. It's created by using the latest Bootstrap Framework with HTML5 and CSS3 techniques in accordance with the latest WordPress Coding Standards. Suitable all popular mobile devices and tablets. In order to create a professional website, you can easily customize the sections like Theme Customizer, Custom Container width options, Sticky Primary Menu - Hide Menu on Scroll Down, Top header bar,  Featured Slider, Services, About us, Testimonial, Call to Action,  News & Updates, Portfolio, Team, Multiple Footer Widgets,  drag and drop widgets, Social Links, Custom Headers, Navigation, Contact us, Subscribe section, Font options,  and many more. This creative theme supports popular plugins like Jetpack, WP page navi, Contact form 7, Elementor page builder, Page Builder by SiteOrigin, W3 Total Cache, Social Pug, All in One SEO Pack, MailChimp, WooCommerce etc. If you are a non-techy person, you can easily modify the theme and design using live customizer in Dashboard > Appearance> Customize. You can change the color and the font of each and every text, link in the theme. We won't bind you to settle for a dull background; you can choose a color or a cool image instead. This theme is translation ready. Check out Theme Instructions at http://doc.evisionthemes.com/business-click and Demo at https://demo.evisionthemes.com/business-click/ . For support: https://evisionthemes.com/supports
 Version: 1.0.0
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -1128,12 +1128,14 @@ header.site-header .evt-header-wrap-nav .evt-menu-toggler-manage #menu-icon.menu
   background-color: #000;
 }
 
-#evt-featured, #evt-why-us, #evt-portfolio .evt-img-overlay, #evt-call-to-action .evt-img-overlay, #evt-team, #evt-testimonials .evt-img-overlay, #evt-blog, #evt-partner .evt-img-overlay, #evt-contact, body .elementor-section-wrap > section, body.dark-theme .elementor-section-wrap > section {
+#evt-featured .evt-img-overlay, #evt-why-us, #evt-portfolio .evt-img-overlay, #evt-call-to-action .evt-img-overlay, #evt-team, #evt-testimonials .evt-img-overlay, #evt-blog .evt-img-overlay, #evt-partner .evt-img-overlay, #evt-contact, #evt-short-code1,
+#evt-short-code2, body .elementor-section-wrap > section, body.dark-theme .elementor-section-wrap > section {
   padding-top: 50px;
   padding-bottom: 50px;
 }
 @media (min-width: 1199px) {
-  #evt-featured, #evt-why-us, #evt-portfolio .evt-img-overlay, #evt-call-to-action .evt-img-overlay, #evt-team, #evt-testimonials .evt-img-overlay, #evt-blog, #evt-partner .evt-img-overlay, #evt-contact, body .elementor-section-wrap > section, body.dark-theme .elementor-section-wrap > section {
+  #evt-featured .evt-img-overlay, #evt-why-us, #evt-portfolio .evt-img-overlay, #evt-call-to-action .evt-img-overlay, #evt-team, #evt-testimonials .evt-img-overlay, #evt-blog .evt-img-overlay, #evt-partner .evt-img-overlay, #evt-contact, #evt-short-code1,
+  #evt-short-code2, body .elementor-section-wrap > section, body.dark-theme .elementor-section-wrap > section {
     padding-top: 80px;
     padding-bottom: 80px;
   }
@@ -1454,16 +1456,16 @@ input[type=checkbox], input[type=radio] {
   position: absolute;
 }
 
-.widget_media_gallery figure.gallery-item, .image {
+.widget_media_gallery figure.gallery-item, .woocommerce ul.products li.product a, .image {
   overflow: hidden;
 }
-.widget_media_gallery figure.gallery-item img, .image img {
+.widget_media_gallery figure.gallery-item img, .woocommerce ul.products li.product a img, .image img {
   -webkit-transition: 0.4s all ease-in-out;
   -moz-transition: 0.4s all ease-in-out;
   -o-transition: 0.4s all ease-in-out;
   transition: 0.4s all ease-in-out;
 }
-.widget_media_gallery figure.gallery-item:hover img, .image:hover img {
+.widget_media_gallery figure.gallery-item:hover img, .woocommerce ul.products li.product a:hover img, .image:hover img {
   -moz-transform: scale(1.05);
   -o-transform: scale(1.05);
   -ms-transform: scale(1.05);
@@ -1838,6 +1840,10 @@ footer ul li,
   font-size: 30px;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  color: #000;
+}
+
 .title-description {
   max-width: 800px;
   margin-left: auto;
@@ -1862,6 +1868,11 @@ body .evt-masonry .entry-title {
 body.search-results .entry-title:before,
 body .evt-masonry .entry-title:before {
   display: none;
+}
+
+h1,
+h1.entry-title {
+  font-size: 2.25em;
 }
 
 .entry-header {
@@ -2959,7 +2970,6 @@ body.head-search-active .evt-search-mask {
 }
 
 .evt-featured-item-wrap .evt-featured-item {
-  background-color: #ffffff;
   padding: 20px 15px;
 }
 .evt-featured-item-wrap .evt-featured-item .evt-featured-icon {
@@ -3397,7 +3407,7 @@ body.home.transparent-header:not(.small-header) .menu-toggler span {
 }
 
 body.home.transparent-header:not(.small-header) nav#site-navigation ul.nav-menu > li.current-menu-item > a {
-  color: #ffffff;
+  color: #ffffff !important;
 }
 
 body.small-header #evt-top-header {
@@ -3482,6 +3492,9 @@ body.logo-left.small-header .evt-header-row .evt-logo-manage .site-branding .sit
   body.logo-center .evt-logo-left-right-nav {
     display: block !important;
   }
+}
+#evt-featured .evt-img-overlay {
+  background-color: transparent;
 }
 #evt-featured .evt-featured-slider.slick-slider {
   column-count: 1;
@@ -3677,6 +3690,9 @@ body.logo-left.small-header .evt-header-row .evt-logo-manage .site-branding .sit
   font-size: 18px;
 }
 
+#evt-blog .evt-img-overlay {
+  background-color: transparent;
+}
 #evt-blog .entry-meta {
   border: 0;
   padding-top: 0;
@@ -3735,10 +3751,11 @@ body.logo-left.small-header .evt-header-row .evt-logo-manage .site-branding .sit
 .site-footer .evt-footer-widget .widget_tag_cloud .tagcloud a {
   background: none;
 }
-@media (max-width: 991px) {
+@media (max-width: 1199px) and (min-width: 576px) {
   .site-footer .evt-footer-widget .evt-footer-widget-col {
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
+    max-width: 50%;
   }
 }
 @media (max-width: 575px) {
@@ -3747,7 +3764,7 @@ body.logo-left.small-header .evt-header-row .evt-logo-manage .site-branding .sit
     flex: 0 0 100%;
   }
 }
-@media screen and (min-width: 48em) {
+@media (min-width: 1200px) {
   .site-footer .evt-footer-widget .evt-footer-widget-col {
     padding: 28px 35px;
   }
@@ -3836,10 +3853,10 @@ body.error404 #evt-page-banner .evt-banner-image .evt-banner-caption .search-for
   #evt-featured .slick-slider .slick-arrow.slick-prev, #evt-testimonials .slick-slider .slick-arrow.slick-prev, #evt-blog .slick-slider .slick-arrow.slick-prev {
     left: 50%;
     right: auto;
-    margin-left: -35px;
+    margin-left: -50px;
   }
   #evt-featured .slick-slider .slick-arrow.slick-next, #evt-testimonials .slick-slider .slick-arrow.slick-next, #evt-blog .slick-slider .slick-arrow.slick-next {
-    margin-right: -35px;
+    margin-right: -30px;
     right: 50%;
   }
 
@@ -4132,6 +4149,10 @@ body {
 .evt-close-wrapper .evt-inner-box .evt-inner:before {
   -webkit-transform: translate(-50%, -50%) rotate(-45deg);
   transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+#evt-blog + #evt-contact {
+  padding-top: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
