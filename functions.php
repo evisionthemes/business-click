@@ -236,6 +236,10 @@ require get_template_directory() . '/inc/custom-header.php';
  */
 require get_template_directory() . '/inc/template-tags.php';
 
+
+/*for tgm recommed plugin */
+require get_template_directory() . '/inc/tgm/class-tgm-plugin-activation.php';
+
 /**
  * Functions which enhance the theme by hooking into WordPress.
  */
@@ -310,3 +314,26 @@ if ( ! function_exists( 'business_click_simple_breadcrumb' ) ) :
 	}
 
 endif;
+
+// recommend plugin
+function business_click_register_required_plugins() {
+	
+	$plugins = array(
+		array(
+			'name'     => esc_html__( 'Contact Form 7', 'business-click' ),
+			'slug'     => 'contact-form-7',
+			'required' => false,
+		),
+		
+		array(
+			'name'      => esc_html__( 'WooCommerce', 'business-click' ),
+			'slug'      => 'woocommerce',
+			'required'  => false,
+		),
+
+	);
+
+	tgmpa( $plugins );
+}
+
+add_action( 'tgmpa_register', 'business_click_register_required_plugins' );
