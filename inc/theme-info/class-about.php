@@ -414,8 +414,8 @@ if ( ! class_exists( 'business_click_About' ) ) {
 				wp_enqueue_script( 'plugin-install' );
 				wp_enqueue_script( 'updates' );
 
-				wp_enqueue_style( 'business-click-about', get_template_directory_uri() . '/includes/theme-info/css/about.css', array(), '2.0.1' );
-				wp_enqueue_script( 'business-click-about', get_template_directory_uri() . '/includes/theme-info/js/about.js', array( 'jquery' ), '2.0.1' );
+				wp_enqueue_style( 'business-click-about', get_template_directory_uri() . '/inc/theme-info/css/about.css', array(), '2.0.1' );
+				wp_enqueue_script( 'business-click-about', get_template_directory_uri() . '/inc/theme-info/js/about.js', array( 'jquery' ), '2.0.1' );
 				$js_vars = array(
 					'ajaxurl' => esc_url( admin_url( 'admin-ajax.php' ) ),
 				);
