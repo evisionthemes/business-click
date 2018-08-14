@@ -158,7 +158,7 @@ if ( ! class_exists( 'business_click_About' ) ) {
 			$this->action_key    = $this->theme_slug . '-recommended_actions';
 			$this->menu_name     = isset( $this->config['menu_name'] ) ? $this->config['menu_name'] : $this->theme_name;
 			$this->page_name     = isset( $this->config['page_name'] ) ? $this->config['page_name'] : $this->theme_name;
-			$this->logo_url      = isset( $this->config['logo_url'] ) ? $this->config['logo_url'] : get_template_directory_uri() . '/includes/theme-info/images/pt-logo.png';
+			$this->logo_url      = isset( $this->config['logo_url'] ) ? $this->config['logo_url'] : get_template_directory_uri() . '/inc/theme-info/images/evt-logo.png';
 			$this->logo_link     = isset( $this->config['logo_link'] ) ? $this->config['logo_link'] : 'https://evisionthemes.com/';
 			$this->tabs          = isset( $this->config['tabs'] ) ? $this->config['tabs'] : array();
 			 /* translators: %s: plugin notification */
