@@ -330,6 +330,12 @@ function business_click_register_required_plugins() {
 			'slug'      => 'woocommerce',
 			'required'  => false,
 		),
+		
+		array(
+			'name'      => esc_html__( 'One Click Demo Import', 'business-click' ),
+			'slug'      => 'one-click-demo-import',
+			'required'  => false,
+		),
 
 	);
 
