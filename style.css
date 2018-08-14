@@ -1840,11 +1840,6 @@ footer ul li,
   font-size: 30px;
 }
 
-h1,
-h1.entry-title {
-  font-size: 2.25em;
-}
-
 h1, h2, h3, h4, h5, h6 {
   color: #000;
 }
@@ -1873,6 +1868,11 @@ body .evt-masonry .entry-title {
 body.search-results .entry-title:before,
 body .evt-masonry .entry-title:before {
   display: none;
+}
+
+h1,
+h1.entry-title {
+  font-size: 2.25em;
 }
 
 .entry-header {
