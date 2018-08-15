@@ -91,7 +91,9 @@ if( !function_exists('business_click_blog') ) :
 																	?>
 																</p>
 															<?php if(!empty($business_click_button_text)) { ?>
-																<a href="<?php the_permalink(); ?>" class="readmore"><?php echo esc_html($business_click_button_text);?></a>
+																<a href="<?php the_permalink(); ?>" class="readmore"><?php echo esc_html($business_click_button_text);?>
+																	<i class="fa fa-angle-right"></i>
+																</a>
 															<?php } ?>	
 														</div>
 													</div>

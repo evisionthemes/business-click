@@ -180,7 +180,7 @@ function business_click_scripts() {
 	wp_enqueue_style( 'business-click-google-fonts',business_click_google_fonts() );
 	// thirdparty style file
 	wp_enqueue_style( 'bootstrap-style', get_template_directory_uri() . '/assets/frameworks/bootstrap/bootstrap'.$suffix.'.css' );
-	wp_enqueue_style( 'fontawesome', get_template_directory_uri() . '/assets/frameworks/font-awesome/css/fontawesome-all'.$suffix.'.css' );
+	wp_enqueue_style( 'fontawesome', get_template_directory_uri() . '/assets/frameworks/font-awesome/css/all'.$suffix.'.css' );
 	wp_enqueue_style( 'slick-style', get_template_directory_uri() . '/assets/frameworks/slick/slick'.$suffix.'.css' );
 
 	//theme-style

@@ -131,7 +131,9 @@ if ( !function_exists('business_click_feature') ) :
 													<p><?php echo wp_kses_post($feature_post_page_arrays['feature-content']);?></p>
 												<?php } ?>
 												<?php if( !empty($feature_button_text)  ) { ?>
-												<a href="<?php echo esc_url($feature_post_page_arrays['feature-url']);?>" class="readmore"><?php echo esc_html($feature_button_text);?></a>
+												<a href="<?php echo esc_url($feature_post_page_arrays['feature-url']);?>" class="readmore"><?php echo esc_html($feature_button_text);?>
+													<i class="fa fa-angle-right"></i>
+												</a>
 												<?php } ?>
 											</div>
 										</div>
