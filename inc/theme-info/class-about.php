@@ -759,8 +759,8 @@ if ( ! class_exists( 'business_click_About' ) ) {
 		            echo '<thead>';
 		            echo '<tr>';
 		            echo '<th></th>';
-		            echo '<th>' . esc_html__( 'eCommerce Gem','business-click' ) . '</th>';
-		            echo '<th>' . esc_html__( 'eCommerce Gem Plus','business-click' ) . '</th>';
+		            echo '<th>' . esc_html__( 'Business Click','business-click' ) . '</th>';
+		            echo '<th>' . esc_html__( 'Business Click Pro','business-click' ) . '</th>';
 		            echo '</tr>';
 		            echo '</thead>';
 		            echo '<tbody>';
