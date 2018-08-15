@@ -158,9 +158,10 @@ if ( ! class_exists( 'business_click_About' ) ) {
 			$this->action_key    = $this->theme_slug . '-recommended_actions';
 			$this->menu_name     = isset( $this->config['menu_name'] ) ? $this->config['menu_name'] : $this->theme_name;
 			$this->page_name     = isset( $this->config['page_name'] ) ? $this->config['page_name'] : $this->theme_name;
-			$this->logo_url      = isset( $this->config['logo_url'] ) ? $this->config['logo_url'] : get_template_directory_uri() . '/includes/theme-info/images/pt-logo.png';
+			$this->logo_url      = isset( $this->config['logo_url'] ) ? $this->config['logo_url'] : get_template_directory_uri() . '/inc/theme-info/images/evt-logo.png';
 			$this->logo_link     = isset( $this->config['logo_link'] ) ? $this->config['logo_link'] : 'https://evisionthemes.com/';
 			$this->tabs          = isset( $this->config['tabs'] ) ? $this->config['tabs'] : array();
+			 /* translators: %s: plugin notification */
 			$this->notification  = isset( $this->config['notification'] ) ? $this->config['notification'] : ( '<p>' . sprintf( esc_html__( 'Welcome! Thank you for choosing %1$s! To fully take advantage of the best our theme can offer please make sure you visit our %2$swelcome page%3$s.', 'business-click' ), $this->theme_name, '<a href="' . esc_url( admin_url( 'themes.php?page=' . $this->page_slug ) ) . '">', '</a>' ) . '</p><p><a href="' . esc_url( admin_url( 'themes.php?page=' . $this->page_slug ) ) . '" class="button button-primary" style="text-decoration: none;">' . sprintf( esc_html__( 'Get started with %s', 'business-click' ), $this->theme_name ) . '</a></p>' );
 		}
 
@@ -308,7 +309,7 @@ if ( ! class_exists( 'business_click_About' ) ) {
 
 				// Display tabs.
 				if ( ! empty( $this->tabs ) ) {
-					$active_tab = isset( $_GET['tab'] ) ? wp_unslash( $_GET['tab'] ) : 'getting_started';
+					$active_tab =sanitize_text_field(wp_unslash( isset(  $_GET['tab'] )  ?  $_GET['tab']   : 'getting_started') );
 
 					echo '<h2 class="nav-tab-wrapper wp-clearfix">';
 
@@ -321,7 +322,7 @@ if ( ! class_exists( 'business_click_About' ) ) {
 							}
 						}
 
-						echo '<a href="' . esc_url( admin_url( 'themes.php?page=' . $this->page_slug ) ) . '&tab=' . $tab_key . '" class="nav-tab ' . ( $active_tab === $tab_key ? 'nav-tab-active' : '' ) . '" role="tab" data-toggle="tab">';
+						echo '<a href="' . esc_url( admin_url( 'themes.php?page=' . $this->page_slug ) )  . '&tab=' . esc_url($tab_key) . '" class="nav-tab ' . ( $active_tab === $tab_key ? 'nav-tab-active' : '' ) . '" role="tab" data-toggle="tab">';
 
 						if ( 'upgrade_to_pro' === $tab_key ) {
 							echo '<span class="dashicons dashicons-star-filled"></span>';
@@ -413,8 +414,8 @@ if ( ! class_exists( 'business_click_About' ) ) {
 				wp_enqueue_script( 'plugin-install' );
 				wp_enqueue_script( 'updates' );
 
-				wp_enqueue_style( 'business-click-about', get_template_directory_uri() . '/includes/theme-info/css/about.css', array(), '2.0.1' );
-				wp_enqueue_script( 'business-click-about', get_template_directory_uri() . '/includes/theme-info/js/about.js', array( 'jquery' ), '2.0.1' );
+				wp_enqueue_style( 'business-click-about', get_template_directory_uri() . '/inc/theme-info/css/about.css', array(), '2.0.1' );
+				wp_enqueue_script( 'business-click-about', get_template_directory_uri() . '/inc/theme-info/js/about.js', array( 'jquery' ), '2.0.1' );
 				$js_vars = array(
 					'ajaxurl' => esc_url( admin_url( 'admin-ajax.php' ) ),
 				);
@@ -473,7 +474,7 @@ if ( ! class_exists( 'business_click_About' ) ) {
 								}
 							}
 
-							echo '<a target="' . $button_new_tab . '" href="' . esc_url( $getting_started_item['button_link'] ) . '"class="' . esc_attr( $button_class ) . '">' . esc_html( $getting_started_item['button_label'] ) . '</a>';
+							echo '<a target="' . esc_attr($button_new_tab) . '" href="' . esc_url( $getting_started_item['button_link'] ) . '"class="' . esc_attr( $button_class ) . '">' . esc_html( $getting_started_item['button_label'] ) . '</a>';
 							echo '</p>';
 						}
 
@@ -724,7 +725,7 @@ if ( ! class_exists( 'business_click_About' ) ) {
 									$button_new_tab = '_blank';
 								}
 							}
-							echo '<a target="' . $button_new_tab . '" href="' . esc_url( $support_step['button_link'] ) . '" class="' . esc_attr( $button_class ) . '">' . esc_html( $support_step['button_label'] ) . '</a>';
+							echo '<a target="' . esc_attr($button_new_tab) . '" href="' . esc_url( $support_step['button_link'] ) . '" class="' . esc_attr( $button_class ) . '">' . esc_html( $support_step['button_label'] ) . '</a>';
 							echo '</p>';
 						}
 
@@ -928,9 +929,9 @@ if ( ! class_exists( 'business_click_About' ) ) {
 		 */
 		public function dismiss_recommended_action_callback() {
 
-			$todo      = ( isset( $_GET['todo'] ) ) ? esc_attr( wp_unslash( $_GET['todo'] ) ) : '';
-			$action_id = ( isset( $_GET['id'] ) ) ? esc_attr( wp_unslash( $_GET['id'] ) ) : '';
-			$wpnonce   = ( isset( $_GET['_wpnonce'] ) ) ? esc_attr( wp_unslash( $_GET['_wpnonce'] ) ) : '';
+			$todo      = ( isset( $_GET['todo'] ) ) ? sanitize_text_field( wp_unslash( $_GET['todo'] ) ) : '';
+			$action_id = ( isset( $_GET['id'] ) ) ? sanitize_text_field( wp_unslash( $_GET['id'] ) ) : '';
+			$wpnonce   = ( isset( $_GET['_wpnonce'] ) ) ? sanitize_text_field( wp_unslash( $_GET['_wpnonce'] ) ) : '';
 
 			$nonce = 'action-' . $action_id . '-' . $todo;
 
