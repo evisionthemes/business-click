@@ -17,7 +17,6 @@ $business_click_customizer_defaults['business-click-feature-button-text']	    		
 /*create section for feature*/
 $business_click_sections['business-click-feature-section'] = array(
 	'title'		          => esc_html__('Features Section','business-click'),
-    'description'           => sprintf( '%1$s <a  href="https://evisionthemes.com/product/business-click-pro/" target="_blank"> %2$s </a> %3$s', esc_html__( 'Note: For more options, please visit', 'business-click' ), esc_html__( 'Business Click Pro ', 'business-click' ), esc_html__( '&nbsp;', 'business-click' ) ),
 	'panel'		          => 'business-click-main-page-options',	
 	'priority'	          => 30,
 
