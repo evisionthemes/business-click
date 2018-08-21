@@ -84,7 +84,7 @@ function business_click_layout_options_callback() {
     $business_click_single_post_image_align = $business_click_customizer_saved_values['business-click-single-post-image-align'];
 
     /*business-click default layout*/
-    $business_click_single_sidebar_layout = $business_click_customizer_saved_values['business-click-default-layout'];
+    $business_click_single_sidebar_layout = 'default';
 
     wp_nonce_field( basename( __FILE__ ), 'business_click_layout_options_nonce' );
     ?>
