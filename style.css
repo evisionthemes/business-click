@@ -2392,7 +2392,7 @@ footer.site-footer .widget_nav_menu ul li {
   -o-transition: 0.4s all ease-in-out;
   transition: 0.4s all ease-in-out;
   margin: auto;
-  max-width: 700px;
+  max-width: 730px;
   padding-left: 50px;
   padding-right: 50px;
   right: 0;
@@ -2410,7 +2410,12 @@ footer.site-footer .widget_nav_menu ul li {
 }
 @media (min-width: 575px) {
   #evt-banner .nivoSlider .nivo-caption h1, #evt-banner .metaslider .caption-wrap .caption h1, .evt-banner-image .evt-banner-caption .evt-title {
-    font-size: 2.5rem;
+    font-size: 2.125rem;
+  }
+}
+@media (min-width: 768px) {
+  #evt-banner .nivoSlider .nivo-caption h1, #evt-banner .metaslider .caption-wrap .caption h1, .evt-banner-image .evt-banner-caption .evt-title {
+    font-size: 2.75rem;
   }
 }
 @media (max-width: 479px) {
@@ -2781,6 +2786,11 @@ body.admin-bar.search .readmore {
   margin-bottom: 10px;
 }
 
+@media screen and (max-width: 600px) {
+  body.admin-bar header#masthead {
+    top: 46px;
+  }
+}
 .image-full {
   margin-bottom: 15px;
 }
@@ -3422,6 +3432,9 @@ body.home.transparent-header:not(.small-header) header.site-header {
 }
 body.transparent-header header.site-header .evt-header-wrap-nav .evt-menu-toggler-manage #menu-icon.menu-toggler:hover {
   background-color: transparent;
+}
+body.transparent-header #evt-banner .nivoSlider .nivo-caption, body.transparent-header #evt-banner .metaslider .caption-wrap, body.transparent-header #evt-banner .coin-slider .cs-title, body.transparent-header .evt-banner-image .evt-banner-caption {
+  padding-top: 80px;
 }
 
 body.home.transparent-header:not(.small-header) .site-branding .site-description {
