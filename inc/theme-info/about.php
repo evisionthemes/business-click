@@ -6,8 +6,8 @@
  */
 
 $config = array(
-	'menu_name' => esc_html__( 'About Business-Click', 'business-click' ),
-	'page_name' => esc_html__( 'About Business-Click', 'business-click' ),
+	'menu_name' => esc_html__( 'About Business Click', 'business-click' ),
+	'page_name' => esc_html__( 'About Business Click', 'business-click' ),
 
 	/* translators: theme version */
 	'welcome_title' => sprintf( esc_html__( 'Welcome to %s - ', 'business-click' ), 'Business-Click' ),

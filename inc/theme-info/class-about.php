@@ -322,7 +322,7 @@ if ( ! class_exists( 'business_click_About' ) ) {
 							}
 						}
 
-						echo '<a href="' . esc_url( admin_url( 'themes.php?page=' . $this->page_slug ) )  . '&tab=' . esc_url($tab_key) . '" class="nav-tab ' . ( $active_tab === $tab_key ? 'nav-tab-active' : '' ) . '" role="tab" data-toggle="tab">';
+						echo '<a href="' . esc_url( admin_url( 'themes.php?page=' . $this->page_slug ) )  . '&tab=' . esc_attr($tab_key) . '" class="nav-tab ' . ( $active_tab === $tab_key ? 'nav-tab-active' : '' ) . '" role="tab" data-toggle="tab">';
 
 						if ( 'upgrade_to_pro' === $tab_key ) {
 							echo '<span class="dashicons dashicons-star-filled"></span>';
