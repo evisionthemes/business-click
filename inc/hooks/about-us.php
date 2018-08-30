@@ -26,7 +26,7 @@ if( !function_exists('about_us_sections') ) :
     	if ( !empty($about_us_page) ){
     		$about_us_arg	= array(
 	    		'post_type' 		=> 'page',
-	            'p' 				=>$about_us_page,
+	            'p' 				=> $about_us_page,
 	            'posts_per_page' 	=> 1
     		);
     		$about_us_query	= new WP_Query($about_us_arg);

@@ -9,6 +9,12 @@ Stable tag: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
 
+== Copyright ==
+
+Business Click WordPress Theme, Copyright 2018 evision Themes
+Business Click is distributed under the terms of the GNU GPL
+
+
 Business Click is a modern and flexible WordPress Business Theme that suits for agency, blog, business, corporate, eCommerce, magazines, portfolios and many more.
 
 == Description ==

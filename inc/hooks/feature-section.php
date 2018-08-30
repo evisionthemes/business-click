@@ -29,7 +29,6 @@ if( !function_exists('business_click_feature_array') ) :
 				$business_click_feature_arg 	= array(
 					'post_type'				=> 'page',
 					'post__in'				=> $feature_page_id,
-					// 'posts_per_page'		=> $feature_number_of_post,
 					'order_by'				=> 'post__in',
 					'order'					=> 'ASC'
 				); 
@@ -44,7 +43,7 @@ if( !function_exists('business_click_feature_array') ) :
 					$business_click_feature_query->the_post();
 					$th_image ='';
 	                if(has_post_thumbnail()){
-	                    $thumb = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'latebusiness-click-image' );
+	                    $thumb = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'business-click-latest-blog-image' );
 	                    $th_image = $thumb['0'];
 	                }
 	                $feature_page_array[] = array(
@@ -106,7 +105,6 @@ if ( !function_exists('business_click_feature') ) :
 							            {
 							              $feature_sec_image = $feature_post_page_arrays['feature-image'];
 							            }
-							            // var_dump($feature_sec_image);die();
 									?>
 									<?php if(!empty($feature_post_page_arrays['feature-icons-ids']) || !empty($feature_post_page_arrays['feature-title']) || !empty($feature_post_page_arrays['feature-content']) || !empty($feature_button_text) ) {?>			
 									<div class="col-12 col-sm-6 col-lg-4 evt-featured-item-wrap evision-animate">

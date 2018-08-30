@@ -36,6 +36,7 @@ $business_click_settings_controls['business-click-feature-enable'] =
             'active_callback'       =>   ''
         )
     );
+    
 /*Section Title*/
 $business_click_settings_controls['business-click-feature-section-title'] =
     array(

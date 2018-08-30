@@ -84,8 +84,8 @@ if ( ! function_exists( 'business_click_setup' ) ) :
 		) );
 
 		/*image size*/
-		add_image_size( 'slider-banner-image', 1600, 660, true );
-		add_image_size( 'latebusiness-click-image', 500, 360, true );
+		add_image_size( 'business-click-slider-banner-image', 1600, 660, true );
+		add_image_size( 'business-click-latest-blog-image', 500, 360, true );
 
 		/*woocommerce support*/
 		add_theme_support( 'woocommerce' );
@@ -239,16 +239,6 @@ require get_template_directory() . '/inc/template-tags.php';
 
 /*for tgm recommed plugin */
 require get_template_directory() . '/inc/tgm/class-tgm-plugin-activation.php';
-
-/**
- * Functions which enhance the theme by hooking into WordPress.
- */
-// require get_template_directory() . '/inc/template-functions.php';
-
-/**
- * Customizer additions.
- */
-// require get_template_directory() . '/inc/customizer.php';
 
 /**
  * Load Jetpack compatibility file.

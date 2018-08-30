@@ -16,7 +16,7 @@ if ( ! function_exists( 'business_click_before_footer' ) ) :
     </section>
     
     
-        <!-- *****************************************
+    <!-- *****************************************
              Footer section starts
     ****************************************** -->
     <footer class="site-footer">
@@ -107,8 +107,6 @@ if ( ! function_exists( 'business_click_footer' ) ) :
                     }
                     ?>
                     </a>
-                    
-                    
                     
                     <span class="sep"> | </span>
                     
