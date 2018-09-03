@@ -137,7 +137,7 @@ Note:
 * All images are licensed under [CC0](http://creativecommons.org/publicdomain/zero/1.0/legalcode.txt)
 
 == Main Slider ==
-1) https://www.pexels.com/photo/ballpen-blur-close-up-computer-461077/
+1) https://pixabay.com/en/office-freelancer-computer-business-620823/
 
 == WooCommerce ==
 Business Click themes includes support for WooCommerce.
