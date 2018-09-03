@@ -9,7 +9,6 @@ $config = array(
 	'static_page'    => 'Home',
 	'posts_page'     => 'Blog',
 	'menu_locations' => array(
-		// 'top'  	  => 'top-menu',
 		'menu-1'  => 'menu',
 		'menu-2'  => 'social',
 	),

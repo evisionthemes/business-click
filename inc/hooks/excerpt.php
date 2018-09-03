@@ -10,11 +10,14 @@ if ( !function_exists('business_click_excerpt_length') ) :
      */
      function business_click_excerpt_length( $length ) {
         global $business_click_customizer_all_values;
+        if(is_admin() ){
+            return $length;
+        }
         $excerpt_length = $business_click_customizer_all_values['business-click-number-of-words'];        
         if ( !$excerpt_length ) {
             $excerpt_length = $length;
         }
-        return $excerpt_length;
+        return absint( $excerpt_length );
      }
 endif;
 add_filter( 'excerpt_length', 'business_click_excerpt_length' );

@@ -29,7 +29,6 @@ if( !function_exists('testimonial_arrays') ) :
 			if( !empty($testimonial_page_id) ){
 				$testimonial_args = array(
 					'post_type'			=> 'page',
-					// 'posts_per_page'	=> $testimonial_number_of_post,
 					'post__in'			=> $testimonial_page_id,
 					'order_by'			=> 'post__in',
 					'order'				=> 'DES'	
@@ -117,8 +116,6 @@ if( !function_exists('testimonial_section') ) :
 													<div class="evt-box-item">
 														
 														<div class="evt-box-caption text-left">
-															<!-- <h2 class="evt-box-title mb-3 mt-2"><a href="#!">Photography tips</a></h2> -->
-
 															<p><?php echo wp_kses_post($tesimonial_pages_arrays['testimonial-content']); ?></p>
 															<div class="evt-testimonials-author">
 																<div class="profile-img">

@@ -51,7 +51,10 @@ function business_click_before_wp_head() {
         <meta charset="<?php bloginfo( 'charset' ); ?>">
         <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'/>
         <link rel="profile" href="http://gmpg.org/xfn/11">
+        <?php if ( is_singular() && pings_open( get_queried_object() ) ) : ?>
         <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+        <?php endif; ?>
+
 <?php
 }
 endif;
@@ -278,7 +281,6 @@ add_action( 'business_click_action_before_header', 'business_click_skip_to_conte
                                 <?php
                                 the_custom_logo();
                                 if ( is_front_page() && is_home() ) :
-                                    // if( !empty( get_bloginfo( 'name' ) ) ) {
                                     ?>
                                     <h1 class="site-title">
                                         <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
@@ -286,9 +288,8 @@ add_action( 'business_click_action_before_header', 'business_click_skip_to_conte
                                         </a>
                                     </h1>
                                     <?php
-                                    // }
+                                    
                                 else :
-                                    // if( !empty( get_bloginfo( 'name' ) ) ) {
                                     ?>
                                     <h1 class="site-title">
                                         <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
@@ -296,7 +297,7 @@ add_action( 'business_click_action_before_header', 'business_click_skip_to_conte
                                         </a>
                                     </h1>
                                     <?php
-                                    // }
+                                    
                                 endif;
                                 $evt_description = get_bloginfo( 'description', 'display' );
                                 if ( $evt_description || is_customize_preview() ) :
@@ -315,7 +316,6 @@ add_action( 'business_click_action_before_header', 'business_click_skip_to_conte
                             <?php if(1 == $business_click_customizer_all_values['business-click-enable-extra-button'] && !empty($business_click_customizer_all_values['business-click-text-extra-button-text']) ) { ?>
                             <?php $extra_button_name = esc_html($business_click_customizer_all_values['business-click-text-extra-button-text']);
                                   $extra_button_url  = esc_url($business_click_customizer_all_values['business-click-link-extra-button']);
-                                  // var_dump($extra_button_url);die();
                              ?>
                                 <a href="<?php echo esc_url($extra_button_url); ?>" id="evt-buy-btn" class="btn btn-reverse d-none d-sm-block float-right" target="_blank"><?php echo esc_html($extra_button_name) ?></a>
                             <?php }?>    
@@ -337,8 +337,6 @@ add_action( 'business_click_action_before_header', 'business_click_skip_to_conte
                                 ) );
                                 ?>
 
-                                <!-- search toggle icon -->
-                                <!-- <button class="evt-head-search-toggler d-none d-lg-block"><i class="fas fa-search"></i></button> -->
                             </nav><!-- #site-navigation -->     
                         </div><!-- site nav -->
                     </div>
@@ -347,10 +345,6 @@ add_action( 'business_click_action_before_header', 'business_click_skip_to_conte
             </div>
         </div>
     </header><!-- #masthead --> 
-        <?php if ( is_front_page() ) {
-          // do_action('business_click_homepage');
-        } ?>
-
 
 <div id="content" class="site-content">
 

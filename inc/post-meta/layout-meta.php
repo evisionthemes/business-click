@@ -37,22 +37,18 @@ $business_click_default_layout_options = array(
     'left-sidebar' => array(
         'value'     => 'left-sidebar',
         'label' => esc_html__( 'Left Sidebar', 'business-click' ),
-        // 'thumbnail' => get_template_directory_uri() . '/inc/images/left-sidebar.png'
     ),
     'right-sidebar' => array(
         'value' => 'right-sidebar',
         'label' => esc_html__( 'Right Sidebar', 'business-click' ),
-        // 'thumbnail' => get_template_directory_uri() . '/inc/images/right-sidebar.png'
     ),
     'no-sidebar' => array(
         'value'     => 'no-sidebar',
         'label' => esc_html__( 'No Sidebar', 'business-click' ),
-        // 'thumbnail' => get_template_directory_uri() . '/inc/images/no-sidebar.png'
     ),
     'default' => array(
         'value' => 'default',
         'label' => esc_html__( 'Default', 'business-click' ),
-        // 'thumbnail' => get_template_directory_uri() . '/inc/images/no-sidebar.png'
     ),
 );
 /* business-click featured layout */
@@ -106,7 +102,6 @@ function business_click_layout_options_callback() {
                         <input id="<?php echo esc_attr( $field['value'] );  ?>" type="radio" name="business-click-default-layout" value="<?php echo esc_attr( $field['value'] ); ?>" <?php checked( $field['value'], $business_click_single_sidebar_layout ); ?> /> 
                         <label class="description" for="<?php echo esc_attr( $field['value'] ); ?>">
                             <?php echo esc_html( $field['label'] ); ?>
-                            <!-- <img src="<?php /*echo esc_url( $field['thumbnail'] );*/ ?>" /> -->
                         </label>
                     </div>
                 <?php } // end foreach
@@ -181,7 +176,6 @@ function business_click_save_sidebar_layout( $post_id ) {
     /*image align*/
     if(isset($_POST['business-click-single-post-image-align'])){
         $old = get_post_meta( $post_id, 'business-click-single-post-image-align', true );
-        // $new = sanitize_text_field( wp_unslash ( $_POST['business-click-single-post-image-align'] ) );
         $new = sanitize_text_field( wp_unslash( $_POST['business-click-single-post-image-align'] ) );
         if ( $new && $new != $old ) {
             update_post_meta( $post_id, 'business-click-single-post-image-align', $new );

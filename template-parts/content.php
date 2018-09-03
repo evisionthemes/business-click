@@ -50,7 +50,7 @@ global $business_click_customizer_all_values;
 				else{
 					echo "<div class='image-full post-image'>";
 					echo '<a href="'.esc_url(get_permalink()).'">';
-					the_post_thumbnail('slider-banner-image');
+					the_post_thumbnail('business-click-slider-banner-image');
 				}
 				echo "</a>";
 				echo "</div>";/*div end*/ 
@@ -63,7 +63,7 @@ global $business_click_customizer_all_values;
 				<?php
 				if ( is_single() ) {
 				} else {
-					/*the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );*/
+					
 				}
 				
 				 ?>
@@ -90,7 +90,7 @@ global $business_click_customizer_all_values;
 				else{
 					echo "<div class='image-full post-image'>";
 					echo '<a href="'.esc_url(get_permalink()).'">';
-					the_post_thumbnail('slider-banner-image');
+					the_post_thumbnail('business-click-slider-banner-image');
 				}
 				echo "</a>";
 				echo "</div>";/*div end*/

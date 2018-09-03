@@ -1,5 +1,6 @@
 <?php
 global $business_click_panels;
+
 /*creating panel for theme settings*/
 $business_click_panels['business-click-theme-options'] =
     array(

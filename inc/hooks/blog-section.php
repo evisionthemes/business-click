@@ -40,12 +40,11 @@ if( !function_exists('business_click_blog') ) :
 									);
 
 									$business_click_blog_query  = new WP_Query($business_click_blog_arg);
-									// var_dump($business_click_blog_query);die();
 									if( $business_click_blog_query->have_posts() ) :
 										while( $business_click_blog_query->have_posts() ) :
 											$business_click_blog_query->the_post();
 											if(has_post_thumbnail()){
-			                                    $thumb = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID(),'latebusiness-click-image' ), 'latebusiness-click-image' );
+			                                    $thumb = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID(),'business-click-latest-blog-image' ), 'latebusiness-click-image' );
 			                                    $th_image = $thumb['0'];
 			                                    }
 			                                    else{
@@ -80,16 +79,16 @@ if( !function_exists('business_click_blog') ) :
 			                                                        </span>                                                       
 			                                                </div>
 
-																<p>
-																	<?php 
-																		if ( has_excerpt() ) {
-								                                            the_excerpt();
-								                                        } else {
-								                                            $content_blog = get_the_content();
-								                                            echo wp_kses_post(business_click_words_count( $business_click_number_single_words, $content_blog ));
-								                                        }
-																	?>
-																</p>
+															<p>
+																<?php 
+																	if ( has_excerpt() ) {
+							                                            the_excerpt();
+							                                        } else {
+							                                            $content_blog = get_the_content();
+							                                            echo wp_kses_post(business_click_words_count( $business_click_number_single_words, $content_blog ));
+							                                        }
+																?>
+															</p>
 															<?php if(!empty($business_click_button_text)) { ?>
 																<a href="<?php the_permalink(); ?>" class="readmore"><?php echo esc_html($business_click_button_text);?>
 																	<i class="fa fa-angle-right"></i>

@@ -13,7 +13,6 @@ if ( !function_exists('business_click_feature_slider_array') ) :
     {
       global $business_click_customizer_all_values;
       $slider_excerpt_length      = absint($business_click_customizer_all_values['business-click-excerpt-length']);
-      // $feature_slideer_array      = array();
 
       $feature_slideer_array[0]['business-click-feature-title']     = esc_html__('Welcome To Business Click Pro!','business-click');
       $feature_slideer_array[0]['business-click-feature-content']   =  esc_html__('Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.','business-click');
@@ -34,7 +33,6 @@ if ( !function_exists('business_click_feature_slider_array') ) :
           $feature_slider_args = array(
             'post_type'             => 'page',
             'post__in'              => $feature_slider_page_ids,
-            // 'posts_per_page'        => $feature_number_of_slider,
             'order_by'              => 'post__in',
             'order'                 => 'ASC' 
           );
@@ -51,7 +49,7 @@ if ( !function_exists('business_click_feature_slider_array') ) :
                 $business_click_feature_slider_args->the_post();
                   $url ='';
                   if(has_post_thumbnail()){
-                      $thumb = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'slider-banner-image' );
+                      $thumb = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'business-click-slider-banner-image' );
                       $url = $thumb['0'];
                   }
                   $feature_slideer_array[$i]['business-click-feature-title']         = get_the_title();
@@ -94,8 +92,7 @@ if (!function_exists('business_click_feature_slider')) :
   $feature_slide_arrays         = business_click_feature_slider_array();
   if ( is_array($feature_slide_arrays) )
   {
-    $feature_button_text        = esc_html($business_click_customizer_all_values['business-click-slider-button-text']);
-    // $feature_number_of_slider   = absint($business_click_customizer_all_values['business-click-number-of-slider']); ?>
+    $feature_button_text        = esc_html($business_click_customizer_all_values['business-click-slider-button-text']); ?>
 
     <section id="evt-banner" class="" style="opacity: 0;">
       <div class="evt-banner-slider">

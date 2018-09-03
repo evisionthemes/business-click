@@ -67,22 +67,6 @@ require get_template_directory().'/inc/customizer/theme-option/option-panel.php'
 require get_template_directory().'/inc/customizer/main-homepage/all-option-panel.php';
 
 
-// require get_template_directory().'/inc/customizer/top-header-bar/top-header-bar.php';
-
-// require get_template_directory().'/inc/customizer/featured-slider/feature-slider-setting.php';
-
-
-
-
-/******************************************
-main-home-page options
- *******************************************/
-// require get_template_directory().'/inc/customizer/main-home-page.php';
-// $business_click_main_home_page_file_path = business_click_file_directory('inc/customizer/main-home-page.php');
-// require $business_click_main_home_page_file_path;
-
-
-
 /*Resetting all Values*/
 /**
  * Reset color settings to default
