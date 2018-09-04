@@ -5,7 +5,6 @@ global$business_click_customizer_defaults;
 
 /*defaults values*/
 $business_click_customizer_defaults['business-click-site-identity-color']                       = '#313131';
-$business_click_customizer_defaults['business-click-primary-color']                             = '#578ECF';
 $business_click_customizer_defaults['business-click-top-header-background-bar-color']           = '#578ECF';
 $business_click_customizer_defaults['business-click-menu-header-background-color']              = '#FFFFFF';
 $business_click_customizer_defaults['business-click-business-clcik-h1-h6']                      = '#000000';
@@ -35,20 +34,6 @@ $business_click_settings_controls['business-click-site-identity-color'] = array(
         'active_callback'       => ''
     )
 );
-
-$business_click_settings_controls['business-click-primary-color'] = array(
-    'setting' => array(
-        'default' => $business_click_customizer_defaults['business-click-primary-color'],
-    ),
-    'control' => array(
-        'label'                 =>  esc_html__( 'Primary Color', 'business-click' ),
-        'section'               => 'colors',
-        'type'                  => 'color',
-        'priority'              => 30,
-        'active_callback'       => ''
-    )
-);
-
 
 $business_click_settings_controls['business-click-top-header-background-bar-color'] = array(
     'setting' => array(

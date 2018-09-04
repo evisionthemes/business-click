@@ -24,7 +24,7 @@ global $business_click_customizer_all_values;
 		</div><!-- .entry-meta -->
 		<?php 
 		if( 'excerpt-only' == $business_click_archive_layout ){ 
-			echo wp_kses( get_the_excerpt() );
+			echo wp_trim_excerpt( get_the_excerpt() );
 
 		}
 		elseif( 'full-post' == $business_click_archive_layout ){ 

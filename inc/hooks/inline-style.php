@@ -36,7 +36,6 @@ if( ! function_exists( 'business_click_inline_style' ) ) :
         //*color options*/
         $business_click_background_color                        = get_background_color();
         $business_click_site_identity_color_option              = $business_click_customizer_all_values['business-click-site-identity-color'];
-        $business_click_primary_color_option                    = $business_click_customizer_all_values['business-click-primary-color'];
         $business_click_top_header_bar_background_color         = $business_click_customizer_all_values['business-click-top-header-background-bar-color'];
         $business_click_menu_header_background_color            = $business_click_customizer_all_values['business-click-menu-header-background-color'];
         $business_click_h1_h6                                   = $business_click_customizer_all_values['business-click-business-clcik-h1-h6'];
@@ -105,37 +104,6 @@ if( ! function_exists( 'business_click_inline_style' ) ) :
         /*Color*/
         /*----------------------------------*/
         <?php 
-        /*Primary*/
-        if( !empty($business_click_primary_color_option) ){
-        // removing , .readmore:hover, a.readmore:hover from bg
-        // adding in color
-        ?>
-
-        .widget-title:before, .widgettitle:before, .page-title:before, .entry-title:before, .widget_search form .search-submit, .evt-head-search form .search-submit, .pagination .nav-links a, .wp-pagenavi a, .woocommerce nav.woocommerce-pagination a, .pagination .nav-links span, .wp-pagenavi span, .woocommerce nav.woocommerce-pagination span, a.btn, .btn, .wpcf7-form .wpcf7-submit, .woocommerce #respond input#submit, .woocommerce div.product form.cart .button, .woocommerce #respond input#submit.alt, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt, button, input[type="button"], input[type="reset"], input[type="submit"], .btn.btn-reverse:hover, .wp-pagenavi a:hover, .wp-pagenavi span.current, .pagination .nav-links ul li span.current, .wp-pagenavi ul li span.current, .woocommerce nav.woocommerce-pagination ul li span.current, .pagination .nav-links ul li span:hover, .wp-pagenavi ul li span:hover, .woocommerce nav.woocommerce-pagination ul li span:hover, .pagination .nav-links ul li a:hover, .wp-pagenavi ul li a:hover, .woocommerce nav.woocommerce-pagination ul li a:hover, header.site-header .evt-header-wrap-nav .evt-menu-toggler-manage #menu-icon.menu-toggler:hover span, ul.slick-dots li button:hover, ul.slick-dots li.slick-active button, .woocommerce span.onsale, .evt-carousel.slick-slider ul.slick-dots li button:hover, .evt-carousel.slick-slider ul.slick-dots li.slick-active button, .evt-featured-item-wrap .evt-featured-item .evt-featured-icon, #evt-top-header, .evt-thumb-holder .evt-thumb-hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons, #evt-testimonials .evt-testimonials-slider{
-            background-color: <?php echo esc_attr( $business_click_primary_color_option ) ;?>;
-        }            
-        .woocommerce-message, .woocommerce-info, .pbThumbs li.active a img {
-            border-color: <?php echo esc_attr( $business_click_primary_color_option ) ;?>;
-        }
-
-        a:hover, .evt-item article .entry-title a:hover, a.readmore, .readmore, .breadcrumbs .trail-items .trail-item a, nav#site-navigation ul li:hover > a, nav#site-navigation ul#menu > li.current-menu-item > a, nav#site-navigation ul.nav-menu > li.current-menu-item > a, nav#site-navigation ul.menu > li.current-menu-item > a, .slick-slider .slick-arrow:hover, .woocommerce ul.products li.product .price, .woocommerce div.product p.price, .woocommerce div.product span.price, .woocommerce-message::before, .woocommerce-info::before, .woocommerce form .form-row .required, .evt-head-search-toggler:hover i, body.head-search-active .evt-head-search-toggler .fa-search, #evt-top-header .evt-head-search-toggler:hover, body.home.transparent-header:not(.small-header) nav#site-navigation ul#menu > li > a:hover, body.home.transparent-header:not(.small-header) nav#site-navigation ul.nav-menu > li > a:hover, body.home.transparent-header:not(.small-header) nav#site-navigation ul.menu > li > a:hover, body.home.transparent-header:not(.small-header) nav#site-navigation ul a:hover, body.home.transparent-header:not(.small-header) nav#site-navigation ul#menu > li.current-menu-item > a, body.home.transparent-header:not(.small-header) nav#site-navigation ul.nav-menu > li.current-menu-item > a, body.home.transparent-header:not(.small-header) nav#site-navigation ul.menu > li.current-menu-item > a, #evt-portfolio #filters button.is-checked, #evt-team .evt-box-item-wrap .evt-box-caption .evt-designation {
-          color: <?php echo esc_attr( $business_click_primary_color_option );?>;
-        }
-        body.home.transparent-header:not(.small-header) nav#site-navigation ul.nav-menu > li.current-menu-item > a {
-            color: #ffffff;
-        }  
-        .readmore:hover, a.readmore:hover {
-            background: none;
-        }
-
-        a.read-more-btn,
-        #content .nav-links a,
-        .author-more,
-        {
-            border-color: <?php echo esc_attr( $business_click_primary_color_option ) ;?>;
-        }  
-        <?php
-        } 
         if( !empty($business_click_site_identity_color_option) ){
         ?>
             /*Site identity / logo & tagline*/

@@ -77,15 +77,18 @@ if ( ! function_exists( 'business_click_setup' ) ) :
 		 * @link https://codex.wordpress.org/Theme_Logo
 		 */
 		add_theme_support( 'custom-logo', array(
-			'height'      => 250,
-			'width'       => 250,
+			// 'height'      => 250,
+			// 'width'       => 250,
 			'flex-width'  => true,
 			'flex-height' => true,
 		) );
 
+		
 		/*image size*/
 		add_image_size( 'business-click-slider-banner-image', 1600, 660, true );
 		add_image_size( 'business-click-latest-blog-image', 500, 360, true );
+
+		add_theme_support( 'custom-header' );
 
 		/*woocommerce support*/
 		add_theme_support( 'woocommerce' );
@@ -231,6 +234,7 @@ require_once( trailingslashit( get_template_directory() ) . 'trt-customize-pro/b
  */
 require get_template_directory() . '/inc/custom-header.php';
 
+
 /**
  * Custom template tags for this theme.
  */
@@ -333,3 +337,4 @@ function business_click_register_required_plugins() {
 }
 
 add_action( 'tgmpa_register', 'business_click_register_required_plugins' );
+
