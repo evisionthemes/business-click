@@ -214,14 +214,16 @@ add_action( 'business_click_action_before_header', 'business_click_skip_to_conte
             <div id="status" style=""><i class="fa fa-spinner fa-spin"></i></div>
         </div>
 
-        <header id="masthead" class="site-header">
+        <?php $header_image = get_header_image();
+        ?>
+        <header id="masthead" class="site-header img-cover" style="<?php echo 'background-image: url('. $header_image.');' ; ?>">
         <div class="evt-header-wrap">
 
             <?php if (1 == $business_click_customizer_all_values['business-click-enbale-top-bar-header']) { ?>
             <div id="evt-top-header" class="">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-8 evt-head-list-item-wrap">
+                        <div class="col-lg-8 evt-head-list-item-wrap" >
                             <!-- head list item -->
                             <div id="evt-head-list-item">
                                 <?php 

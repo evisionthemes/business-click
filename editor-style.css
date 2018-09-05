@@ -1,5 +1,5 @@
 li#accordion-section-header_image {
-  display: none !important;
+  /*display: none !important;*/
 }
 
 #customize-theme-controls li#accordion-panel-business-click-main-page-options h3.accordion-section-title {
