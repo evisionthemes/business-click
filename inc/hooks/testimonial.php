@@ -30,8 +30,8 @@ if( !function_exists('testimonial_arrays') ) :
 				$testimonial_args = array(
 					'post_type'			=> 'page',
 					'post__in'			=> $testimonial_page_id,
-					'order_by'			=> 'post__in',
-					'order'				=> 'DES'	
+					'orderby'			=> 'post__in',
+					'order'				=> 'ASC'	
 
 				);
 			}
