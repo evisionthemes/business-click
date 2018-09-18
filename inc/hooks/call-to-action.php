@@ -48,7 +48,7 @@ if( !function_exists('business_click_call_to_action_array') ) :
 					                    <h2 class="widget-title evision-animate slideInDown"><?php the_title();?></h2>
 					                    <p class="evision-animate fadeInUp"><?php echo wp_kses_post(business_click_words_count( $call_to_action_number_of_word ,get_the_content()));?></p>
 					                    <?php if( !empty($call_to_action_button_text) ) { ?>
-					                    	<a href="<?php echo the_permalink();?>" class="btn evision-animate fadeInUp"><?php echo esc_html($call_to_action_button_text);?><i class="fas fa-angle-right"></i></a>
+					                    	<a href="<?php  the_permalink();?>" class="btn evision-animate fadeInUp"><?php echo esc_html($call_to_action_button_text);?><i class="fas fa-angle-right"></i></a>
 					                    <?php } ?>	
 					                </div>
 					            </div>
