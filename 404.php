@@ -10,9 +10,9 @@
 get_header();
 ?>
 
-<section id="evt-page-banner" class="">
+<section id="evt-page-banner">
 
-	<div class="evt-banner-image evt-overlay position-relative" style="background-image: url('<?php echo get_template_directory_uri();  // WPCS: XSS OK.?>/assets/img/404.jpg');" >
+	<div class="evt-banner-image evt-overlay position-relative">
 		<div class="evt-banner-caption">
 			<h2 class="evt-title text-white mb-4"><?php esc_html_e('Oops! That page can&rsquo;t be found.', 'business-click') ?></h2>
 			<p><?php esc_html_e('It looks like nothing was found at this location.','business-click') ?></p>
