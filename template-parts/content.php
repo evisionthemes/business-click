@@ -20,7 +20,6 @@ global $business_click_customizer_all_values;
 		<a href="<?php the_permalink()?>"><h2><?php echo get_the_title(); ?></h2></a> 
 		<div class="entry-meta">
 			<?php business_click_posted_on(); ?>
-			<?php //business_click_entry_footer(); ?>
 		</div><!-- .entry-meta -->
 		<?php 
 		if( 'excerpt-only' == $business_click_archive_layout ){ 
