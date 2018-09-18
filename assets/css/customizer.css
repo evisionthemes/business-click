@@ -1,5 +1,46 @@
-li#accordion-section-header_image {
-  /*display: none !important;*/
+.button-important {
+  background-color: #1492ce;
+  color: #fff !important;
+  display: block;
+  padding: 5px 0;
+  text-align: center;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 8px 0;
+  font-style: normal;
+}
+.button-important:hover {
+  background-color: #0073aa;
+}
+
+.customize-control .tab-title {
+  background-color: #fff;
+  padding: 7px 10px;
+  display: block;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+li.customize-section-description-container + .customize-control .tab-title {
+  margin-top: 0;
+}
+
+#sub-accordion-section-business-click-family .customize-control {
+  background-color: #fff;
+  box-sizing: border-box;
+  margin-bottom: 0;
+  padding: 10px;
+  width: 100%;
+}
+#sub-accordion-section-business-click-family .customize-control[id*="business-click-title"] {
+  background-color: transparent;
+  padding: 0;
+  width: auto;
+}
+#sub-accordion-section-business-click-family .customize-control[id*="business-click-title"] .customize-control-description {
+  margin-bottom: 2px;
 }
 
 #customize-theme-controls li#accordion-panel-business-click-main-page-options h3.accordion-section-title {
@@ -144,4 +185,12 @@ li#customize-control-business_click_options-business-click-slider-overlay-transp
   margin-top: 8px;
 }
 
-/*# sourceMappingURL=editor-style.css.map */
+.from-page-selected .customize-control-category_dropdown {
+  display: none !important;
+}
+
+.from-category-selected .customize-control-dropdown-pages {
+  display: none !important;
+}
+
+/*# sourceMappingURL=customizer.css.map */
