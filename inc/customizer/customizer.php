@@ -53,10 +53,6 @@ Modify Site Font Options
  *******************************************/
 require get_template_directory().'/inc/customizer/font/font-section.php';
 
-/******************************************
-Featured Slider options
- *******************************************/
-// require get_template_directory().'/inc/customizer/featured-slider/slider-panel.php';
 
 /******************************************
 Modify Theme Option Section Options
@@ -122,12 +118,6 @@ $business_click_sections['custom_css'] =
         'title'          => esc_html__( 'Additional CSS', 'business-click' ),
         'priority'       => 400,
     );
-    
-// $business_click_sections['header_image'] =
-//     array(
-//         'priority'       => 1999,
-//         'title'          => esc_html__( 'Header Image', 'business-click' )
-//     );
 
 $business_click_customizer_args = array(
     'panels'            => $business_click_panels, /*always use key panels */

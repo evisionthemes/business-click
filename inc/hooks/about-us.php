@@ -1,6 +1,6 @@
 <?php
 
-if( !function_exists('about_us_sections') ) :
+if( !function_exists('business_click_about_us_sections') ) :
 	/**
     * about us
     *
@@ -10,12 +10,12 @@ if( !function_exists('about_us_sections') ) :
     * @return null
     *
     */
-    function about_us_sections()
+    function business_click_about_us_sections()
     {
     	global $business_click_customizer_all_values;
-    	$about_us_single_number_words 		= esc_attr($business_click_customizer_all_values['business-clcik-excerpt-length']);
+    	$about_us_single_number_words 		= absint($business_click_customizer_all_values['business-clcik-excerpt-length']);
     	$about_us_button_text				= esc_html( $business_click_customizer_all_values['business-click-about-us-button-text'] );
-    	$about_us_page						= $business_click_customizer_all_values['business-click-about-us-select-page'];
+    	$about_us_page						= absint($business_click_customizer_all_values['business-click-about-us-select-page'] );
 
     	if(  ! $business_click_customizer_all_values['business-click-enable-about-us'] )
     	{
@@ -23,10 +23,10 @@ if( !function_exists('about_us_sections') ) :
     	} ?>
 
     	<?php
-    	if ( !empty($about_us_page) ){
+    	if ( $about_us_page > 0 ){
     		$about_us_arg	= array(
 	    		'post_type' 		=> 'page',
-	            'p' 				=> $about_us_page,
+	            'p' 				=> absint($about_us_page),
 	            'posts_per_page' 	=> 1
     		);
     		$about_us_query	= new WP_Query($about_us_arg);
@@ -49,7 +49,7 @@ if( !function_exists('about_us_sections') ) :
 									<p><?php echo wp_kses_post(business_click_words_count( $about_us_single_number_words ,get_the_content()));?></p>
 											
 									<?php if( (!empty($about_us_button_text)  ) ){ ?>
-										<a href="<?php echo esc_url(the_permalink());?>" class="btn"><?php echo esc_html($about_us_button_text);?><i class="fas fa-angle-right"></i></a>
+										<a href="<?php  the_permalink();?>" class="btn"><?php echo esc_html($about_us_button_text);?><i class="fas fa-angle-right"></i></a>
 									<?php } ?>	
 								</div>
 								<div class="w-100 d-block d-md-none"></div>
@@ -68,4 +68,4 @@ if( !function_exists('about_us_sections') ) :
 
     }
 endif;
-add_action( 'business_click_homepage', 'about_us_sections', 50 );
+add_action( 'business_click_homepage', 'business_click_about_us_sections', 50 );

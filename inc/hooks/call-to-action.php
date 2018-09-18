@@ -1,6 +1,6 @@
 <?php
 
-if( !function_exists('call_to_action_array') ) :
+if( !function_exists('business_click_call_to_action_array') ) :
 	/**
      * call to action array creation
      *
@@ -9,7 +9,7 @@ if( !function_exists('call_to_action_array') ) :
      * @param  null
      * @return null
      */
-	function call_to_action_array(){
+	function business_click_call_to_action_array(){
 		global $business_click_customizer_all_values;
 
 		$call_to_action_number_of_word				= $business_click_customizer_all_values['business-click-call-excerpt-length'];
@@ -22,10 +22,10 @@ if( !function_exists('call_to_action_array') ) :
 		} ?>
 		<?php
 
-		if( !empty($call_to_action_select_page)  ){
+		if( $call_to_action_select_page > 0  ){
 			$call_to_action_arg	 = array(
 	    		'post_type' 		=> 'page',
-	            'p' 				=> $call_to_action_select_page,
+	            'p' 				=> absint($call_to_action_select_page),
 	            'posts_per_page' 	=> 1
     		);
     		$call_to_action_arg_querry	= new WP_Query($call_to_action_arg);
@@ -48,7 +48,7 @@ if( !function_exists('call_to_action_array') ) :
 					                    <h2 class="widget-title evision-animate slideInDown"><?php the_title();?></h2>
 					                    <p class="evision-animate fadeInUp"><?php echo wp_kses_post(business_click_words_count( $call_to_action_number_of_word ,get_the_content()));?></p>
 					                    <?php if( !empty($call_to_action_button_text) ) { ?>
-					                    	<a href="<?php echo esc_url(the_permalink());?>" class="btn evision-animate fadeInUp"><?php echo esc_html($call_to_action_button_text);?><i class="fas fa-angle-right"></i></a>
+					                    	<a href="<?php echo the_permalink();?>" class="btn evision-animate fadeInUp"><?php echo esc_html($call_to_action_button_text);?><i class="fas fa-angle-right"></i></a>
 					                    <?php } ?>	
 					                </div>
 					            </div>
@@ -61,4 +61,4 @@ if( !function_exists('call_to_action_array') ) :
 		}
 	}
 endif;
-add_action('business_click_homepage','call_to_action_array',30);
+add_action('business_click_homepage','business_click_call_to_action_array',30);

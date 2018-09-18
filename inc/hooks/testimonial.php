@@ -1,5 +1,5 @@
 <?php
-if( !function_exists('testimonial_arrays') ) :
+if( !function_exists('business_click_testimonial_arrays') ) :
 	/**
      *Testimonial array creation
      *
@@ -8,7 +8,7 @@ if( !function_exists('testimonial_arrays') ) :
      * @param  null
      * @return array
      */
-	function testimonial_arrays(){
+	function business_click_testimonial_arrays(){
 		global $business_click_customizer_all_values;
 		$testimonila_number_of_word					= absint( $business_click_customizer_all_values['business-click-testimonial-excerpt-length'] );
 
@@ -83,7 +83,7 @@ if( !function_exists('testimonial_section') ) :
 			return null;
 		}
 		$testimonial_select_post					= esc_html($business_click_customizer_all_values['business-click-testimonial-select-for-page'] );
-		$tesimonial_pages_array						= testimonial_arrays($testimonial_select_post);		
+		$tesimonial_pages_array						= business_click_testimonial_arrays($testimonial_select_post);		
 
 		if( is_array($tesimonial_pages_array) )	
 		{

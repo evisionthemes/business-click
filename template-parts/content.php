@@ -17,7 +17,7 @@ global $business_click_customizer_all_values;
 		<?php
 		$business_click_archive_layout = $business_click_customizer_all_values['business-click-archive-layout'];
 		$business_click_archive_image_align = $business_click_customizer_all_values['business-click-archive-image-align']; ?>
-		<h2><?php echo get_the_title(); ?></h2> 
+		<a href="<?php the_permalink()?>"><h2><?php echo get_the_title(); ?></h2></a> 
 		<div class="entry-meta">
 			<?php business_click_posted_on(); ?>
 			<?php //business_click_entry_footer(); ?>
@@ -57,17 +57,7 @@ global $business_click_customizer_all_values;
 			}
 				echo "<div class='entry-content-stat'>";
 			?> 
-			<header class="entry-header">
-				<!-- <div class="entry-category">
-				</div> -->
-				<?php
-				if ( is_single() ) {
-				} else {
-					
-				}
-				
-				 ?>
-			</header><!-- .entry-header -->
+
 			<?php the_content( sprintf(
 			/* translators: %s: Name of current post. */
 				wp_kses( __( 'Read More %s <span class="meta-nav">&rarr;</span>', 'business-click' ), array( 'span' => array( 'class' => array() ) ) ),

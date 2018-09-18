@@ -25,7 +25,6 @@ if ( 'posts' == get_option( 'show_on_front' ) )
 
         $business_click_static_page = absint($business_click_customizer_all_values['business-click-enable-static-page']);
         do_action('business_click_link');
-        // $business_click_static_page = 1;
         if (0 != $business_click_static_page ) { ?>
             <div class="container pt-4">
                 <div class="row">

@@ -1,6 +1,6 @@
 <?php
 
-if( !function_exists('contact_us_section') ) :
+if( !function_exists('business_click_contact_us_section') ) :
 /**
      *contact us 
      *
@@ -9,7 +9,7 @@ if( !function_exists('contact_us_section') ) :
      * @param  null
      * @return null
      */
-	function contact_us_section()
+	function business_click_contact_us_section()
 	{
 		global $business_click_customizer_all_values; 
 		$business_contact_section_title 	= esc_html($business_click_customizer_all_values['business-click-contact-section-title']);
@@ -48,4 +48,4 @@ if( !function_exists('contact_us_section') ) :
 
 	<?php }
 endif;
-add_action('business_click_homepage','contact_us_section',100) ?>
+add_action('business_click_homepage','business_click_contact_us_section',100) ?>
