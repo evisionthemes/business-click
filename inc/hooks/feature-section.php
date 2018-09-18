@@ -29,7 +29,7 @@ if( !function_exists('business_click_feature_array') ) :
 				$business_click_feature_arg 	= array(
 					'post_type'				=> 'page',
 					'post__in'				=> $feature_page_id,
-					'order_by'				=> 'post__in',
+					'orderby'				=> 'post__in',
 					'order'					=> 'ASC'
 				); 
 			}
