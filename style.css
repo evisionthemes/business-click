@@ -3867,6 +3867,7 @@ body.error404 #breadcrumb {
   display: none;
 }
 body.error404 #evt-page-banner {
+  background-color: #000;
   margin-bottom: 0;
 }
 body.error404 #evt-page-banner .evt-banner-image .evt-banner-caption {
