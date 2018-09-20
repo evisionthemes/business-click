@@ -3,7 +3,7 @@
 		var header_height = $('header').height();
 
 		if($('body').hasClass('fixed-header')) {
-			if($('body.home').hasClass('blog')) {
+			if($('body').hasClass('blog')) {
 				header_height += 30;
 			}
 			$('#page.site').css({ 'padding-top': header_height + 'px' });
