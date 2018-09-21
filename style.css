@@ -2595,6 +2595,10 @@ ul.slick-dots li button {
   background-color: #ffffff;
   border-color: #999;
 }
+.wpcf7-form label img.wpcf7-form-control {
+  margin-bottom: 10px;
+  width: auto;
+}
 .wpcf7-form label textarea.wpcf7-form-control {
   height: 150px;
 }
