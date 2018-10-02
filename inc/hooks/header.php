@@ -113,28 +113,37 @@ function business_click_body_class( $business_click_body_classes ) {
             $business_click_transparent_header = "non-tarnsparent";
         }
     }
+    
+    // var_dump($business_click_customizer_all_values['business-click-feature-enable']);die();
+    if( 1 == $business_click_customizer_all_values['business-click-enbale-slider'] ){
+        $business_click_has_feature_slider = 'has-featured-slider';
+    }
+    else{
+        $business_click_has_feature_slider = 'no-featured-slider';
+    }
+
     if(!is_front_page() || ( is_front_page())){
         $business_click_default_layout = business_click_default_layout();
         if( !empty( $business_click_default_layout ) ){
             if( 'left-sidebar' == $business_click_default_layout ){
-                $business_click_body_classes[] = 'evt-left-sidebar'.' '. $business_click_transparent_header;
+                $business_click_body_classes[] = 'evt-left-sidebar'.' '. $business_click_transparent_header . ' ' . $business_click_has_feature_slider;
             }
             elseif( 'right-sidebar' == $business_click_default_layout ){ 
-                $business_click_body_classes[] = 'evt-right-sidebar'.' '. $business_click_transparent_header;
+                $business_click_body_classes[] = 'evt-right-sidebar'.' '. $business_click_transparent_header . ' ' . $business_click_has_feature_slider;
             }
             elseif( 'both-sidebar' == $business_click_default_layout ){
-                $business_click_body_classes[] = 'evt-both-sidebar'.' '. $business_click_transparent_header ;
+                $business_click_body_classes[] = 'evt-both-sidebar'.' '. $business_click_transparent_header  . ' ' . $business_click_has_feature_slider;
             }
             elseif( 'no-sidebar' == $business_click_default_layout ){
-                $business_click_body_classes[] = 'evt-no-sidebar'.' '. $business_click_transparent_header;
+                $business_click_body_classes[] = 'evt-no-sidebar'.' '. $business_click_transparent_header . ' ' . $business_click_has_feature_slider;
             }
             
             else{
-                $business_click_body_classes[] = 'evt-'. $business_click_customizer_all_values['business-click-default-layout'].' '. $business_click_transparent_header;
+                $business_click_body_classes[] = 'evt-'. $business_click_customizer_all_values['business-click-default-layout'].' '. $business_click_transparent_header . ' ' . $business_click_has_feature_slider;
             }
         }
         else{
-            $business_click_body_classes[] = 'evt-right-sidebar'.' '. $business_click_transparent_header;
+            $business_click_body_classes[] = 'evt-right-sidebar'.' '. $business_click_transparent_header . ' ' . $business_click_has_feature_slider;
         }
     }
     return $business_click_body_classes;
