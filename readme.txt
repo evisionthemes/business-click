@@ -148,6 +148,7 @@ Note:
 * All images are licensed under [CC0](http://creativecommons.org/publicdomain/zero/1.0/legalcode.txt)
 
 1) https://pixabay.com/en/business-man-adult-american-boss-3380350/
+2) https://pixabay.com/en/woman-business-fashion-young-3060784/
 
 == WooCommerce ==
 Business Click themes includes support for WooCommerce.
