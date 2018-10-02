@@ -97,6 +97,8 @@ if (!function_exists('business_click_feature_slider')) :
     <section id="evt-banner" class="" style="opacity: 0;">
       <div class="evt-banner-slider">
         <?php
+          $resolution_lg = 1600 . 'x' . 660;
+
           $i = 0;
           foreach ($feature_slide_arrays as $feature_slide_array)
           {
@@ -113,16 +115,20 @@ if (!function_exists('business_click_feature_slider')) :
           ?>
 
           <div class="evt-banner-image evt-overlay position-relative" <?php if(  !empty($feature_slider_image)) {?> style="background-image: url('<?php echo esc_url($feature_slider_image); ?>');"<?php } ?> >
-            <div class="evt-banner-caption">
-              <?php if(  !empty($feature_slide_array['business-click-feature-title']) ) { ?>
-                <h2 class="evt-title text-white mb-4"><?php echo esc_html($feature_slide_array['business-click-feature-title']);?></h2>
-              <?php } ?>
-              <?php if(  !empty($feature_slide_array['business-click-feature-content']) ) {?>
-                <p><?php echo wp_kses_post($feature_slide_array['business-click-feature-content']);?></p>
-              <?php } ?>  
-              <?php if(!empty($feature_button_text) ) { ?>
-                <a href="<?php echo esc_url($feature_slide_array['business-click-feature-url']);?>" class="btn"><?php echo esc_html($feature_button_text);?><i class="fas fa-angle-right"></i></a>
-              <?php } ?>  
+            <img data-src="holder.js/<?php echo $resolution_lg;?>" style="opacity: 0;" class="holder">
+
+            <div class="container">
+              <div class="evt-banner-caption">
+                <?php if(  !empty($feature_slide_array['business-click-feature-title']) ) { ?>
+                  <h2 class="evt-title text-white mb-4"><?php echo esc_html($feature_slide_array['business-click-feature-title']);?></h2>
+                <?php } ?>
+                <?php if(  !empty($feature_slide_array['business-click-feature-content']) ) {?>
+                  <p><?php echo wp_kses_post($feature_slide_array['business-click-feature-content']);?></p>
+                <?php } ?>  
+                <?php if(!empty($feature_button_text) ) { ?>
+                  <a href="<?php echo esc_url($feature_slide_array['business-click-feature-url']);?>" class="btn"><?php echo esc_html($feature_button_text);?><i class="fas fa-angle-right"></i></a>
+                <?php } ?>  
+              </div>
             </div>
           </div>
           <?php

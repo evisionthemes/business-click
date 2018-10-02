@@ -195,6 +195,7 @@ function business_click_scripts() {
 	// thirdparty assets
 	wp_enqueue_script( 'jquery-bootstrap', get_template_directory_uri() . '/assets/frameworks/bootstrap/bootstrap.js', array('jquery'), true );
 	wp_enqueue_script( 'jquery-slick', get_template_directory_uri() . '/assets/frameworks/slick/slick.js', array('jquery'), true );
+	wp_enqueue_script( 'jquery-holder', get_template_directory_uri() . '/assets/frameworks/holder/holder.js', array('jquery'), true );
 
 	wp_enqueue_script( 'business-click-mobile-menu', get_template_directory_uri() . '/assets/custom/mobile-menu.js', array('jquery'), true );
 	wp_enqueue_script( 'business-click-main', get_template_directory_uri() . '/assets/custom/main.js', array('jquery'), true );

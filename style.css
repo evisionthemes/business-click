@@ -1026,7 +1026,7 @@ body.home.transparent-header:not(.small-header) nav#site-navigation > ul > li > 
 
 .white-title.widget-title, .white-title.widgettitle,
 .woocommerce div.product .white-title.product_title, .white-title.page-title, body .white-title.entry-title, .white-title.widget-title:before, .white-title.widgettitle:before,
-.woocommerce div.product .white-title.product_title:before, .white-title.page-title:before, body .white-title.entry-title:before, .pagination .nav-links ul li span.current, .wp-pagenavi ul li span.current, .woocommerce nav.woocommerce-pagination ul li span.current, .pagination .nav-links ul li span:hover, .wp-pagenavi ul li span:hover, .woocommerce nav.woocommerce-pagination ul li span:hover, .pagination .nav-links ul li a:hover, .wp-pagenavi ul li a:hover, .woocommerce nav.woocommerce-pagination ul li a:hover, body.home.transparent-header:not(.small-header) header.site-header .site-branding a, body.home.transparent-header:not(.small-header) nav#site-navigation ul#menu > li > a,
+.woocommerce div.product .white-title.product_title:before, .white-title.page-title:before, body .white-title.entry-title:before, .pagination .nav-links ul li span.current, .wp-pagenavi ul li span.current, .woocommerce nav.woocommerce-pagination ul li span.current, .pagination .nav-links ul li span:hover, .wp-pagenavi ul li span:hover, .woocommerce nav.woocommerce-pagination ul li span:hover, .pagination .nav-links ul li a:hover, .wp-pagenavi ul li a:hover, .woocommerce nav.woocommerce-pagination ul li a:hover, body.home.transparent-header:not(.small-header) nav#site-navigation ul#menu > li > a,
 body.home.transparent-header:not(.small-header) nav#site-navigation ul.nav-menu > li > a,
 body.home.transparent-header:not(.small-header) nav#site-navigation ul.menu > li > a,
 body.home.transparent-header:not(.small-header) nav#site-navigation > ul > li > a {
@@ -1106,7 +1106,7 @@ body .elementor-widget-heading.elementor-widget-heading .elementor-heading-title
 .woocommerce input.button.alt, button, input[type="button"], input[type="reset"], input[type="submit"],
 .btn.btn-reverse:hover, .wp-pagenavi a:hover,
 .wp-pagenavi span.current, .pagination .nav-links ul li span.current, .wp-pagenavi ul li span.current, .woocommerce nav.woocommerce-pagination ul li span.current, .pagination .nav-links ul li span:hover, .wp-pagenavi ul li span:hover, .woocommerce nav.woocommerce-pagination ul li span:hover, .pagination .nav-links ul li a:hover, .wp-pagenavi ul li a:hover, .woocommerce nav.woocommerce-pagination ul li a:hover, header.site-header .evt-header-wrap-nav .evt-menu-toggler-manage #menu-icon.menu-toggler:hover span, ul.slick-dots li button:hover, ul.slick-dots li.slick-active button, .woocommerce span.onsale, .woocommerce .widget_price_filter .ui-slider .ui-slider-range,
-.woocommerce .widget_price_filter .ui-slider .ui-slider-handle, .evt-carousel.slick-slider ul.slick-dots li button:hover, .evt-carousel.slick-slider ul.slick-dots li.slick-active button, .evt-featured-item-wrap .evt-featured-item .evt-featured-icon, #evt-top-header, .evt-thumb-holder .evt-thumb-hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons, #evt-testimonials .evt-testimonials-slider, .elementor-widget-button a.elementor-button, .elementor-widget-button .elementor-button, .elementor-slick-slider ul.slick-dots li button, .elementor-widget-icon.elementor-view-stacked .elementor-icon, body .elementor-social-icon, body .elementor-add-new-section .elementor-add-section-button {
+.woocommerce .widget_price_filter .ui-slider .ui-slider-handle, .evt-carousel.slick-slider ul.slick-dots li button:hover, .evt-carousel.slick-slider ul.slick-dots li.slick-active button, .evt-featured-item-wrap .evt-featured-item .evt-featured-icon, #evt-top-header, .evt-thumb-holder .evt-thumb-hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons, #evt-testimonials.dark-background, #evt-testimonials .evt-testimonials-slider, .elementor-widget-button a.elementor-button, .elementor-widget-button .elementor-button, .elementor-slick-slider ul.slick-dots li button, .elementor-widget-icon.elementor-view-stacked .elementor-icon, body .elementor-social-icon, body .elementor-add-new-section .elementor-add-section-button {
   background-color: #578ECF;
 }
 
@@ -1129,7 +1129,7 @@ header.site-header .evt-header-wrap-nav .evt-menu-toggler-manage #menu-icon.menu
 .woocommerce #respond input#submit.alt:hover,
 .woocommerce a.button.alt:hover,
 .woocommerce button.button.alt:hover,
-.woocommerce input.button.alt:hover, #evt-testimonials {
+.woocommerce input.button.alt:hover {
   background-color: #000;
 }
 
@@ -1157,7 +1157,8 @@ body .elementor-widget-counter .elementor-counter-title {
   font-family: "Catamaran", sans-serif;
 }
 
-.post-navigation .nav-previous a:before, .posts-navigation .nav-previous a:before, .post-navigation .nav-next a:after, .posts-navigation .nav-next a:after, .breadcrumbs .trail-items .trail-item + .trail-item::before {
+.post-navigation .nav-previous a:before, .posts-navigation .nav-previous a:before, .post-navigation .nav-next a:after, .posts-navigation .nav-next a:after, .breadcrumbs .trail-items .trail-item + .trail-item::before, nav#site-navigation ul li.menu-item-has-children > a:after,
+nav#site-navigation ul li.page_item_has_children > a:after {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
 }
@@ -1238,8 +1239,8 @@ body {
 #secondary .widget-title:before,
 #secondary .widgettitle:before,
 #secondary .page-title:before, .site-footer .widget-title:before {
-  left: 0;
-  margin-left: 0;
+  left: 0 !important;
+  margin-left: 0 !important;
 }
 
 .text-center.widget-title, .text-center.widgettitle,
@@ -1783,6 +1784,10 @@ textarea:focus,
 .evt-img-overlay {
   background-color: rgba(0, 0, 0, 0.5);
   content: "";
+}
+
+.home p:empty {
+  display: none;
 }
 
 /* import all the components */
@@ -2408,14 +2413,18 @@ footer.site-footer .widget_nav_menu ul li {
   transition: 0.4s all ease-in-out;
   margin: auto;
   max-width: 730px;
-  padding-left: 50px;
-  padding-right: 50px;
   right: 0;
   z-index: 99;
 }
 @media (max-width: 479px) {
   #evt-banner .nivoSlider .nivo-caption, #evt-banner .metaslider .caption-wrap, #evt-banner .coin-slider .cs-title, .evt-banner-image .evt-banner-caption {
     font-size: 0.875rem;
+  }
+}
+@media (max-width: 767px) {
+  #evt-banner .nivoSlider .nivo-caption, #evt-banner .metaslider .caption-wrap, #evt-banner .coin-slider .cs-title, .evt-banner-image .evt-banner-caption {
+    margin-left: 30px;
+    margin-right: 30px;
   }
 }
 
@@ -2559,10 +2568,10 @@ footer.site-footer .widget_nav_menu ul li {
 }
 
 #evt-banner .evt-banner-slider .evt-overlay:after, #evt-banner .evt-banner-slider .coin-slider:after {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 #evt-banner .evt-banner-slider:hover .evt-overlay:after, #evt-banner .evt-banner-slider:hover .coin-slider:after {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 ul.slick-dots {
@@ -2867,7 +2876,7 @@ ul[id^=menu-social] li {
   border-bottom: 0;
 }
 ul[id^=menu-social] li:hover {
-  padding-left: 0;
+  padding-left: 0 !important;
 }
 
 .evt-head-search-toggler {
@@ -3095,6 +3104,37 @@ body.head-search-active .evt-search-mask {
 }
 .dark-background .widget-title {
   color: #ffffff !important;
+}
+
+nav#site-navigation ul li.menu-item-has-children > a:after,
+nav#site-navigation ul li.page_item_has_children > a:after {
+  font-size: 12px;
+  content: "\f107";
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  -moz-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  -webkit-transition: 0.4s all ease-in-out;
+  -moz-transition: 0.4s all ease-in-out;
+  -o-transition: 0.4s all ease-in-out;
+  transition: 0.4s all ease-in-out;
+}
+nav#site-navigation ul li.menu-item-has-children:hover > a:after,
+nav#site-navigation ul li.page_item_has_children:hover > a:after {
+  transform: translate(0, -50%) rotate(180deg);
+}
+nav#site-navigation ul li.menu-item-has-children li > a:after,
+nav#site-navigation ul li.page_item_has_children li > a:after {
+  right: 15px;
+  transform: translate(0, -50%) rotate(270deg);
+}
+nav#site-navigation ul li.menu-item-has-children li:hover > a:after,
+nav#site-navigation ul li.page_item_has_children li:hover > a:after {
+  transform: translate(0, -50%) rotate(90deg);
 }
 
 nav#site-navigation ul {
@@ -3376,7 +3416,16 @@ nav#site-navigation {
   right: 15px;
   margin-top: 4px;
   top: 50%;
-  margin-top: -18px;
+  margin-top: -17px;
+}
+
+body.logo-left .evt-logo-manage,
+body.logo-right .evt-logo-manage {
+  width: 270px;
+}
+body.logo-left .evt-menu-toggler-manage,
+body.logo-right .evt-menu-toggler-manage {
+  width: calc(100% - 270px);
 }
 
 body.logo-left .evt-header-row .evt-logo-manage .site-branding, body.logo-right .evt-header-row .evt-logo-manage .site-branding, body.logo-center .evt-header-row .evt-logo-manage .site-branding {
@@ -3395,11 +3444,9 @@ body.logo-left .evt-header-row:after {
   clear: both;
 }
 body.logo-left .evt-header-row .evt-logo-manage {
-  width: 270px;
   float: left;
 }
 body.logo-left .evt-header-row .evt-menu-toggler-manage {
-  width: calc(100% - 270px);
   float: right;
 }
 body.logo-left .evt-header-row #site-navigation {
@@ -3417,14 +3464,12 @@ body.logo-right .evt-header-row:after {
   clear: both;
 }
 body.logo-right .evt-header-row .evt-logo-manage {
-  width: 270px;
   float: right;
 }
 body.logo-right .evt-header-row .evt-logo-manage .site-branding {
   text-align: right;
 }
 body.logo-right .evt-header-row .evt-menu-toggler-manage {
-  width: calc(100% - 270px);
   float: left;
 }
 body.logo-right .evt-header-row .evt-menu-toggler-manage nav#site-navigation ul.nav-menu,
@@ -3443,13 +3488,20 @@ body.logo-right #evt-buy-btn {
 body.home.transparent-header:not(.small-header) header.site-header {
   background-color: transparent;
   border: 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: none;
+}
+body.home.transparent-header:not(.small-header) header.site-header .site-branding .site-description,
+body.home.transparent-header:not(.small-header) header.site-header .site-branding a {
+  color: #ffffff;
+}
+body.home.transparent-header:not(.small-header) header.site-header .menu-toggler span {
+  background: #ffffff;
 }
 
 @media (min-width: 992px) {
   body.transparent-header #evt-banner .evt-banner-slider .slick-slide .evt-banner-image {
     height: 100vh;
+    max-height: 700px;
   }
 }
 body.transparent-header header.site-header .evt-header-wrap-nav .evt-menu-toggler-manage #menu-icon.menu-toggler:hover {
@@ -3457,13 +3509,6 @@ body.transparent-header header.site-header .evt-header-wrap-nav .evt-menu-toggle
 }
 body.transparent-header #evt-banner .nivoSlider .nivo-caption, body.transparent-header #evt-banner .metaslider .caption-wrap, body.transparent-header #evt-banner .coin-slider .cs-title, body.transparent-header .evt-banner-image .evt-banner-caption {
   padding-top: 80px;
-}
-
-body.home.transparent-header:not(.small-header) .site-branding .site-description {
-  color: #ffffff;
-}
-body.home.transparent-header:not(.small-header) .menu-toggler span {
-  background: #ffffff;
 }
 
 body.home.transparent-header:not(.small-header) nav#site-navigation ul.nav-menu > li.current-menu-item > a {
@@ -3558,6 +3603,12 @@ body.logo-left.small-header .evt-header-row .evt-logo-manage .site-branding .sit
 }
 #evt-featured .evt-featured-slider.slick-slider {
   column-count: 1;
+}
+#evt-featured .evt-featured-slider ul.slick-dots {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  margin-top: 0;
 }
 
 @media (max-width: 768px) {
@@ -4217,6 +4268,34 @@ body {
 
 #evt-blog + #evt-contact {
   padding-top: 0;
+}
+
+#evt-banner .evt-banner-image .container {
+  position: relative;
+  height: 100%;
+}
+#evt-banner img.holder {
+  opacity: 0;
+  width: 100% !important;
+  height: auto !important;
+  display: none;
+}
+@media (min-width: 576px) {
+  #evt-banner img.holder {
+    display: block;
+  }
+}
+@media (min-width: 576px) {
+  #evt-banner .evt-banner-image .container {
+    top: 0;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 999;
+  }
+  #evt-banner .evt-banner-image {
+    height: auto;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

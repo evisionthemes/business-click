@@ -8,7 +8,6 @@ $business_click_customizer_defaults['business-click-site-identity-color']       
 $business_click_customizer_defaults['business-click-top-header-background-bar-color']           = '#578ECF';
 $business_click_customizer_defaults['business-click-menu-header-background-color']              = '#FFFFFF';
 $business_click_customizer_defaults['business-click-business-clcik-h1-h6']                      = '#000000';
-$business_click_customizer_defaults['business-click-section-heading-bottom-border-color']       = '#578ECF';
 $business_click_customizer_defaults['business-click-footer-background-color']                   = '#1F1F1F';
 $business_click_customizer_defaults['business-click-color-reset']                               = '';
 
@@ -71,19 +70,6 @@ $business_click_settings_controls['business-click-business-clcik-h1-h6'] = array
         'section'               => 'colors',
         'type'                  => 'color',
         'priority'              => 150,
-        'active_callback'       => ''
-    )
-);
-
-$business_click_settings_controls['business-click-section-heading-bottom-border-color'] = array(
-    'setting' => array(
-        'default' => $business_click_customizer_defaults['business-click-section-heading-bottom-border-color'],
-    ),
-    'control' => array(
-        'label'                 =>  esc_html__( 'Section Header Bottom Border Color', 'business-click' ),
-        'section'               => 'colors',
-        'type'                  => 'color',
-        'priority'              => 155,
         'active_callback'       => ''
     )
 );
