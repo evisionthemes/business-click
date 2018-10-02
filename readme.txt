@@ -5,7 +5,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 
 Requires at least: 4.5
 Tested up to: 4.9.7
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 License: GNU General Public License v2 or later
 License URI: LICENSE
 
@@ -156,11 +156,15 @@ Business Click themes includes support for WooCommerce.
 Business Click themes includes support for Contact Form 7.
 
 == Changelog ==
-= - 1.0.2 - =
+
+## 1.0.3 ##
+* Slider height and overlay issue fix
+
+## 1.0.2 ##
 * Issue fixed and update.
 
-= - 1.0.1 - =
+## 1.0.1 ##
 * Issue fixed and update.
 
-= - 1.0.0 - =
+## 1.0.0 ##
 * Initial release.
