@@ -1,6 +1,6 @@
 === business-click ===
 
-Contributors: automattic
+Contributors: eVision Themes
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready, left-sidebar, right-sidebar, blog, e-commerce, theme-options, custom-colors, rtl-language-support, full-width-template, one-column, grid-layout, footer-widgets, portfolio
 
 Requires at least: 4.5
@@ -147,7 +147,7 @@ Note:
 == Image used in screenshot ==
 * All images are licensed under [CC0](http://creativecommons.org/publicdomain/zero/1.0/legalcode.txt)
 
-1) https://pixabay.com/en/office-freelancer-computer-business-620823/
+1) https://pixabay.com/en/business-man-adult-american-boss-3380350/
 
 == WooCommerce ==
 Business Click themes includes support for WooCommerce.
