@@ -4,7 +4,7 @@
 **Tags:**              [custom-background](https://wordpress.org/themes/tags/custom-background/), [custom-logo](https://wordpress.org/themes/tags/custom-logo/), [custom-menu](https://wordpress.org/themes/tags/custom-menu/), [featured-images](https://wordpress.org/themes/tags/featured-images/), [threaded-comments](https://wordpress.org/themes/tags/threaded-comments/), [translation-ready](https://wordpress.org/themes/tags/translation-ready/), [left-sidebar](https://wordpress.org/themes/tags/left-sidebar/), [right-sidebar](https://wordpress.org/themes/tags/right-sidebar), [blog](https://wordpress.org/themes/tags/blog/), [e-commerce](https://wordpress.org/themes/tags/e-commerce/), [theme-options](https://wordpress.org/themes/tags/theme-options/), [custom-colors](https://wordpress.org/themes/tags/custom-colors/), [full-width-template](https://wordpress.org/themes/tags/full-width-template/), [one-column](https://wordpress.org/themes/tags/one-column/), [grid-layout](https://wordpress.org/themes/tags/grid-layout/), [footer-widgets](https://wordpress.org/themes/tags/footer-widgets/), [portfolio](https://wordpress.org/themes/tags/portfolio)  
 **Requires at least:** 4.5  
 **Tested up to:**      4.9.7  
-**Stable tag:**        1.0.2  
+**Stable tag:**        1.0.3  
 **License:**           GNU General Public License v3 or later  
 **License URI:**       http://www.gnu.org/licenses/gpl-3.0.html  
 
@@ -60,6 +60,11 @@ License: Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICEN
 Slick:  
 Author: Ken Wheeler  
 Source: http://github.com/kenwheeler/slick  
+License: Licensed MIT
+
+Holderjs:
+Author: Ivan Malopinsky
+Source: http://holderjs.com
 License: Licensed MIT  
 
 Font Icons:  
@@ -81,10 +86,14 @@ License: Open Font License
 
 
 ### Main Slider ###
-* https://pixabay.com/en/office-freelancer-computer-business-620823/
+* https://pixabay.com/en/business-man-adult-american-boss-3380350/
+* https://pixabay.com/en/woman-business-fashion-young-3060784/
 
 
 ## Changelog ##
+
+### 1.0.3 ###
+* Slider height and overlay issue fix
 
 ### 1.0.2 ###
 * Issue fixed and update.

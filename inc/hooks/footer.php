@@ -111,7 +111,7 @@ if ( ! function_exists( 'business_click_footer' ) ) :
                     <span class="sep"> | </span>
                     
                     <?PHP    /* translators: 1: Theme name, 2: Theme author. */
-                         printf( esc_html__( 'Theme: %1$s by %2$s', 'business-click' ), 'Business Click', sprintf('<a href="%s" target = "_blank" rel="designer">%s</a>', esc_url( 'http://evisionthemes.com/' ), esc_html__( 'eVisionThemes', 'business-click' ) )  ); 
+                         printf( esc_html__( 'Theme: %1$s by %2$s', 'business-click' ), business_click_theme_name(), sprintf('<a href="%s" target = "_blank" rel="designer">%s</a>', esc_url( 'http://evisionthemes.com/' ), esc_html__( 'eVisionThemes', 'business-click' ) )  ); 
 
                     ?>
                  </div>

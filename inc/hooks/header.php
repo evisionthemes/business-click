@@ -114,7 +114,6 @@ function business_click_body_class( $business_click_body_classes ) {
         }
     }
     
-    // var_dump($business_click_customizer_all_values['business-click-feature-enable']);die();
     if( 1 == $business_click_customizer_all_values['business-click-enbale-slider'] ){
         $business_click_has_feature_slider = 'has-featured-slider';
     }

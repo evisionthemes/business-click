@@ -336,3 +336,9 @@ function business_click_register_required_plugins() {
 
 add_action( 'tgmpa_register', 'business_click_register_required_plugins' );
 
+// theme name
+if ( ! function_exists ( 'business_click_theme_name' ) ) {
+	function business_click_theme_name() {
+		return esc_html__('Business Click','business-click');
+	}
+}

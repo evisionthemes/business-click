@@ -13,7 +13,7 @@ if ( !function_exists('business_click_feature_slider_array') ) :
     {
       global $business_click_customizer_all_values;
       $slider_excerpt_length      = absint($business_click_customizer_all_values['business-click-excerpt-length']);
-      $feature_slideer_array      =  array(); 
+
       $reapeated_pages      = array('business-click-page-id');
       $feature_slider_args  = array(); 
 
