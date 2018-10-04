@@ -2,7 +2,7 @@
 if ( class_exists( 'WP_Customize_Control' ) && !class_exists( 'Evision_Customizer_Category_Dropdown_Control' )){
     /**
      * Custom Control for category dropdown
-     * @since 1.0.0
+     * @since 0.0.1
      *
      */
     class Evision_Customizer_Category_Dropdown_Control extends WP_Customize_Control {
@@ -19,29 +19,29 @@ if ( class_exists( 'WP_Customize_Control' ) && !class_exists( 'Evision_Customize
          * Function to  render the content on the theme customizer page
          *
          * @access public
-         * @since 1.0.0
+         * @since 0.0.1
          *
          * @param null
          * @return void
          *
          */
         public function render_content() {
-            $name = 'evision_customizer_dropdown_categories_' . $this->id;;
+            $name = 'evision_customizer_dropdown_categories_' . $this->id;
             $dropdown_categories = wp_dropdown_categories(
                 array(
-                    'name'              => $name,
+                    'name'              =>  $name ,
                     'echo'              => 0,
-                    'show_option_none'  => esc_html__( 'Select', 'business-click' ),
-                    'option_none_value' => '0',
+                    'show_option_none'  => esc_html__('All','business-click'),
+                    'order'             => 'DESC',
+                    'option_none_value' => '-1',
                     'selected'          => $this->value(),
                 )
             );
+            
             $dropdown_final = str_replace( '<select', '<select ' . $this->get_link(), $dropdown_categories );
-            printf(  // WPCS: XSS OK
-                '<label><span class="customize-control-title">%s</span> %s</label>',
-                esc_html($this->label),
-                $dropdown_final
-            );
+            
+            printf( // WPCS: XSS OK
+                '<label><span class="customize-control-title">%s</span> %s</label>', $this->label, $dropdown_final );
         }
     }
 }

@@ -48,6 +48,7 @@ $business_click_settings_controls['business-click-call-excerpt-length'] = array(
 
 );
 
+
 /*page selection*/
 $business_click_settings_controls['business-click-call-to-action-select-from-page'] = array(
 	'setting' => array(
@@ -57,7 +58,7 @@ $business_click_settings_controls['business-click-call-to-action-select-from-pag
 		'label'						=> esc_html__('Select page','business-click'),
 		'section'					=> 'business-click-call-to-action-portfolio',
 		'type'						=> 'dropdown-pages',
-		'priority'					=> 30,
+		'priority'					=> 50,
 		'acitive_callback'			=> ''
 	)		
 
@@ -72,7 +73,7 @@ $business_click_settings_controls['business-click-button-text'] = array(
 		'label'						=> esc_html__('Button Text','business-click'),
 		'section'					=> 'business-click-call-to-action-portfolio',
 		'type'						=> 'text',
-		'priority'					=> 40,
+		'priority'					=> 60,
 		'acitive_callback'			=> ''
 	)		
 

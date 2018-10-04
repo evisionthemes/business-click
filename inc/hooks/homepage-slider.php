@@ -9,33 +9,41 @@ if ( !function_exists('business_click_feature_slider_array') ) :
      * @param  $from_slider
      * @return array
      */
-    function business_click_feature_slider_array()
+    function business_click_feature_slider_array($from_slider)
     {
       global $business_click_customizer_all_values;
       $slider_excerpt_length      = absint($business_click_customizer_all_values['business-click-excerpt-length']);
-
-      $feature_slideer_array[0]['business-click-feature-title']     = esc_html__('Welcome To Business Click Pro!','business-click');
-      $feature_slideer_array[0]['business-click-feature-content']   =  esc_html__('Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.','business-click');
-      $feature_slideer_array[0]['business-click-feature-image']     = get_template_directory_uri()."/assets/img/slider.jpg";
-      $feature_slideer_array[0]['business-click-feature-url']       = '';
-      
+      $feature_slideer_array      =  array(); 
       $reapeated_pages      = array('business-click-page-id');
       $feature_slider_args  = array(); 
 
-      $feature_slider_post_page = evision_customizer_get_repeated_all_value(3,$reapeated_pages);
-      if (null !=$feature_slider_post_page ){
-        foreach ($feature_slider_post_page as $feature_slider_post_pages){
-          if ( 0 !=  $feature_slider_post_pages['business-click-page-id']){
-            $feature_slider_page_ids[] = $feature_slider_post_pages['business-click-page-id'];
-          }
-        }
-        if (!empty($feature_slider_page_ids ) ){
+      if('form-category' == $from_slider){
+        $business_click_slider_cat = $business_click_customizer_all_values['business-click-select-from-cat'];
+        if(0 != $business_click_slider_cat){
           $feature_slider_args = array(
-            'post_type'             => 'page',
-            'post__in'              => $feature_slider_page_ids,
-            'order_by'              => 'post__in',
-            'order'                 => 'ASC' 
-          );
+                'post_type'             => 'post',
+                'posts_per_page'        => 3,
+                'cat'                   => absint($business_click_slider_cat),
+                'ignore_sticky_posts'   => true
+            );
+        }
+      }
+      else{
+        $feature_slider_post_page = evision_customizer_get_repeated_all_value(3,$reapeated_pages);
+        if (null !=$feature_slider_post_page ){
+          foreach ($feature_slider_post_page as $feature_slider_post_pages){
+            if ( 0 !=  $feature_slider_post_pages['business-click-page-id']){
+              $feature_slider_page_ids[] = $feature_slider_post_pages['business-click-page-id'];
+            }
+          }
+          if (!empty($feature_slider_page_ids ) ){
+            $feature_slider_args = array(
+              'post_type'             => 'page',
+              'post__in'              => $feature_slider_page_ids,
+              'order_by'              => 'post__in',
+              'order'                 => 'ASC' 
+            );
+          }
         }
       }
 
@@ -52,15 +60,13 @@ if ( !function_exists('business_click_feature_slider_array') ) :
                       $thumb = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'business-click-slider-banner-image' );
                       $url = $thumb['0'];
                   }
-                  $feature_slideer_array[$i]['business-click-feature-title']         = get_the_title();
-                  if (has_excerpt()){
-                      $feature_slideer_array[$i]['business-click-feature-content']   = get_the_excerpt();
-                  }
-                  else{
-                      $feature_slideer_array[$i]['business-click-feature-content']   = business_click_words_count( $slider_excerpt_length ,get_the_content());
-                  }
-                  $feature_slideer_array[$i]['business-click-feature-url']           = esc_url( get_permalink() );
-                  $feature_slideer_array[$i]['business-click-feature-image']         = $url;
+                    $feature_slideer_array[]  =  array(
+                      'business-click-feature-title'    => get_the_title(),
+                      'business-click-feature-content'  => has_excerpt() ? get_the_excerpt() : business_click_words_count($slider_excerpt_length, get_the_content() ),
+                      'business-click-feature-image'    => $url,
+                      'business-click-feature-url'      => esc_url( get_permalink() )
+
+                    );
                   $i++;
               endwhile;
               wp_reset_postdata();
@@ -88,8 +94,8 @@ if (!function_exists('business_click_feature_slider')) :
   {
     return null;
   }
-
-  $feature_slide_arrays         = business_click_feature_slider_array();
+  $fetaure_slider_select_post   = $business_click_customizer_all_values['business-click-selct-post-form'];
+  $feature_slide_arrays         = business_click_feature_slider_array($fetaure_slider_select_post);
   if ( is_array($feature_slide_arrays) )
   {
     $feature_button_text        = esc_html($business_click_customizer_all_values['business-click-slider-button-text']); ?>

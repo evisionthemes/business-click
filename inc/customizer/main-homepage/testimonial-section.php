@@ -7,8 +7,10 @@ global $business_click_customizer_defaults;
 
 /*defaults value*/
 $business_click_customizer_defaults['business-click-testimonila-enable']				= 1;
-$business_click_customizer_defaults['business-click-testimonial-section-title']			= '';
+$business_click_customizer_defaults['business-click-testimonial-section-title']			= esc_html__('Testimonial','business-click');
 $business_click_customizer_defaults['business-click-testimonial-excerpt-length']		= 30;
+$business_click_customizer_defaults['business-click-testimonial-select-form']			= 'form-category';
+$business_click_customizer_defaults['business-click-testimonial-from-category']         = -1;
 $business_click_customizer_defaults['business-click-testimonial-select-for-page']		= 0;
 $business_click_customizer_defaults['business-click-testimonial-designation']			= '';
 $business_click_customizer_defaults['business-click-testimonial-background-image']		= '';
@@ -63,6 +65,40 @@ $business_click_settings_controls['business-click-testimonial-excerpt-length'] =
 	)
 );
 
+/* Select slider post */
+$business_click_settings_controls['business-click-testimonial-select-form'] = array(
+        'setting' => array(
+        'default'                   => $business_click_customizer_defaults['business-click-testimonial-select-form'] 
+        ),
+        'control' => array(
+            'label'                 => esc_html__('Select Slider Post Type ','business-click'),
+            'section'               => 'business-click-testimonial-section',
+            'type'                  => 'select',
+            'choices' => array(
+                'form-category'     => esc_html__('Choose From Category','business-click'),    
+                'form-post'         => esc_html__('Choose From page','business-click'),    
+            ),            
+            'priority'              => 50,
+            'acticve_callback'      => ''
+
+        ),     
+);
+
+/*post type slider from post */
+$business_click_settings_controls['business-click-testimonial-from-category'] = array(
+        'setting' => array(
+        'default'                   => $business_click_customizer_defaults['business-click-testimonial-from-category'] 
+        ),
+        'control' => array(
+            'label'                 => esc_html__('Select Category','business-click'),
+            'section'               => 'business-click-testimonial-section',
+            'type'                  => 'category_dropdown',            
+            'priority'              => 60,
+            'acticve_callback'      => ''
+
+        ),     
+);
+
 
 /*Select number of page*/
 $business_click_repeated_settings_controls['business-click-testimonial-designation'] = array(
@@ -76,7 +112,7 @@ $business_click_repeated_settings_controls['business-click-testimonial-designati
 			'label'						=> esc_html__('Designation %s','business-click'),
 			'section'					=> 'business-click-testimonial-section',
 			'type'						=> 'text',
-			'priority'					=> 50,
+			'priority'					=> 70,
 			'active_callback'			=> ''
 		)
 	),
@@ -89,7 +125,7 @@ $business_click_repeated_settings_controls['business-click-testimonial-designati
 			'label'						=> esc_html__('Testimonial %s','business-click'),
 			'section'					=> 'business-click-testimonial-section',
 			'type'						=> 'dropdown-pages',
-			'priority'					=> 50,
+			'priority'					=> 70,
 			'active_callback'			=> ''
 		)
 	),	
@@ -104,7 +140,7 @@ $business_click_settings_controls['business-click-testimonial-background-image']
 		'label'						=> esc_html__('Upload Background Image','business-click'),
 		'section'					=> 'business-click-testimonial-section',
 		'type'						=> 'image',
-		'priority'					=> 60,
+		'priority'					=> 80,
 		'active_callback'			=> ''
 	)
 );

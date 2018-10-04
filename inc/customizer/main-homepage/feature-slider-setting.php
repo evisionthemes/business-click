@@ -7,6 +7,8 @@ global $business_click_customizer_defaults;
 /*defaults value*/
 $business_click_customizer_defaults['business-click-enbale-slider']                         = 1;
 $business_click_customizer_defaults['business-click-excerpt-length']                        = 30;
+$business_click_customizer_defaults['business-click-selct-post-form']                       = 'form-category';
+$business_click_customizer_defaults['business-click-select-from-cat']                       = -1;
 $business_click_customizer_defaults['business-click-select-from-page']                      = 0;
 $business_click_customizer_defaults['business-click-slider-button-text']                    = esc_html__('Learn more','business-click');
 
@@ -45,6 +47,42 @@ $business_click_settings_controls['business-click-excerpt-length'] = array(
         'acticve_callback'  => ''
 
     )       
+);
+
+/* Select slider post */
+$business_click_settings_controls['business-click-selct-post-form'] = array(
+        'setting' => array(
+        'default'                   => $business_click_customizer_defaults['business-click-selct-post-form'] 
+        ),
+        'control' => array(
+            /* translators: %s: search slider page */
+            'label'                 => esc_html__('Select Slider Post Type ','business-click'),
+            'section'               => 'business-click-slider-section',
+            'type'                  => 'select',
+            'choices' => array(
+                'form-category'     => esc_html__('Choose From Category','business-click'),    
+                'form-post'         => esc_html__('Choose From page','business-click'),    
+            ),            
+            'priority'              => 30,
+            'acticve_callback'      => ''
+
+        ),     
+);
+
+
+/*post type slider from post */
+$business_click_settings_controls['business-click-select-from-cat'] = array(
+        'setting' => array(
+        'default'                   => $business_click_customizer_defaults['business-click-select-from-cat'] 
+        ),
+        'control' => array(
+            'label'                 => esc_html__('Select Category Slider ','business-click'),
+            'section'               => 'business-click-slider-section',
+            'type'                  => 'category_dropdown',            
+            'priority'              => 40,
+            'acticve_callback'      => ''
+
+        ),     
 );
 
 /*post type slider from page */

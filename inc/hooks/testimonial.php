@@ -5,10 +5,10 @@ if( !function_exists('business_click_testimonial_arrays') ) :
      *
      * @since Business Click 1.0.0
      *
-     * @param  null
+     * @param  $from_slider
      * @return array
      */
-	function business_click_testimonial_arrays(){
+	function business_click_testimonial_arrays($from_slider){
 		global $business_click_customizer_all_values;
 		$testimonila_number_of_word					= absint( $business_click_customizer_all_values['business-click-testimonial-excerpt-length'] );
 
@@ -20,22 +20,35 @@ if( !function_exists('business_click_testimonial_arrays') ) :
 		$testimonial_post_page 			= evision_customizer_get_repeated_all_value(2,$reapeted_page);
 		$testimonial_post_designation 	= evision_customizer_get_repeated_all_value(2,$repeated_designation);
 
-		if(  null != $testimonial_post_page ){
-			foreach($testimonial_post_page as $testimonial_post_pages){
-				if( 0 != $testimonial_post_pages['testimonial-page-ids'] ){
-					$testimonial_page_id[] = $testimonial_post_pages['testimonial-page-ids'];
-				}
-			}
-			if( !empty($testimonial_page_id) ){
-				$testimonial_args = array(
-					'post_type'			=> 'page',
-					'post__in'			=> $testimonial_page_id,
-					'orderby'			=> 'post__in',
-					'order'				=> 'ASC'	
-
-				);
+		if('form-category' == $from_slider){
+			$testimonial_post_cat = $business_click_customizer_all_values['business-click-testimonial-from-category'];
+			if( 0 != $testimonial_post_cat ){
+				$testimonial_args 	= array(
+					'post_type'				=> 'post',
+					'cat'					=> absint($testimonial_post_cat),
+					'posts_per_page'	    => 2,
+					'order'					=> 'DESC'
+				); 
 			}
 		}
+		else{
+			if(  null != $testimonial_post_page ){
+				foreach($testimonial_post_page as $testimonial_post_pages){
+					if( 0 != $testimonial_post_pages['testimonial-page-ids'] ){
+						$testimonial_page_id[] = $testimonial_post_pages['testimonial-page-ids'];
+					}
+				}
+				if( !empty($testimonial_page_id) ){
+					$testimonial_args = array(
+						'post_type'			=> 'page',
+						'post__in'			=> $testimonial_page_id,
+						'orderby'			=> 'post__in',
+						'order'				=> 'ASC'	
+
+					);
+				}
+			}
+		}	
 		if( !empty( $testimonial_args ) ){
 			/*Query start*/
 			$testimonial_ars_query 	= new WP_Query($testimonial_args);
@@ -82,7 +95,7 @@ if( !function_exists('testimonial_section') ) :
 		if( ! $business_click_customizer_all_values['business-click-testimonila-enable'] ){
 			return null;
 		}
-		$testimonial_select_post					= esc_html($business_click_customizer_all_values['business-click-testimonial-select-for-page'] );
+		$testimonial_select_post					= esc_html($business_click_customizer_all_values['business-click-testimonial-select-form'] );
 		$tesimonial_pages_array						= business_click_testimonial_arrays($testimonial_select_post);		
 
 		if( is_array($tesimonial_pages_array) )	

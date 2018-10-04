@@ -5,10 +5,10 @@ if( !function_exists('business_click_feature_array') ) :
      *
      * @since Business Click 1.0.0
      *
-     * @param string null
+     * @param  $from_slider
      * @return array
      */
-	function business_click_feature_array(){
+	function business_click_feature_array($from_slider){
 		global $business_click_customizer_all_values;
 		$feasute_single_number_words 	= absint($business_click_customizer_all_values['business-click-feature-excerpt-length']);
 		$feature_page_array 			= array();
@@ -19,19 +19,32 @@ if( !function_exists('business_click_feature_array') ) :
 		$feature_post_icon	=  evision_customizer_get_repeated_all_value(3,$repeated_icon);
 
 		$feature_page_id	= array();
-		if( null != $feature_post_page) {
-			foreach ( $feature_post_page as $feature_post_pages ){
-				if( 0 != $feature_post_pages['feature-page-ids'] ){
-					$feature_page_id[]  =  $feature_post_pages['feature-page-ids'];
-				}
-			}
-			if( !empty($feature_page_id) ){
+		if('form-category' == $from_slider){
+			$feature_post_cat = $business_click_customizer_all_values['business-click-feature-from-category'];
+			if( 0 != $feature_post_cat ){
 				$business_click_feature_arg 	= array(
-					'post_type'				=> 'page',
-					'post__in'				=> $feature_page_id,
-					'orderby'				=> 'post__in',
-					'order'					=> 'ASC'
+					'post_type'				=> 'post',
+					'cat'					=> absint($feature_post_cat),
+					'posts_per_page'	    => 3,
+					'order'					=> 'DESC'
 				); 
+			}
+		}
+		else{
+			if( null != $feature_post_page) {
+				foreach ( $feature_post_page as $feature_post_pages ){
+					if( 0 != $feature_post_pages['feature-page-ids'] ){
+						$feature_page_id[]  =  $feature_post_pages['feature-page-ids'];
+					}
+				}
+				if( !empty($feature_page_id) ){
+					$business_click_feature_arg 	= array(
+						'post_type'				=> 'page',
+						'post__in'				=> $feature_page_id,
+						'orderby'				=> 'post__in',
+						'order'					=> 'ASC'
+					); 
+				}
 			}
 		}
 
@@ -78,7 +91,7 @@ if ( !function_exists('business_click_feature') ) :
   	if (  ! $business_click_customizer_all_values['business-click-feature-enable'] ){
   		return null;
   	}
-  	$feature_select_of_page  = $business_click_customizer_all_values['business-click-feature-from-page'];
+  	$feature_select_of_page  = $business_click_customizer_all_values['business-click-feature-select-form'];
   	$feature_post_page_array = business_click_feature_array($feature_select_of_page);
   	if( is_array($feature_post_page_array)  ){
   		$feature_section_title 				= esc_html($business_click_customizer_all_values['business-click-feature-section-title']);
