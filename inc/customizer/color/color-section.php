@@ -5,7 +5,7 @@ global$business_click_customizer_defaults;
 
 /*defaults values*/
 $business_click_customizer_defaults['business-click-site-identity-color']                       = '#313131';
-$business_click_customizer_defaults['business-click-top-header-background-bar-color']           = '#578ECF';
+$business_click_customizer_defaults['business-click-top-header-background-bar-color']           = '#000000';
 $business_click_customizer_defaults['business-click-menu-header-background-color']              = '#FFFFFF';
 $business_click_customizer_defaults['business-click-business-clcik-h1-h6']                      = '#000000';
 $business_click_customizer_defaults['business-click-footer-background-color']                   = '#1F1F1F';
