@@ -148,4 +148,4 @@ if (!function_exists('business_click_feature_slider')) :
   }
  }
 endif;
-add_action('business_click_homepage','business_click_feature_slider',10);
+add_action('business_click_homepage_slider','business_click_feature_slider',10);

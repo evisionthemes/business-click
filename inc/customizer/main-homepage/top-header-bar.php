@@ -7,9 +7,9 @@ global $business_click_customizer_defaults;
 
 // defaults value
 $business_click_customizer_defaults['business-click-enbale-top-bar-header'] = 1;
-$business_click_customizer_defaults['business-click-top-bar-phone'] 		= '';
-$business_click_customizer_defaults['bussiness-click-top-bar-email'] 		= '';
-$business_click_customizer_defaults['bussiness-click-top-bar-location'] 	= '';
+$business_click_customizer_defaults['business-click-top-bar-phone'] 		= esc_html__('+977-9841XXXXXX','business-click');
+$business_click_customizer_defaults['bussiness-click-top-bar-email'] 		= esc_html__('example@gmail.com','business-click');
+$business_click_customizer_defaults['bussiness-click-top-bar-location'] 	= esc_html__('Jawalakhel, Lalitpur, Nepal','business-click');
 $business_click_customizer_defaults['bussiness-click-top-bar-social-menu'] 	= '';
 
 

@@ -13,6 +13,9 @@
  */
 
 get_header(); ?>
+
+<?php do_action('business_click_homepage_slider');?>
+
 <div class="container">
 	<div class="row">
 		<div id="primary" class="content-area">

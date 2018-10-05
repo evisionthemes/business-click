@@ -21,6 +21,7 @@ if ( 'posts' == get_option( 'show_on_front' ) )
          * @hooked busine_Craft_aboutus _page -16
          * @hooked business_click_our_service -21
 		 */
+        do_action( 'business_click_homepage_slider' );
         do_action( 'business_click_homepage' );
 
         $business_click_static_page = absint($business_click_customizer_all_values['business-click-enable-static-page']);
