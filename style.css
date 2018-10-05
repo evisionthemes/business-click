@@ -1790,6 +1790,10 @@ textarea:focus,
   display: none;
 }
 
+#evt-banner .evt-banner-image {
+  background-color: #000;
+}
+
 /* import all the components */
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 1rem;
@@ -3802,6 +3806,10 @@ body.logo-left.small-header .evt-header-row .evt-logo-manage .site-branding .sit
 
 .profile-name {
   font-size: 18px;
+}
+
+.blog.has-featured-slider #evt-banner {
+  margin-bottom: 40px;
 }
 
 #evt-blog .evt-img-overlay {
