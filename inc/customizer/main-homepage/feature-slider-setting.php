@@ -127,7 +127,7 @@ $business_click_settings_controls['business-click-slider-enable-blog'] = array(
         'default'          => $business_click_customizer_defaults['business-click-slider-enable-blog'] 
     ),
     'control' => array(
-        'label'             => esc_html__('Disable main banner section on blog archive','business-click'),
+        'label'             => esc_html__('Disable Slider on Blog Archive','business-click'),
         'section'           => 'business-click-slider-section',
         'type'              => 'checkbox',
         'priority'          => 80,
