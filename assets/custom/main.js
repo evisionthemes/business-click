@@ -3,7 +3,10 @@
 		var header_height = $('header').height();
 
 		if($('body').hasClass('fixed-header')) {
-			if($('body').hasClass('blog')) {
+			if($('body').hasClass('has-featured-slider')) {
+			}
+			else {
+				//if featured slider not present
 				header_height += 30;
 			}
 			$('#page.site').css({ 'padding-top': header_height + 'px' });
