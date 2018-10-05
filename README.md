@@ -4,7 +4,7 @@
 **Tags:**              [custom-background](https://wordpress.org/themes/tags/custom-background/), [custom-logo](https://wordpress.org/themes/tags/custom-logo/), [custom-menu](https://wordpress.org/themes/tags/custom-menu/), [featured-images](https://wordpress.org/themes/tags/featured-images/), [threaded-comments](https://wordpress.org/themes/tags/threaded-comments/), [translation-ready](https://wordpress.org/themes/tags/translation-ready/), [left-sidebar](https://wordpress.org/themes/tags/left-sidebar/), [right-sidebar](https://wordpress.org/themes/tags/right-sidebar), [blog](https://wordpress.org/themes/tags/blog/), [e-commerce](https://wordpress.org/themes/tags/e-commerce/), [theme-options](https://wordpress.org/themes/tags/theme-options/), [custom-colors](https://wordpress.org/themes/tags/custom-colors/), [full-width-template](https://wordpress.org/themes/tags/full-width-template/), [one-column](https://wordpress.org/themes/tags/one-column/), [grid-layout](https://wordpress.org/themes/tags/grid-layout/), [footer-widgets](https://wordpress.org/themes/tags/footer-widgets/), [portfolio](https://wordpress.org/themes/tags/portfolio)  
 **Requires at least:** 4.5  
 **Tested up to:**      4.9.7  
-**Stable tag:**        1.0.3  
+**Stable tag:**        1.0.4  
 **License:**           GNU General Public License v3 or later  
 **License URI:**       http://www.gnu.org/licenses/gpl-3.0.html  
 
@@ -91,6 +91,10 @@ License: Open Font License
 
 
 ## Changelog ##
+
+### 1.0.4 ###
+* Slider shown in blog archive.
+* Default posts display
 
 ### 1.0.3 ###
 * Slider height and overlay issue fix
