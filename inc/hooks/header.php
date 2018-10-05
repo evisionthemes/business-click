@@ -114,7 +114,7 @@ function business_click_body_class( $business_click_body_classes ) {
         }
     }
     
-    if ( is_home() &&  is_front_page() ) {
+    if ( is_front_page() ) {
         if( 1 == $business_click_customizer_all_values['business-click-enbale-slider'] ){
             $business_click_has_feature_slider = 'has-featured-slider';
         }
@@ -122,14 +122,15 @@ function business_click_body_class( $business_click_body_classes ) {
             $business_click_has_feature_slider = 'no-featured-slider';
         }
 
-        if( is_home() ) {
-            if( 1 == $business_click_customizer_all_values['business-click-slider-enable-blog'] ) {
-                $business_click_has_feature_slider = 'no-featured-slider';   
-            }
-        }
     }
     else {
         $business_click_has_feature_slider = '';
+    }
+    
+    if( is_home() ) {
+        if( 1 == $business_click_customizer_all_values['business-click-slider-enable-blog'] ) {
+            $business_click_has_feature_slider = 'no-featured-slider';   
+        }
     }
 
     if(!is_front_page() || ( is_front_page())){

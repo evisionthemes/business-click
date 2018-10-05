@@ -1791,7 +1791,7 @@ textarea:focus,
 }
 
 #evt-banner .evt-banner-image {
-  background-color: #000;
+  background-color: #333;
 }
 
 /* import all the components */
