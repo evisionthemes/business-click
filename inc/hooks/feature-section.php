@@ -129,8 +129,14 @@ if ( !function_exists('business_click_feature') ) :
 												</div>
 											<?php }
 											else{ ?>
-												<div class="evt-featured-img">
-												  	<img src="<?php echo esc_url($feature_sec_image);?>">
+												<div class="evt-featured-img image">
+													<a href="<?php echo esc_url($feature_post_page_arrays['feature-url']);?>">
+														<?php if($feature_sec_image != '') { ?>
+													  		<img src="<?php echo esc_url($feature_sec_image);?>">
+													  	<?php } else { ?>
+													  		<img data-src="holder.js/500x360" class="holder">
+													  	<?php } ?>
+												  	</a>
 												</div>
 											<?php } ?>
 												

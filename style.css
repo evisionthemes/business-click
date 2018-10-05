@@ -1790,8 +1790,19 @@ textarea:focus,
   display: none;
 }
 
-#evt-banner .evt-banner-image {
+#evt-banner .evt-banner-image,
+#evt-blog .evt-box-image,
+#evt-featured .evt-featured-img,
+.profile-img {
   background-color: #333;
+}
+
+#evt-testimonials img.holder,
+#evt-featured img.holder,
+#evt-blog img.holder {
+  opacity: 0;
+  width: 100% !important;
+  height: auto !important;
 }
 
 /* import all the components */

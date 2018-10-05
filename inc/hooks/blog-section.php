@@ -55,7 +55,17 @@ if( !function_exists('business_click_blog') ) :
 													<div class="evt-box-item">
 														<div class="evt-box-image image">
 															<a href="<?php the_permalink(); ?>">
-																<img src="<?php echo esc_url($th_image);?>">
+																<?php if($th_image != '') {
+																	?>
+																	<img src="<?php echo esc_url($th_image);?>">
+																	<?php
+																}
+																else {
+																	?>
+																	<img data-src="holder.js/500x360" class="holder">
+																	<?php
+																}
+																?>
 															</a>
 														</div>
 				
