@@ -14,7 +14,9 @@
 
 get_header(); ?>
 
-<?php do_action('business_click_homepage_slider');?>
+<?php if( 0 == $business_click_customizer_all_values['business-click-slider-enable-blog']){
+	do_action('business_click_homepage_slider');
+} ?>
 
 <div class="container">
 	<div class="row">

@@ -11,6 +11,8 @@ $business_click_customizer_defaults['business-click-selct-post-form']           
 $business_click_customizer_defaults['business-click-select-from-cat']                       = -1;
 $business_click_customizer_defaults['business-click-select-from-page']                      = 0;
 $business_click_customizer_defaults['business-click-slider-button-text']                    = esc_html__('Learn more','business-click');
+$business_click_customizer_defaults['business-click-slider-enable-blog']                    = 0;
+
 
 /*create section for feature slider*/
 $business_click_sections['business-click-slider-section']  = array(
@@ -119,6 +121,19 @@ $business_click_settings_controls['business-click-slider-button-text'] = array(
     )       
 );
 
+/*for blog option */
+$business_click_settings_controls['business-click-slider-enable-blog'] = array(
+    'setting' => array(
+        'default'          => $business_click_customizer_defaults['business-click-slider-enable-blog'] 
+    ),
+    'control' => array(
+        'label'             => esc_html__('Disable main banner section on blog archive','business-click'),
+        'section'           => 'business-click-slider-section',
+        'type'              => 'checkbox',
+        'priority'          => 80,
+        'acticve_callback'  => ''
 
+    )       
+);
 
 
