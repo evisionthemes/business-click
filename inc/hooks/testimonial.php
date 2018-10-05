@@ -132,7 +132,18 @@ if( !function_exists('testimonial_section') ) :
 															<p><?php echo wp_kses_post($tesimonial_pages_arrays['testimonial-content']); ?></p>
 															<div class="evt-testimonials-author">
 																<div class="profile-img">
-																	<img src="<?php echo esc_url($testimonial_image);?>">
+
+																	<?php if($testimonial_image != '') {
+																		?>
+																		<img src="<?php echo esc_url($testimonial_image);?>">
+																		<?php
+																	}
+																	else {
+																		?>
+																		<img data-src="holder.js/150x150" class="holder">
+																		<?php
+																	}
+																	?>
 																</div>	
 																<div class="profile-info">
 																	<h3 class="profile-name"><?php echo esc_html($tesimonial_pages_arrays['testimonial-title']);?></h3>	
