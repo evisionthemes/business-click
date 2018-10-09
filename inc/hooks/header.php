@@ -368,6 +368,23 @@ add_action( 'business_click_action_before_header', 'business_click_skip_to_conte
         </div>
     </header><!-- #masthead --> 
 
+
+    <?php 
+    if(is_front_page()) {
+        echo '<ul id="fp-menu" style="display: none;">';
+            // if enabled
+            business_click_fp_menu_item('Slider');
+            business_click_fp_menu_item('Featured');
+            business_click_fp_menu_item('Call To Action');
+            business_click_fp_menu_item('About');
+            business_click_fp_menu_item('Testimonials');
+            business_click_fp_menu_item('Blog');
+            business_click_fp_menu_item('Contact');
+        echo '</ul>';
+        // end if
+    }
+    ?>
+
 <div id="content" class="site-content">
 
 <?php

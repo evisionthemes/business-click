@@ -1797,9 +1797,9 @@ textarea:focus,
   background-color: #333;
 }
 
-#evt-testimonials img.holder,
-#evt-featured img.holder,
-#evt-blog img.holder {
+#evt-testimonials .holder,
+#evt-featured .holder,
+#evt-blog .holder {
   opacity: 0;
   width: 100% !important;
   height: auto !important;
@@ -1910,6 +1910,9 @@ h1, h2, h3, h4, h5, h6 {
   body.home .site-content .widget-title:before {
     left: 50%;
     margin-left: -35px;
+  }
+  body.home .site-content .site-footer .widget-title {
+    text-align: left;
   }
 }
 body.search-results .entry-title,
@@ -2576,7 +2579,7 @@ footer.site-footer .widget_nav_menu ul li {
   #evt-banner .evt-banner-slider ul.slick-dots {
     display: inline-block !important;
     position: absolute;
-    bottom: 20px;
+    bottom: 40px;
     right: 50px;
     z-index: 1;
   }
@@ -2812,6 +2815,15 @@ body.admin-bar.logo-center.big-logo-disable #big-logo-site-nav {
   body.admin-bar.fixed-header .site-header,
   body.admin-bar.logo-center.big-logo-disable #big-logo-site-nav {
     top: 0;
+  }
+}
+
+body.admin-bar.fullpage-enabled .site-footer {
+  padding-bottom: 32px;
+}
+@media screen and (max-width: 782px) {
+  body.admin-bar.fullpage-enabled .site-footer {
+    padding-bottom: 46px;
   }
 }
 
@@ -3626,7 +3638,7 @@ body.logo-left.small-header .evt-header-row .evt-logo-manage .site-branding .sit
   margin-top: 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   #evt-why-us {
     text-align: center;
   }
@@ -4293,14 +4305,14 @@ body {
   position: relative;
   height: 100%;
 }
-#evt-banner img.holder {
+#evt-banner .holder {
   opacity: 0;
   width: 100% !important;
   height: auto !important;
   display: none;
 }
 @media (min-width: 576px) {
-  #evt-banner img.holder {
+  #evt-banner .holder {
     display: block;
   }
 }

@@ -11,15 +11,15 @@ if ( ! function_exists( 'business_click_before_footer' ) ) :
      */
     function business_click_before_footer() {
     ?>
-        </div><!-- #content -->
-    </div>
-    </section>
     
     
     <!-- *****************************************
              Footer section starts
     ****************************************** -->
+    <section class="section">
+            
     <footer class="site-footer">
+        <div class="evt-img-overlay">
     <?php
     }
 endif;
@@ -118,10 +118,16 @@ if ( ! function_exists( 'business_click_footer' ) ) :
             </div><!-- .site-info -->
         </section><!-- #colophon -->     
 
+        </div><!-- evt-img-overlay -->
     </footer><!-- #colophon -->
+    
+    </section>
     <!-- *****************************************
              Footer section ends
     ****************************************** -->
+
+        </div><!-- #content -->
+    </div>
     <?php
     }
 endif;

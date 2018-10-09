@@ -100,11 +100,9 @@ if (!function_exists('business_click_feature_slider')) :
   {
     $feature_button_text        = esc_html($business_click_customizer_all_values['business-click-slider-button-text']); ?>
 
-    <section id="evt-banner" class="" style="opacity: 0;">
+    <section id="evt-banner" class="section" style="opacity: 0;">
       <div class="evt-banner-slider">
         <?php
-          $resolution_lg = 1600 . 'x' . 660;
-
           $i = 0;
           foreach ($feature_slide_arrays as $feature_slide_array)
           {
@@ -121,7 +119,7 @@ if (!function_exists('business_click_feature_slider')) :
           ?>
 
           <div class="evt-banner-image evt-overlay position-relative" <?php if(  !empty($feature_slider_image)) {?> style="background-image: url('<?php echo esc_url($feature_slider_image); ?>');"<?php } ?> >
-            <img data-src="holder.js/<?php echo $resolution_lg;?>" style="opacity: 0;" class="holder">
+            <img src="<?php echo get_template_directory_uri();?>/assets/img/1600x660.png" class="holder">
 
             <div class="container">
               <div class="evt-banner-caption">
@@ -142,6 +140,9 @@ if (!function_exists('business_click_feature_slider')) :
         }
         ?>
       </div>
+
+       <!-- move section down -->
+       <a id="moveSectionDown" class="animate-move-up-down" style="display: none;" href="#"><i class="fa fa-angle-down"></i></a>
     </section>
 
   <?php

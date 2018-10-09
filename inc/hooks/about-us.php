@@ -41,11 +41,11 @@ if( !function_exists('business_click_about_us_sections') ) :
 		            {
 		                $thumb[0] = '';
 		            }?>
-		            <section id="evt-why-us" class="">	
+		            <section id="evt-why-us" class="section">	
 						<div class="container">
-							<h2 class="widget-title evision-animate slideInDown"><?php the_title();?></h2>
 							<div class="row">
-								<div class="col align-self-center evision-animate fadeInLeft">
+								<div class="col align-self-center evision-animate fadeInLeft evt-why-us-text">
+									<h2 class="widget-title evision-animate slideInDown"><?php the_title();?></h2>
 									<p><?php echo wp_kses_post(business_click_words_count( $about_us_single_number_words ,get_the_content()));?></p>
 											
 									<?php if( (!empty($about_us_button_text)  ) ){ ?>

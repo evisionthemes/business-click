@@ -62,11 +62,6 @@ Author: Ken Wheeler
 Source: http://github.com/kenwheeler/slick  
 License: Licensed MIT
 
-Holderjs:
-Author: Ivan Malopinsky
-Source: http://holderjs.com
-License: Licensed MIT  
-
 Font Icons:  
 Author: @fontawesome  
 Source: http://fontawesome.io  

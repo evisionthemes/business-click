@@ -195,7 +195,6 @@ function business_click_scripts() {
 	// thirdparty assets
 	wp_enqueue_script( 'jquery-bootstrap', get_template_directory_uri() . '/assets/frameworks/bootstrap/bootstrap.js', array('jquery'), true );
 	wp_enqueue_script( 'jquery-slick', get_template_directory_uri() . '/assets/frameworks/slick/slick.js', array('jquery'), true );
-	wp_enqueue_script( 'jquery-holder', get_template_directory_uri() . '/assets/frameworks/holder/holder.js', array('jquery'), true );
 
 	wp_enqueue_script( 'business-click-mobile-menu', get_template_directory_uri() . '/assets/custom/mobile-menu.js', array('jquery'), true );
 	wp_enqueue_script( 'business-click-main', get_template_directory_uri() . '/assets/custom/main.js', array('jquery'), true );
@@ -341,4 +340,45 @@ if ( ! function_exists ( 'business_click_theme_name' ) ) {
 	function business_click_theme_name() {
 		return esc_html__('Business Click','business-click');
 	}
+}
+
+/* slugify */
+function business_click_slugify($text) {
+  // replace non letter or digits by -
+  $text = preg_replace('~[^\pL\d]+~u', '-', $text);
+
+  // transliterate
+  $text = iconv('utf-8', 'us-ascii//TRANSLIT', $text);
+
+  // remove unwanted characters
+  $text = preg_replace('~[^-\w]+~', '', $text);
+
+  // trim
+  $text = trim($text, '-');
+
+  // remove duplicate -
+  $text = preg_replace('~-+~', '-', $text);
+
+  // lowercase
+  $text = strtolower($text);
+
+  if (empty($text)) {
+    return 'n-a';
+  }
+
+  return $text;
+}
+
+/* fp menu */
+function business_click_fp_menu_item($title) {
+	// convert to slug
+	$title_slug = business_click_slugify($title);
+	?>
+	<li data-menuanchor="<?php echo $title_slug;?>">
+        <a href="#<?php echo $title_slug;?>">
+            <span class="fp-menu-text"><?php echo esc_html($title);?></span>
+            <span class="fp-menu-indicator"><span></span></span>
+        </a>
+    </li>
+	<?php
 }

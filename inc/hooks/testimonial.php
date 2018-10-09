@@ -105,7 +105,7 @@ if( !function_exists('testimonial_section') ) :
 			
 			?>
 			<?php if( '' != $testimonila_section_title || count( $tesimonial_pages_array ) > 0 ) { ?>			
-				<section id="evt-testimonials" class="img-cover dark-background" style="background-image: url('<?php echo esc_url($testimonila_background_image);?>');">	
+				<section id="evt-testimonials" class="section img-cover dark-background" style="background-image: url('<?php echo esc_url($testimonila_background_image);?>');">	
 					<div class="evt-img-overlay">
 						<div class="container">
 							<h2 class="widget-title evision-animate slideInDown"><?php echo esc_html($testimonila_section_title);?></h2>	
@@ -131,19 +131,8 @@ if( !function_exists('testimonial_section') ) :
 														<div class="evt-box-caption text-left">
 															<p><?php echo wp_kses_post($tesimonial_pages_arrays['testimonial-content']); ?></p>
 															<div class="evt-testimonials-author">
-																<div class="profile-img">
-
-																	<?php if($testimonial_image != '') {
-																		?>
-																		<img src="<?php echo esc_url($testimonial_image);?>">
-																		<?php
-																	}
-																	else {
-																		?>
-																		<img data-src="holder.js/150x150" class="holder">
-																		<?php
-																	}
-																	?>
+																<div class="profile-img img-cover" style="<?php if($testimonial_image != '') {?>background-image: url(<?php echo esc_url($testimonial_image);?>);<?php } ?>">
+																	<img src="<?php echo get_template_directory_uri();?>/assets/img/150x150.png" class="holder">
 																</div>	
 																<div class="profile-info">
 																	<h3 class="profile-name"><?php echo esc_html($tesimonial_pages_arrays['testimonial-title']);?></h3>	
