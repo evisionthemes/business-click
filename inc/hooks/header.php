@@ -373,26 +373,41 @@ add_action( 'business_click_action_before_header', 'business_click_skip_to_conte
     if(is_front_page()) {
         echo '<ul id="fp-menu" style="display: none;">';
             // if enabled
-            if(  $business_click_customizer_all_values['business-click-enbale-slider'] )
-                business_click_fp_menu_item('Slider');
+            $i = 1;
+            if(  $business_click_customizer_all_values['business-click-enbale-slider'] ) {
+                business_click_fp_menu_item('Slider', $i);
+                $i++;
+            }
 
-            if ( $business_click_customizer_all_values['business-click-feature-enable'] )
-                business_click_fp_menu_item('Featured');
+            if ( $business_click_customizer_all_values['business-click-feature-enable'] ) {
+                business_click_fp_menu_item('Featured', $i);
+                $i++;
+            }
 
-            if( $business_click_customizer_all_values['business-click-enable-call-to-action']  )
-                business_click_fp_menu_item('Call To Action');
+            if( $business_click_customizer_all_values['business-click-enable-call-to-action']  ) {
+                business_click_fp_menu_item('Call To Action', $i);
+                $i++;
+            }
 
-            if( $business_click_customizer_all_values['business-click-enable-about-us'] )
-                business_click_fp_menu_item('About');
+            if( $business_click_customizer_all_values['business-click-enable-about-us'] ) {
+                business_click_fp_menu_item('About', $i);
+                $i++;
+            }
 
-            if($business_click_customizer_all_values['business-click-testimonila-enable'] )
-                business_click_fp_menu_item('Testimonials');
+            if($business_click_customizer_all_values['business-click-testimonila-enable'] ) {
+                business_click_fp_menu_item('Testimonials', $i);
+                $i++;
+            }
             
-            if( $business_click_customizer_all_values['business-click-blog-section-enable']  )
-                business_click_fp_menu_item('Blog');
+            if( $business_click_customizer_all_values['business-click-blog-section-enable']  ) {
+                business_click_fp_menu_item('Blog', $i);
+                $i++;
+            }
 
-            if( $business_click_customizer_all_values['business-click-contact-section-enable'] )
-                business_click_fp_menu_item('Contact');
+            if( $business_click_customizer_all_values['business-click-contact-section-enable'] ) {
+                business_click_fp_menu_item('Contact', $i);
+                $i++;
+            }
         echo '</ul>';
         // end if
     }

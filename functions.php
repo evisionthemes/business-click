@@ -344,40 +344,11 @@ if ( ! function_exists ( 'business_click_theme_name' ) ) {
 	}
 }
 
-/* slugify */
-function business_click_slugify($text) {
-  // replace non letter or digits by -
-  $text = preg_replace('~[^\pL\d]+~u', '-', $text);
-
-  // transliterate
-  $text = iconv('utf-8', 'us-ascii//TRANSLIT', $text);
-
-  // remove unwanted characters
-  $text = preg_replace('~[^-\w]+~', '', $text);
-
-  // trim
-  $text = trim($text, '-');
-
-  // remove duplicate -
-  $text = preg_replace('~-+~', '-', $text);
-
-  // lowercase
-  $text = strtolower($text);
-
-  if (empty($text)) {
-    return 'n-a';
-  }
-
-  return $text;
-}
-
 /* fp menu */
-function business_click_fp_menu_item($title) {
-	// convert to slug
-	$title_slug = business_click_slugify($title);
+function business_click_fp_menu_item($title, $i) {
 	?>
-	<li data-menuanchor="<?php echo $title_slug;?>">
-        <a href="#<?php echo $title_slug;?>">
+	<li data-menuanchor="section<?php echo $i;?>">
+        <a href="#section<?php echo $i;?>">
             <span class="fp-menu-text"><?php echo esc_html($title);?></span>
             <span class="fp-menu-indicator"><span></span></span>
         </a>
