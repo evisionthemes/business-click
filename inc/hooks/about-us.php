@@ -16,6 +16,7 @@ if( !function_exists('business_click_about_us_sections') ) :
     	$about_us_single_number_words 		= absint($business_click_customizer_all_values['business-clcik-excerpt-length']);
     	$about_us_button_text				= esc_html( $business_click_customizer_all_values['business-click-about-us-button-text'] );
     	$about_us_page						= absint($business_click_customizer_all_values['business-click-about-us-select-page'] );
+		$about_us_background_image			= esc_url($business_click_customizer_all_values['business-click-about-us-background-image'] );
 
     	if(  ! $business_click_customizer_all_values['business-click-enable-about-us'] )
     	{
@@ -41,7 +42,7 @@ if( !function_exists('business_click_about_us_sections') ) :
 		            {
 		                $thumb[0] = '';
 		            }?>
-		            <section id="evt-why-us" class="section">	
+		            <section id="evt-why-us" class="section img-cover" style="background-image: url('<?php echo esc_url($about_us_background_image);?>');">	
 		            	<div class="evt-img-overlay">
 							<div class="container">
 								<div class="row">

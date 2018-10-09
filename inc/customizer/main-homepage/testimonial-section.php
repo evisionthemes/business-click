@@ -137,7 +137,7 @@ $business_click_settings_controls['business-click-testimonial-background-image']
 		'default'					=> $business_click_customizer_defaults['business-click-testimonial-background-image']
 	),
 	'control' => array(
-		'label'						=> esc_html__('Upload Background Image','business-click'),
+		'label'						=> esc_html__('Background Image','business-click'),
 		'section'					=> 'business-click-testimonial-section',
 		'type'						=> 'image',
 		'priority'					=> 80,

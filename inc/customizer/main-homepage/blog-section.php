@@ -11,6 +11,7 @@ $business_click_customizer_defaults['business-click-blog-section-title-text']			
 $business_click_customizer_defaults['business-click-blog-excerpt-length']					= 30;
 $business_click_customizer_defaults['business-click-blog-select-category']					=  -1;
 $business_click_customizer_defaults['business-click-blog-button-text']						= esc_html__('Read More','business-click');
+$business_click_customizer_defaults['business-click-blog-background-image']					= '';
 
 
 /*create section blog*/
@@ -93,8 +94,16 @@ $business_click_settings_controls['business-click-blog-button-text']  = array(
 
 
 
-
-
-
-
-
+/*Background image upload*/
+$business_click_settings_controls['business-click-blog-background-image'] = array(
+	'setting' => array(
+		'default'					=> $business_click_customizer_defaults['business-click-blog-background-image']
+	),
+	'control' => array(
+		'label'						=> esc_html__('Background Image','business-click'),
+		'section'					=> 'business-click-blog-section',
+		'type'						=> 'image',
+		'priority'					=> 50,
+		'active_callback'			=> ''
+	)
+);

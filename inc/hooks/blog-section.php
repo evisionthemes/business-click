@@ -17,12 +17,13 @@ if( !function_exists('business_click_blog') ) :
 		$business_click_number_single_words	= absint( $business_click_customizer_all_values['business-click-blog-excerpt-length'] );
 		$business_click_blog_category		= $business_click_customizer_all_values['business-click-blog-select-category'];
 		$business_click_button_text			= esc_html( $business_click_customizer_all_values['business-click-blog-button-text'] );
+		$business_click_blog_background_image = esc_url($business_click_customizer_all_values['business-click-blog-background-image'] );
 
 		if(  ! $business_click_customizer_all_values['business-click-blog-section-enable']  ){
 			return null;
 		} ?>
 		<?php if(!empty($business_click_blog_category) ) { ?>
-			<section id="evt-blog" class="section text-center">	
+			<section id="evt-blog" class="section text-center img-cover" style="background-image: url('<?php echo esc_url($business_click_blog_background_image);?>');">	
 				<div class="evt-img-overlay">
 					<div class="container">
 						<?php if( !empty($business_click_section_title) ) { ?>

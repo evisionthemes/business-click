@@ -14,6 +14,7 @@ $business_click_customizer_defaults['business-click-feature-from-category']     
 $business_click_customizer_defaults['business-click-feature-from-page']					= 0;
 $business_click_customizer_defaults['business-click-feature-page-icon']					= '';
 $business_click_customizer_defaults['business-click-feature-button-text']	    		= '';
+$business_click_customizer_defaults['business-click-feature-background-image']          = '';
 
 
 /*create section for feature*/
@@ -155,6 +156,16 @@ $business_click_settings_controls['business-click-feature-button-text'] =
         )
     );
 
-
-
-
+/*Background image upload*/
+$business_click_settings_controls['business-click-feature-background-image'] = array(
+    'setting' => array(
+        'default'                   => $business_click_customizer_defaults['business-click-feature-background-image']
+    ),
+    'control' => array(
+        'label'                     => esc_html__('Background Image','business-click'),
+        'section'                   => 'business-click-feature-section',
+        'type'                      => 'image',
+        'priority'                  => 80,
+        'active_callback'           => ''
+    )
+);

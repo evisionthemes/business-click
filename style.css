@@ -1133,13 +1133,13 @@ header.site-header .evt-header-wrap-nav .evt-menu-toggler-manage #menu-icon.menu
   background-color: #000;
 }
 
-#evt-featured .evt-img-overlay, #evt-why-us, #evt-portfolio .evt-img-overlay, #evt-call-to-action .evt-img-overlay, #evt-team, #evt-testimonials .evt-img-overlay, #evt-blog .evt-img-overlay, #evt-partner .evt-img-overlay, #evt-contact, #evt-short-code1,
+#evt-featured .evt-img-overlay, #evt-why-us .evt-img-overlay, #evt-portfolio .evt-img-overlay, #evt-call-to-action .evt-img-overlay, #evt-team, #evt-testimonials .evt-img-overlay, #evt-blog .evt-img-overlay, #evt-partner .evt-img-overlay, #evt-contact .evt-img-overlay, #evt-short-code1,
 #evt-short-code2, body .elementor-section-wrap > section, body.dark-theme .elementor-section-wrap > section {
   padding-top: 50px;
   padding-bottom: 50px;
 }
 @media (min-width: 1199px) {
-  #evt-featured .evt-img-overlay, #evt-why-us, #evt-portfolio .evt-img-overlay, #evt-call-to-action .evt-img-overlay, #evt-team, #evt-testimonials .evt-img-overlay, #evt-blog .evt-img-overlay, #evt-partner .evt-img-overlay, #evt-contact, #evt-short-code1,
+  #evt-featured .evt-img-overlay, #evt-why-us .evt-img-overlay, #evt-portfolio .evt-img-overlay, #evt-call-to-action .evt-img-overlay, #evt-team, #evt-testimonials .evt-img-overlay, #evt-blog .evt-img-overlay, #evt-partner .evt-img-overlay, #evt-contact .evt-img-overlay, #evt-short-code1,
   #evt-short-code2, body .elementor-section-wrap > section, body.dark-theme .elementor-section-wrap > section {
     padding-top: 80px;
     padding-bottom: 80px;
@@ -4303,6 +4303,24 @@ body {
 
 .evt-img-overlay {
   background-color: transparent;
+}
+
+#evt-call-to-action .evt-img-overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: 768px) {
+  #evt-why-us .widget-title {
+    text-align: left;
+  }
+}
+
+#evt-blog .evt-img-overlay {
+  padding-bottom: 40px;
+}
+
+#evt-contact .evt-img-overlay {
+  padding-top: 40px;
 }
 
 #evt-banner .evt-banner-image .container {
