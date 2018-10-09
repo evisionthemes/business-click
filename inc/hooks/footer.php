@@ -150,7 +150,7 @@ if ( ! function_exists( 'business_click_page_end' ) ) :
     $scroll_to_top = $business_click_customizer_all_values['business-click-enable-scroll-to-top'];
      if( 1 == $scroll_to_top) {
         ?>
-            <a id="evt-scroll-top" class="btn" href="#page"><i class="fa fa-angle-up"></i></a>
+            <a id="evt-scroll-top" class="btn" href="#slider"><i class="fa fa-angle-up"></i></a>
         <?php
         } ?>
     </div><!-- #page -->

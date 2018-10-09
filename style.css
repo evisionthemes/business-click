@@ -2447,7 +2447,7 @@ footer.site-footer .widget_nav_menu ul li {
 }
 
 #evt-banner .nivoSlider .nivo-caption h1, #evt-banner .metaslider .caption-wrap .caption h1, .evt-banner-image .evt-banner-caption .evt-title {
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
   font-size: 1.5rem;
 }
 @media (min-width: 575px) {
@@ -4299,6 +4299,10 @@ body {
 
 #evt-blog + #evt-contact {
   padding-top: 0;
+}
+
+.evt-img-overlay {
+  background-color: transparent;
 }
 
 #evt-banner .evt-banner-image .container {

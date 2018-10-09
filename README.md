@@ -62,6 +62,11 @@ Author: Ken Wheeler
 Source: http://github.com/kenwheeler/slick  
 License: Licensed MIT
 
+wow:
+Author: Matthieu Aussaguel
+Source: https://github.com/matthieua/WOW
+License: Licensed MIT
+
 Font Icons:  
 Author: @fontawesome  
 Source: http://fontawesome.io  

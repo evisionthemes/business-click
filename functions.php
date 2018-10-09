@@ -182,6 +182,7 @@ function business_click_scripts() {
 	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/assets/frameworks/bootstrap/bootstrap.css' );
 	wp_enqueue_style( 'fontawesome', get_template_directory_uri() . '/assets/frameworks/font-awesome/css/all.css' );
 	wp_enqueue_style( 'slick', get_template_directory_uri() . '/assets/frameworks/slick/slick.css' );
+	wp_enqueue_style( 'animate-css', get_template_directory_uri() . '/assets/frameworks/wow/css/animate.css' );
 
 	//theme
 	wp_enqueue_style( 'business-click-style', get_stylesheet_uri() );
@@ -195,6 +196,7 @@ function business_click_scripts() {
 	// thirdparty assets
 	wp_enqueue_script( 'jquery-bootstrap', get_template_directory_uri() . '/assets/frameworks/bootstrap/bootstrap.js', array('jquery'), true );
 	wp_enqueue_script( 'jquery-slick', get_template_directory_uri() . '/assets/frameworks/slick/slick.js', array('jquery'), true );
+	wp_enqueue_script( 'wow', get_template_directory_uri() . '/assets/frameworks/wow/js/wow.js', array('jquery'), true );
 
 	wp_enqueue_script( 'business-click-mobile-menu', get_template_directory_uri() . '/assets/custom/mobile-menu.js', array('jquery'), true );
 	wp_enqueue_script( 'business-click-main', get_template_directory_uri() . '/assets/custom/main.js', array('jquery'), true );
