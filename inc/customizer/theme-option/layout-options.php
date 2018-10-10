@@ -6,7 +6,7 @@ global $business_click_customizer_defaults;
 
 /*defaults values*/
 $business_click_customizer_defaults['business-click-enable-static-page']            = 0;
-$business_click_customizer_defaults['business-click-default-layout']                = esc_html('default','business-click');
+$business_click_customizer_defaults['business-click-default-layout']                = esc_html('no-sidebar','business-click');
 $business_click_customizer_defaults['business-click-single-post-image-align']       = 'full';
 $business_click_customizer_defaults['business-click-archive-image-align']           = 'full';
 $business_click_customizer_defaults['business-click-archive-layout']                = 'thumbnail-and-excerpt';
