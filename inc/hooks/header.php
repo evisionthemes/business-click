@@ -332,8 +332,6 @@ add_action( 'business_click_action_before_header', 'business_click_skip_to_conte
                         <!-- left and right nav -->
                         <div class="text-right evt-logo-left-right-nav evt-menu-toggler-manage">
                             <!-- search toggle icon -->
-                                                       
-                            <!-- <button class="evt-head-search-toggler float-right d-lg-none"><i class="fas fa-search"></i></button> -->
 
                             <?php if(1 == $business_click_customizer_all_values['business-click-enable-extra-button'] && !empty($business_click_customizer_all_values['business-click-text-extra-button-text']) ) { ?>
                             <?php $extra_button_name = esc_html($business_click_customizer_all_values['business-click-text-extra-button-text']);
