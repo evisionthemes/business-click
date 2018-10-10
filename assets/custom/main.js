@@ -6,8 +6,10 @@
 			if($('body').hasClass('has-featured-slider')) {
 			}
 			else {
-				//if featured slider not present
-				header_height += 30;
+				if($('body').hasClass('home')) {
+					//if featured slider not present
+					header_height += 30;//for blog page...
+				}
 			}
 			$('#page.site').css({ 'padding-top': header_height + 'px' });
 		}
@@ -93,9 +95,30 @@
 		    } 
 		});
 
-		$('#evt-scroll-top').click(function() {
-			$("html, body").animate({ scrollTop: 0 }, "slow");
-		});
+		// $('#evt-scroll-top').click(function() {
+		// 	$("html, body").animate({ scrollTop: 0 }, "slow");
+		// });
+
+		// scroll
+    	var adminbar = '';
+    	var headerHeight = $('header.site-header').height();
+    	var paddingOffset = 40;
+		
+		// might need to check if ...
+		headerHeight = '';
+		paddingOffset = '';
+    	
+    	if($('body').hasClass('admin-bar')) {
+    		adminbar = $('#wpadminbar').height();
+    	}
+	    $('a[href*="#"]').on('click', function(event){
+	        if ($(this.hash).length){
+	            event.preventDefault();
+	            $("html, body").stop().animate({
+	            	scrollTop: $(this.hash).offset().top - adminbar - headerHeight - paddingOffset
+	            }, "slow");
+	        }
+	    });
 
 		// slick_init
 		var slick_ltr, slick_rtl;
