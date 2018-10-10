@@ -381,14 +381,23 @@ add_action( 'business_click_action_before_header', 'business_click_skip_to_conte
                 $i++;
             }
 
+
+            $call_to_action_select_page                 = $business_click_customizer_all_values['business-click-call-to-action-select-from-page'];
+
             if( $business_click_customizer_all_values['business-click-enable-call-to-action']  ) {
-                business_click_fp_menu_item('Call To Action', $i);
-                $i++;
+                if( $call_to_action_select_page > 0  ){
+                    business_click_fp_menu_item('Call To Action', $i);
+                    $i++;
+                }
             }
 
+
+            $about_us_page                      = absint($business_click_customizer_all_values['business-click-about-us-select-page'] );
             if( $business_click_customizer_all_values['business-click-enable-about-us'] ) {
-                business_click_fp_menu_item('About', $i);
-                $i++;
+                if ( $about_us_page > 0 ){
+                    business_click_fp_menu_item('About', $i);
+                    $i++;
+                }
             }
 
             if($business_click_customizer_all_values['business-click-testimonila-enable'] ) {
@@ -401,9 +410,14 @@ add_action( 'business_click_action_before_header', 'business_click_skip_to_conte
                 $i++;
             }
 
+            
+            $business_contact_section_title     = esc_html($business_click_customizer_all_values['business-click-contact-section-title']);
+            $business_click_contact_form        = esc_attr($business_click_customizer_all_values['business-click-contact-section-contact-form-short-code']  );
             if( $business_click_customizer_all_values['business-click-contact-section-enable'] ) {
-                business_click_fp_menu_item('Contact', $i);
-                $i++;
+                if(!empty($business_contact_section_title) || !empty($business_click_contact_form)) {
+                    business_click_fp_menu_item('Contact', $i);
+                    $i++;
+                }
             }
         echo '</ul>';
         // end if

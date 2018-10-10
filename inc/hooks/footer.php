@@ -16,10 +16,9 @@ if ( ! function_exists( 'business_click_before_footer' ) ) :
     <!-- *****************************************
              Footer section starts
     ****************************************** -->
-    <section class="section">
+    <section class="section fp-auto-height">
             
     <footer class="site-footer">
-        <div class="evt-img-overlay">
     <?php
     }
 endif;
@@ -42,11 +41,8 @@ if ( ! function_exists( 'business_click_widget_before_footer' ) ) :
         }
         $col = 'col';
         ?>
-        <!-- *****************************************
-             Footer before section
-        ****************************************** -->
-
         <!-- footer widget -->
+        <div class="evt-img-overlay">
 
         <section class="evt-footer-widget">
             <div class="container">
@@ -75,6 +71,8 @@ if ( ! function_exists( 'business_click_widget_before_footer' ) ) :
                 </div>
             </div>
         </section>
+
+        </div><!-- evt-img-overlay -->
     <?php
     }
 endif;
@@ -118,7 +116,6 @@ if ( ! function_exists( 'business_click_footer' ) ) :
             </div><!-- .site-info -->
         </section><!-- #colophon -->     
 
-        </div><!-- evt-img-overlay -->
     </footer><!-- #colophon -->
     
     </section>
