@@ -37,6 +37,13 @@
 		nav_padding_right();
 	});
 
+	$(document).ready(function() {		
+		// dismissable
+		$('.evt-preloader-close').click(function() {
+			$('#evt-preloader').addClass('d-none');
+		});
+	});
+
 	$(window).load(function() {
 		// fixed header, boxed for archive page, enable-scroll-animations
 		$('body').addClass('fixed-header  logo-left hide-header-on-scroll-down enable-scroll-animations');

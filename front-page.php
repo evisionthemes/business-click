@@ -28,32 +28,36 @@ if ( 'posts' == get_option( 'show_on_front' ) )
         $business_click_static_page = absint($business_click_customizer_all_values['business-click-enable-static-page']);
         do_action('business_click_link');
         if (0 != $business_click_static_page ) { ?>
-            <div class="container pt-4">
-                <div class="row">
-                    <div id="primary" class="content-area">
-                        <main id="main" class="site-main" role="main">
+            <section class="section fp-auto-height">
+                <div class="evt-img-overlay">
+                    <div class="container pt-4">
+                        <div class="row">
+                            <div id="primary" class="content-area">
+                                <main id="main" class="site-main" role="main">
 
+                                    <?php
+                                    while ( have_posts() ) : the_post();
+
+                                        get_template_part( 'template-parts/content', 'page' );
+
+                                        // If comments are open or we have at least one comment, load up the comment template.
+                                        if ( comments_open() || get_comments_number() ) :
+                                            comments_template();
+                                        endif;
+
+                                    endwhile; // End of the loop.
+                                    ?>
+
+                                </main><!-- #main -->
+                            </div><!-- #primary -->
                             <?php
-                            while ( have_posts() ) : the_post();
-
-                                get_template_part( 'template-parts/content', 'page' );
-
-                                // If comments are open or we have at least one comment, load up the comment template.
-                                if ( comments_open() || get_comments_number() ) :
-                                    comments_template();
-                                endif;
-
-                            endwhile; // End of the loop.
+                                get_sidebar();
                             ?>
-
-                        </main><!-- #main -->
-                    </div><!-- #primary -->
-                    <?php
-                        get_sidebar();
-                    ?>
+                        </div>
+                        
+                    </div>
                 </div>
-                
-            </div>
+            </section>
         <?php }
 
         
