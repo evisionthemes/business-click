@@ -93,10 +93,11 @@ License: Open Font License
 ## Changelog ##
 
 ### 1.0.4 ###
-* Animations added in homepage sections.
+* Animations added in homepage sections and other micro animations added.
 * Slider shown in blog archive.
-* Default posts display and image issue fixed
-* Added Background Image Option in each sections
+* Default posts display and image issue fixed.
+* Added Background Image Option in each sections.
+* Dismissiable loading screens added.
 
 ### 1.0.3 ###
 * Slider height and overlay issue fix
