@@ -344,6 +344,27 @@ if ( ! function_exists ( 'business_click_theme_name' ) ) {
 	}
 }
 
+// customize the catgory title author
+function business_click_customizer_remove_defualt_cat_author($title)
+{
+    if( is_category() ) {
+
+        $title = single_cat_title( '', false );
+
+    } 
+    elseif ( is_tag() ) {
+
+        $title = single_tag_title( '', false );
+    }        
+    else if (is_author()){
+    	$title = '<span class="vcard">' . get_the_author() . '</span>' ;
+    }
+
+    return $title;
+
+}
+add_filter( 'get_the_archive_title', 'business_click_customizer_remove_defualt_cat_author' );
+
 /* fp menu */
 function business_click_fp_menu_item($title, $i) {
 	?>
