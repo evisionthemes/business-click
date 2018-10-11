@@ -1381,6 +1381,7 @@ textarea:focus,
   color: #ffffff;
   cursor: pointer;
   line-height: 1.5em;
+  font-weight: 600;
   padding: 5px 20px;
   overflow: hidden;
   -webkit-transform: translateZ(0);
@@ -2029,6 +2030,10 @@ a.readmore:hover,
 
 .alert-dismissible .close {
   background-color: transparent;
+}
+
+button.slick-arrow:before {
+  display: none;
 }
 
 .widget li {
@@ -3902,7 +3907,6 @@ body.logo-left.small-header .evt-header-row .evt-logo-manage .site-branding .sit
   padding-top: 0;
 }
 #evt-blog .evt-blog-slider .evt-box-caption {
-  background: #fff;
   padding: 15px;
   border: 1px solid #d3d3d3;
   border-top: 0;
