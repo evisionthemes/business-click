@@ -2645,9 +2645,6 @@ footer.site-footer .widget_nav_menu ul li {
 #evt-banner .evt-banner-slider .evt-overlay:after, #evt-banner .evt-banner-slider .coin-slider:after {
   background-color: rgba(0, 0, 0, 0.2);
 }
-#evt-banner .evt-banner-slider:hover .evt-overlay:after, #evt-banner .evt-banner-slider:hover .coin-slider:after {
-  background-color: rgba(0, 0, 0, 0.4);
-}
 
 ul.slick-dots {
   margin-top: 30px;
