@@ -378,3 +378,17 @@ function business_click_fp_menu_item($title, $i) {
     </li>
 	<?php
 }
+
+// default slider
+if ( ! function_exists ( 'business_click_default_slider_value' ) ) {
+	function business_click_default_slider_value() {
+		// displaying these defaults if uncategoried post is not present at first
+		$default_feature_slideer_array[]  =  array(
+          'business-click-feature-title'    => esc_html__('Welcome to Business Click', 'business-click'),
+          'business-click-feature-content'  => esc_html__('This is your dummy post. Please select post category or page from Customizer - Homepage / Front Page - Feature Slider Section.', 'business-click'),
+          'business-click-feature-image'    => get_template_directory_uri() . '/assets/img/slider.jpg',
+          'business-click-feature-url'      => '#'
+        );
+		return $default_feature_slideer_array;
+	}
+}
