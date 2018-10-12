@@ -3,17 +3,20 @@ global $business_click_panels;
 global $business_click_sections;
 global $business_click_settings_controls;
 global $business_click_repeated_settings_controls;
-global $business_click_customizer_defaults;
+global $defaults; //$business_click_customizer_defaults;
 
+
+$defaults = business_click_defauts_value();
+// var_dump($defaults);die('hello');
 /*default values*/
-$business_click_customizer_defaults['business-click-feature-enable']					= 1;
-$business_click_customizer_defaults['business-click-feature-section-title']				= esc_html__('Feature Section','business-click');
-$business_click_customizer_defaults['business-click-feature-excerpt-length']            = 30;
-$business_click_customizer_defaults['business-click-feature-select-form']			    = 'form-category';
-$business_click_customizer_defaults['business-click-feature-from-category']             = -1;
-$business_click_customizer_defaults['business-click-feature-from-page']					= 0;
-$business_click_customizer_defaults['business-click-feature-page-icon']					= '';
-$business_click_customizer_defaults['business-click-feature-button-text']	    		= '';
+// $business_click_customizer_defaults['business-click-feature-enable']					= 1;
+// $business_click_customizer_defaults['business-click-feature-section-title']				= esc_html__('Feature Section','business-click');
+// $business_click_customizer_defaults['business-click-feature-excerpt-length']            = 30;
+// $business_click_customizer_defaults['business-click-feature-select-form']			    = 'form-category';
+// $business_click_customizer_defaults['business-click-feature-from-category']             = -1;
+// $business_click_customizer_defaults['business-click-feature-from-page']					= 0;
+// $business_click_customizer_defaults['business-click-feature-page-icon']					= '';
+// $business_click_customizer_defaults['business-click-feature-button-text']	    		= '';
 
 
 /*create section for feature*/
@@ -28,7 +31,7 @@ $business_click_sections['business-click-feature-section'] = array(
 $business_click_settings_controls['business-click-feature-enable'] =
     array(
         'setting' =>       array(
-            'default'               =>   $business_click_customizer_defaults['business-click-feature-enable']
+            'default'               =>   $defaults['business-click-feature-enable']
         ),
         'control' =>   array(
             'label'                 =>    esc_html__( 'Show Features Section', 'business-click' ),
@@ -43,7 +46,7 @@ $business_click_settings_controls['business-click-feature-enable'] =
 $business_click_settings_controls['business-click-feature-section-title'] =
     array(
         'setting' =>       array(
-            'default'              =>   $business_click_customizer_defaults['business-click-feature-section-title']
+            'default'              =>   $defaults['business-click-feature-section-title']
         ),
         'control' =>   array(
             'label'                 =>    esc_html__( 'Section Title', 'business-click' ),
@@ -59,7 +62,7 @@ $business_click_settings_controls['business-click-feature-section-title'] =
 $business_click_settings_controls['business-click-feature-excerpt-length'] =
     array(
         'setting' =>       array(
-            'default'               =>   $business_click_customizer_defaults['business-click-feature-excerpt-length']
+            'default'               =>   $defaults['business-click-feature-excerpt-length']
         ),
         'control' =>   array(
             'label'                 =>    esc_html__( 'Excerpt Length', 'business-click' ),
@@ -73,7 +76,7 @@ $business_click_settings_controls['business-click-feature-excerpt-length'] =
 /* Select slider post */
 $business_click_settings_controls['business-click-feature-select-form'] = array(
         'setting' => array(
-        'default'                   => $business_click_customizer_defaults['business-click-feature-select-form'] 
+        'default'                   => $defaults['business-click-feature-select-form'] 
         ),
         'control' => array(
             'label'                 => esc_html__('Select Slider Post Type ','business-click'),
@@ -92,7 +95,7 @@ $business_click_settings_controls['business-click-feature-select-form'] = array(
 /*post type slider from post */
 $business_click_settings_controls['business-click-feature-from-category'] = array(
         'setting' => array(
-        'default'                   => $business_click_customizer_defaults['business-click-feature-from-category'] 
+        'default'                   => $defaults['business-click-feature-from-category'] 
         ),
         'control' => array(
             'label'                 => esc_html__('Select Category','business-click'),
@@ -111,7 +114,7 @@ $business_click_repeated_settings_controls['business-click-feature-from-page'] =
 	'repeated' 		=> 3,
 	'feature-icons-ids' => array(
         'setting' => array(
-            'default'               =>   $business_click_customizer_defaults['business-click-feature-page-icon']
+            'default'               =>   $defaults['business-click-feature-page-icon']
         ),
         'control' =>   array(
             /* translators: %s: search page icon */
@@ -126,7 +129,7 @@ $business_click_repeated_settings_controls['business-click-feature-from-page'] =
 	),
     'feature-page-ids' => array(
         'setting' => array(
-            'default'              =>   $business_click_customizer_defaults['business-click-feature-from-page']
+            'default'              =>   $defaults['business-click-feature-from-page']
         ),
         'control' =>   array(
             /* translators: %s: search feature page */
@@ -144,7 +147,7 @@ $business_click_repeated_settings_controls['business-click-feature-from-page'] =
 $business_click_settings_controls['business-click-feature-button-text'] =
     array(
         'setting' =>       array(
-            'default'               =>   $business_click_customizer_defaults['business-click-feature-button-text']
+            'default'               =>   $defaults['business-click-feature-button-text']
         ),
         'control' =>   array(
             'label'                 =>    esc_html__( 'Button Text', 'business-click' ),

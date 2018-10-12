@@ -38,4 +38,12 @@ require get_template_directory().'/inc/customizer/main-homepage/contact-us.php';
 /*footer options */
 require get_template_directory().'/inc/customizer/main-homepage/footer.php';
 
+// color options
+require get_template_directory().'/inc/customizer/color/color-section.php';
+
+//fonts options
+require get_template_directory().'/inc/customizer/font/font-section.php';
+
+
+
 

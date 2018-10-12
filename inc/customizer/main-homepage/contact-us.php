@@ -2,12 +2,13 @@
 global $business_click_sections;
 global $business_click_settings_controls;
 global $business_click_repeated_settings_controls;
-global $business_click_customizer_defaults;
+global $defaults;//$business_click_customizer_defaults;
 
+$defaults = business_click_defauts_value();
 /*defaults values*/
-$business_click_customizer_defaults['business-click-contact-section-enable']					= 1;
-$business_click_customizer_defaults['business-click-contact-section-title']						= '';
-$business_click_customizer_defaults['business-click-contact-section-contact-form-short-code']	= '';
+// $business_click_customizer_defaults['business-click-contact-section-enable']					= 1;
+// $business_click_customizer_defaults['business-click-contact-section-title']						= '';
+// $business_click_customizer_defaults['business-click-contact-section-short-code']	= '';
 
 /*create a section for contct*/
 $business_click_sections['business-click-contact-section'] = array(
@@ -19,7 +20,7 @@ $business_click_sections['business-click-contact-section'] = array(
 /*Enable contact section*/
 $business_click_settings_controls['business-click-contact-section-enable'] = array(
 	'setting' => array(
-		'default'					=> $business_click_customizer_defaults['business-click-contact-section-enable']
+		'default'					=> $defaults['business-click-contact-section-enable']
 	),
 	'control' => array(
 		'label'						=> esc_html__('Show Contact Us Section','business-click'),
@@ -34,7 +35,7 @@ $business_click_settings_controls['business-click-contact-section-enable'] = arr
 /*section Title */
 $business_click_settings_controls['business-click-contact-section-title'] = array(
 	'setting' => array(
-		'default'					=> $business_click_customizer_defaults['business-click-contact-section-title']
+		'default'					=> $defaults['business-click-contact-section-title']
 	),
 	'control' => array(
 		'label'						=> esc_html__('Title Section','business-click'),
@@ -47,9 +48,9 @@ $business_click_settings_controls['business-click-contact-section-title'] = arra
 );
 
 /*contact form short code */
-$business_click_settings_controls['business-click-contact-section-contact-form-short-code'] = array(
+$business_click_settings_controls['business-click-contact-section-short-code'] = array(
 	'setting' => array(
-		'default'					=> $business_click_customizer_defaults['business-click-contact-section-contact-form-short-code']
+		'default'					=> $defaults['business-click-contact-section-short-code']
 	),
 	'control' => array(
 		'label'						=> esc_html__('Shortcode for Contact From 7','business-click'),

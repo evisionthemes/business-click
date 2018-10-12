@@ -13,7 +13,7 @@ if( !function_exists('business_click_contact_us_section') ) :
 	{
 		global $business_click_customizer_all_values; 
 		$business_contact_section_title 	= esc_html($business_click_customizer_all_values['business-click-contact-section-title']);
-        $business_click_contact_form		= esc_attr($business_click_customizer_all_values['business-click-contact-section-contact-form-short-code']  );
+        $business_click_contact_form		= esc_attr($business_click_customizer_all_values['business-click-contact-section-short-code']  );
 
         if(  ! $business_click_customizer_all_values['business-click-contact-section-enable'] ){
         	return null;
@@ -28,11 +28,11 @@ if( !function_exists('business_click_contact_us_section') ) :
 							<div class="w-100 d-block d-md-none"></div>
 							<div class="col col-md-8 evision-animate fadeInUp">
 								<?php 
-									if(function_exists( 'wpcf7' ) && isset( $business_click_customizer_all_values['business-click-contact-section-contact-form-short-code'] )){
+									if(function_exists( 'wpcf7' ) && isset( $business_click_customizer_all_values['business-click-contact-section-short-code'] )){
 										
 		                        ?>
 									<div class="contact-form">
-										<?php echo do_shortcode( str_replace( '\\', '',  $business_click_customizer_all_values['business-click-contact-section-contact-form-short-code'] ) ); ?>
+										<?php echo do_shortcode( str_replace( '\\', '',  $business_click_customizer_all_values['business-click-contact-section-short-code'] ) ); ?>
 										
 										 
 									</div>

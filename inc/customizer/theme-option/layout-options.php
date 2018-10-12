@@ -2,16 +2,18 @@
 global $business_click_sections;
 global $business_click_settings_controls;
 global $business_click_repeated_settings_controls;
-global $business_click_customizer_defaults;
+global $defauts;//$business_click_customizer_defaults;
+
+$defaults = business_click_defauts_value();
 
 /*defaults values*/
-$business_click_customizer_defaults['business-click-enable-static-page']            = 0;
-$business_click_customizer_defaults['business-click-default-layout']                = esc_html('default','business-click');
-$business_click_customizer_defaults['business-click-single-post-image-align']       = 'full';
-$business_click_customizer_defaults['business-click-archive-image-align']           = 'full';
-$business_click_customizer_defaults['business-click-archive-layout']                = 'thumbnail-and-excerpt';
-$business_click_customizer_defaults['business-click-number-of-words']               = 35;
-$business_click_customizer_defaults['business-click-conatiner-width-layout']        = 1140;
+// $business_click_customizer_defaults['business-click-enable-static-page']            = 0;
+// $business_click_customizer_defaults['business-click-default-layout']                = esc_html('default','business-click');
+// $business_click_customizer_defaults['business-click-single-post-image-align']       = 'full';
+// $business_click_customizer_defaults['business-click-archive-image-align']           = 'full';
+// $business_click_customizer_defaults['business-click-archive-layout']                = 'thumbnail-and-excerpt';
+// $business_click_customizer_defaults['business-click-number-of-words']               = 35;
+// $business_click_customizer_defaults['business-click-conatiner-width-layout']        = 1140;
 
 $business_click_sections['business-click-layout-options'] = array(
         'priority'       => 200,
@@ -22,7 +24,7 @@ $business_click_sections['business-click-layout-options'] = array(
 /*home page static page display*/
 $business_click_settings_controls['business-click-enable-static-page'] = array(
     'setting' =>     array(
-        'default'              => $business_click_customizer_defaults['business-click-enable-static-page'],
+        'default'              => $defaults['business-click-enable-static-page'],
     ),
     'control' => array(
         'label'                 =>  esc_html__( 'Enable Static Front Page', 'business-click' ),
@@ -37,7 +39,7 @@ $business_click_settings_controls['business-click-enable-static-page'] = array(
 /*layout-options option responsive lodader start*/
 $business_click_settings_controls['business-click-default-layout'] = array(
     'setting' =>     array(
-        'default'              => $business_click_customizer_defaults['business-click-default-layout'],
+        'default'              => $defaults['business-click-default-layout'],
     ),
     'control' => array(
         'label'                 =>  esc_html__( 'Default Layout', 'business-click' ),
@@ -58,7 +60,7 @@ $business_click_settings_controls['business-click-default-layout'] = array(
 
 $business_click_settings_controls['business-click-single-post-image-align'] = array(
     'setting' =>     array(
-        'default'              => $business_click_customizer_defaults['business-click-single-post-image-align'],
+        'default'              => $defaults['business-click-single-post-image-align'],
     ),
     'control' => array(
         'label'                 =>  esc_html__( 'Alignment of Image in Single Post/Page', 'business-click' ),
@@ -79,7 +81,7 @@ $business_click_settings_controls['business-click-single-post-image-align'] = ar
    
 $business_click_settings_controls['business-click-archive-layout'] = array(
     'setting' => array(
-        'default'              => $business_click_customizer_defaults['business-click-archive-layout'],
+        'default'              => $defaults['business-click-archive-layout'],
     ),
     'control' => array(
         'label'                 =>  esc_html__( 'Archive Layout', 'business-click' ),
@@ -99,7 +101,7 @@ $business_click_settings_controls['business-click-archive-layout'] = array(
 /*container size*/
 $business_click_settings_controls['business-click-conatiner-width-layout'] = array(
     'setting' => array(
-        'default'              => $business_click_customizer_defaults['business-click-conatiner-width-layout'],
+        'default'              => $defaults['business-click-conatiner-width-layout'],
     ),
     'control' => array(
         'label'                 =>  esc_html__( 'Container Width', 'business-click' ),

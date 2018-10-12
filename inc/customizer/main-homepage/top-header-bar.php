@@ -3,15 +3,18 @@
 global $business_click_sections;
 global $business_click_settings_controls;
 global $business_click_repeated_settings_controls;
-global $business_click_customizer_defaults;
+global $defaults;
 
 // defaults value
-$business_click_customizer_defaults['business-click-enbale-top-bar-header'] = 1;
-$business_click_customizer_defaults['business-click-top-bar-phone'] 		= esc_html__('+977-9841XXXXXX','business-click');
-$business_click_customizer_defaults['bussiness-click-top-bar-email'] 		= esc_html__('example@gmail.com','business-click');
-$business_click_customizer_defaults['bussiness-click-top-bar-location'] 	= esc_html__('Jawalakhel, Lalitpur, Nepal','business-click');
-$business_click_customizer_defaults['bussiness-click-top-bar-social-menu'] 	= '';
+$defaults = business_click_defauts_value();
+// var_dump($defaults);die('k k vo ');
+// $defaults = 'business-click-enbale-top-bar-header';
+// $defaults = 'business-click-top-bar-phone';
+// $defaults = 'bussiness-click-top-bar-email';
+// $defaults = 'bussiness-click-top-bar-location';
+// $defaults = 'bussiness-click-top-bar-social-menu';
 
+// var_dump($defaults);die('k vo k ');
 
 
 //create a section for top header bar
@@ -26,7 +29,7 @@ $business_click_sections['business-click-top-header-bar-sections'] = array(
 // cretae a enable top header
 $business_click_settings_controls['business-click-enbale-top-bar-header']  = array(
 	'setting' => array(
-		'default' 		    => $business_click_customizer_defaults['business-click-enbale-top-bar-header']	
+		'default' 		    => $defaults['business-click-enbale-top-bar-header']	
 	),
 	'control' => array(
 		'label'				=> esc_html__('Show Top Header','business-click'),
@@ -42,7 +45,7 @@ $business_click_settings_controls['business-click-enbale-top-bar-header']  = arr
 // create text field for phone  number
 $business_click_settings_controls['business-click-top-bar-phone']  = array(
 	'setting' => array(
-		'default' 		    => $business_click_customizer_defaults['business-click-top-bar-phone']	
+		'default' 		    => $defaults['business-click-top-bar-phone']		
 	),
 	'control' => array(
 		'label'				=> esc_html__('Phone Number','business-click'),
@@ -58,7 +61,7 @@ $business_click_settings_controls['business-click-top-bar-phone']  = array(
 // create text field for email 
 $business_click_settings_controls['bussiness-click-top-bar-email']  = array(
 	'setting' => array(
-		'default' 		=> $business_click_customizer_defaults['bussiness-click-top-bar-email']	
+		'default' 		=> $defaults['bussiness-click-top-bar-email']	
 	),
 	'control' => array(
 		'label'				=> esc_html__('E-mail','business-click'),
@@ -74,7 +77,7 @@ $business_click_settings_controls['bussiness-click-top-bar-email']  = array(
 // create text field for location  
 $business_click_settings_controls['bussiness-click-top-bar-location']  = array(
 	'setting' => array(
-		'default' 		=> $business_click_customizer_defaults['bussiness-click-top-bar-location']	
+		'default' 		=> $defaults['bussiness-click-top-bar-location']	
 	),
 	'control' => array(
 		'label'				=> esc_html__('Location Address','business-click'),

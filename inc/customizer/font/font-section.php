@@ -4,7 +4,9 @@ global $business_click_panels;
 global $business_click_sections;
 global $business_click_settings_controls;
 global $business_click_repeated_settings_controls;
-global $business_click_customizer_defaults;
+global $defaults;//$business_click_customizer_defaults;
+
+$defaults = business_click_defauts_value();
 
 /*creating panel for fonts-setting*/
 $business_click_panels['business-click-fonts'] = array(
@@ -50,14 +52,14 @@ $business_click_google_fonts = array(
 );
 
 /*defaults values*/
-$business_click_customizer_defaults['business-click-font-family-site-identity']     = 'Catamaran:400,600,700';
-$business_click_customizer_defaults['business-click-font-family-menu']              = 'Catamaran:400,600,700';
-$business_click_customizer_defaults['business-click-font-family-h1-h6']             = 'Catamaran:400,600,700';
-$business_click_customizer_defaults['business-click-font-family-title-size']        = 30;
-$business_click_customizer_defaults['business-click-font-family-content-size']      = 16;
-$business_click_customizer_defaults['business-click-font-family-body-p']            = 'Open+Sans:400,400italic,600,700';
-$business_click_customizer_defaults['business-click-font-family-button-text']        = 'Open+Sans:400,400italic,600,700';
-$business_click_customizer_defaults['business-click-footer-copy-right-text']        = 'Open+Sans:400,400italic,600,700';
+// $business_click_customizer_defaults['business-click-font-family-site-identity']     = 'Catamaran:400,600,700';
+// $business_click_customizer_defaults['business-click-font-family-menu']              = 'Catamaran:400,600,700';
+// $business_click_customizer_defaults['business-click-font-family-h1-h6']             = 'Catamaran:400,600,700';
+// $business_click_customizer_defaults['business-click-font-family-title-size']        = 30;
+// $business_click_customizer_defaults['business-click-font-family-content-size']      = 16;
+// $business_click_customizer_defaults['business-click-font-family-body-p']            = 'Open+Sans:400,400italic,600,700';
+// $business_click_customizer_defaults['business-click-font-family-button-text']        = 'Open+Sans:400,400italic,600,700';
+// $business_click_customizer_defaults['business-click-footer-copy-right-text']        = 'Open+Sans:400,400italic,600,700';
 
 /*section*/
 $business_click_sections['business-click-family'] =
@@ -71,7 +73,7 @@ $business_click_sections['business-click-family'] =
 $business_click_settings_controls['business-click-font-family-site-identity'] =
     array(
         'setting' =>     array(
-            'default'              => $business_click_customizer_defaults['business-click-font-family-site-identity'],
+            'default'              => $defaults['business-click-font-family-site-identity'],
         ),
         'control' => array(
             'label'                 => esc_html__( 'Site Identity Font Family', 'business-click' ),
@@ -87,7 +89,7 @@ $business_click_settings_controls['business-click-font-family-site-identity'] =
 $business_click_settings_controls['business-click-font-family-menu'] =
     array(
         'setting' =>     array(
-            'default'              => $business_click_customizer_defaults['business-click-font-family-menu'],
+            'default'              => $defaults['business-click-font-family-menu'],
         ),
         'control' => array(
             'label'                 => esc_html__( 'Menu Font Family', 'business-click' ),
@@ -103,7 +105,7 @@ $business_click_settings_controls['business-click-font-family-menu'] =
 $business_click_settings_controls['business-click-font-family-h1-h6'] =
     array(
         'setting' =>     array(
-            'default'              => $business_click_customizer_defaults['business-click-font-family-h1-h6'],
+            'default'              => $defaults['business-click-font-family-h1-h6'],
         ),
         'control' => array(
             'label'                 => esc_html__( 'H1-H6 Font Family', 'business-click' ),
@@ -119,7 +121,7 @@ $business_click_settings_controls['business-click-font-family-h1-h6'] =
 $business_click_settings_controls['business-click-font-family-body-p'] =
     array(
         'setting' =>     array(
-            'default'              => $business_click_customizer_defaults['business-click-font-family-body-p'],
+            'default'              => $defaults['business-click-font-family-body-p'],
         ),
         'control' => array(
             'label'                 => esc_html__( 'Body Content Font Family', 'business-click' ),
@@ -135,7 +137,7 @@ $business_click_settings_controls['business-click-font-family-body-p'] =
 $business_click_settings_controls['business-click-font-family-button-text'] =
     array(
         'setting' =>     array(
-            'default'              => $business_click_customizer_defaults['business-click-font-family-button-text'],
+            'default'              => $defaults['business-click-font-family-button-text'],
         ),
         'control' => array(
             'label'                 => esc_html__( 'Button Text Font Family', 'business-click' ),
@@ -151,7 +153,7 @@ $business_click_settings_controls['business-click-font-family-button-text'] =
 $business_click_settings_controls['business-click-footer-copy-right-text'] =
     array(
         'setting' =>     array(
-            'default'              => $business_click_customizer_defaults['business-click-footer-copy-right-text'],
+            'default'              => $defaults['business-click-footer-copy-right-text'],
         ),
         'control' => array(
             'label'                 => esc_html__( 'Font Family for Copy Right Text', 'business-click' ),
@@ -166,7 +168,7 @@ $business_click_settings_controls['business-click-footer-copy-right-text'] =
 $business_click_settings_controls['business-click-font-family-title-size'] =
     array(
         'setting' =>     array(
-            'default'              => $business_click_customizer_defaults['business-click-font-family-title-size'],
+            'default'              => $defaults['business-click-font-family-title-size'],
         ),
         'control' => array(
             'label'                 => esc_html__( 'Title Font Size', 'business-click' ),
@@ -181,7 +183,7 @@ $business_click_settings_controls['business-click-font-family-title-size'] =
 $business_click_settings_controls['business-click-font-family-content-size'] =
     array(
         'setting' =>     array(
-            'default'              => $business_click_customizer_defaults['business-click-font-family-content-size'],
+            'default'              => $defaults['business-click-font-family-content-size'],
         ),
         'control' => array(
             'label'                 => esc_html__( 'Content Font Size', 'business-click' ),

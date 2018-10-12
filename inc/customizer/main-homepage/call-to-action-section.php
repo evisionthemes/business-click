@@ -2,13 +2,16 @@
 global $business_click_sections;
 global $business_click_settings_controls;
 global $business_click_repeated_settings_controls;
-global $business_click_customizer_defaults;
+global $defaults; // $business_click_customizer_defaults;
+
+$defaults = business_click_defauts_value();
+// var_dump($defaults);die('cta');
 
 /*defaults values*/
-$business_click_customizer_defaults['business-click-enable-call-to-action'] 					= 1;
-$business_click_customizer_defaults['business-click-call-excerpt-length']						= 30;
-$business_click_customizer_defaults['business-click-call-to-action-select-from-page']			= 0;
-$business_click_customizer_defaults['business-click-button-text']								= esc_html__('Learn more','business-click');
+// $business_click_customizer_defaults['business-click-enable-call-to-action'] 					= 1;
+// $business_click_customizer_defaults['business-click-call-excerpt-length']						= 30;
+// $business_click_customizer_defaults['business-click-call-to-action-select-from-page']			= 0;
+// $business_click_customizer_defaults['business-click-button-text']								= esc_html__('Learn more','business-click');
 
 
 /*create section for call to action*/
@@ -21,7 +24,7 @@ $business_click_sections['business-click-call-to-action-portfolio'] = array(
 /*create enable section*/
 $business_click_settings_controls['business-click-enable-call-to-action'] = array(
 	'setting' => array(
-		'default'					=> $business_click_customizer_defaults['business-click-enable-call-to-action'] 
+		'default'					=> $defaults['business-click-enable-call-to-action'] 
 	),	
 	'control' => array(
 		'label'						=> esc_html__('Show Call To Action','business-click'),
@@ -36,7 +39,7 @@ $business_click_settings_controls['business-click-enable-call-to-action'] = arra
 /*Excerpt Length*/
 $business_click_settings_controls['business-click-call-excerpt-length'] = array(
 	'setting' => array(
-		'default'					=> $business_click_customizer_defaults['business-click-call-excerpt-length'] 
+		'default'					=> $defaults['business-click-call-excerpt-length'] 
 	),	
 	'control' => array(
 		'label'						=> esc_html__('Excerpt Length','business-click'),
@@ -52,7 +55,7 @@ $business_click_settings_controls['business-click-call-excerpt-length'] = array(
 /*page selection*/
 $business_click_settings_controls['business-click-call-to-action-select-from-page'] = array(
 	'setting' => array(
-		'default'					=> $business_click_customizer_defaults['business-click-call-to-action-select-from-page'] 
+		'default'					=> $defaults['business-click-call-to-action-select-from-page'] 
 	),	
 	'control' => array(
 		'label'						=> esc_html__('Select page','business-click'),
@@ -67,7 +70,7 @@ $business_click_settings_controls['business-click-call-to-action-select-from-pag
 /*Button Text*/
 $business_click_settings_controls['business-click-button-text'] = array(
 	'setting' => array(
-		'default'					=> $business_click_customizer_defaults['business-click-button-text'] 
+		'default'					=> $defaults['business-click-button-text'] 
 	),	
 	'control' => array(
 		'label'						=> esc_html__('Button Text','business-click'),

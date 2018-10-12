@@ -7,6 +7,9 @@
  * @since business-click 1.0.0
  */
 
+require trailingslashit(get_template_directory() ).'/inc/customizer/customizer.php';
+
+require trailingslashit(get_template_directory() ) .'/inc/hooks/header.php';
 
 
 require trailingslashit(get_template_directory() ).'/inc/hooks/homepage-slider.php';
@@ -27,8 +30,6 @@ require trailingslashit(get_template_directory() ) . '/inc/hooks/inline-style.ph
 
 require trailingslashit(get_template_directory() ). '/inc/hooks/init.php';
 
-require trailingslashit(get_template_directory() ).'/inc/customizer/customizer.php';
-
 require trailingslashit(get_template_directory() ) .'/inc/sidebar-widget-init.php';
 
 require trailingslashit(get_template_directory() ) .'/inc/post-meta/layout-meta.php';
@@ -41,9 +42,9 @@ require trailingslashit(get_template_directory() ) .'/inc/function/single-image-
 
 require trailingslashit(get_template_directory() ) .'/inc/function/header-logo.php';
 
-require trailingslashit(get_template_directory() ) .'/inc/hooks/header.php';
 
 require trailingslashit(get_template_directory() ) .'/inc/hooks/footer.php';
+
 
 
 

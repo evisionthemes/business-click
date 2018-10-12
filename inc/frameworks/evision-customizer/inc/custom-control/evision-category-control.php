@@ -31,7 +31,7 @@ if ( class_exists( 'WP_Customize_Control' ) && !class_exists( 'Evision_Customize
                 array(
                     'name'              =>  $name ,
                     'echo'              => 0,
-                    'show_option_none'  => esc_html__('Uncategorized','business-click'),
+                    'show_option_none'  => esc_html__('','business-click'),
                     'order'             => 'DESC',
                     'option_none_value' => '-1',
                     'selected'          => $this->value(),

@@ -3,14 +3,16 @@
 global $business_click_sections;
 global $business_click_settings_controls;
 global $business_click_repeated_settings_controls;
-global $business_click_customizer_defaults;
+global $defaults; //$business_click_customizer_defaults;
+
+$defaults = business_click_defauts_value();
 
 /*defaults value*/
-$business_click_customizer_defaults['business-click-blog-section-enable'] 					= 1;
-$business_click_customizer_defaults['business-click-blog-section-title-text']				= esc_html__('Blog','business-click');
-$business_click_customizer_defaults['business-click-blog-excerpt-length']					= 30;
-$business_click_customizer_defaults['business-click-blog-select-category']					=  -1;
-$business_click_customizer_defaults['business-click-blog-button-text']						= esc_html__('Read More','business-click');
+// $business_click_customizer_defaults['business-click-blog-section-enable'] 					= 1;
+// $business_click_customizer_defaults['business-click-blog-section-title-text']				= esc_html__('Blog','business-click');
+// $business_click_customizer_defaults['business-click-blog-excerpt-length']					= 30;
+// $business_click_customizer_defaults['business-click-blog-select-category']					=  -1;
+// $business_click_customizer_defaults['business-click-blog-button-text']						= esc_html__('Read More','business-click');
 
 
 /*create section blog*/
@@ -23,7 +25,7 @@ $business_click_sections['business-click-blog-section'] = array(
 /*enable blog section*/
 $business_click_settings_controls['business-click-blog-section-enable']  = array(
 	'setting' => array(
-		'default'					=> $business_click_customizer_defaults['business-click-blog-section-enable']
+		'default'					=> $defaults['business-click-blog-section-enable']
 	),
 	'control' => array(
 		'label'						=> esc_html__('Show Blog Section ','business-click'),
@@ -37,7 +39,7 @@ $business_click_settings_controls['business-click-blog-section-enable']  = array
 /*Blog section Title*/
 $business_click_settings_controls['business-click-blog-section-title-text']  = array(
 	'setting' => array(
-		'default'					=> $business_click_customizer_defaults['business-click-blog-section-title-text']
+		'default'					=> $defaults['business-click-blog-section-title-text']
 	),
 	'control' => array(
 		'label'						=> esc_html__('Section Title','business-click'),
@@ -51,7 +53,7 @@ $business_click_settings_controls['business-click-blog-section-title-text']  = a
 /*Excerpt Length*/
 $business_click_settings_controls['business-click-blog-excerpt-length']  = array(
 	'setting' => array(
-		'default'					=> $business_click_customizer_defaults['business-click-blog-excerpt-length']
+		'default'					=> $defaults['business-click-blog-excerpt-length']
 	),
 	'control' => array(
 		'label'						=> esc_html__('Excerpt Length','business-click'),
@@ -65,7 +67,7 @@ $business_click_settings_controls['business-click-blog-excerpt-length']  = array
 /*Select Category*/
 $business_click_settings_controls['business-click-blog-select-category']  = array(
 	'setting' => array(
-		'default'					=> $business_click_customizer_defaults['business-click-blog-select-category']
+		'default'					=> $defaults['business-click-blog-select-category']
 	),
 	'control' => array(
 		'label'						=> esc_html__('Select Category for Blog','business-click'),
@@ -80,7 +82,7 @@ $business_click_settings_controls['business-click-blog-select-category']  = arra
 /*Button Text*/
 $business_click_settings_controls['business-click-blog-button-text']  = array(
 	'setting' => array(
-		'default'					=> $business_click_customizer_defaults['business-click-blog-button-text']
+		'default'					=> $defaults['business-click-blog-button-text']
 	),
 	'control' => array(
 		'label'						=> esc_html__('Button Text','business-click'),

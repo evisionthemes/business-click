@@ -33,6 +33,8 @@ if ( ! function_exists( 'business_click_reset_options' ) ) :
     }
 endif;
 
+require get_template_directory().'/inc/customizer/default.php';
+
 /**
  * Customizer framework added.
  */
@@ -41,26 +43,31 @@ global $business_click_panels;
 global $business_click_sections;
 global $business_click_settings_controls;
 global $business_click_repeated_settings_controls;
+global $defaults;//$business_click_customizer_defaults;
 global $business_click_customizer_defaults;
+$defaults =  business_click_defauts_value();
+
 
 /******************************************
 Modify Site Color Options
  *******************************************/
-require get_template_directory().'/inc/customizer/color/color-section.php';
+// require get_template_directory().'/inc/customizer/color/color-section.php';
 
 /******************************************
 Modify Site Font Options
  *******************************************/
-require get_template_directory().'/inc/customizer/font/font-section.php';
+// require get_template_directory().'/inc/customizer/font/font-section.php';
 
+// require get_template_directory().'/inc/customizer/default.php';
+
+/*mainhomepage panel*/
+require get_template_directory().'/inc/customizer/main-homepage/all-option-panel.php';
 
 /******************************************
 Modify Theme Option Section Options
  *******************************************/
 require get_template_directory().'/inc/customizer/theme-option/option-panel.php';
 
-/*mainhomepage panel*/
-require get_template_directory().'/inc/customizer/main-homepage/all-option-panel.php';
 
 
 /*Resetting all Values*/
@@ -165,12 +172,12 @@ if ( ! function_exists( 'business_click_get_all_options' ) ) :
     function business_click_get_all_options( $merge_default = 0 ) {
         $business_click_customizer_saved_values = evision_customizer_get_all_values( EVISION_CUSTOMIZER_NAME );
         if( 1 == $merge_default ){
-            global $business_click_customizer_defaults;
+            global $defaults;
             if(is_array( $business_click_customizer_saved_values )){
-                $business_click_customizer_saved_values = array_merge($business_click_customizer_defaults, $business_click_customizer_saved_values );
+                $business_click_customizer_saved_values = array_merge($defaults, $business_click_customizer_saved_values );
             }
             else{
-                $business_click_customizer_saved_values = $business_click_customizer_defaults;
+                $business_click_customizer_saved_values = $defaults;
             }
         }
         return $business_click_customizer_saved_values;

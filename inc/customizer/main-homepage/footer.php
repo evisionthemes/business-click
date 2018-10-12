@@ -2,11 +2,13 @@
 global $business_click_sections;
 global $business_click_settings_controls;
 global $business_click_repeated_settings_controls;
-global $business_click_customizer_defaults;
+global $defaults;//$business_click_customizer_defaults;
+
+$defaults = business_click_defauts_value();
 
 /*defaults values*/
-$business_click_customizer_defaults['business-click-copyright-text']        = esc_html__( 'Copyright &copy; All right reserved.', 'business-click' );
-$business_click_customizer_defaults['business-click-enable-scroll-to-top']  = 1;
+// $business_click_customizer_defaults['business-click-copyright-text']        = esc_html__( 'Copyright &copy; All right reserved.', 'business-click' );
+// $business_click_customizer_defaults['business-click-enable-scroll-to-top']  = 1;
 
 $business_click_sections['business-click-footer-options'] =
     array(
@@ -18,7 +20,7 @@ $business_click_sections['business-click-footer-options'] =
 $business_click_settings_controls['business-click-copyright-text'] =
     array(
         'setting' =>     array(
-            'default'              => $business_click_customizer_defaults['business-click-copyright-text'],
+            'default'              => $defaults['business-click-copyright-text'],
         ),
         'control' => array(
             'label'                 =>  esc_html__( 'Copyright Text', 'business-click' ),
@@ -32,7 +34,7 @@ $business_click_settings_controls['business-click-copyright-text'] =
 $business_click_settings_controls['business-click-enable-scroll-to-top'] =
     array(
         'setting' =>     array(
-            'default'              => $business_click_customizer_defaults['business-click-enable-scroll-to-top'],
+            'default'              => $defaults['business-click-enable-scroll-to-top'],
         ),
         'control' => array(
             'label'                 =>  esc_html__( 'Show Scroll To Top', 'business-click' ),

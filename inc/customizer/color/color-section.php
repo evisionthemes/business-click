@@ -1,15 +1,20 @@
 <?php
 global$business_click_sections;
 global$business_click_settings_controls;
-global$business_click_customizer_defaults;
+global$defaults;
+// require get_template_directory().'/inc/customizer/default.php';
+
+$defaults = business_click_defauts_value();
+
+// var_dump($defaults);die('color');
 
 /*defaults values*/
-$business_click_customizer_defaults['business-click-site-identity-color']                       = '#313131';
-$business_click_customizer_defaults['business-click-top-header-background-bar-color']           = '#000000';
-$business_click_customizer_defaults['business-click-menu-header-background-color']              = '#FFFFFF';
-$business_click_customizer_defaults['business-click-business-clcik-h1-h6']                      = '#000000';
-$business_click_customizer_defaults['business-click-footer-background-color']                   = '#1F1F1F';
-$business_click_customizer_defaults['business-click-color-reset']                               = '';
+// $business_click_customizer_defaults['business-click-site-identity-color']                       = '#313131';
+// $business_click_customizer_defaults['business-click-top-header-background-bar-color']           = '#000000';
+// $business_click_customizer_defaults['business-click-menu-header-background-color']              = '#FFFFFF';
+// $business_click_customizer_defaults['business-click-business-clcik-h1-h6']                      = '#000000';
+// $business_click_customizer_defaults['business-click-footer-background-color']                   = '#1F1F1F';
+// $business_click_customizer_defaults['business-click-color-reset']                               = '';
 
 
 /*Default color*/
@@ -22,7 +27,7 @@ $business_click_sections['colors'] = array(
 
 $business_click_settings_controls['business-click-site-identity-color'] = array(
     'setting' =>  array(
-        'default'  => $business_click_customizer_defaults['business-click-site-identity-color'],
+        'default'  => $defaults['business-click-site-identity-color'],
     ),
     'control' => array(
         'label'                 =>  esc_html__( 'Site Identity Color', 'business-click' ),
@@ -36,7 +41,7 @@ $business_click_settings_controls['business-click-site-identity-color'] = array(
 
 $business_click_settings_controls['business-click-top-header-background-bar-color'] = array(
     'setting' => array(
-        'default' => $business_click_customizer_defaults['business-click-top-header-background-bar-color'],
+        'default' => $defaults['business-click-top-header-background-bar-color'],
     ),
     'control' => array(
         'label'                 =>  esc_html__( 'Top Header Bar Background Color', 'business-click' ),
@@ -50,7 +55,7 @@ $business_click_settings_controls['business-click-top-header-background-bar-colo
 
 $business_click_settings_controls['business-click-menu-header-background-color'] = array(
     'setting' => array(
-        'default' => $business_click_customizer_defaults['business-click-menu-header-background-color'],
+        'default' => $defaults['business-click-menu-header-background-color'],
     ),
     'control' => array(
         'label'                 =>  esc_html__( 'Header Menu Background Color', 'business-click' ),
@@ -63,7 +68,7 @@ $business_click_settings_controls['business-click-menu-header-background-color']
 
 $business_click_settings_controls['business-click-business-clcik-h1-h6'] = array(
     'setting' => array(
-        'default' => $business_click_customizer_defaults['business-click-business-clcik-h1-h6'],
+        'default' => $defaults['business-click-business-clcik-h1-h6'],
     ),
     'control' => array(
         'label'                 =>  esc_html__( 'H1-H6 Color', 'business-click' ),
@@ -77,7 +82,7 @@ $business_click_settings_controls['business-click-business-clcik-h1-h6'] = array
 
 $business_click_settings_controls['business-click-footer-background-color'] = array(
     'setting' => array(
-        'default' => $business_click_customizer_defaults['business-click-footer-background-color'],
+        'default' => $defaults['business-click-footer-background-color'],
     ),
     'control' => array(
         'label'                 =>  esc_html__( 'Footer Background Color', 'business-click' ),

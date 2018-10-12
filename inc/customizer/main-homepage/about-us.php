@@ -2,13 +2,15 @@
 global $business_click_sections;
 global $business_click_settings_controls;
 global $business_click_repeated_settings_controls;
-global $business_click_customizer_defaults;
+global $defaults; //$business_click_customizer_defaults;
+
+$defaults = business_click_defauts_value();
 
 /*default value*/
-$business_click_customizer_defaults['business-click-enable-about-us']   			= 1;
-$business_click_customizer_defaults['business-clcik-excerpt-length']				= 30;
-$business_click_customizer_defaults['business-click-about-us-select-page']			= 0;
-$business_click_customizer_defaults['business-click-about-us-button-text']			= esc_html__('Details','business-click');
+// $business_click_customizer_defaults['business-click-enable-about-us']   			= 1;
+// $business_click_customizer_defaults['business-clcik-excerpt-length']				= 30;
+// $business_click_customizer_defaults['business-click-about-us-select-page']			= 0;
+// $business_click_customizer_defaults['business-click-about-us-button-text']			= esc_html__('Details','business-click');
 
 
 /*create section about us*/
@@ -21,7 +23,7 @@ $business_click_sections['busiess-click-about-us-section'] = array(
 /*enable about us*/
 $business_click_settings_controls['business-click-enable-about-us']  =  array(
 	'setting' => array(
-		'default'			=> $business_click_customizer_defaults['business-click-enable-about-us']
+		'default'			=> $defaults['business-click-enable-about-us']
 	),
 	'control' => array(
 		'label'				=> esc_html__('Show About Us Section','business-click'),
@@ -36,7 +38,7 @@ $business_click_settings_controls['business-click-enable-about-us']  =  array(
 /*excerpt length*/
 $business_click_settings_controls['business-clcik-excerpt-length']  =  array(
 	'setting' => array(
-		'default'			=> $business_click_customizer_defaults['business-clcik-excerpt-length']
+		'default'			=> $defaults['business-clcik-excerpt-length']
 	),
 	'control' => array(
 		'label'				=> esc_html__('Excerpt Length','business-click'),
@@ -51,7 +53,7 @@ $business_click_settings_controls['business-clcik-excerpt-length']  =  array(
 /*Select Page*/
 $business_click_settings_controls['business-click-about-us-select-page']  =  array(
 	'setting' => array(
-		'default'			=> $business_click_customizer_defaults['business-click-about-us-select-page']
+		'default'			=> $defaults['business-click-about-us-select-page']
 	),
 	'control' => array(
 		'label'				=> esc_html__('Select page','business-click'),
@@ -66,7 +68,7 @@ $business_click_settings_controls['business-click-about-us-select-page']  =  arr
 /*button text*/
 $business_click_settings_controls['business-click-about-us-button-text']  =  array(
 	'setting' => array(
-		'default'			=> $business_click_customizer_defaults['business-click-about-us-button-text']
+		'default'			=> $defaults['business-click-about-us-button-text']
 	),
 	'control' => array(
 		'label'				=> esc_html__('Button Text','business-click'),

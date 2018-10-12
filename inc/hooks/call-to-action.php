@@ -1,5 +1,4 @@
 <?php
-
 if( !function_exists('business_click_call_to_action_array') ) :
 	/**
      * call to action array creation
@@ -11,10 +10,11 @@ if( !function_exists('business_click_call_to_action_array') ) :
      */
 	function business_click_call_to_action_array(){
 		global $business_click_customizer_all_values;
-
+		// $business_click_customizer_all_values = business_click_defauts_value();
 		$call_to_action_number_of_word				= $business_click_customizer_all_values['business-click-call-excerpt-length'];
 		$call_to_action_button_text					= $business_click_customizer_all_values['business-click-button-text'];
 		$call_to_action_select_page					= $business_click_customizer_all_values['business-click-call-to-action-select-from-page'];
+		// var_dump($call_to_action_select_page);die('hello');
 
 		if(  ! $business_click_customizer_all_values['business-click-enable-call-to-action']  )
 		{
