@@ -14,13 +14,14 @@ if( !function_exists('business_click_contact_us_section') ) :
 		global $business_click_customizer_all_values; 
 		$business_contact_section_title 	= esc_html($business_click_customizer_all_values['business-click-contact-section-title']);
         $business_click_contact_form		= esc_attr($business_click_customizer_all_values['business-click-contact-section-short-code']  );
+		$business_click_contact_background_image			= esc_url($business_click_customizer_all_values['business-click-contact-background-image'] );
 
         if(  ! $business_click_customizer_all_values['business-click-contact-section-enable'] ){
         	return null;
         }
 		?>
 		<?php if(!empty($business_contact_section_title) || !empty($business_click_contact_form)) {?>
-			<section id="evt-contact">
+			<section id="evt-contact" class="section img-cover" style="background-image: url('<?php echo esc_url($business_click_contact_background_image);?>');">
 				<div class="container">
 					<h2 class="widget-title text-left- evision-animate slideInDown"><?php echo esc_html($business_contact_section_title);?></h2>
 					<?php if(!empty($business_click_contact_form) ) { ?>

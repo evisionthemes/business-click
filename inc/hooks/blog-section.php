@@ -17,12 +17,13 @@ if( !function_exists('business_click_blog') ) :
 		$business_click_number_single_words	= absint( $business_click_customizer_all_values['business-click-blog-excerpt-length'] );
 		$business_click_blog_category		= $business_click_customizer_all_values['business-click-blog-select-category'];
 		$business_click_button_text			= esc_html( $business_click_customizer_all_values['business-click-blog-button-text'] );
+		$business_click_blog_background_image = esc_url($business_click_customizer_all_values['business-click-blog-background-image'] );
 
 		if(  ! $business_click_customizer_all_values['business-click-blog-section-enable']  ){
 			return null;
 		} ?>
 		<?php if(!empty($business_click_blog_category) ) { ?>
-			<section id="evt-blog" class="text-center">	
+			<section id="evt-blog" class="section text-center img-cover" style="background-image: url('<?php echo esc_url($business_click_blog_background_image);?>');">	
 				<div class="evt-img-overlay">
 					<div class="container">
 						<?php if( !empty($business_click_section_title) ) { ?>
@@ -53,19 +54,9 @@ if( !function_exists('business_click_blog') ) :
 												?>
 												<div class="col-12 col-sm-6 col-lg-4 evt-box-item-wrap">
 													<div class="evt-box-item">
-														<div class="evt-box-image image">
+														<div class="evt-box-image image img-cover" style="<?php if($th_image != '') { ?>background-image: url(<?php echo esc_url($th_image);?>);<?php } ?>">
 															<a href="<?php the_permalink(); ?>">
-																<?php if($th_image != '') {
-																	?>
-																	<img src="<?php echo esc_url($th_image);?>">
-																	<?php
-																}
-																else {
-																	?>
-																	<img data-src="holder.js/500x360" class="holder">
-																	<?php
-																}
-																?>
+																<img src="<?php echo get_template_directory_uri();?>/assets/img/500x360.png" class="holder">
 															</a>
 														</div>
 				

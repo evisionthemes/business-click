@@ -17,6 +17,7 @@ if( !function_exists('business_click_about_us_sections') ) :
     	// var_dump($about_us_single_number_words);die('about');
     	$about_us_button_text				= esc_html( $business_click_customizer_all_values['business-click-about-us-button-text'] );
     	$about_us_page						= absint($business_click_customizer_all_values['business-click-about-us-select-page'] );
+		$about_us_background_image			= esc_url($business_click_customizer_all_values['business-click-about-us-background-image'] );
 
     	if(  ! $business_click_customizer_all_values['business-click-enable-about-us'] )
     	{
@@ -42,22 +43,24 @@ if( !function_exists('business_click_about_us_sections') ) :
 		            {
 		                $thumb[0] = '';
 		            }?>
-		            <section id="evt-why-us" class="">	
-						<div class="container">
-							<h2 class="widget-title evision-animate slideInDown"><?php the_title();?></h2>
-							<div class="row">
-								<div class="col align-self-center evision-animate fadeInLeft">
-									<p><?php echo wp_kses_post(business_click_words_count( $about_us_single_number_words ,get_the_content()));?></p>
-											
-									<?php if( (!empty($about_us_button_text)  ) ){ ?>
-										<a href="<?php  the_permalink();?>" class="btn"><?php echo esc_html($about_us_button_text);?><i class="fas fa-angle-right"></i></a>
-									<?php } ?>	
-								</div>
-								<div class="w-100 d-block d-md-none"></div>
-								<div class="col align-self-center evision-animate fadeInRight">
-									<figure>
-										<img src="<?php echo esc_url($thumb[0]); ?>">
-									</figure>	
+		            <section id="evt-why-us" class="section img-cover" style="background-image: url('<?php echo esc_url($about_us_background_image);?>');">	
+		            	<div class="evt-img-overlay">
+							<div class="container">
+								<div class="row">
+									<div class="col align-self-center evision-animate fadeInLeft evt-why-us-text">
+										<h2 class="widget-title evision-animate slideInDown"><?php the_title();?></h2>
+										<p><?php echo wp_kses_post(business_click_words_count( $about_us_single_number_words ,get_the_content()));?></p>
+												
+										<?php if( (!empty($about_us_button_text)  ) ){ ?>
+											<a href="<?php  the_permalink();?>" class="btn"><?php echo esc_html($about_us_button_text);?><i class="fas fa-angle-right"></i></a>
+										<?php } ?>	
+									</div>
+									<div class="w-100 d-block d-md-none"></div>
+									<div class="col align-self-center evision-animate fadeInRight">
+										<figure>
+											<img src="<?php echo esc_url($thumb[0]); ?>">
+										</figure>	
+									</div>
 								</div>
 							</div>
 						</div>

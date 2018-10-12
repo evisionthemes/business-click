@@ -97,9 +97,11 @@ if ( !function_exists('business_click_feature') ) :
   	$feature_post_page_array = business_click_feature_array($feature_select_of_page);
   	if( is_array($feature_post_page_array)  ){
   		$feature_section_title 				= esc_html($business_click_customizer_all_values['business-click-feature-section-title']);
-  		$feature_button_text					= esc_html($business_click_customizer_all_values['business-click-feature-button-text']);?>
+  		$feature_button_text					= esc_html($business_click_customizer_all_values['business-click-feature-button-text']);
+		$feature_background_image			= esc_url($business_click_customizer_all_values['business-click-feature-background-image'] );
+  		?>
   			<?php if(!empty($feature_section_title) || count($feature_post_page_array) > 0 ) { ?>
-  			<section id="evt-featured" class="text-center">	
+  			<section id="evt-featured" class="section text-center img-cover" style="background-image: url('<?php echo esc_url($feature_background_image);?>');">	
 				<div class="evt-img-overlay">
 					<div class="container">
 						<?php if(!empty($feature_section_title)) { ?>
@@ -131,13 +133,9 @@ if ( !function_exists('business_click_feature') ) :
 												</div>
 											<?php }
 											else{ ?>
-												<div class="evt-featured-img image">
+												<div class="evt-featured-img image img-cover" style="<?php if($feature_sec_image != '') { ?>background-image: url(<?php echo esc_url($feature_sec_image);?>);<?php }//endif ?>">
 													<a href="<?php echo esc_url($feature_post_page_arrays['feature-url']);?>">
-														<?php if($feature_sec_image != '') { ?>
-													  		<img src="<?php echo esc_url($feature_sec_image);?>">
-													  	<?php } else { ?>
-													  		<img data-src="holder.js/500x360" class="holder">
-													  	<?php } ?>
+														<img src="<?php echo get_template_directory_uri();?>/assets/img/500x360.png" class="holder">
 												  	</a>
 												</div>
 											<?php } ?>

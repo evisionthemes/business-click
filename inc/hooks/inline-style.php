@@ -266,6 +266,53 @@ if( ! function_exists( 'business_click_inline_style' ) ) :
         }
         // end contact
 
+        if( $business_click_customizer_all_values['business-click-feature-background-image'] != '') {
+        ?>
+            #evt-featured,
+            .evt-featured-item-wrap .evt-featured-item .evt-featured-title a,
+            #evt-featured .widget-title {
+                color: #fff;
+            }
+            #evt-featured .evt-img-overlay {
+                background-color: rgba(0,0,0,0.3);
+            }
+        <?php 
+        }
+
+        if($business_click_customizer_all_values['business-click-about-us-background-image'] != '') {
+        ?>
+            #evt-why-us,
+            #evt-why-us .widget-title {
+                color: #fff;
+            }
+            #evt-why-us .evt-img-overlay {
+                background-color: rgba(0,0,0,0.3);
+            }
+        <?php 
+        }
+
+        if($business_click_customizer_all_values['business-click-blog-background-image'] != '') { 
+        ?>
+            #evt-blog .widget-title {
+                color: #fff;
+            }
+            #evt-blog .evt-img-overlay {
+                background-color: rgba(0,0,0,0.3);
+            }
+        <?php 
+        }
+
+        if($business_click_customizer_all_values['business-click-contact-background-image'] != '') { 
+        ?>
+            #evt-contact,
+            #evt-contact .widget-title {
+                color: #fff;
+            }
+            #evt-contact .evt-img-overlay {
+                background-color: rgba(0,0,0,0.3);
+            }
+        <?php 
+        } 
         ?>
        </style>
     <?php

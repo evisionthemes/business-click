@@ -47,7 +47,7 @@ if ( !function_exists('business_click_feature_slider_array') ) :
           }
         }
       }
-
+      
       if( !empty( $feature_slider_args )){
           // the query
           $business_click_feature_slider_args = new WP_Query( $feature_slider_args );
@@ -71,7 +71,24 @@ if ( !function_exists('business_click_feature_slider_array') ) :
                   $i++;
               endwhile;
               wp_reset_postdata();
+          else:
+            // if uncategorized is not present
+            $feature_slideer_array[]  =  array(
+              'business-click-feature-title'    => esc_html__('Welcome to Business Click', 'business-click'),
+              'business-click-feature-content'  => esc_html__('This is your dummy post. Please select post category or page from Customizer - Homepage / Front Page - Feature Slider Section.', 'business-click'),
+              'business-click-feature-image'    => get_template_directory_uri() . '/assets/img/slider.jpg',
+              'business-click-feature-url'      => '#'
+            );
           endif;
+      }
+      else {
+        // if uncategorized is not present
+        $feature_slideer_array[]  =  array(
+          'business-click-feature-title'    => esc_html__('Welcome to Business Click', 'business-click'),
+          'business-click-feature-content'  => esc_html__('This is your dummy post. Please select post category or page from Customizer - Homepage / Front Page - Feature Slider Section.', 'business-click'),
+          'business-click-feature-image'    => get_template_directory_uri() . '/assets/img/slider.jpg',
+          'business-click-feature-url'      => '#'
+        );
       }
       return $feature_slideer_array;
     }
@@ -103,11 +120,9 @@ if (!function_exists('business_click_feature_slider')) :
   {
     $feature_button_text        = esc_html($business_click_customizer_all_values['business-click-slider-button-text']); ?>
 
-    <section id="evt-banner" class="" style="opacity: 0;">
+    <section id="evt-banner" class="section" style="opacity: 0;">
       <div class="evt-banner-slider">
         <?php
-          $resolution_lg = 1600 . 'x' . 660;
-
           $i = 0;
           foreach ($feature_slide_arrays as $feature_slide_array)
           {
@@ -124,7 +139,7 @@ if (!function_exists('business_click_feature_slider')) :
           ?>
 
           <div class="evt-banner-image evt-overlay position-relative" <?php if(  !empty($feature_slider_image)) {?> style="background-image: url('<?php echo esc_url($feature_slider_image); ?>');"<?php } ?> >
-            <img data-src="holder.js/<?php echo $resolution_lg;?>" style="opacity: 0;" class="holder">
+            <img src="<?php echo get_template_directory_uri();?>/assets/img/1600x660.png" class="holder">
 
             <div class="container">
               <div class="evt-banner-caption">
@@ -145,6 +160,9 @@ if (!function_exists('business_click_feature_slider')) :
         }
         ?>
       </div>
+
+       <!-- move section down -->
+       <a id="moveSectionDown" class="animate-move-up-down" style="display: none;" href="#"><i class="fa fa-angle-down"></i></a>
     </section>
 
   <?php

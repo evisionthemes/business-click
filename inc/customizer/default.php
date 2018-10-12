@@ -68,6 +68,7 @@ if(!function_exists('business_click_defauts_value') ) :
 		$defaults['business-click-feature-from-page']  					= 0;
 		$defaults['business-click-feature-page-icon']  					= '';
 		$defaults['business-click-feature-button-text']  				= '';
+		$defaults['business-click-feature-background-image']  			= '';
 
 		//CTA
 		$defaults['business-click-enable-call-to-action'] 				= 1;
@@ -80,6 +81,7 @@ if(!function_exists('business_click_defauts_value') ) :
 		$defaults['business-clcik-excerpt-length'] 						= 30;
 		$defaults['business-click-about-us-select-page'] 				= 0;
 		$defaults['business-click-about-us-button-text'] 				= esc_html__('Details','business-click');
+		$defaults['business-click-about-us-background-image'] 			= '';
 
 		//testimonial
 		$defaults['business-click-testimonila-enable']					= 1;
@@ -97,15 +99,17 @@ if(!function_exists('business_click_defauts_value') ) :
 		$defaults['business-click-blog-excerpt-length'] 				= 30;
 		$defaults['business-click-blog-select-category'] 				= -1;
 		$defaults['business-click-blog-button-text'] 					= esc_html__('Read More','business-click');
+		$defaults['business-click-blog-background-image'] 				= '';
 
 		//Contact us Section
 		$defaults['business-click-contact-section-enable'] 				= 1;
 		$defaults['business-click-contact-section-title'] 				= '';
-		$defaults['business-click-contact-section-short-code'] 			= 1;
+		$defaults['business-click-contact-section-short-code'] 			= '';
+		$defaults['business-click-contact-background-image'] 			= '';
 
 		//layout options
 		$defaults['business-click-enable-static-page'] 					= 0;
-		$defaults['business-click-default-layout']     					= esc_html('default','business-click');
+		$defaults['business-click-default-layout']     					= esc_html('no-sidebar','business-click');
 		$defaults['business-click-single-post-image-align'] 			= 'full';
 		$defaults['business-click-archive-image-align']     			= 'full';
 		$defaults['business-click-archive-layout'] 						= 'thumbnail-and-excerpt';

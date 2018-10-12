@@ -103,9 +103,6 @@ function business_click_body_class( $business_click_body_classes ) {
   $business_click_transparent_header = '';
     $transparant_header = $business_click_customizer_all_values['business-click-enable-transparent-header'];
     if ( is_home() &&  is_front_page() ) {
-    }
-    else
-    {
         if($transparant_header == 1 &&  ($business_click_customizer_all_values['business-click-enbale-slider'] == 1) ){
             $business_click_transparent_header = "transparent-header";
         }
@@ -113,6 +110,14 @@ function business_click_body_class( $business_click_body_classes ) {
             $business_click_transparent_header = "non-tarnsparent";
         }
     }
+    
+    if( is_home() ) {
+        //hide on blog
+        if( 1 == $business_click_customizer_all_values['business-click-slider-enable-blog'] ) {
+            $business_click_transparent_header = 'non-tarnsparent';  
+        }
+    }
+    
     
     if ( is_front_page() ) {
         if( 1 == $business_click_customizer_all_values['business-click-enbale-slider'] ){
@@ -129,7 +134,7 @@ function business_click_body_class( $business_click_body_classes ) {
     
     if( is_home() ) {
         if( 1 == $business_click_customizer_all_values['business-click-slider-enable-blog'] ) {
-            $business_click_has_feature_slider = 'no-featured-slider';   
+            $business_click_has_feature_slider = 'no-featured-slider';  
         }
     }
 
@@ -233,7 +238,11 @@ add_action( 'business_click_action_before_header', 'business_click_skip_to_conte
        ?>
         <!-- preloader -->
         <div id="evt-preloader" style="">
-            <div id="status" style=""><i class="fa fa-spinner fa-spin"></i></div>
+            <div id="status" style="">
+                <i class="fa fa-times evt-preloader-close"></i>
+                
+                <i class="fa fa-spinner fa-spin"></i>
+            </div>
         </div>
 
         <?php $header_image = get_header_image();
@@ -342,7 +351,7 @@ add_action( 'business_click_action_before_header', 'business_click_skip_to_conte
                             <?php $extra_button_name = esc_html($business_click_customizer_all_values['business-click-text-extra-button-text']);
                                   $extra_button_url  = esc_url($business_click_customizer_all_values['business-click-link-extra-button']);
                              ?>
-                                <a href="<?php echo esc_url($extra_button_url); ?>" id="evt-buy-btn" class="btn btn-reverse d-none d-sm-block float-right" target="_blank"><?php echo esc_html($extra_button_name) ?></a>
+                                <a href="<?php echo esc_url($extra_button_url); ?>" id="evt-buy-btn" class="btn d-none d-sm-block float-right" target="_blank"><?php echo esc_html($extra_button_name) ?></a>
                             <?php }?>    
 
                             <button class="menu-toggler" id="menu-icon">
@@ -370,6 +379,65 @@ add_action( 'business_click_action_before_header', 'business_click_skip_to_conte
             </div>
         </div>
     </header><!-- #masthead --> 
+
+
+    <?php 
+    if(is_front_page()) {
+        echo '<ul id="fp-menu" style="display: none;">';
+            // if enabled
+            $i = 1;
+            if(  $business_click_customizer_all_values['business-click-enbale-slider'] ) {
+                business_click_fp_menu_item('Slider', $i);
+                $i++;
+            }
+
+            if ( $business_click_customizer_all_values['business-click-feature-enable'] ) {
+                business_click_fp_menu_item('Featured', $i);
+                $i++;
+            }
+
+
+            $call_to_action_select_page                 = $business_click_customizer_all_values['business-click-call-to-action-select-from-page'];
+
+            if( $business_click_customizer_all_values['business-click-enable-call-to-action']  ) {
+                if( $call_to_action_select_page > 0  ){
+                    business_click_fp_menu_item('Call To Action', $i);
+                    $i++;
+                }
+            }
+
+
+            $about_us_page                      = absint($business_click_customizer_all_values['business-click-about-us-select-page'] );
+            if( $business_click_customizer_all_values['business-click-enable-about-us'] ) {
+                if ( $about_us_page > 0 ){
+                    business_click_fp_menu_item('About', $i);
+                    $i++;
+                }
+            }
+
+            if($business_click_customizer_all_values['business-click-testimonila-enable'] ) {
+                business_click_fp_menu_item('Testimonials', $i);
+                $i++;
+            }
+            
+            if( $business_click_customizer_all_values['business-click-blog-section-enable']  ) {
+                business_click_fp_menu_item('Blog', $i);
+                $i++;
+            }
+
+            
+            $business_contact_section_title     = esc_html($business_click_customizer_all_values['business-click-contact-section-title']);
+            $business_click_contact_form        = esc_attr($business_click_customizer_all_values['business-click-contact-section-contact-form-short-code']  );
+            if( $business_click_customizer_all_values['business-click-contact-section-enable'] ) {
+                if(!empty($business_contact_section_title) || !empty($business_click_contact_form)) {
+                    business_click_fp_menu_item('Contact', $i);
+                    $i++;
+                }
+            }
+        echo '</ul>';
+        // end if
+    }
+    ?>
 
 <div id="content" class="site-content">
 

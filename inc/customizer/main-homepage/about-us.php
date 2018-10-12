@@ -11,6 +11,7 @@ $defaults = business_click_defauts_value();
 // $business_click_customizer_defaults['business-clcik-excerpt-length']				= 30;
 // $business_click_customizer_defaults['business-click-about-us-select-page']			= 0;
 // $business_click_customizer_defaults['business-click-about-us-button-text']			= esc_html__('Details','business-click');
+//$business_click_customizer_defaults['business-click-about-us-background-image']		= '';
 
 
 /*create section about us*/
@@ -80,3 +81,17 @@ $business_click_settings_controls['business-click-about-us-button-text']  =  arr
 
 );
 
+
+/*Background image upload*/
+$business_click_settings_controls['business-click-about-us-background-image'] = array(
+	'setting' => array(
+		'default'					=> $defaults['business-click-about-us-background-image']
+	),
+	'control' => array(
+		'label'						=> esc_html__('Background Image','business-click'),
+		'section'					=> 'busiess-click-about-us-section',
+		'type'						=> 'image',
+		'priority'					=> 50,
+		'active_callback'			=> ''
+	)
+);

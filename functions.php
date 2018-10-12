@@ -185,6 +185,7 @@ function business_click_scripts() {
 	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/assets/frameworks/bootstrap/bootstrap.css' );
 	wp_enqueue_style( 'fontawesome', get_template_directory_uri() . '/assets/frameworks/font-awesome/css/all.css' );
 	wp_enqueue_style( 'slick', get_template_directory_uri() . '/assets/frameworks/slick/slick.css' );
+	wp_enqueue_style( 'animate-css', get_template_directory_uri() . '/assets/frameworks/wow/css/animate.css' );
 
 	//theme
 	wp_enqueue_style( 'business-click-style', get_stylesheet_uri() );
@@ -198,7 +199,7 @@ function business_click_scripts() {
 	// thirdparty assets
 	wp_enqueue_script( 'jquery-bootstrap', get_template_directory_uri() . '/assets/frameworks/bootstrap/bootstrap.js', array('jquery'), true );
 	wp_enqueue_script( 'jquery-slick', get_template_directory_uri() . '/assets/frameworks/slick/slick.js', array('jquery'), true );
-	wp_enqueue_script( 'jquery-holder', get_template_directory_uri() . '/assets/frameworks/holder/holder.js', array('jquery'), true );
+	wp_enqueue_script( 'wow', get_template_directory_uri() . '/assets/frameworks/wow/js/wow.js', array('jquery'), true );
 
 	wp_enqueue_script( 'business-click-mobile-menu', get_template_directory_uri() . '/assets/custom/mobile-menu.js', array('jquery'), true );
 	wp_enqueue_script( 'business-click-main', get_template_directory_uri() . '/assets/custom/main.js', array('jquery'), true );
@@ -344,4 +345,37 @@ if ( ! function_exists ( 'business_click_theme_name' ) ) {
 	function business_click_theme_name() {
 		return esc_html__('Business Click','business-click');
 	}
+}
+
+// customize the catgory title author
+function business_click_customizer_remove_defualt_cat_author($title)
+{
+    if( is_category() ) {
+
+        $title = single_cat_title( '', false );
+
+    } 
+    elseif ( is_tag() ) {
+
+        $title = single_tag_title( '', false );
+    }        
+    else if (is_author()){
+    	$title = '<span class="vcard">' . get_the_author() . '</span>' ;
+    }
+
+    return $title;
+
+}
+add_filter( 'get_the_archive_title', 'business_click_customizer_remove_defualt_cat_author' );
+
+/* fp menu */
+function business_click_fp_menu_item($title, $i) {
+	?>
+	<li data-menuanchor="section<?php echo $i;?>">
+        <a href="#section<?php echo $i;?>">
+            <span class="fp-menu-text"><?php echo esc_html($title);?></span>
+            <span class="fp-menu-indicator"><span></span></span>
+        </a>
+    </li>
+	<?php
 }

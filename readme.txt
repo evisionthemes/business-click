@@ -5,7 +5,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 
 Requires at least: 4.5
 Tested up to: 4.9.7
-Stable tag: 1.0.3
+Stable tag: 1.0.4
 License: GNU General Public License v2 or later
 License URI: LICENSE
 
@@ -58,9 +58,9 @@ Author: Ken Wheeler
 Source: http://github.com/kenwheeler/slick
 License: Licensed MIT
 
-holderjs:
-Author: Ivan Malopinsky
-Source: http://holderjs.com
+wow:
+Author: Matthieu Aussaguel
+Source: https://github.com/matthieua/WOW
 License: Licensed MIT
 
 Font Icons:
@@ -157,6 +157,13 @@ Business Click themes includes support for WooCommerce.
 Business Click themes includes support for Contact Form 7.
 
 == Changelog ==
+
+## 1.0.4 ##
+* Animations added in homepage sections and other micro animations added.
+* Slider shown in blog archive.
+* Default posts display and image issue fixed.
+* Added Background Image Option in each sections.
+* Dismissiable loading screens added.
 
 ## 1.0.3 ##
 * Slider height and overlay issue fix

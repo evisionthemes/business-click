@@ -18,6 +18,7 @@ get_header(); ?>
 	do_action('business_click_homepage_slider');
 } ?>
 
+<section class="section fp-auto-height">
 <div class="container">
 	<div class="row">
 		<div id="primary" class="content-area">
@@ -59,5 +60,7 @@ get_header(); ?>
 		<?php get_sidebar(); ?>
 	</div>
 </div>
+</section>
+
 <?php
 get_footer();

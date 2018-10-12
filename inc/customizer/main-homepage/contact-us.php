@@ -9,6 +9,7 @@ $defaults = business_click_defauts_value();
 // $business_click_customizer_defaults['business-click-contact-section-enable']					= 1;
 // $business_click_customizer_defaults['business-click-contact-section-title']						= '';
 // $business_click_customizer_defaults['business-click-contact-section-short-code']	= '';
+// $business_click_customizer_defaults['business-click-contact-background-image']					= '';
 
 /*create a section for contct*/
 $business_click_sections['business-click-contact-section'] = array(
@@ -62,4 +63,19 @@ $business_click_settings_controls['business-click-contact-section-short-code'] =
 		'active_callback'			=> ''
 	)
 
+);
+
+
+/*Background image upload*/
+$business_click_settings_controls['business-click-contact-background-image'] = array(
+	'setting' => array(
+		'default'					=> $defaults['business-click-contact-background-image']
+	),
+	'control' => array(
+		'label'						=> esc_html__('Background Image','business-click'),
+		'section'					=> 'business-click-contact-section',
+		'type'						=> 'image',
+		'priority'					=> 50,
+		'active_callback'			=> ''
+	)
 );
