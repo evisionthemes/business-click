@@ -73,23 +73,16 @@ if ( !function_exists('business_click_feature_slider_array') ) :
               wp_reset_postdata();
           else:
             // if uncategorized is not present
-            $feature_slideer_array[]  =  array(
-              'business-click-feature-title'    => esc_html__('Welcome to Business Click', 'business-click'),
-              'business-click-feature-content'  => esc_html__('This is your dummy post. Please select post category or page from Customizer - Homepage / Front Page - Feature Slider Section.', 'business-click'),
-              'business-click-feature-image'    => get_template_directory_uri() . '/assets/img/slider.jpg',
-              'business-click-feature-url'      => '#'
-            );
+            $feature_slideer_array =  business_click_default_slider_value();
           endif;
       }
       else {
         // if uncategorized is not present
-        $feature_slideer_array[]  =  array(
-          'business-click-feature-title'    => esc_html__('Welcome to Business Click', 'business-click'),
-          'business-click-feature-content'  => esc_html__('This is your dummy post. Please select post category or page from Customizer - Homepage / Front Page - Feature Slider Section.', 'business-click'),
-          'business-click-feature-image'    => get_template_directory_uri() . '/assets/img/slider.jpg',
-          'business-click-feature-url'      => '#'
-        );
+        $feature_slideer_array =  business_click_default_slider_value();
       }
+
+      // var_dump($feature_slideer_array);die();
+
       return $feature_slideer_array;
     }
 endif;
