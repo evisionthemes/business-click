@@ -427,7 +427,12 @@ add_action( 'business_click_action_before_header', 'business_click_skip_to_conte
 
             
             $business_contact_section_title     = esc_html($business_click_customizer_all_values['business-click-contact-section-title']);
-            $business_click_contact_form        = esc_attr($business_click_customizer_all_values['business-click-contact-section-contact-form-short-code']  );
+            if(!empty($business_click_customizer_all_values['business-click-contact-section-contact-form-short-code'])) {
+                $business_click_contact_form        = esc_attr($business_click_customizer_all_values['business-click-contact-section-contact-form-short-code']  );
+            }
+            else {
+                $business_click_contact_form = '';
+            }
             if( $business_click_customizer_all_values['business-click-contact-section-enable'] ) {
                 if(!empty($business_contact_section_title) || !empty($business_click_contact_form)) {
                     business_click_fp_menu_item('Contact', $i);
