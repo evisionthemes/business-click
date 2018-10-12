@@ -12,7 +12,6 @@ if( !function_exists('business_click_feature_array') ) :
 		global $business_click_customizer_all_values;
 
 		$feasute_single_number_words 	= absint($business_click_customizer_all_values['business-click-feature-excerpt-length']);
-		// var_dump($feasute_single_number_words);die('slider');
 		$feature_page_array 			= array();
 		$repeated_page		= array('feature-page-ids');
 		$repeated_icon		= array('feature-icons-ids');

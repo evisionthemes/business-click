@@ -12,7 +12,6 @@ if ( !function_exists('business_click_feature_slider_array') ) :
     function business_click_feature_slider_array($from_slider)
     {
       global $business_click_customizer_all_values;
-      // var_dump($business_click_customizer_all_values);die('k k vayo');
       $slider_excerpt_length      = absint($business_click_customizer_all_values['business-click-excerpt-length']);
 
       $reapeated_pages      = array('business-click-page-id');
@@ -108,13 +107,11 @@ if (!function_exists('business_click_feature_slider')) :
  {
 
   global $business_click_customizer_all_values;
-  // $business_click_customizer_all_values = business_click_defauts_value();
   if(  !$business_click_customizer_all_values['business-click-enbale-slider'] )
   {
     return null;
   }
   $fetaure_slider_select_post   = $business_click_customizer_all_values['business-click-select-post-form'];
-  // var_dump($fetaure_slider_select_post);die('hello');
   $feature_slide_arrays         = business_click_feature_slider_array($fetaure_slider_select_post);
   if ( is_array($feature_slide_arrays) )
   {

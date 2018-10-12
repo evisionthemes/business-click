@@ -2,7 +2,6 @@
 /**
 	* default page
 	* @package business-click
-
 */
 if(!function_exists('business_click_defauts_value') ) :
 

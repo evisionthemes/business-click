@@ -2,17 +2,10 @@
 global $business_click_sections;
 global $business_click_settings_controls;
 global $business_click_repeated_settings_controls;
-global $defaults; // $business_click_customizer_defaults;
+global $defaults;
 
+// call all defaults values
 $defaults = business_click_defauts_value();
-// var_dump($defaults);die('cta');
-
-/*defaults values*/
-// $business_click_customizer_defaults['business-click-enable-call-to-action'] 					= 1;
-// $business_click_customizer_defaults['business-click-call-excerpt-length']						= 30;
-// $business_click_customizer_defaults['business-click-call-to-action-select-from-page']			= 0;
-// $business_click_customizer_defaults['business-click-button-text']								= esc_html__('Learn more','business-click');
-
 
 /*create section for call to action*/
 $business_click_sections['business-click-call-to-action-portfolio'] = array(

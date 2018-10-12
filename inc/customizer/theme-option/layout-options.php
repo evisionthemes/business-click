@@ -2,19 +2,12 @@
 global $business_click_sections;
 global $business_click_settings_controls;
 global $business_click_repeated_settings_controls;
-global $defauts;//$business_click_customizer_defaults;
+global $defauts;
 
+//call all defaults values
 $defaults = business_click_defauts_value();
 
-/*defaults values*/
-// $business_click_customizer_defaults['business-click-enable-static-page']            = 0;
-// $business_click_customizer_defaults['business-click-default-layout']                = esc_html('default','business-click');
-// $business_click_customizer_defaults['business-click-single-post-image-align']       = 'full';
-// $business_click_customizer_defaults['business-click-archive-image-align']           = 'full';
-// $business_click_customizer_defaults['business-click-archive-layout']                = 'thumbnail-and-excerpt';
-// $business_click_customizer_defaults['business-click-number-of-words']               = 35;
-// $business_click_customizer_defaults['business-click-conatiner-width-layout']        = 1140;
-
+// layout option section
 $business_click_sections['business-click-layout-options'] = array(
         'priority'       => 200,
         'title'          => esc_html__( 'Layout Options', 'business-click' ),

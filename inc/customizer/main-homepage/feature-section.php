@@ -3,22 +3,10 @@ global $business_click_panels;
 global $business_click_sections;
 global $business_click_settings_controls;
 global $business_click_repeated_settings_controls;
-global $defaults; //$business_click_customizer_defaults;
+global $defaults;
 
-
+// Call all default values
 $defaults = business_click_defauts_value();
-// var_dump($defaults);die('hello');
-/*default values*/
-// $business_click_customizer_defaults['business-click-feature-enable']					= 1;
-// $business_click_customizer_defaults['business-click-feature-section-title']				= esc_html__('Feature Section','business-click');
-// $business_click_customizer_defaults['business-click-feature-excerpt-length']            = 30;
-// $business_click_customizer_defaults['business-click-feature-select-form']			    = 'form-category';
-// $business_click_customizer_defaults['business-click-feature-from-category']             = -1;
-// $business_click_customizer_defaults['business-click-feature-from-page']					= 0;
-// $business_click_customizer_defaults['business-click-feature-page-icon']					= '';
-// $business_click_customizer_defaults['business-click-feature-button-text']	    		= '';
-//$business_click_customizer_defaults['business-click-feature-background-image']          = '';
-
 
 /*create section for feature*/
 $business_click_sections['business-click-feature-section'] = array(

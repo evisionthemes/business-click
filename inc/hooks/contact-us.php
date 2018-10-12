@@ -33,9 +33,7 @@ if( !function_exists('business_click_contact_us_section') ) :
 										
 		                        ?>
 									<div class="contact-form">
-										<?php echo do_shortcode( str_replace( '\\', '',  $business_click_customizer_all_values['business-click-contact-section-short-code'] ) ); ?>
-										
-										 
+										<?php echo do_shortcode( str_replace( '\\', '',  $business_click_customizer_all_values['business-click-contact-section-short-code'] ) ); ?>										 
 									</div>
 								<?php
 		    					}

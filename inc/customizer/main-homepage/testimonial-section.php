@@ -3,20 +3,11 @@
 global $business_click_sections;
 global $business_click_settings_controls;
 global $business_click_repeated_settings_controls;
-global $defaults; //$business_click_customizer_defaults;
+global $defaults; 
 
+
+// Call all defaults value
 $defaults = business_click_defauts_value();
-
-/*defaults value*/
-// $business_click_customizer_defaults['business-click-testimonila-enable']				= 1;
-// $business_click_customizer_defaults['business-click-testimonial-section-title']			= esc_html__('Testimonial','business-click');
-// $business_click_customizer_defaults['business-click-testimonial-excerpt-length']		= 30;
-// $business_click_customizer_defaults['business-click-testimonial-select-form']			= 'form-category';
-// $business_click_customizer_defaults['business-click-testimonial-from-category']         = -1;
-// $business_click_customizer_defaults['business-click-testimonial-select-for-page']		= 0;
-// $business_click_customizer_defaults['business-click-testimonial-designation']			= '';
-// $business_click_customizer_defaults['business-click-testimonial-background-image']		= '';
-
 
 /*create a section */
 $business_click_sections['business-click-testimonial-section'] = array(
