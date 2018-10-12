@@ -4,7 +4,6 @@ global $business_click_settings_controls;
 global $business_click_repeated_settings_controls;
 global $business_click_customizer_defaults;
 
-
 //call all defaults values
 $defaults = business_click_defauts_value();
 

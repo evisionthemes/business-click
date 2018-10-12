@@ -56,7 +56,7 @@ if( !function_exists('business_click_blog') ) :
 													<div class="evt-box-item">
 														<div class="evt-box-image image img-cover css-gradient" style="<?php if($th_image != '') { ?>background-image: url(<?php echo esc_url($th_image);?>);<?php } ?>">
 															<a href="<?php the_permalink(); ?>">
-																<img src="<?php echo get_template_directory_uri();?>/assets/img/500x360.png" class="holder">
+																<img src="<?php echo esc_url(get_template_directory_uri().'/assets/img/500x360.png' );?>" class="holder">
 															</a>
 														</div>
 				

@@ -18,8 +18,6 @@
  */
 do_action( 'business_click_action_before_head' );?>
 
-
-
 <head>
 
 	<?php
@@ -93,7 +91,6 @@ do_action( 'business_click_action_on_header' );
  * @hooked null
  */
 do_action( 'business_click_action_before_content' );
-
 
 ?>
 

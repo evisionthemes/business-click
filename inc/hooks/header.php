@@ -245,7 +245,7 @@ add_action( 'business_click_action_before_header', 'business_click_skip_to_conte
 
         <?php $header_image = get_header_image();
         ?>
-        <header id="masthead" class="site-header img-cover" style="<?php echo 'background-image: url('. $header_image.');' ; ?>">
+        <header id="masthead" class="site-header img-cover" style="<?php echo 'background-image: url('. esc_url($header_image) .');' ; ?>">
         <div class="evt-header-wrap">
 
             <?php if (1 == $business_click_customizer_all_values['business-click-enbale-top-bar-header']) { ?>
@@ -423,12 +423,9 @@ add_action( 'business_click_action_before_header', 'business_click_skip_to_conte
 
             
             $business_contact_section_title     = esc_html($business_click_customizer_all_values['business-click-contact-section-title']);
-            if(!empty($business_click_customizer_all_values['business-click-contact-section-contact-form-short-code'])) {
-                $business_click_contact_form        = esc_attr($business_click_customizer_all_values['business-click-contact-section-contact-form-short-code']  );
-            }
-            else {
-                $business_click_contact_form = '';
-            }
+
+            $business_click_contact_form        = esc_attr($business_click_customizer_all_values['business-click-contact-section-short-code']  );
+
             if( $business_click_customizer_all_values['business-click-contact-section-enable'] ) {
                 if(!empty($business_contact_section_title) || !empty($business_click_contact_form)) {
                     business_click_fp_menu_item('Contact', $i);
