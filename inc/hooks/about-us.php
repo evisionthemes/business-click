@@ -46,7 +46,7 @@ if( !function_exists('business_click_about_us_sections') ) :
 		            	<div class="evt-img-overlay">
 							<div class="container">
 								<div class="row">
-									<div class="col align-self-center evision-animate fadeInLeft evt-why-us-text">
+									<div class="col align-self-center evision-animate fadeIn evt-why-us-text">
 										<h2 class="widget-title evision-animate slideInDown"><?php the_title();?></h2>
 										<p><?php echo wp_kses_post(business_click_words_count( $about_us_single_number_words ,get_the_content()));?></p>
 												
@@ -55,7 +55,7 @@ if( !function_exists('business_click_about_us_sections') ) :
 										<?php } ?>	
 									</div>
 									<div class="w-100 d-block d-md-none"></div>
-									<div class="col align-self-center evision-animate fadeInRight">
+									<div class="col align-self-center evision-animate fadeIn">
 										<figure>
 											<img src="<?php echo esc_url($thumb[0]); ?>">
 										</figure>	

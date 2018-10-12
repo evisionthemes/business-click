@@ -1939,14 +1939,14 @@ footer ul li,
   bottom: 0;
   right: 0;
   z-index: 99999;
-  background: #fff;
+  background: #578ECF;
 }
 #evt-preloader #status {
   height: 100%;
   width: 100%;
 }
 #evt-preloader #status i {
-  color: #000;
+  color: #ffffff;
   font-size: 30px;
 }
 #evt-preloader #status .evt-preloader-close {
