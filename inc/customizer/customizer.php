@@ -43,22 +43,11 @@ global $business_click_panels;
 global $business_click_sections;
 global $business_click_settings_controls;
 global $business_click_repeated_settings_controls;
-global $defaults;//$business_click_customizer_defaults;
 global $business_click_customizer_defaults;
+global $defaults;
+
 $defaults =  business_click_defauts_value();
 
-
-/******************************************
-Modify Site Color Options
- *******************************************/
-// require get_template_directory().'/inc/customizer/color/color-section.php';
-
-/******************************************
-Modify Site Font Options
- *******************************************/
-// require get_template_directory().'/inc/customizer/font/font-section.php';
-
-// require get_template_directory().'/inc/customizer/default.php';
 
 /*mainhomepage panel*/
 require get_template_directory().'/inc/customizer/main-homepage/all-option-panel.php';

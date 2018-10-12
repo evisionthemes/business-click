@@ -3,18 +3,10 @@
 global $business_click_sections;
 global $business_click_settings_controls;
 global $business_click_repeated_settings_controls;
-global $defaults; //$business_click_customizer_defaults;
+global $defaults; 
 
+/* call all defaults value*/
 $defaults = business_click_defauts_value();
-
-/*defaults value*/
-// $business_click_customizer_defaults['business-click-blog-section-enable'] 					= 1;
-// $business_click_customizer_defaults['business-click-blog-section-title-text']				= esc_html__('Blog','business-click');
-// $business_click_customizer_defaults['business-click-blog-excerpt-length']					= 30;
-// $business_click_customizer_defaults['business-click-blog-select-category']					=  -1;
-// $business_click_customizer_defaults['business-click-blog-button-text']						= esc_html__('Read More','business-click');
-//$business_click_customizer_defaults['business-click-blog-background-image']					= '';
-
 
 /*create section blog*/
 $business_click_sections['business-click-blog-section'] = array(

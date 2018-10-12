@@ -14,7 +14,6 @@ if( !function_exists('business_click_about_us_sections') ) :
     {
     	global $business_click_customizer_all_values;
     	$about_us_single_number_words 		= absint($business_click_customizer_all_values['business-clcik-excerpt-length']);
-    	// var_dump($about_us_single_number_words);die('about');
     	$about_us_button_text				= esc_html( $business_click_customizer_all_values['business-click-about-us-button-text'] );
     	$about_us_page						= absint($business_click_customizer_all_values['business-click-about-us-select-page'] );
 		$about_us_background_image			= esc_url($business_click_customizer_all_values['business-click-about-us-background-image'] );

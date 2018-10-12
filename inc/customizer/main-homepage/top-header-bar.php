@@ -5,17 +5,8 @@ global $business_click_settings_controls;
 global $business_click_repeated_settings_controls;
 global $defaults;
 
-// defaults value
+//Call all defaults value
 $defaults = business_click_defauts_value();
-// var_dump($defaults);die('k k vo ');
-// $defaults = 'business-click-enbale-top-bar-header';
-// $defaults = 'business-click-top-bar-phone';
-// $defaults = 'bussiness-click-top-bar-email';
-// $defaults = 'bussiness-click-top-bar-location';
-// $defaults = 'bussiness-click-top-bar-social-menu';
-
-// var_dump($defaults);die('k vo k ');
-
 
 //create a section for top header bar
 $business_click_sections['business-click-top-header-bar-sections'] = array(

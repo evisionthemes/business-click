@@ -4,8 +4,8 @@ global $business_click_settings_controls;
 global $business_click_repeated_settings_controls;
 global $business_click_customizer_defaults;
 
-/*defaults values*/
-$business_click_customizer_defaults['business-click-enable-breadcrumb'] = 1;
+//Call all Defaults values
+$defaults = business_click_defauts_value();
 
 // section for breadcrumb
 $business_click_sections['business-click-breadcrumb-options'] = array(
@@ -17,7 +17,7 @@ $business_click_sections['business-click-breadcrumb-options'] = array(
 // enable option for breadcrumb
 $business_click_settings_controls['business-click-enable-breadcrumb'] = array(
         'setting' =>     array(
-            'default'              => $business_click_customizer_defaults['business-click-enable-breadcrumb'],
+            'default'              => $defaults['business-click-enable-breadcrumb'],
         ),
         'control' => array(
             'label'                 =>  esc_html__( 'Enable Breadcrumb', 'business-click' ),

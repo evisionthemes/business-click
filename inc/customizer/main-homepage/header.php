@@ -4,14 +4,8 @@ global $business_click_settings_controls;
 global $business_click_repeated_settings_controls;
 global $defaults;
 
+// Call all default value
 $defaults  =  business_click_defauts_value();
-
-
-/*default value*/
-// $business_click_customizer_defaults['business-click-enable-extra-button'] 				= 1;
-// $business_click_customizer_defaults['business-click-text-extra-button-text'] 			= esc_html__('Buy Now','business-click');
-// $business_click_customizer_defaults['business-click-link-extra-button']					= '#';
-// $business_click_customizer_defaults['business-click-enable-transparent-header'] 		= 1;
 
 /*create a header section */
 $business_click_sections['business-click-header-section'] = array(

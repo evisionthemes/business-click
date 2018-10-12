@@ -233,8 +233,6 @@ add_action( 'business_click_action_before_header', 'business_click_skip_to_conte
     */
    function business_click_navigation_page_start() {
        global $business_click_customizer_all_values;
-       // var_dump($business_click_customizer_all_values);die('k vo k ');
-
        ?>
         <!-- preloader -->
         <div id="evt-preloader" style="">
@@ -259,7 +257,6 @@ add_action( 'business_click_action_before_header', 'business_click_skip_to_conte
                             <div id="evt-head-list-item">
                                 <?php 
                                     global $business_click_customizer_all_values;
-                                    // var_dump($business_click_customizer_all_values);die('check');
                                     $business_click_phone_number = esc_html($business_click_customizer_all_values['business-click-top-bar-phone']);
                                     $business_click_email_address = esc_html($business_click_customizer_all_values['bussiness-click-top-bar-email']);
                                     $business_click_location= esc_html($business_click_customizer_all_values['bussiness-click-top-bar-location']);
@@ -345,7 +342,6 @@ add_action( 'business_click_action_before_header', 'business_click_skip_to_conte
                         <div class="text-right evt-logo-left-right-nav evt-menu-toggler-manage">
                             <!-- search toggle icon -->
                                                        
-                            <!-- <button class="evt-head-search-toggler float-right d-lg-none"><i class="fas fa-search"></i></button> -->
                             <?php global $business_click_customizer_all_values;  ?>
                             <?php if(1 == $business_click_customizer_all_values['business-click-enable-extra-button'] && !empty($business_click_customizer_all_values['business-click-text-extra-button-text']) ) { ?>
                             <?php $extra_button_name = esc_html($business_click_customizer_all_values['business-click-text-extra-button-text']);

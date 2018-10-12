@@ -2,14 +2,10 @@
 global $business_click_sections;
 global $business_click_settings_controls;
 global $business_click_repeated_settings_controls;
-global $defaults;//$business_click_customizer_defaults;
+global $defaults;
 
+// call all defaults values
 $defaults = business_click_defauts_value();
-/*defaults values*/
-// $business_click_customizer_defaults['business-click-contact-section-enable']					= 1;
-// $business_click_customizer_defaults['business-click-contact-section-title']						= '';
-// $business_click_customizer_defaults['business-click-contact-section-short-code']	= '';
-// $business_click_customizer_defaults['business-click-contact-background-image']					= '';
 
 /*create a section for contct*/
 $business_click_sections['business-click-contact-section'] = array(

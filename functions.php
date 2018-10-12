@@ -125,8 +125,7 @@ add_action( 'after_setup_theme', 'business_click_content_width', 0 );
 function business_click_google_fonts()
 {
 	global $business_click_customizer_all_values;
-	// $business_click_customizer_all_values = business_click_defauts_value();
-	// var_dump($business_click_customizer_all_values);
+
 	$fonts_url  = '';
 	$fonts 		= array();
 

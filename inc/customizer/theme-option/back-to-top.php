@@ -2,12 +2,10 @@
 global $business_click_sections;
 global $business_click_settings_controls;
 global $business_click_repeated_settings_controls;
-global $defaults; //$business_click_customizer_defaults;
+global $defaults; 
 
+//Call all Defaults values
 $defaults = business_click_defauts_value();
-
-/*defaults values*/
-// $business_click_customizer_defaults['business-click-enable-back-to-top'] = 1;
 
 // section for back to top
 $business_click_sections['business-click-back-to-top-options'] = array(

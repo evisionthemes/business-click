@@ -2,28 +2,10 @@
 global $business_click_sections;
 global $business_click_settings_controls;
 global $business_click_repeated_settings_controls;
-global $defaults; // $business_click_customizer_defaults;
+global $defaults; 
 
-/*defaults value*/
-// $business_click_customizer_defaults['business-click-enbale-slider']                         = 1;
-// $business_click_customizer_defaults['business-click-excerpt-length']                        = 30;
-// $business_click_customizer_defaults['business-click-select-post-form']                       = 'form-category';
-// $business_click_customizer_defaults['business-click-select-from-cat']                       = -1;
-// $business_click_customizer_defaults['business-click-select-from-page']                      = 0;
-// $business_click_customizer_defaults['business-click-slider-button-text']                    = esc_html__('Learn more','business-click');
-// $business_click_customizer_defaults['business-click-slider-enable-blog']                    = 0;
-
+//Call all defaults value
 $defaults = business_click_defauts_value();
-// var_dump($defaults);die('hello');
-// $defaults = 'business-click-enbale-slider';
-// $defaults = 'business-click-excerpt-length';
-// $defaults = 'business-click-select-post-form';
-// $defaults = 'business-click-select-from-cat';
-// $defaults = 'business-click-select-from-page';
-// $defaults = 'business-click-slider-button-text';
-// $defaults = 'business-click-slider-enable-blog';
-
-// var_dump($defaults) ;die('can u help me');
 
 /*create section for feature slider*/
 $business_click_sections['business-click-slider-section']  = array(
