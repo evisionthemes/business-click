@@ -18,15 +18,15 @@ if(!function_exists('business_click_defauts_value') ) :
 
 		//top bar
 		$defaults['business-click-enbale-top-bar-header']  				= 1;
-		$defaults['business-click-top-bar-phone']          				= esc_html__('+977-9841XXXXXX','business-click');
-		$defaults['bussiness-click-top-bar-email']         				= esc_html__('example@gmail.com','business-click');
-		$defaults['bussiness-click-top-bar-location']      				= esc_html__('Jawalakhel, Lalitpur, Nepal','business-click');
+		$defaults['business-click-top-bar-phone']          				= esc_html__('+(123)-456789','business-click');
+		$defaults['bussiness-click-top-bar-email']         				= esc_html__('evisionthemes@gmail.com','business-click');
+		$defaults['bussiness-click-top-bar-location']      				= esc_html__('Kathmandu, Nepal','business-click');
 		$defaults['bussiness-click-top-bar-social-menu']   				= '';
 
 		// header Section
 		$defaults['business-click-enable-extra-button']					= 1;
-		$defaults['business-click-text-extra-button-text']				= esc_html__('Buy Now','business-click');
-		$defaults['business-click-link-extra-button']					= '#';
+		$defaults['business-click-text-extra-button-text']				= esc_html__('More Demos','business-click');
+		$defaults['business-click-link-extra-button']					= 'https://demo.evisionthemes.com/business-click/multipage/';
 		$defaults['business-click-enable-transparent-header']		    = 1;
 
 
