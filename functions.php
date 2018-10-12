@@ -142,8 +142,6 @@ function business_click_google_fonts()
 	$business_click_fonts[] = $business_click_font_family_button_text;
 	$business_click_fonts[] = $business_click_font_family_body_paragraph;
 	$business_click_fonts[] = $business_click_font_family_footer_copyright_text;
-
-
 	$business_click_fonts_stylesheet = '//fonts.googleapis.com/css?family=';
 
 	$i  = 0;
@@ -370,8 +368,8 @@ add_filter( 'get_the_archive_title', 'business_click_customizer_remove_defualt_c
 /* fp menu */
 function business_click_fp_menu_item($title, $i) {
 	?>
-	<li data-menuanchor="section<?php echo $i;?>">
-        <a href="#section<?php echo $i;?>">
+	<li data-menuanchor="section<?php echo esc_attr($i);?>">
+        <a href="#section<?php echo esc_attr($i);?>">
             <span class="fp-menu-text"><?php echo esc_html($title);?></span>
             <span class="fp-menu-indicator"><span></span></span>
         </a>

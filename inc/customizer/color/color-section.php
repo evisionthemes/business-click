@@ -2,29 +2,18 @@
 global$business_click_sections;
 global$business_click_settings_controls;
 global$defaults;
-// require get_template_directory().'/inc/customizer/default.php';
 
+//Call all defaults values
 $defaults = business_click_defauts_value();
 
-// var_dump($defaults);die('color');
-
-/*defaults values*/
-// $business_click_customizer_defaults['business-click-site-identity-color']                       = '#313131';
-// $business_click_customizer_defaults['business-click-top-header-background-bar-color']           = '#000000';
-// $business_click_customizer_defaults['business-click-menu-header-background-color']              = '#FFFFFF';
-// $business_click_customizer_defaults['business-click-business-clcik-h1-h6']                      = '#000000';
-// $business_click_customizer_defaults['business-click-footer-background-color']                   = '#1F1F1F';
-// $business_click_customizer_defaults['business-click-color-reset']                               = '';
-
-
-/*Default color*/
+/*create color section */
 $business_click_sections['colors'] = array(
         'priority'       => 110,
         'title'          => esc_html__( 'Colors', 'business-click' ),
         'panel'          => 'business-click-theme-options'
     );
 
-
+//color for site-identity
 $business_click_settings_controls['business-click-site-identity-color'] = array(
     'setting' =>  array(
         'default'  => $defaults['business-click-site-identity-color'],
@@ -39,6 +28,7 @@ $business_click_settings_controls['business-click-site-identity-color'] = array(
     )
 );
 
+//color for top header background
 $business_click_settings_controls['business-click-top-header-background-bar-color'] = array(
     'setting' => array(
         'default' => $defaults['business-click-top-header-background-bar-color'],
@@ -52,7 +42,7 @@ $business_click_settings_controls['business-click-top-header-background-bar-colo
     )
 );
 
-
+//color for menu header background color
 $business_click_settings_controls['business-click-menu-header-background-color'] = array(
     'setting' => array(
         'default' => $defaults['business-click-menu-header-background-color'],
@@ -66,6 +56,7 @@ $business_click_settings_controls['business-click-menu-header-background-color']
     )
 );
 
+//color for h1 to h6
 $business_click_settings_controls['business-click-business-clcik-h1-h6'] = array(
     'setting' => array(
         'default' => $defaults['business-click-business-clcik-h1-h6'],
@@ -79,7 +70,7 @@ $business_click_settings_controls['business-click-business-clcik-h1-h6'] = array
     )
 );
 
-
+//color for footer background color
 $business_click_settings_controls['business-click-footer-background-color'] = array(
     'setting' => array(
         'default' => $defaults['business-click-footer-background-color'],

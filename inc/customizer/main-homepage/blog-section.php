@@ -87,7 +87,6 @@ $business_click_settings_controls['business-click-blog-button-text']  = array(
 );
 
 
-
 /*Background image upload*/
 $business_click_settings_controls['business-click-blog-background-image'] = array(
 	'setting' => array(
