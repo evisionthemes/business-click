@@ -100,7 +100,7 @@ if ( !function_exists('business_click_feature') ) :
 		$feature_background_image			= esc_url($business_click_customizer_all_values['business-click-feature-background-image'] );
   		?>
   			<?php if(!empty($feature_section_title) || count($feature_post_page_array) > 0 ) { ?>
-  			<section id="evt-featured" class="section text-center img-cover" style="background-image: url('<?php echo esc_url($feature_background_image);?>');">	
+  			<section id="evt-featured" class="section text-center img-cover <?php if($feature_background_image == '') echo esc_html('css-gradient');?>" style="background-image: url('<?php echo esc_url($feature_background_image);?>');">	
 				<div class="evt-img-overlay">
 					<div class="container">
 						<?php if(!empty($feature_section_title)) { ?>
@@ -132,7 +132,7 @@ if ( !function_exists('business_click_feature') ) :
 												</div>
 											<?php }
 											else{ ?>
-												<div class="evt-featured-img image img-cover" style="<?php if($feature_sec_image != '') { ?>background-image: url(<?php echo esc_url($feature_sec_image);?>);<?php }//endif ?>">
+												<div class="evt-featured-img image img-cover css-gradient" style="<?php if($feature_sec_image != '') { ?>background-image: url(<?php echo esc_url($feature_sec_image);?>);<?php }//endif ?>">
 													<a href="<?php echo esc_url($feature_post_page_arrays['feature-url']);?>">
 														<img src="<?php echo get_template_directory_uri();?>/assets/img/500x360.png" class="holder">
 												  	</a>

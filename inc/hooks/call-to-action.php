@@ -38,7 +38,7 @@ if( !function_exists('business_click_call_to_action_array') ) :
 		            {
 		                $thumb[0] = '';
 		            }?>
-		            <section id="evt-call-to-action" class="section text-center img-cover dark-background" style="background-image: url('<?php  echo esc_url($thumb[0]); ?>');">
+		            <section id="evt-call-to-action" class="section text-center img-cover dark-background <?php if($thumb[0] == '') echo esc_html('css-gradient');?>" style="background-image: url('<?php  echo esc_url($thumb[0]); ?>');">
 					    <div class="evt-img-overlay">
 					        <div class="container">
 					            <div class="row justify-content-center">

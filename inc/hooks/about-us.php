@@ -42,7 +42,7 @@ if( !function_exists('business_click_about_us_sections') ) :
 		            {
 		                $thumb[0] = '';
 		            }?>
-		            <section id="evt-why-us" class="section img-cover" style="background-image: url('<?php echo esc_url($about_us_background_image);?>');">	
+		            <section id="evt-why-us" class="section img-cover <?php if($about_us_background_image == '') echo esc_html('css-gradient');?>" style="background-image: url('<?php echo esc_url($about_us_background_image);?>');">	
 		            	<div class="evt-img-overlay">
 							<div class="container">
 								<div class="row">

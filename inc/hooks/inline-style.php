@@ -293,7 +293,9 @@ if( ! function_exists( 'business_click_inline_style' ) ) :
 
         if($business_click_customizer_all_values['business-click-blog-background-image'] != '') { 
         ?>
-            #evt-blog .widget-title {
+            #evt-blog .widget-title,
+            #evt-blog .evt-blog-slider .evt-box-caption, 
+            #evt-blog .evt-blog-slider .evt-box-caption a {
                 color: #fff;
             }
             #evt-blog .evt-img-overlay {

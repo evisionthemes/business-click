@@ -128,19 +128,19 @@ if (!function_exists('business_click_feature_slider')) :
 
           ?>
 
-          <div class="evt-banner-image evt-overlay position-relative" <?php if(  !empty($feature_slider_image)) {?> style="background-image: url('<?php echo esc_url($feature_slider_image); ?>');"<?php } ?> >
+          <div class="evt-banner-image evt-overlay position-relative <?php if($feature_slider_image == '') echo esc_html('css-gradient');?>" <?php if(  !empty($feature_slider_image)) {?> style="background-image: url('<?php echo esc_url($feature_slider_image); ?>');"<?php } ?> >
             <img src="<?php echo get_template_directory_uri();?>/assets/img/1600x660.png" class="holder">
 
             <div class="container">
               <div class="evt-banner-caption">
                 <?php if(  !empty($feature_slide_array['business-click-feature-title']) ) { ?>
-                  <h2 class="evt-title text-white mb-4"><?php echo esc_html($feature_slide_array['business-click-feature-title']);?></h2>
+                  <h2 class="evt-title text-white mb-4 evision-animate fadeIn"><?php echo esc_html($feature_slide_array['business-click-feature-title']);?></h2>
                 <?php } ?>
                 <?php if(  !empty($feature_slide_array['business-click-feature-content']) ) {?>
-                  <p><?php echo wp_kses_post($feature_slide_array['business-click-feature-content']);?></p>
+                  <p class="evision-animate fadeIn"><?php echo wp_kses_post($feature_slide_array['business-click-feature-content']);?></p>
                 <?php } ?>  
                 <?php if(!empty($feature_button_text) ) { ?>
-                  <a href="<?php echo esc_url($feature_slide_array['business-click-feature-url']);?>" class="btn"><?php echo esc_html($feature_button_text);?><i class="fas fa-angle-right"></i></a>
+                  <a href="<?php echo esc_url($feature_slide_array['business-click-feature-url']);?>" class="btn evision-animate fadeIn"><?php echo esc_html($feature_button_text);?><i class="fas fa-angle-right"></i></a>
                 <?php } ?>  
               </div>
             </div>

@@ -23,7 +23,7 @@ if( !function_exists('business_click_blog') ) :
 			return null;
 		} ?>
 		<?php if(!empty($business_click_blog_category) ) { ?>
-			<section id="evt-blog" class="section text-center img-cover" style="background-image: url('<?php echo esc_url($business_click_blog_background_image);?>');">	
+			<section id="evt-blog" class="section text-center img-cover <?php if($business_click_blog_background_image == '') echo esc_html('css-gradient');?>" style="background-image: url('<?php echo esc_url($business_click_blog_background_image);?>');">	
 				<div class="evt-img-overlay">
 					<div class="container">
 						<?php if( !empty($business_click_section_title) ) { ?>
@@ -54,7 +54,7 @@ if( !function_exists('business_click_blog') ) :
 												?>
 												<div class="col-12 col-sm-6 col-lg-4 evt-box-item-wrap">
 													<div class="evt-box-item">
-														<div class="evt-box-image image img-cover" style="<?php if($th_image != '') { ?>background-image: url(<?php echo esc_url($th_image);?>);<?php } ?>">
+														<div class="evt-box-image image img-cover css-gradient" style="<?php if($th_image != '') { ?>background-image: url(<?php echo esc_url($th_image);?>);<?php } ?>">
 															<a href="<?php the_permalink(); ?>">
 																<img src="<?php echo get_template_directory_uri();?>/assets/img/500x360.png" class="holder">
 															</a>
