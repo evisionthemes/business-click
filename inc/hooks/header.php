@@ -102,13 +102,12 @@ function business_click_body_class( $business_click_body_classes ) {
   global $business_click_customizer_all_values;
   $business_click_transparent_header = '';
     $transparant_header = $business_click_customizer_all_values['business-click-enable-transparent-header'];
-    if ( is_home() &&  is_front_page() ) {
-        if($transparant_header == 1 &&  ($business_click_customizer_all_values['business-click-enbale-slider'] == 1) ){
-            $business_click_transparent_header = "transparent-header";
-        }
-        else{
-            $business_click_transparent_header = "non-tarnsparent";
-        }
+    
+    if($transparant_header == 1 &&  ($business_click_customizer_all_values['business-click-enbale-slider'] == 1) ){
+        $business_click_transparent_header = "transparent-header";
+    }
+    else{
+        $business_click_transparent_header = "non-tarnsparent";
     }
     
     if( is_home() ) {
