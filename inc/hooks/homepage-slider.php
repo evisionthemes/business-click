@@ -129,7 +129,7 @@ if (!function_exists('business_click_feature_slider')) :
           ?>
 
           <div class="evt-banner-image evt-overlay position-relative" <?php if(  !empty($feature_slider_image)) {?> style="background-image: url('<?php echo esc_url($feature_slider_image); ?>');"<?php } ?> >
-            <img src="<?php echo get_template_directory_uri();?>/assets/img/1600x660.png" class="holder">
+            <img src="<?php echo esc_url(get_template_directory_uri().'/assets/img/1600x660.png')?>; " class="holder">
 
             <div class="container">
               <div class="evt-banner-caption">

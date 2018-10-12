@@ -245,7 +245,7 @@ add_action( 'business_click_action_before_header', 'business_click_skip_to_conte
 
         <?php $header_image = get_header_image();
         ?>
-        <header id="masthead" class="site-header img-cover" style="<?php echo 'background-image: url('. $header_image.');' ; ?>">
+        <header id="masthead" class="site-header img-cover" style="<?php echo 'background-image: url('. esc_url($header_image) .');' ; ?>">
         <div class="evt-header-wrap">
 
             <?php if (1 == $business_click_customizer_all_values['business-click-enbale-top-bar-header']) { ?>

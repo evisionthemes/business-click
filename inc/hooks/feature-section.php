@@ -134,7 +134,7 @@ if ( !function_exists('business_click_feature') ) :
 											else{ ?>
 												<div class="evt-featured-img image img-cover" style="<?php if($feature_sec_image != '') { ?>background-image: url(<?php echo esc_url($feature_sec_image);?>);<?php }//endif ?>">
 													<a href="<?php echo esc_url($feature_post_page_arrays['feature-url']);?>">
-														<img src="<?php echo get_template_directory_uri();?>/assets/img/500x360.png" class="holder">
+														<img src="<?php echo esc_url(get_template_directory_uri().'/assets/img/500x360.png' );?>" class="holder">
 												  	</a>
 												</div>
 											<?php } ?>
