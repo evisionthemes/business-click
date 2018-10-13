@@ -3911,6 +3911,10 @@ body.logo-left.small-header .evt-header-row .evt-logo-manage .site-branding .sit
   margin-bottom: 40px;
 }
 
+.blog.no-featured-slider #content.site-content {
+  padding-top: 30px;
+}
+
 #evt-blog .evt-img-overlay {
   background-color: transparent;
 }
