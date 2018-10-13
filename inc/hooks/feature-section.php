@@ -132,9 +132,12 @@ if ( !function_exists('business_click_feature') ) :
 												</div>
 											<?php }
 											else{ ?>
-												<div class="evt-featured-img image img-cover css-gradient" style="<?php if($feature_sec_image != '') { ?>background-image: url(<?php echo esc_url($feature_sec_image);?>);<?php }//endif ?>">
+												<div class="evt-featured-img image img-cover" style="">
 													<a href="<?php echo esc_url($feature_post_page_arrays['feature-url']);?>">
-														<img src="<?php echo esc_url(get_template_directory_uri().'/assets/img/500x360.png' );?>" class="holder">
+														<!-- consider adding icon img also -->
+														<?php if($feature_sec_image != '') { ?>
+															<img src="<?php echo esc_url($feature_sec_image);?>">
+														<?php }//endif ?>
 												  	</a>
 												</div>
 											<?php } ?>
