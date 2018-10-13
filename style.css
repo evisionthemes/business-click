@@ -3907,7 +3907,7 @@ body.logo-left.small-header .evt-header-row .evt-logo-manage .site-branding .sit
   font-size: 18px;
 }
 
-.blog.has-featured-slider #evt-banner {
+.blog #evt-banner {
   margin-bottom: 40px;
 }
 
