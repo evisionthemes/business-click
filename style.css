@@ -1110,13 +1110,13 @@ header.site-header .evt-header-wrap-nav .evt-menu-toggler-manage #menu-icon.menu
   background-color: #ffffff;
 }
 
-body.dark-theme .elementor-section-wrap > section, body .elementor-section-wrap > section, #evt-short-code1,
+body.dark-theme .elementor-section-wrap > section, #evt-short-code1,
 #evt-short-code2, #evt-contact .evt-img-overlay, #evt-partner .evt-img-overlay, #evt-blog .evt-img-overlay, #evt-testimonials .evt-img-overlay, #evt-team, #evt-call-to-action .evt-img-overlay, #evt-portfolio .evt-img-overlay, #evt-why-us .evt-img-overlay, #evt-featured .evt-img-overlay {
   padding-top: 50px;
   padding-bottom: 50px;
 }
 @media (min-width: 1199px) {
-  body.dark-theme .elementor-section-wrap > section, body .elementor-section-wrap > section, #evt-short-code1,
+  body.dark-theme .elementor-section-wrap > section, #evt-short-code1,
 #evt-short-code2, #evt-contact .evt-img-overlay, #evt-partner .evt-img-overlay, #evt-blog .evt-img-overlay, #evt-testimonials .evt-img-overlay, #evt-team, #evt-call-to-action .evt-img-overlay, #evt-portfolio .evt-img-overlay, #evt-why-us .evt-img-overlay, #evt-featured .evt-img-overlay {
     padding-top: 80px;
     padding-bottom: 80px;
