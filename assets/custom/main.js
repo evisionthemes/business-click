@@ -223,17 +223,19 @@
 		}
 
 		// wow js
-	    if( $('body').hasClass('enable-scroll-animations') ) {
-			if($('body.home').hasClass('fullpage-enabled')) {
-		    }
-		    else {
-		    	// if full page is not enabled
-			    wow = new WOW({
-			            boxClass: 'evision-animate'
-			        }
-			    )
-			    wow.init();
-		    }
+		if($(window).width() >= 768) {
+		    if( $('body').hasClass('enable-scroll-animations') ) {
+				if($('body.home').hasClass('fullpage-enabled')) {
+			    }
+			    else {
+			    	// if full page is not enabled
+				    wow = new WOW({
+				            boxClass: 'evision-animate'
+				        }
+				    )
+				    wow.init();
+			    }
+			}
 		}
 
 		// preloader
