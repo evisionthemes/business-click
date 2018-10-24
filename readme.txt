@@ -164,6 +164,7 @@ Business Click themes includes support for Contact Form 7.
 * Default posts display and image issue fixed.
 * Added Background Image Option in each sections.
 * Dismissiable loading screens added.
+* Fixed transparent header issue in mobile devices.
 
 ## 1.0.3 ##
 * Slider height and overlay issue fix

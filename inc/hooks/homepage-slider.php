@@ -127,7 +127,7 @@ if (!function_exists('business_click_feature_slider')) :
             }
 
           ?>
-
+          <div>
           <div class="evt-banner-image evt-overlay position-relative <?php if($feature_slider_image == '') echo esc_html('css-gradient');?>" <?php if(  !empty($feature_slider_image)) {?> style="background-image: url('<?php echo esc_url($feature_slider_image); ?>');"<?php } ?> >
             <img src="<?php echo esc_url(get_template_directory_uri().'/assets/img/1600x660.png');?>" class="holder">
 
@@ -144,6 +144,7 @@ if (!function_exists('business_click_feature_slider')) :
                 <?php } ?>  
               </div>
             </div>
+          </div>
           </div>
           <?php
           $i++;
