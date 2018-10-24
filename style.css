@@ -1,11 +1,10 @@
-@charset "UTF-8";
 /*!
 Theme Name: Business Click
 Theme URI: http://evisionthemes.com/product/business-click/
 Author: eVision Themes
 Author URI: http://evisionthemes.com/
 Description: Business Click is a modern and flexible WordPress Business Theme that suits for agency, blog, business, corporate, eCommerce, magazines, portfolios and many more. It's created by using the latest Bootstrap Framework with HTML5 and CSS3 techniques in accordance with the latest WordPress Coding Standards. Suitable all popular mobile devices and tablets. In order to create a professional website, you can easily customize the sections like Theme Customizer, Custom Container width options, Sticky Primary Menu - Hide Menu on Scroll Down, Top header bar,  Featured Slider, Services, About us, Testimonial, Call to Action,  News & Updates, Portfolio, Team, Multiple Footer Widgets,  drag and drop widgets, Social Links, Custom Headers, Navigation, Contact us, Subscribe section, Font options,  and many more. This creative theme supports popular plugins like Jetpack, WP page navi, Contact form 7, Elementor page builder, Page Builder by SiteOrigin, W3 Total Cache, Social Pug, All in One SEO Pack, MailChimp, WooCommerce etc. If you are a non-techy person, you can easily modify the theme and design using live customizer in Dashboard > Appearance> Customize. You can change the color and the font of each and every text, link in the theme. We won't bind you to settle for a dull background; you can choose a color or a cool image instead. This theme is translation ready. Check out Theme Instructions at http://doc.evisionthemes.com/business-click and Demo at https://demo.evisionthemes.com/business-click/ . For support: https://evisionthemes.com/supports
-Version: 1.0.4
+Version: 1.0.5
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: business-click
@@ -227,9 +226,9 @@ select {
  * Correct the inability to style clickable types in iOS and Safari.
  */
 button,
-[type=button],
-[type=reset],
-[type=submit] {
+[type="button"],
+[type="reset"],
+[type="submit"] {
   -webkit-appearance: button;
 }
 
@@ -237,9 +236,9 @@ button,
  * Remove the inner border and padding in Firefox.
  */
 button::-moz-focus-inner,
-[type=button]::-moz-focus-inner,
-[type=reset]::-moz-focus-inner,
-[type=submit]::-moz-focus-inner {
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
@@ -248,9 +247,9 @@ button::-moz-focus-inner,
  * Restore the focus styles unset by the previous rule.
  */
 button:-moz-focusring,
-[type=button]:-moz-focusring,
-[type=reset]:-moz-focusring,
-[type=submit]:-moz-focusring {
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -300,8 +299,8 @@ textarea {
  * 1. Add the correct box sizing in IE 10.
  * 2. Remove the padding in IE 10.
  */
-[type=checkbox],
-[type=radio] {
+[type="checkbox"],
+[type="radio"] {
   box-sizing: border-box;
   /* 1 */
   padding: 0;
@@ -311,8 +310,8 @@ textarea {
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
-[type=number]::-webkit-inner-spin-button,
-[type=number]::-webkit-outer-spin-button {
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -320,7 +319,7 @@ textarea {
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
-[type=search] {
+[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
   outline-offset: -2px;
@@ -330,7 +329,7 @@ textarea {
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
  */
-[type=search]::-webkit-search-decoration {
+[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -517,50 +516,50 @@ table {
 # Forms
 --------------------------------------------------------------*/
 button,
-input[type=button],
-input[type=reset],
-input[type=submit] {
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
   border: 1px solid;
   border-color: #ccc #ccc #bbb;
   border-radius: 3px;
   background: #e6e6e6;
   color: rgba(0, 0, 0, 0.8);
   line-height: 1;
-  padding: 0.6em 1em 0.4em;
+  padding: .6em 1em .4em;
 }
 
 button:hover,
-input[type=button]:hover,
-input[type=reset]:hover,
-input[type=submit]:hover {
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
   border-color: #ccc #bbb #aaa;
 }
 
 button:active, button:focus,
-input[type=button]:active,
-input[type=button]:focus,
-input[type=reset]:active,
-input[type=reset]:focus,
-input[type=submit]:active,
-input[type=submit]:focus {
+input[type="button"]:active,
+input[type="button"]:focus,
+input[type="reset"]:active,
+input[type="reset"]:focus,
+input[type="submit"]:active,
+input[type="submit"]:focus {
   border-color: #aaa #bbb #bbb;
 }
 
-input[type=text],
-input[type=email],
-input[type=url],
-input[type=password],
-input[type=search],
-input[type=number],
-input[type=tel],
-input[type=range],
-input[type=date],
-input[type=month],
-input[type=week],
-input[type=time],
-input[type=datetime],
-input[type=datetime-local],
-input[type=color],
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
 textarea {
   color: #666;
   border: 1px solid #ccc;
@@ -568,21 +567,21 @@ textarea {
   padding: 3px;
 }
 
-input[type=text]:focus,
-input[type=email]:focus,
-input[type=url]:focus,
-input[type=password]:focus,
-input[type=search]:focus,
-input[type=number]:focus,
-input[type=tel]:focus,
-input[type=range]:focus,
-input[type=date]:focus,
-input[type=month]:focus,
-input[type=week]:focus,
-input[type=time]:focus,
-input[type=datetime]:focus,
-input[type=datetime-local]:focus,
-input[type=color]:focus,
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="range"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="time"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="color"]:focus,
 textarea:focus {
   color: #111;
 }
@@ -687,8 +686,9 @@ a:hover, a:active {
     display: block;
   }
 }
-.site-main .comment-navigation, .site-main .posts-navigation,
-.site-main .post-navigation {
+.site-main .comment-navigation, .site-main
+.posts-navigation, .site-main
+.post-navigation {
   margin: 0 0 1.5em;
   overflow: hidden;
 }
@@ -903,7 +903,7 @@ object {
   max-width: 100%;
 }
 
-.wp-caption img[class*=wp-image-] {
+.wp-caption img[class*="wp-image-"] {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -967,8 +967,6 @@ object {
   display: block;
 }
 
-/* MIXINS */
-/*prifix */
 #evt-partner .evt-img-overlay .evt-partner-slider .slick-list .slick-track {
   display: -ms-flexbox;
   display: flex;
@@ -976,22 +974,22 @@ object {
   align-items: center;
 }
 
-.widget_products ul li,
-.woocommerce-MyAccount-navigation ul li, .widget_product_categories ul li,
-.widget_categories ul li,
-.widget_archive ul li,
-.widget_recent_entries ul li,
-.widget_recent_comments ul li,
-.widget_meta ul li,
-.widget_pages ul li,
-.widget_nav_menu ul li {
+.site-content .widget_product_categories ul li,
+.site-content .widget_categories ul li,
+.site-content .widget_archive ul li,
+.site-content .widget_recent_entries ul li,
+.site-content .widget_recent_comments ul li,
+.site-content .widget_meta ul li,
+.site-content .widget_pages ul li,
+.site-content .widget_nav_menu ul li, .widget_products ul li,
+.woocommerce-MyAccount-navigation ul li {
   -webkit-transition: 0.4s all ease-in-out;
   -moz-transition: 0.4s all ease-in-out;
   -o-transition: 0.4s all ease-in-out;
   transition: 0.4s all ease-in-out;
 }
 
-#evt-call-to-action, #evt-page-banner .evt-banner-image, .evt-banner-image, #evt-banner .coin-slider, .img-cover {
+.img-cover, #evt-banner .coin-slider, .evt-banner-image, #evt-page-banner .evt-banner-image, #evt-call-to-action {
   background-size: cover;
   background-position: center center;
 }
@@ -1009,46 +1007,39 @@ ul {
   padding: 0;
 }
 
-body .elementor-widget-heading .elementor-heading-title > a, .elementor-widget-icon-box.elementor-view-framed .elementor-icon, #evt-team .evt-box-item-wrap .evt-box-caption .evt-designation, #evt-portfolio #filters button.is-checked, #evt-top-header .evt-head-search-toggler:hover, nav#site-navigation ul#menu > li.current-menu-item > a,
-nav#site-navigation ul.nav-menu > li.current-menu-item > a,
-nav#site-navigation ul.menu > li.current-menu-item > a,
-nav#site-navigation > ul > li.current-menu-item > a, nav#site-navigation ul li:hover > a, body.head-search-active .evt-head-search-toggler .fa-search, .evt-head-search-toggler:hover i, .woocommerce ul.products li.product .price,
+a:hover, .evt-item article .entry-title a:hover, a.readmore,
+.readmore, .breadcrumbs .trail-items .trail-item a, .slick-slider .slick-arrow:hover, .woocommerce ul.products li.product .price,
 .woocommerce div.product p.price, .woocommerce div.product span.price,
 .woocommerce-message::before,
 .woocommerce-info::before,
-.woocommerce form .form-row .required, .slick-slider .slick-arrow:hover, .breadcrumbs .trail-items .trail-item a, a.readmore,
-.readmore, .evt-item article .entry-title a:hover, a:hover {
+.woocommerce form .form-row .required, .evt-head-search-toggler:hover i, body.head-search-active .evt-head-search-toggler .fa-search, nav#site-navigation ul li:hover > a, nav#site-navigation ul#menu > li.current-menu-item > a,
+nav#site-navigation ul.nav-menu > li.current-menu-item > a,
+nav#site-navigation ul.menu > li.current-menu-item > a,
+nav#site-navigation > ul > li.current-menu-item > a, #evt-top-header .evt-head-search-toggler:hover, #evt-portfolio #filters button.is-checked, #evt-team .evt-box-item-wrap .evt-box-caption .evt-designation, .elementor-widget-icon-box.elementor-view-framed .elementor-icon, body .elementor-widget-heading .elementor-heading-title > a {
   color: #578ECF;
 }
 
-.woocommerce nav.woocommerce-pagination ul li span:hover, .wp-pagenavi ul li span:hover, .pagination .nav-links ul li span:hover, .woocommerce nav.woocommerce-pagination ul li a:hover, .wp-pagenavi ul li a:hover, .pagination .nav-links ul li a:hover, .woocommerce nav.woocommerce-pagination ul li span.current, .wp-pagenavi ul li span.current, .pagination .nav-links ul li span.current, body .white-title.entry-title:before, .white-title.page-title:before, .white-title.widget-title:before, .white-title.widgettitle:before, body .white-title.entry-title, .white-title.page-title, .white-title.widget-title, .white-title.widgettitle,
-.woocommerce div.product .white-title.product_title {
+.white-title.widget-title, .white-title.widgettitle,
+.woocommerce div.product .white-title.product_title, .white-title.page-title, body .white-title.entry-title, .white-title.widget-title:before, .white-title.widgettitle:before,
+.woocommerce div.product .white-title.product_title:before, .white-title.page-title:before, body .white-title.entry-title:before, .pagination .nav-links ul li span.current, .wp-pagenavi ul li span.current, .woocommerce nav.woocommerce-pagination ul li span.current, .pagination .nav-links ul li span:hover, .wp-pagenavi ul li span:hover, .woocommerce nav.woocommerce-pagination ul li span:hover, .pagination .nav-links ul li a:hover, .wp-pagenavi ul li a:hover, .woocommerce nav.woocommerce-pagination ul li a:hover {
   color: #ffffff;
 }
 
-body .entry-title a, .page-title a, .widget-title a, .widgettitle a,
-.woocommerce div.product .product_title a, body .entry-title, .page-title, .widget-title, .widgettitle,
-.woocommerce div.product .product_title {
+.widget-title, .widgettitle,
+.woocommerce div.product .product_title, .page-title, body .entry-title, .widget-title a, .widgettitle a,
+.woocommerce div.product .product_title a, .page-title a, body .entry-title a {
   color: #000;
 }
 
 a {
   color: gray;
 }
-#evt-top-header a, #evt-top-header .evt-head-search-toggler, #evt-top-header {
+
+#evt-top-header, #evt-top-header .evt-head-search-toggler, #evt-top-header a {
   color: #ffffff;
 }
 
-body:not(.dark-theme) .elementor-widget-image .widget-image-caption,
-body:not(.dark-theme) .elementor-widget-text-editor,
-body:not(.dark-theme) .elementor-widget-divider .elementor-divider-separator,
-body:not(.dark-theme) .elementor-widget-image-box .elementor-image-box-content .elementor-image-box-description,
-body:not(.dark-theme) .elementor-widget-icon-box .elementor-icon-box-content .elementor-icon-box-description,
-body:not(.dark-theme) .elementor-widget-icon-list .elementor-icon-list-item:not(:last-child):after,
-body:not(.dark-theme) .elementor-widget-testimonial .elementor-testimonial-content,
-body:not(.dark-theme) .elementor-widget-tabs .elementor-tab-content,
-body:not(.dark-theme) .elementor-widget-accordion .elementor-accordion .elementor-tab-content,
-body:not(.dark-theme) .elementor-widget-toggle .elementor-toggle .elementor-tab-content, body .elementor-widget-heading.elementor-widget-heading .elementor-heading-title,
+#evt-portfolio #filters button, #evt-contact a, body .elementor-widget-icon-box .elementor-icon-box-content .elementor-icon-box-title, body .elementor-widget-heading.elementor-widget-heading .elementor-heading-title,
 body .elementor-image-box-title,
 body .elementor-widget-icon-list .elementor-icon-list-text,
 body .elementor-widget-counter .elementor-counter-title,
@@ -1059,7 +1050,16 @@ body .elementor-background-overlay + .elementor-container .elementor-widget-head
 body .elementor-background-overlay + .elementor-container .elementor-widget-testimonial .elementor-testimonial-name,
 body .elementor-background-overlay + .elementor-container .elementor-widget-testimonial .elementor-testimonial-job,
 body .elementor-background-overlay + .elementor-container .elementor-widget-tabs .elementor-tab-content,
-body .elementor-background-overlay + .elementor-container .elementor-widget-tabs .elementor-tab-title, body .elementor-widget-icon-box .elementor-icon-box-content .elementor-icon-box-title, #evt-contact a, #evt-portfolio #filters button {
+body .elementor-background-overlay + .elementor-container .elementor-widget-tabs .elementor-tab-title, body:not(.dark-theme) .elementor-widget-image .widget-image-caption,
+body:not(.dark-theme) .elementor-widget-text-editor,
+body:not(.dark-theme) .elementor-widget-divider .elementor-divider-separator,
+body:not(.dark-theme) .elementor-widget-image-box .elementor-image-box-content .elementor-image-box-description,
+body:not(.dark-theme) .elementor-widget-icon-box .elementor-icon-box-content .elementor-icon-box-description,
+body:not(.dark-theme) .elementor-widget-icon-list .elementor-icon-list-item:not(:last-child):after,
+body:not(.dark-theme) .elementor-widget-testimonial .elementor-testimonial-content,
+body:not(.dark-theme) .elementor-widget-tabs .elementor-tab-content,
+body:not(.dark-theme) .elementor-widget-accordion .elementor-accordion .elementor-tab-content,
+body:not(.dark-theme) .elementor-widget-toggle .elementor-toggle .elementor-tab-content {
   color: #3e3e3e;
 }
 
@@ -1083,10 +1083,11 @@ body .elementor-widget-heading.elementor-widget-heading .elementor-heading-title
   color: #000;
 }
 
-body .elementor-add-new-section .elementor-add-section-button, body .elementor-social-icon, .elementor-widget-icon.elementor-view-stacked .elementor-icon, .elementor-slick-slider ul.slick-dots li button, .elementor-widget-button a.elementor-button, .elementor-widget-button .elementor-button, #evt-testimonials .evt-testimonials-slider, #evt-testimonials.dark-background, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons, .evt-thumb-holder .evt-thumb-hover, #evt-top-header, .evt-featured-item-wrap .evt-featured-item .evt-featured-icon, .evt-carousel.slick-slider ul.slick-dots li.slick-active button, .evt-carousel.slick-slider ul.slick-dots li button:hover, .woocommerce .widget_price_filter .ui-slider .ui-slider-range,
-.woocommerce .widget_price_filter .ui-slider .ui-slider-handle, .woocommerce span.onsale, ul.slick-dots li.slick-active button, ul.slick-dots li button:hover, header.site-header .evt-header-wrap-nav .evt-menu-toggler-manage #menu-icon.menu-toggler:hover span, .woocommerce nav.woocommerce-pagination ul li span:hover, .wp-pagenavi ul li span:hover, .pagination .nav-links ul li span:hover, .woocommerce nav.woocommerce-pagination ul li a:hover, .wp-pagenavi ul li a:hover, .pagination .nav-links ul li a:hover, .woocommerce nav.woocommerce-pagination ul li span.current, .wp-pagenavi ul li span.current, .pagination .nav-links ul li span.current, .wp-pagenavi a:hover,
-.wp-pagenavi span.current,
-.btn.btn-reverse:hover, button, input[type=button], input[type=reset], input[type=submit], .woocommerce #respond input#submit,
+.widget-title:before, .widgettitle:before,
+.woocommerce div.product .product_title:before, .page-title:before, body .entry-title:before, .widget_search form .search-submit, .evt-head-search form .search-submit, .pagination .nav-links a, .wp-pagenavi a, .woocommerce nav.woocommerce-pagination a,
+.pagination .nav-links span,
+.wp-pagenavi span,
+.woocommerce nav.woocommerce-pagination span, a.btn, .btn, .read-more, .wpcf7-form .wpcf7-submit, .woocommerce #respond input#submit,
 .woocommerce div.product form.cart .button,
 .woocommerce #respond input#submit.alt,
 .woocommerce a.button,
@@ -1094,11 +1095,10 @@ body .elementor-add-new-section .elementor-add-section-button, body .elementor-s
 .woocommerce input.button,
 .woocommerce a.button.alt,
 .woocommerce button.button.alt,
-.woocommerce input.button.alt, .wpcf7-form .wpcf7-submit, .read-more, .btn, a.btn, .woocommerce nav.woocommerce-pagination a, .wp-pagenavi a, .pagination .nav-links a,
-.woocommerce nav.woocommerce-pagination span,
-.wp-pagenavi span,
-.pagination .nav-links span, .evt-head-search form .search-submit, .widget_search form .search-submit, body .entry-title:before, .page-title:before, .widget-title:before, .widgettitle:before,
-.woocommerce div.product .product_title:before {
+.woocommerce input.button.alt, button, input[type="button"], input[type="reset"], input[type="submit"],
+.btn.btn-reverse:hover, .wp-pagenavi a:hover,
+.wp-pagenavi span.current, .pagination .nav-links ul li span.current, .wp-pagenavi ul li span.current, .woocommerce nav.woocommerce-pagination ul li span.current, .pagination .nav-links ul li span:hover, .wp-pagenavi ul li span:hover, .woocommerce nav.woocommerce-pagination ul li span:hover, .pagination .nav-links ul li a:hover, .wp-pagenavi ul li a:hover, .woocommerce nav.woocommerce-pagination ul li a:hover, header.site-header .evt-header-wrap-nav .evt-menu-toggler-manage #menu-icon.menu-toggler:hover span, ul.slick-dots li button:hover, ul.slick-dots li.slick-active button, .woocommerce span.onsale, .woocommerce .widget_price_filter .ui-slider .ui-slider-range,
+.woocommerce .widget_price_filter .ui-slider .ui-slider-handle, .evt-carousel.slick-slider ul.slick-dots li button:hover, .evt-carousel.slick-slider ul.slick-dots li.slick-active button, .evt-featured-item-wrap .evt-featured-item .evt-featured-icon, #evt-top-header, .evt-thumb-holder .evt-thumb-hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons, #evt-testimonials.dark-background, #evt-testimonials .evt-testimonials-slider, .elementor-widget-button a.elementor-button, .elementor-widget-button .elementor-button, .elementor-slick-slider ul.slick-dots li button, .elementor-widget-icon.elementor-view-stacked .elementor-icon, body .elementor-social-icon, body .elementor-add-new-section .elementor-add-section-button {
   background-color: #578ECF;
 }
 
@@ -1110,32 +1110,32 @@ header.site-header .evt-header-wrap-nav .evt-menu-toggler-manage #menu-icon.menu
   background-color: #ffffff;
 }
 
-body.dark-theme .elementor-section-wrap > section, #evt-short-code1,
-#evt-short-code2, #evt-contact .evt-img-overlay, #evt-partner .evt-img-overlay, #evt-blog .evt-img-overlay, #evt-testimonials .evt-img-overlay, #evt-team, #evt-call-to-action .evt-img-overlay, #evt-portfolio .evt-img-overlay, #evt-why-us .evt-img-overlay, #evt-featured .evt-img-overlay {
+#evt-featured .evt-img-overlay, #evt-why-us .evt-img-overlay, #evt-portfolio .evt-img-overlay, #evt-call-to-action .evt-img-overlay, #evt-team, #evt-testimonials .evt-img-overlay, #evt-blog .evt-img-overlay, #evt-partner .evt-img-overlay, #evt-contact .evt-img-overlay, #evt-short-code1,
+#evt-short-code2, body.dark-theme .elementor-section-wrap > section {
   padding-top: 50px;
   padding-bottom: 50px;
 }
 @media (min-width: 1199px) {
-  body.dark-theme .elementor-section-wrap > section, #evt-short-code1,
-#evt-short-code2, #evt-contact .evt-img-overlay, #evt-partner .evt-img-overlay, #evt-blog .evt-img-overlay, #evt-testimonials .evt-img-overlay, #evt-team, #evt-call-to-action .evt-img-overlay, #evt-portfolio .evt-img-overlay, #evt-why-us .evt-img-overlay, #evt-featured .evt-img-overlay {
+  #evt-featured .evt-img-overlay, #evt-why-us .evt-img-overlay, #evt-portfolio .evt-img-overlay, #evt-call-to-action .evt-img-overlay, #evt-team, #evt-testimonials .evt-img-overlay, #evt-blog .evt-img-overlay, #evt-partner .evt-img-overlay, #evt-contact .evt-img-overlay, #evt-short-code1,
+  #evt-short-code2, body.dark-theme .elementor-section-wrap > section {
     padding-top: 80px;
     padding-bottom: 80px;
   }
 }
 
-body .elementor-widget-divider .elementor-divider-separator, .elementor-widget-icon-box.elementor-view-framed .elementor-icon, .woocommerce-message,
-.woocommerce-info {
+.woocommerce-message,
+.woocommerce-info, .elementor-widget-icon-box.elementor-view-framed .elementor-icon, body .elementor-widget-divider .elementor-divider-separator {
   border-color: #578ECF;
 }
 
-body .elementor-widget-heading.elementor-widget-heading .elementor-heading-title,
+h1, h2, h3, h4, h5, h6, .evt-title, .readmore, nav#site-navigation ul a, body .elementor-widget-heading.elementor-widget-heading .elementor-heading-title,
 body .elementor-widget-icon-box .elementor-icon-box-content .elementor-icon-box-title,
-body .elementor-widget-counter .elementor-counter-title, nav#site-navigation ul a, .readmore, .evt-title, h1, h2, h3, h4, h5, h6 {
+body .elementor-widget-counter .elementor-counter-title {
   font-family: "Catamaran", sans-serif;
 }
 
-nav#site-navigation ul li.menu-item-has-children > a:after,
-nav#site-navigation ul li.page_item_has_children > a:after, .breadcrumbs .trail-items .trail-item + .trail-item::before, .posts-navigation .nav-next a:after, .post-navigation .nav-next a:after, .posts-navigation .nav-previous a:before, .post-navigation .nav-previous a:before {
+.post-navigation .nav-previous a:before, .posts-navigation .nav-previous a:before, .post-navigation .nav-next a:after, .posts-navigation .nav-next a:after, .breadcrumbs .trail-items .trail-item + .trail-item::before, nav#site-navigation ul li.menu-item-has-children > a:after,
+nav#site-navigation ul li.page_item_has_children > a:after {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
 }
@@ -1144,23 +1144,25 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-.site-footer .widget_calendar caption, .site-footer .evt-footer-widget, .site-footer .evt-footer-widget .widget-title, .site-footer .evt-footer-widget .btn:hover, .site-footer .evt-footer-widget .readmore:hover, .site-footer .evt-footer-widget .btn, .site-footer .evt-footer-widget .readmore,
-.site-footer .evt-footer-widget .nav-tabs .nav-item .nav-link.active,
-.site-footer .evt-footer-widget .evt-popular-posts-item .evt-popular-posts-content .evt-popular-posts-title a, .site-footer table, .site-footer, .site-footer a {
+.site-footer a, .site-footer .evt-footer-widget .evt-popular-posts-item .evt-popular-posts-content .evt-popular-posts-title a, .site-footer, .site-footer table, .site-footer .evt-footer-widget .btn, .site-footer .evt-footer-widget .readmore,
+.site-footer .evt-footer-widget .nav-tabs .nav-item .nav-link.active, .site-footer .evt-footer-widget .btn:hover, .site-footer .evt-footer-widget .readmore:hover,
+.site-footer .evt-footer-widget .nav-tabs .nav-item .nav-link.active:hover,
+.site-footer .evt-footer-widget .evt-popular-posts-item .evt-popular-posts-content .evt-popular-posts-title a:hover, .site-footer .evt-footer-widget, .site-footer .evt-footer-widget .widget-title, .site-footer .widget_calendar caption {
   color: #fff;
 }
 
-.site-footer .evt-footer-widget .evt-popular-posts-item .evt-popular-posts-content .evt-popular-posts-title a:hover, .site-footer a:hover {
+.site-footer a:hover, .site-footer .evt-footer-widget .evt-popular-posts-item .evt-popular-posts-content .evt-popular-posts-title a:hover {
   color: #b3b3b3;
 }
 
-.evt-box-title, .evt-featured-item-wrap .evt-featured-item .evt-featured-title {
+.evt-featured-item-wrap .evt-featured-item .evt-featured-title, .evt-box-title {
   font-size: 1.25rem;
   color: #000;
 }
-.evt-box-title a, .evt-featured-item-wrap .evt-featured-item .evt-featured-title a {
+.evt-featured-item-wrap .evt-featured-item .evt-featured-title a, .evt-box-title a {
   color: #000;
 }
+
 .evt-item article .entry-title {
   color: #000;
   font-size: 1.5rem;
@@ -1169,8 +1171,9 @@ body {
 .evt-item article .entry-title a {
   color: #000;
 }
-body .entry-title, .page-title, .widget-title, .widgettitle,
-.woocommerce div.product .product_title {
+
+.widget-title, .widgettitle,
+.woocommerce div.product .product_title, .page-title, body .entry-title {
   font-size: 1.5rem;
   font-weight: 700;
   margin-top: 0;
@@ -1181,60 +1184,61 @@ body .entry-title, .page-title, .widget-title, .widgettitle,
   text-align: left;
 }
 @media (min-width: 575px) {
-  body .entry-title, .page-title, .widget-title, .widgettitle,
-.woocommerce div.product .product_title {
+  .widget-title, .widgettitle,
+  .woocommerce div.product .product_title, .page-title, body .entry-title {
     font-size: 1.625rem;
   }
 }
-body .entry-title:before, .page-title:before, .widget-title:before, .widgettitle:before,
-.woocommerce div.product .product_title:before {
-  content: "";
+.widget-title:before, .widgettitle:before,
+.woocommerce div.product .product_title:before, .page-title:before, body .entry-title:before {
+  content: '';
   height: 4px;
   width: 70px;
   position: absolute;
   bottom: 0;
 }
 @media (min-width: 575px) {
-  body .entry-title, .page-title, .widget-title, .widgettitle,
-.woocommerce div.product .product_title {
+  .widget-title, .widgettitle,
+  .woocommerce div.product .product_title, .page-title, body .entry-title {
     padding-right: 0;
   }
 }
-.site-footer .widget-title, #secondary .entry-title,
+
+.text-left.widget-title, .text-left.widgettitle,
+.woocommerce div.product .text-left.product_title, .text-left.page-title, body .text-left.entry-title, #secondary .entry-title,
 #secondary .widget-title,
 #secondary .widgettitle,
-#secondary .page-title, body .text-left.entry-title, .text-left.page-title, .text-left.widget-title, .text-left.widgettitle,
-.woocommerce div.product .text-left.product_title {
+#secondary .page-title, .site-footer .widget-title {
   text-align: left;
 }
-.site-footer .widget-title:before, #secondary .entry-title:before,
+.text-left.widget-title:before, .text-left.widgettitle:before,
+.woocommerce div.product .text-left.product_title:before, .text-left.page-title:before, body .text-left.entry-title:before, #secondary .entry-title:before,
 #secondary .widget-title:before,
 #secondary .widgettitle:before,
-#secondary .page-title:before, body .text-left.entry-title:before, .text-left.page-title:before, .text-left.widget-title:before, .text-left.widgettitle:before,
-.woocommerce div.product .text-left.product_title:before {
+#secondary .page-title:before, .site-footer .widget-title:before {
   left: 0 !important;
   margin-left: 0 !important;
 }
 
-body .text-center.entry-title, .text-center.page-title, .text-center.widget-title, .text-center.widgettitle,
-.woocommerce div.product .text-center.product_title {
+.text-center.widget-title, .text-center.widgettitle,
+.woocommerce div.product .text-center.product_title, .text-center.page-title, body .text-center.entry-title {
   text-align: center;
 }
-body .text-center.entry-title:before, .text-center.page-title:before, .text-center.widget-title:before, .text-center.widgettitle:before,
-.woocommerce div.product .text-center.product_title:before {
+.text-center.widget-title:before, .text-center.widgettitle:before,
+.woocommerce div.product .text-center.product_title:before, .text-center.page-title:before, body .text-center.entry-title:before {
   left: 50% !important;
   margin-left: -35px !important;
 }
 
-.widget_products ul li,
-.woocommerce-MyAccount-navigation ul li, .widget_product_categories ul li,
-.widget_categories ul li,
-.widget_archive ul li,
-.widget_recent_entries ul li,
-.widget_recent_comments ul li,
-.widget_meta ul li,
-.widget_pages ul li,
-.widget_nav_menu ul li {
+.site-content .widget_product_categories ul li,
+.site-content .widget_categories ul li,
+.site-content .widget_archive ul li,
+.site-content .widget_recent_entries ul li,
+.site-content .widget_recent_comments ul li,
+.site-content .widget_meta ul li,
+.site-content .widget_pages ul li,
+.site-content .widget_nav_menu ul li, .widget_products ul li,
+.woocommerce-MyAccount-navigation ul li {
   border-width: 0;
   border-bottom-width: 1px;
   list-style: none;
@@ -1243,50 +1247,51 @@ body .text-center.entry-title:before, .text-center.page-title:before, .text-cent
   padding-top: 8px;
   padding-bottom: 8px;
 }
-.widget_products ul li:first-child,
-.woocommerce-MyAccount-navigation ul li:first-child, .widget_product_categories ul li:first-child,
-.widget_categories ul li:first-child,
-.widget_archive ul li:first-child,
-.widget_recent_entries ul li:first-child,
-.widget_recent_comments ul li:first-child,
-.widget_meta ul li:first-child,
-.widget_pages ul li:first-child,
-.widget_nav_menu ul li:first-child {
+.site-content .widget_product_categories ul li:first-child,
+.site-content .widget_categories ul li:first-child,
+.site-content .widget_archive ul li:first-child,
+.site-content .widget_recent_entries ul li:first-child,
+.site-content .widget_recent_comments ul li:first-child,
+.site-content .widget_meta ul li:first-child,
+.site-content .widget_pages ul li:first-child,
+.site-content .widget_nav_menu ul li:first-child, .widget_products ul li:first-child,
+.woocommerce-MyAccount-navigation ul li:first-child {
   padding-top: 0;
 }
-.widget_products ul li:hover,
-.woocommerce-MyAccount-navigation ul li:hover, .widget_product_categories ul li:hover,
-.widget_categories ul li:hover,
-.widget_archive ul li:hover,
-.widget_recent_entries ul li:hover,
-.widget_recent_comments ul li:hover,
-.widget_meta ul li:hover,
-.widget_pages ul li:hover,
-.widget_nav_menu ul li:hover {
+.site-content .widget_product_categories ul li:hover,
+.site-content .widget_categories ul li:hover,
+.site-content .widget_archive ul li:hover,
+.site-content .widget_recent_entries ul li:hover,
+.site-content .widget_recent_comments ul li:hover,
+.site-content .widget_meta ul li:hover,
+.site-content .widget_pages ul li:hover,
+.site-content .widget_nav_menu ul li:hover, .widget_products ul li:hover,
+.woocommerce-MyAccount-navigation ul li:hover {
   padding-left: 20px;
 }
-.widget_products ul li a,
-.woocommerce-MyAccount-navigation ul li a, .widget_product_categories ul li a,
-.widget_categories ul li a,
-.widget_archive ul li a,
-.widget_recent_entries ul li a,
-.widget_recent_comments ul li a,
-.widget_meta ul li a,
-.widget_pages ul li a,
-.widget_nav_menu ul li a {
+.site-content .widget_product_categories ul li a,
+.site-content .widget_categories ul li a,
+.site-content .widget_archive ul li a,
+.site-content .widget_recent_entries ul li a,
+.site-content .widget_recent_comments ul li a,
+.site-content .widget_meta ul li a,
+.site-content .widget_pages ul li a,
+.site-content .widget_nav_menu ul li a, .widget_products ul li a,
+.woocommerce-MyAccount-navigation ul li a {
   display: inline-block;
 }
-.widget_products ul li.recentcomments span,
-.woocommerce-MyAccount-navigation ul li.recentcomments span, .widget_product_categories ul li.recentcomments span,
-.widget_categories ul li.recentcomments span,
-.widget_archive ul li.recentcomments span,
-.widget_recent_entries ul li.recentcomments span,
-.widget_recent_comments ul li.recentcomments span,
-.widget_meta ul li.recentcomments span,
-.widget_pages ul li.recentcomments span,
-.widget_nav_menu ul li.recentcomments span {
+.site-content .widget_product_categories ul li.recentcomments span,
+.site-content .widget_categories ul li.recentcomments span,
+.site-content .widget_archive ul li.recentcomments span,
+.site-content .widget_recent_entries ul li.recentcomments span,
+.site-content .widget_recent_comments ul li.recentcomments span,
+.site-content .widget_meta ul li.recentcomments span,
+.site-content .widget_pages ul li.recentcomments span,
+.site-content .widget_nav_menu ul li.recentcomments span, .widget_products ul li.recentcomments span,
+.woocommerce-MyAccount-navigation ul li.recentcomments span {
   display: inline-block;
 }
+
 a:focus,
 input:focus,
 button:focus,
@@ -1295,38 +1300,54 @@ textarea:focus,
   box-shadow: none;
 }
 
-input[type=submit]:hover, .evt-head-search form .search-submit:hover, .widget_search form .search-submit:hover, button:before, input[type=button]:before, input[type=reset]:before, input[type=submit]:before, .woocommerce #respond input#submit:before,
+.widget_search form .search-submit:before, .evt-head-search form .search-submit:before, .pagination .nav-links a:before, .wp-pagenavi a:before, .woocommerce nav.woocommerce-pagination a:before,
+.pagination .nav-links span:before,
+.wp-pagenavi span:before,
+.woocommerce nav.woocommerce-pagination span:before, .btn:before, .read-more:before, .wpcf7-form .wpcf7-submit:before, .woocommerce #respond input#submit:before,
 .woocommerce div.product form.cart .button:before,
+.woocommerce #respond input#submit.alt:before,
 .woocommerce a.button:before,
 .woocommerce button.button:before,
-.woocommerce input.button:before, .wpcf7-form .wpcf7-submit:before, .read-more:before, .btn:before, .woocommerce nav.woocommerce-pagination a:before, .wp-pagenavi a:before, .pagination .nav-links a:before,
-.woocommerce nav.woocommerce-pagination span:before,
-.wp-pagenavi span:before,
-.pagination .nav-links span:before, .evt-head-search form .search-submit:before, .widget_search form .search-submit:before {
+.woocommerce input.button:before,
+.woocommerce a.button.alt:before,
+.woocommerce button.button.alt:before,
+.woocommerce input.button.alt:before, button:before, input[type="button"]:before, input[type="reset"]:before, input[type="submit"]:before, .widget_search form .search-submit:hover, .evt-head-search form .search-submit:hover, input[type="submit"]:hover {
   background-color: #000;
 }
 
-button:hover, input[type=button]:hover, input[type=reset]:hover, input[type=submit]:hover, .woocommerce #respond input#submit:hover,
+.widget_search form .search-submit:hover, .evt-head-search form .search-submit:hover, .pagination .nav-links a:hover, .wp-pagenavi a:hover, .woocommerce nav.woocommerce-pagination a:hover,
+.pagination .nav-links span:hover,
+.wp-pagenavi span:hover,
+.woocommerce nav.woocommerce-pagination span:hover, .btn:hover, .read-more:hover, .wpcf7-form .wpcf7-submit:hover, .woocommerce #respond input#submit:hover,
 .woocommerce div.product form.cart .button:hover,
 .woocommerce a.button:hover,
 .woocommerce button.button:hover,
-.woocommerce input.button:hover, .wpcf7-form .wpcf7-submit:hover, .read-more:hover, .btn:hover, .woocommerce nav.woocommerce-pagination a:hover, .wp-pagenavi a:hover, .pagination .nav-links a:hover,
-.woocommerce nav.woocommerce-pagination span:hover,
-.wp-pagenavi span:hover,
-.pagination .nav-links span:hover, .evt-head-search form .search-submit:hover, .widget_search form .search-submit:hover {
+.woocommerce input.button:hover, button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover,
+.woocommerce #respond input#submit.alt:hover,
+.woocommerce a.button.alt:hover,
+.woocommerce button.button.alt:hover,
+.woocommerce input.button.alt:hover {
   color: #ffffff;
 }
-button:before:hover, input[type=button]:before:hover, input[type=reset]:before:hover, input[type=submit]:before:hover, .woocommerce #respond input#submit:before:hover,
-.woocommerce div.product form.cart .button:before:hover,
-.woocommerce a.button:before:hover,
-.woocommerce input.button:before:hover, .wpcf7-form .wpcf7-submit:before:hover, .read-more:before:hover, .btn:before:hover, .woocommerce nav.woocommerce-pagination a:before:hover, .wp-pagenavi a:before:hover, .pagination .nav-links a:before:hover,
-.woocommerce nav.woocommerce-pagination span:before:hover,
-.wp-pagenavi span:before:hover,
-.pagination .nav-links span:before:hover, .evt-head-search form .search-submit:before:hover, .widget_search form .search-submit:before:hover {
+.widget_search form .search-submit:hover:before, .evt-head-search form .search-submit:hover:before, .pagination .nav-links a:hover:before, .wp-pagenavi a:hover:before, .woocommerce nav.woocommerce-pagination a:hover:before,
+.pagination .nav-links span:hover:before,
+.wp-pagenavi span:hover:before,
+.woocommerce nav.woocommerce-pagination span:hover:before, .btn:hover:before, .read-more:hover:before, .wpcf7-form .wpcf7-submit:hover:before, .woocommerce #respond input#submit:hover:before,
+.woocommerce div.product form.cart .button:hover:before,
+.woocommerce a.button:hover:before,
+.woocommerce button.button:hover:before,
+.woocommerce input.button:hover:before, button:hover:before, input[type="button"]:hover:before, input[type="reset"]:hover:before, input[type="submit"]:hover:before,
+.woocommerce #respond input#submit.alt:hover:before,
+.woocommerce a.button.alt:hover:before,
+.woocommerce button.button.alt:hover:before,
+.woocommerce input.button.alt:hover:before {
   transform: translateX(0);
 }
 
-button, input[type=button], input[type=reset], input[type=submit], .woocommerce #respond input#submit,
+.widget_search form .search-submit, .evt-head-search form .search-submit, .pagination .nav-links a, .wp-pagenavi a, .woocommerce nav.woocommerce-pagination a,
+.pagination .nav-links span,
+.wp-pagenavi span,
+.woocommerce nav.woocommerce-pagination span, a.btn, .btn, .read-more, .wpcf7-form .wpcf7-submit, .woocommerce #respond input#submit,
 .woocommerce div.product form.cart .button,
 .woocommerce #respond input#submit.alt,
 .woocommerce a.button,
@@ -1334,10 +1355,7 @@ button, input[type=button], input[type=reset], input[type=submit], .woocommerce 
 .woocommerce input.button,
 .woocommerce a.button.alt,
 .woocommerce button.button.alt,
-.woocommerce input.button.alt, .wpcf7-form .wpcf7-submit, .read-more, .btn, a.btn, .woocommerce nav.woocommerce-pagination a, .wp-pagenavi a, .pagination .nav-links a,
-.woocommerce nav.woocommerce-pagination span,
-.wp-pagenavi span,
-.pagination .nav-links span, .evt-head-search form .search-submit, .widget_search form .search-submit {
+.woocommerce input.button.alt, button, input[type="button"], input[type="reset"], input[type="submit"] {
   border: 0;
   border-radius: 0;
   color: #ffffff;
@@ -1348,15 +1366,19 @@ button, input[type=button], input[type=reset], input[type=submit], .woocommerce 
   overflow: hidden;
   -webkit-transform: translateZ(0);
 }
-button:before, input[type=button]:before, input[type=reset]:before, input[type=submit]:before, .woocommerce #respond input#submit:before,
+.widget_search form .search-submit:before, .evt-head-search form .search-submit:before, .pagination .nav-links a:before, .wp-pagenavi a:before, .woocommerce nav.woocommerce-pagination a:before,
+.pagination .nav-links span:before,
+.wp-pagenavi span:before,
+.woocommerce nav.woocommerce-pagination span:before, .btn:before, .read-more:before, .wpcf7-form .wpcf7-submit:before, .woocommerce #respond input#submit:before,
 .woocommerce div.product form.cart .button:before,
+.woocommerce #respond input#submit.alt:before,
 .woocommerce a.button:before,
 .woocommerce button.button:before,
-.woocommerce input.button:before, .wpcf7-form .wpcf7-submit:before, .read-more:before, .btn:before, .woocommerce nav.woocommerce-pagination a:before, .wp-pagenavi a:before, .pagination .nav-links a:before,
-.woocommerce nav.woocommerce-pagination span:before,
-.wp-pagenavi span:before,
-.pagination .nav-links span:before, .evt-head-search form .search-submit:before, .widget_search form .search-submit:before {
-  content: "";
+.woocommerce input.button:before,
+.woocommerce a.button.alt:before,
+.woocommerce button.button.alt:before,
+.woocommerce input.button.alt:before, button:before, input[type="button"]:before, input[type="reset"]:before, input[type="submit"]:before {
+  content: '';
   z-index: -1;
   transform: translateX(-100%);
   -webkit-transition: 0.4s all ease-in-out;
@@ -1369,7 +1391,10 @@ button:before, input[type=button]:before, input[type=reset]:before, input[type=s
   top: 0;
   bottom: 0;
 }
-button i, input[type=button] i, input[type=reset] i, input[type=submit] i, .woocommerce #respond input#submit i,
+.widget_search form .search-submit i, .evt-head-search form .search-submit i, .pagination .nav-links a i, .wp-pagenavi a i, .woocommerce nav.woocommerce-pagination a i,
+.pagination .nav-links span i,
+.wp-pagenavi span i,
+.woocommerce nav.woocommerce-pagination span i, .btn i, .read-more i, .wpcf7-form .wpcf7-submit i, .woocommerce #respond input#submit i,
 .woocommerce div.product form.cart .button i,
 .woocommerce #respond input#submit.alt i,
 .woocommerce a.button i,
@@ -1377,10 +1402,7 @@ button i, input[type=button] i, input[type=reset] i, input[type=submit] i, .wooc
 .woocommerce input.button i,
 .woocommerce a.button.alt i,
 .woocommerce button.button.alt i,
-.woocommerce input.button.alt i, .wpcf7-form .wpcf7-submit i, .read-more i, .btn i, .woocommerce nav.woocommerce-pagination a i, .wp-pagenavi a i, .pagination .nav-links a i,
-.woocommerce nav.woocommerce-pagination span i,
-.wp-pagenavi span i,
-.pagination .nav-links span i, .evt-head-search form .search-submit i, .widget_search form .search-submit i {
+.woocommerce input.button.alt i, button i, input[type="button"] i, input[type="reset"] i, input[type="submit"] i {
   margin-left: 10px;
 }
 
@@ -1388,8 +1410,9 @@ a.btn.btn-reverse,
 .btn.btn-reverse {
   background-color: #000;
 }
-input[type=text], input[type=email], input[type=url], input[type=password], input[type=search], input[type=number], input[type=tel], input[type=range], input[type=date], input[type=month], input[type=week], input[type=time], input[type=datetime], input[type=datetime-local], input[type=color], textarea, .wpcf7-form label input.wpcf7-form-control,
-.wpcf7-form label .wpcf7-form-control, .evt-head-search form label .search-field, .widget_search form label .search-field {
+
+.widget_search form label .search-field, .evt-head-search form label .search-field, .wpcf7-form label input.wpcf7-form-control,
+.wpcf7-form label .wpcf7-form-control, input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], input[type="number"], input[type="tel"], input[type="range"], input[type="date"], input[type="month"], input[type="week"], input[type="time"], input[type="datetime"], input[type="datetime-local"], input[type="color"], textarea {
   background: #f2f2f2;
   border: 0;
   border-radius: 0px;
@@ -1404,25 +1427,26 @@ input[type=checkbox], input[type=radio] {
   margin-right: 10px;
 }
 
-.evt-head-search form, .widget_search form {
+.widget_search form, .evt-head-search form {
   height: 34px;
   position: relative;
   padding-right: 90px;
 }
-.evt-head-search form label, .widget_search form label {
+.widget_search form label, .evt-head-search form label {
   height: 100%;
   margin-bottom: 0;
   width: 100%;
 }
-.evt-head-search form label .search-field, .widget_search form label .search-field {
+.widget_search form label .search-field, .evt-head-search form label .search-field {
   height: 100%;
 }
-.evt-head-search form .search-submit, .widget_search form .search-submit {
+.widget_search form .search-submit, .evt-head-search form .search-submit {
   position: absolute;
   height: 100%;
   right: 0;
   top: 0;
 }
+
 #evt-preloader #status {
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -1437,68 +1461,69 @@ input[type=checkbox], input[type=radio] {
   justify-content: center;
 }
 
-header.site-header, body.single .entry-meta, .posts-navigation, .post-navigation, .widget_products ul li,
-.woocommerce-MyAccount-navigation ul li, .widget_product_categories ul li,
-.widget_categories ul li,
-.widget_archive ul li,
-.widget_recent_entries ul li,
-.widget_recent_comments ul li,
-.widget_meta ul li,
-.widget_pages ul li,
-.widget_nav_menu ul li {
+.site-content .widget_product_categories ul li,
+.site-content .widget_categories ul li,
+.site-content .widget_archive ul li,
+.site-content .widget_recent_entries ul li,
+.site-content .widget_recent_comments ul li,
+.site-content .widget_meta ul li,
+.site-content .widget_pages ul li,
+.site-content .widget_nav_menu ul li, .widget_products ul li,
+.woocommerce-MyAccount-navigation ul li, .post-navigation, .posts-navigation, body.single .entry-meta, header.site-header {
   border-color: #e0e0e0;
   border-style: solid;
 }
 
-.posts-navigation, .post-navigation {
+.post-navigation, .posts-navigation {
   border-width: 0;
   border-top-width: 1px;
   padding-top: 15px;
 }
-.posts-navigation .nav-previous a:before, .post-navigation .nav-previous a:before {
-  content: "";
+.post-navigation .nav-previous a:before, .posts-navigation .nav-previous a:before {
+  content: "\f30a";
   margin-right: 10px;
 }
-.posts-navigation .nav-next a:after, .post-navigation .nav-next a:after {
-  content: "";
+.post-navigation .nav-next a:after, .posts-navigation .nav-next a:after {
+  content: "\f30b";
   margin-left: 10px;
 }
 
-.woocommerce nav.woocommerce-pagination, .wp-pagenavi, .pagination .nav-links {
+.pagination .nav-links, .wp-pagenavi, .woocommerce nav.woocommerce-pagination {
   margin: 0 auto;
   margin-top: 20px;
 }
-.woocommerce nav.woocommerce-pagination a, .wp-pagenavi a, .pagination .nav-links a {
+.pagination .nav-links a, .wp-pagenavi a, .woocommerce nav.woocommerce-pagination a {
   background-color: black;
 }
-.woocommerce nav.woocommerce-pagination ul, .wp-pagenavi ul, .pagination .nav-links ul {
+.pagination .nav-links ul, .wp-pagenavi ul, .woocommerce nav.woocommerce-pagination ul {
   border: 0;
 }
-.woocommerce nav.woocommerce-pagination ul li, .wp-pagenavi ul li, .pagination .nav-links ul li {
+.pagination .nav-links ul li, .wp-pagenavi ul li, .woocommerce nav.woocommerce-pagination ul li {
   border: 0;
 }
-.woocommerce nav.woocommerce-pagination ul li span, .wp-pagenavi ul li span, .pagination .nav-links ul li span, .woocommerce nav.woocommerce-pagination ul li a, .wp-pagenavi ul li a, .pagination .nav-links ul li a {
+.pagination .nav-links ul li span, .wp-pagenavi ul li span, .woocommerce nav.woocommerce-pagination ul li span, .pagination .nav-links ul li a, .wp-pagenavi ul li a, .woocommerce nav.woocommerce-pagination ul li a {
   line-height: inherit;
-  padding: 0.5em 1em;
+  padding: .5em 1em;
 }
-.woocommerce nav.woocommerce-pagination a, .wp-pagenavi a, .pagination .nav-links a {
+
+.pagination .nav-links a, .wp-pagenavi a, .woocommerce nav.woocommerce-pagination a {
   display: inline-block;
   position: relative;
 }
-.woocommerce nav.woocommerce-pagination a span, .wp-pagenavi a span, .pagination .nav-links a span {
+.pagination .nav-links a span, .wp-pagenavi a span, .woocommerce nav.woocommerce-pagination a span {
   position: absolute;
 }
 
-.image, .woocommerce ul.products li.product a, .widget_media_gallery figure.gallery-item {
+.widget_media_gallery figure.gallery-item, .woocommerce ul.products li.product a, .image {
   overflow: hidden;
 }
-.image img, .woocommerce ul.products li.product a img, .widget_media_gallery figure.gallery-item img {
+.widget_media_gallery figure.gallery-item img, .woocommerce ul.products li.product a img, .image img {
   -webkit-transition: 0.4s all ease-in-out;
   -moz-transition: 0.4s all ease-in-out;
   -o-transition: 0.4s all ease-in-out;
   transition: 0.4s all ease-in-out;
 }
-.image:hover img, .woocommerce ul.products li.product a:hover img, .widget_media_gallery figure.gallery-item:hover img {
+.widget_media_gallery figure.gallery-item:hover img, .woocommerce ul.products li.product a:hover img, .image:hover img {
   -moz-transform: scale(1.05);
   -o-transform: scale(1.05);
   -ms-transform: scale(1.05);
@@ -1506,7 +1531,7 @@ header.site-header, body.single .entry-meta, .posts-navigation, .post-navigation
   transform: scale(1.05);
 }
 
-#evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li, ul[id^=menu-social] li, #evt-social-icons li {
+#evt-social-icons li, ul[id^=menu-social] li, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li {
   display: inline-block;
   list-style: none;
   margin-right: 14px;
@@ -1514,204 +1539,204 @@ header.site-header, body.single .entry-meta, .posts-navigation, .post-navigation
   overflow: hidden;
   /*social links hover effect */
 }
-#evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a, ul[id^=menu-social] li a, #evt-social-icons li a {
+#evt-social-icons li a, ul[id^=menu-social] li a, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a {
   display: inline-block;
   text-transform: capitalize;
 }
-#evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a:before, ul[id^=menu-social] li a:before, #evt-social-icons li a:before {
+#evt-social-icons li a:before, ul[id^=menu-social] li a:before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a:before {
   font-family: Font Awesome\ 5 Brands;
   margin-right: 10px;
 }
-#evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="facebook.com"]::before, ul[id^=menu-social] li a[href*="facebook.com"]::before, #evt-social-icons li a[href*="facebook.com"]::before {
-  content: "";
+#evt-social-icons li a[href*="facebook.com"]::before, ul[id^=menu-social] li a[href*="facebook.com"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="facebook.com"]::before {
+  content: "\f09a";
 }
-#evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="twitter.com"]::before, ul[id^=menu-social] li a[href*="twitter.com"]::before, #evt-social-icons li a[href*="twitter.com"]::before {
-  content: "";
+#evt-social-icons li a[href*="twitter.com"]::before, ul[id^=menu-social] li a[href*="twitter.com"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="twitter.com"]::before {
+  content: "\f099";
 }
-#evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="linkedin.com"]::before, ul[id^=menu-social] li a[href*="linkedin.com"]::before, #evt-social-icons li a[href*="linkedin.com"]::before {
-  content: "";
+#evt-social-icons li a[href*="linkedin.com"]::before, ul[id^=menu-social] li a[href*="linkedin.com"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="linkedin.com"]::before {
+  content: "\f0e1";
 }
-#evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="plus.google.com"]::before, ul[id^=menu-social] li a[href*="plus.google.com"]::before, #evt-social-icons li a[href*="plus.google.com"]::before {
-  content: "";
+#evt-social-icons li a[href*="plus.google.com"]::before, ul[id^=menu-social] li a[href*="plus.google.com"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="plus.google.com"]::before {
+  content: "\f0d5";
 }
-#evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="youtube.com"]::before, ul[id^=menu-social] li a[href*="youtube.com"]::before, #evt-social-icons li a[href*="youtube.com"]::before {
-  content: "";
+#evt-social-icons li a[href*="youtube.com"]::before, ul[id^=menu-social] li a[href*="youtube.com"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="youtube.com"]::before {
+  content: "\f167";
 }
-#evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="dribbble.com"]::before, ul[id^=menu-social] li a[href*="dribbble.com"]::before, #evt-social-icons li a[href*="dribbble.com"]::before {
-  content: "";
+#evt-social-icons li a[href*="dribbble.com"]::before, ul[id^=menu-social] li a[href*="dribbble.com"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="dribbble.com"]::before {
+  content: "\f17d";
 }
-#evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="pinterest.com"]::before, ul[id^=menu-social] li a[href*="pinterest.com"]::before, #evt-social-icons li a[href*="pinterest.com"]::before {
-  content: "";
+#evt-social-icons li a[href*="pinterest.com"]::before, ul[id^=menu-social] li a[href*="pinterest.com"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="pinterest.com"]::before {
+  content: "\f0d2";
 }
-#evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="bitbucket.org"]::before, ul[id^=menu-social] li a[href*="bitbucket.org"]::before, #evt-social-icons li a[href*="bitbucket.org"]::before {
-  content: "";
+#evt-social-icons li a[href*="bitbucket.org"]::before, ul[id^=menu-social] li a[href*="bitbucket.org"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="bitbucket.org"]::before {
+  content: "\f171";
 }
-#evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="github.com"]::before, ul[id^=menu-social] li a[href*="github.com"]::before, #evt-social-icons li a[href*="github.com"]::before {
-  content: "";
+#evt-social-icons li a[href*="github.com"]::before, ul[id^=menu-social] li a[href*="github.com"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="github.com"]::before {
+  content: "\f113";
 }
-#evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="codepen.io"]::before, ul[id^=menu-social] li a[href*="codepen.io"]::before, #evt-social-icons li a[href*="codepen.io"]::before {
-  content: "";
+#evt-social-icons li a[href*="codepen.io"]::before, ul[id^=menu-social] li a[href*="codepen.io"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="codepen.io"]::before {
+  content: "\f1cb";
 }
-#evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="flickr.com"]::before, ul[id^=menu-social] li a[href*="flickr.com"]::before, #evt-social-icons li a[href*="flickr.com"]::before {
-  content: "";
+#evt-social-icons li a[href*="flickr.com"]::before, ul[id^=menu-social] li a[href*="flickr.com"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="flickr.com"]::before {
+  content: "\f16e";
 }
-#evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href$="/feed/"]::before, ul[id^=menu-social] li a[href$="/feed/"]::before, #evt-social-icons li a[href$="/feed/"]::before {
-  content: "";
+#evt-social-icons li a[href$="/feed/"]::before, ul[id^=menu-social] li a[href$="/feed/"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href$="/feed/"]::before {
+  content: "\f09e";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
 }
-#evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="foursquare.com"]::before, ul[id^=menu-social] li a[href*="foursquare.com"]::before, #evt-social-icons li a[href*="foursquare.com"]::before {
-  content: "";
+#evt-social-icons li a[href*="foursquare.com"]::before, ul[id^=menu-social] li a[href*="foursquare.com"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="foursquare.com"]::before {
+  content: "\f180";
 }
-#evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="instagram.com"]::before, ul[id^=menu-social] li a[href*="instagram.com"]::before, #evt-social-icons li a[href*="instagram.com"]::before {
-  content: "";
+#evt-social-icons li a[href*="instagram.com"]::before, ul[id^=menu-social] li a[href*="instagram.com"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="instagram.com"]::before {
+  content: "\f16d";
 }
-#evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="tumblr.com"]::before, ul[id^=menu-social] li a[href*="tumblr.com"]::before, #evt-social-icons li a[href*="tumblr.com"]::before {
-  content: "";
+#evt-social-icons li a[href*="tumblr.com"]::before, ul[id^=menu-social] li a[href*="tumblr.com"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="tumblr.com"]::before {
+  content: "\f173";
 }
-#evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="reddit.com"]::before, ul[id^=menu-social] li a[href*="reddit.com"]::before, #evt-social-icons li a[href*="reddit.com"]::before {
-  content: "";
+#evt-social-icons li a[href*="reddit.com"]::before, ul[id^=menu-social] li a[href*="reddit.com"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="reddit.com"]::before {
+  content: "\f1a1";
 }
-#evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="vimeo.com"]::before, ul[id^=menu-social] li a[href*="vimeo.com"]::before, #evt-social-icons li a[href*="vimeo.com"]::before {
-  content: "";
+#evt-social-icons li a[href*="vimeo.com"]::before, ul[id^=menu-social] li a[href*="vimeo.com"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="vimeo.com"]::before {
+  content: "\f194";
 }
-#evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="digg.com"]::before, ul[id^=menu-social] li a[href*="digg.com"]::before, #evt-social-icons li a[href*="digg.com"]::before {
-  content: "";
+#evt-social-icons li a[href*="digg.com"]::before, ul[id^=menu-social] li a[href*="digg.com"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="digg.com"]::before {
+  content: "\f1a6";
 }
-#evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="twitch.tv"]::before, ul[id^=menu-social] li a[href*="twitch.tv"]::before, #evt-social-icons li a[href*="twitch.tv"]::before {
-  content: "";
+#evt-social-icons li a[href*="twitch.tv"]::before, ul[id^=menu-social] li a[href*="twitch.tv"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="twitch.tv"]::before {
+  content: "\f1e8";
 }
-#evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="stumbleupon.com"]::before, ul[id^=menu-social] li a[href*="stumbleupon.com"]::before, #evt-social-icons li a[href*="stumbleupon.com"]::before {
-  content: "";
+#evt-social-icons li a[href*="stumbleupon.com"]::before, ul[id^=menu-social] li a[href*="stumbleupon.com"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="stumbleupon.com"]::before {
+  content: "\f1a4";
 }
-#evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="delicious.com"]::before, ul[id^=menu-social] li a[href*="delicious.com"]::before, #evt-social-icons li a[href*="delicious.com"]::before {
-  content: "";
+#evt-social-icons li a[href*="delicious.com"]::before, ul[id^=menu-social] li a[href*="delicious.com"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="delicious.com"]::before {
+  content: "\f1a5";
 }
-#evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="mailto:"]::before, ul[id^=menu-social] li a[href*="mailto:"]::before, #evt-social-icons li a[href*="mailto:"]::before {
-  content: "";
+#evt-social-icons li a[href*="mailto:"]::before, ul[id^=menu-social] li a[href*="mailto:"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="mailto:"]::before {
+  content: "\f0e0";
   font-family: "Font Awesome 5 Free";
 }
-#evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="soundcloud.com"]::before, ul[id^=menu-social] li a[href*="soundcloud.com"]::before, #evt-social-icons li a[href*="soundcloud.com"]::before {
-  content: "";
+#evt-social-icons li a[href*="soundcloud.com"]::before, ul[id^=menu-social] li a[href*="soundcloud.com"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="soundcloud.com"]::before {
+  content: "\f1be";
 }
-#evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="wordpress.org"]::before, ul[id^=menu-social] li a[href*="wordpress.org"]::before, #evt-social-icons li a[href*="wordpress.org"]::before {
-  content: "";
+#evt-social-icons li a[href*="wordpress.org"]::before, ul[id^=menu-social] li a[href*="wordpress.org"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="wordpress.org"]::before {
+  content: "\f19a";
 }
-#evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="wordpress.com"]::before, ul[id^=menu-social] li a[href*="wordpress.com"]::before, #evt-social-icons li a[href*="wordpress.com"]::before {
-  content: "";
+#evt-social-icons li a[href*="wordpress.com"]::before, ul[id^=menu-social] li a[href*="wordpress.com"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="wordpress.com"]::before {
+  content: "\f19a";
 }
-#evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="jsfiddle.net"]::before, ul[id^=menu-social] li a[href*="jsfiddle.net"]::before, #evt-social-icons li a[href*="jsfiddle.net"]::before {
-  content: "";
+#evt-social-icons li a[href*="jsfiddle.net"]::before, ul[id^=menu-social] li a[href*="jsfiddle.net"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="jsfiddle.net"]::before {
+  content: "\f1cc";
 }
-#evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="tripadvisor.com"]::before, ul[id^=menu-social] li a[href*="tripadvisor.com"]::before, #evt-social-icons li a[href*="tripadvisor.com"]::before {
-  content: "";
+#evt-social-icons li a[href*="tripadvisor.com"]::before, ul[id^=menu-social] li a[href*="tripadvisor.com"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="tripadvisor.com"]::before {
+  content: "\f262";
 }
-#evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="angel.co"]::before, ul[id^=menu-social] li a[href*="angel.co"]::before, #evt-social-icons li a[href*="angel.co"]::before {
-  content: "";
+#evt-social-icons li a[href*="angel.co"]::before, ul[id^=menu-social] li a[href*="angel.co"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="angel.co"]::before {
+  content: "\f209";
 }
-#evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="slack.com"]::before, ul[id^=menu-social] li a[href*="slack.com"]::before, #evt-social-icons li a[href*="slack.com"]::before {
-  content: "";
+#evt-social-icons li a[href*="slack.com"]::before, ul[id^=menu-social] li a[href*="slack.com"]::before, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="slack.com"]::before {
+  content: "\f198";
 }
-#evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="facebook.com"]:hover, ul[id^=menu-social] li a[href*="facebook.com"]:hover, #evt-social-icons li a[href*="facebook.com"]:hover {
+#evt-social-icons li a[href*="facebook.com"]:hover, ul[id^=menu-social] li a[href*="facebook.com"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="facebook.com"]:hover {
   color: #3b5998;
 }
-#evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="twitter.com"]:hover, ul[id^=menu-social] li a[href*="twitter.com"]:hover, #evt-social-icons li a[href*="twitter.com"]:hover {
+#evt-social-icons li a[href*="twitter.com"]:hover, ul[id^=menu-social] li a[href*="twitter.com"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="twitter.com"]:hover {
   color: #00aced;
 }
-#evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="plus.google.com"]:hover, ul[id^=menu-social] li a[href*="plus.google.com"]:hover, #evt-social-icons li a[href*="plus.google.com"]:hover {
+#evt-social-icons li a[href*="plus.google.com"]:hover, ul[id^=menu-social] li a[href*="plus.google.com"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="plus.google.com"]:hover {
   color: #dd4b39;
 }
-#evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="/feed/"]:hover, ul[id^=menu-social] li a[href*="/feed/"]:hover, #evt-social-icons li a[href*="/feed/"]:hover {
+#evt-social-icons li a[href*="/feed/"]:hover, ul[id^=menu-social] li a[href*="/feed/"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="/feed/"]:hover {
   color: #dc622c;
 }
-#evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="wordpress.org"]:hover, ul[id^=menu-social] li a[href*="wordpress.org"]:hover, #evt-social-icons li a[href*="wordpress.org"]:hover,
-#evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="wordpress.com"]:hover,
+#evt-social-icons li a[href*="wordpress.org"]:hover, ul[id^=menu-social] li a[href*="wordpress.org"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="wordpress.org"]:hover,
+#evt-social-icons li a[href*="wordpress.com"]:hover,
 ul[id^=menu-social] li a[href*="wordpress.com"]:hover,
-#evt-social-icons li a[href*="wordpress.com"]:hover {
+#evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="wordpress.com"]:hover {
   color: #45bbe6;
 }
-#evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="github.com"]:hover, ul[id^=menu-social] li a[href*="github.com"]:hover, #evt-social-icons li a[href*="github.com"]:hover {
+#evt-social-icons li a[href*="github.com"]:hover, ul[id^=menu-social] li a[href*="github.com"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="github.com"]:hover {
   color: #4183c4;
 }
-#evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="linkedin.com"]:hover, ul[id^=menu-social] li a[href*="linkedin.com"]:hover, #evt-social-icons li a[href*="linkedin.com"]:hover {
+#evt-social-icons li a[href*="linkedin.com"]:hover, ul[id^=menu-social] li a[href*="linkedin.com"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="linkedin.com"]:hover {
   color: #007bb6;
 }
-#evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="pinterest.com"]:hover, ul[id^=menu-social] li a[href*="pinterest.com"]:hover, #evt-social-icons li a[href*="pinterest.com"]:hover {
+#evt-social-icons li a[href*="pinterest.com"]:hover, ul[id^=menu-social] li a[href*="pinterest.com"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="pinterest.com"]:hover {
   color: #cb2027;
 }
-#evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="flickr.com"]:hover, ul[id^=menu-social] li a[href*="flickr.com"]:hover, #evt-social-icons li a[href*="flickr.com"]:hover {
+#evt-social-icons li a[href*="flickr.com"]:hover, ul[id^=menu-social] li a[href*="flickr.com"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="flickr.com"]:hover {
   color: #ff0084;
 }
-#evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="vimeo.com"]:hover, ul[id^=menu-social] li a[href*="vimeo.com"]:hover, #evt-social-icons li a[href*="vimeo.com"]:hover {
+#evt-social-icons li a[href*="vimeo.com"]:hover, ul[id^=menu-social] li a[href*="vimeo.com"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="vimeo.com"]:hover {
   color: #aad450;
 }
-#evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="youtube.com"]:hover, ul[id^=menu-social] li a[href*="youtube.com"]:hover, #evt-social-icons li a[href*="youtube.com"]:hover {
+#evt-social-icons li a[href*="youtube.com"]:hover, ul[id^=menu-social] li a[href*="youtube.com"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="youtube.com"]:hover {
   color: #bb0000;
 }
-#evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="instagram.com"]:hover, ul[id^=menu-social] li a[href*="instagram.com"]:hover, #evt-social-icons li a[href*="instagram.com"]:hover {
+#evt-social-icons li a[href*="instagram.com"]:hover, ul[id^=menu-social] li a[href*="instagram.com"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="instagram.com"]:hover {
   color: #517fa4;
 }
-#evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="dribbble.com"]:hover, ul[id^=menu-social] li a[href*="dribbble.com"]:hover, #evt-social-icons li a[href*="dribbble.com"]:hover {
+#evt-social-icons li a[href*="dribbble.com"]:hover, ul[id^=menu-social] li a[href*="dribbble.com"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="dribbble.com"]:hover {
   color: #ea4c89;
 }
-#evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="skype.com"]:hover, ul[id^=menu-social] li a[href*="skype.com"]:hover, #evt-social-icons li a[href*="skype.com"]:hover {
+#evt-social-icons li a[href*="skype.com"]:hover, ul[id^=menu-social] li a[href*="skype.com"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="skype.com"]:hover {
   color: #12a5f4;
 }
-#evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="digg.com"]:hover, ul[id^=menu-social] li a[href*="digg.com"]:hover, #evt-social-icons li a[href*="digg.com"]:hover {
+#evt-social-icons li a[href*="digg.com"]:hover, ul[id^=menu-social] li a[href*="digg.com"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="digg.com"]:hover {
   color: #333;
 }
-#evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="codepen.io"]:hover, ul[id^=menu-social] li a[href*="codepen.io"]:hover, #evt-social-icons li a[href*="codepen.io"]:hover {
+#evt-social-icons li a[href*="codepen.io"]:hover, ul[id^=menu-social] li a[href*="codepen.io"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="codepen.io"]:hover {
   color: #000;
 }
-#evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="reddit.com"]:hover, ul[id^=menu-social] li a[href*="reddit.com"]:hover, #evt-social-icons li a[href*="reddit.com"]:hover {
+#evt-social-icons li a[href*="reddit.com"]:hover, ul[id^=menu-social] li a[href*="reddit.com"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="reddit.com"]:hover {
   color: #ff4500;
 }
-#evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="mailto:"]:hover, ul[id^=menu-social] li a[href*="mailto:"]:hover, #evt-social-icons li a[href*="mailto:"]:hover {
+#evt-social-icons li a[href*="mailto:"]:hover, ul[id^=menu-social] li a[href*="mailto:"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="mailto:"]:hover {
   color: #1d62f0;
 }
-#evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="foursquare.com"]:hover, ul[id^=menu-social] li a[href*="foursquare.com"]:hover, #evt-social-icons li a[href*="foursquare.com"]:hover {
+#evt-social-icons li a[href*="foursquare.com"]:hover, ul[id^=menu-social] li a[href*="foursquare.com"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="foursquare.com"]:hover {
   color: #f94877;
 }
-#evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="stumbleupon.com"]:hover, ul[id^=menu-social] li a[href*="stumbleupon.com"]:hover, #evt-social-icons li a[href*="stumbleupon.com"]:hover {
+#evt-social-icons li a[href*="stumbleupon.com"]:hover, ul[id^=menu-social] li a[href*="stumbleupon.com"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="stumbleupon.com"]:hover {
   color: #eb4924;
 }
-#evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="twitch.tv"]:hover, ul[id^=menu-social] li a[href*="twitch.tv"]:hover, #evt-social-icons li a[href*="twitch.tv"]:hover {
+#evt-social-icons li a[href*="twitch.tv"]:hover, ul[id^=menu-social] li a[href*="twitch.tv"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="twitch.tv"]:hover {
   color: #6441a5;
 }
-#evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="tumblr.com"]:hover, ul[id^=menu-social] li a[href*="tumblr.com"]:hover, #evt-social-icons li a[href*="tumblr.com"]:hover {
+#evt-social-icons li a[href*="tumblr.com"]:hover, ul[id^=menu-social] li a[href*="tumblr.com"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="tumblr.com"]:hover {
   color: #32506d;
 }
-#evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="stumbleupon.com"]:hover, ul[id^=menu-social] li a[href*="stumbleupon.com"]:hover, #evt-social-icons li a[href*="stumbleupon.com"]:hover {
+#evt-social-icons li a[href*="stumbleupon.com"]:hover, ul[id^=menu-social] li a[href*="stumbleupon.com"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="stumbleupon.com"]:hover {
   color: #eb4924;
 }
-#evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="twitch.tv"]:hover, ul[id^=menu-social] li a[href*="twitch.tv"]:hover, #evt-social-icons li a[href*="twitch.tv"]:hover {
+#evt-social-icons li a[href*="twitch.tv"]:hover, ul[id^=menu-social] li a[href*="twitch.tv"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="twitch.tv"]:hover {
   color: #6441a5;
 }
-#evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="tumblr.com"]:hover, ul[id^=menu-social] li a[href*="tumblr.com"]:hover, #evt-social-icons li a[href*="tumblr.com"]:hover {
+#evt-social-icons li a[href*="tumblr.com"]:hover, ul[id^=menu-social] li a[href*="tumblr.com"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="tumblr.com"]:hover {
   color: #32506d;
 }
-#evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="soundcloud.com"]:hover, ul[id^=menu-social] li a[href*="soundcloud.com"]:hover, #evt-social-icons li a[href*="soundcloud.com"]:hover {
+#evt-social-icons li a[href*="soundcloud.com"]:hover, ul[id^=menu-social] li a[href*="soundcloud.com"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="soundcloud.com"]:hover {
   color: #ff5500;
 }
-#evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="wordpress.org"]:hover, ul[id^=menu-social] li a[href*="wordpress.org"]:hover, #evt-social-icons li a[href*="wordpress.org"]:hover {
+#evt-social-icons li a[href*="wordpress.org"]:hover, ul[id^=menu-social] li a[href*="wordpress.org"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="wordpress.org"]:hover {
   color: #45bbe6;
 }
-#evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="jsfiddle.net"]:hover, ul[id^=menu-social] li a[href*="jsfiddle.net"]:hover, #evt-social-icons li a[href*="jsfiddle.net"]:hover {
+#evt-social-icons li a[href*="jsfiddle.net"]:hover, ul[id^=menu-social] li a[href*="jsfiddle.net"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="jsfiddle.net"]:hover {
   color: #4679bd;
 }
-#evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="tripadvisor.com"]:hover, ul[id^=menu-social] li a[href*="tripadvisor.com"]:hover, #evt-social-icons li a[href*="tripadvisor.com"]:hover {
+#evt-social-icons li a[href*="tripadvisor.com"]:hover, ul[id^=menu-social] li a[href*="tripadvisor.com"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="tripadvisor.com"]:hover {
   color: #86c171;
 }
-#evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="foursquare.com"]:hover, ul[id^=menu-social] li a[href*="foursquare.com"]:hover, #evt-social-icons li a[href*="foursquare.com"]:hover {
+#evt-social-icons li a[href*="foursquare.com"]:hover, ul[id^=menu-social] li a[href*="foursquare.com"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="foursquare.com"]:hover {
   color: #2d5be3;
 }
-#evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="angel.co"]:hover, ul[id^=menu-social] li a[href*="angel.co"]:hover, #evt-social-icons li a[href*="angel.co"]:hover {
+#evt-social-icons li a[href*="angel.co"]:hover, ul[id^=menu-social] li a[href*="angel.co"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="angel.co"]:hover {
   color: #000;
 }
-#evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="slack.com"]:hover, ul[id^=menu-social] li a[href*="slack.com"]:hover, #evt-social-icons li a[href*="slack.com"]:hover {
+#evt-social-icons li a[href*="slack.com"]:hover, ul[id^=menu-social] li a[href*="slack.com"]:hover, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li a[href*="slack.com"]:hover {
   color: #56b68b;
 }
-#evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li:last-child, ul[id^=menu-social] li:last-child, #evt-social-icons li:last-child {
+#evt-social-icons li:last-child, ul[id^=menu-social] li:last-child, #evt-team .evt-box-item-wrap .evt-box-image .evt-box-social-icons li:last-child {
   margin-right: 0;
 }
 
@@ -1813,7 +1838,6 @@ textarea:focus,
   height: auto !important;
 }
 
-/* css3 gradient */
 .css-gradient,
 .evt-banner-image.css-gradient {
   background: black;
@@ -2010,6 +2034,7 @@ button.slick-arrow:before,
 .widget-area li:before {
   color: #b3b3b3;
 }
+
 #breadcrumb {
   background: #f2f2f2;
   margin-top: -30px;
@@ -2022,14 +2047,15 @@ button.slick-arrow:before,
   display: inline-block;
 }
 .breadcrumbs .trail-items .trail-item + .trail-item {
-  padding-left: 0.5rem;
+  padding-left: .5rem;
 }
 .breadcrumbs .trail-items .trail-item + .trail-item::before {
   display: inline-block;
-  padding-right: 0.5rem;
+  padding-right: .5rem;
   color: #6c757d;
-  content: "";
+  content: "\f105";
 }
+
 header.site-header .evt-header-wrap-nav .container {
   position: relative;
 }
@@ -2060,11 +2086,13 @@ header.site-header .evt-header-wrap-nav .evt-menu-toggler-manage #menu-icon.menu
 header.site-header .evt-header-wrap-nav .evt-menu-toggler-manage #menu-icon.menu-toggler span:nth-child(3) {
   margin-bottom: 0;
 }
+
 body.logo-right header.site-header .evt-header-wrap-nav .evt-menu-toggler-manage #menu-icon.menu-toggler {
   right: auto;
 }
 
-body:not(.home):not(.blog):not(.error404) .site-content {
+body:not(.home):not(.blog):not(.error404) .site-content
+ {
   padding-top: 30px;
 }
 
@@ -2213,17 +2241,17 @@ body.boxed .evt-masonry article {
   }
 }
 
-.cat-links:before, .tags-links:before, .date-link a:before, .author-link a:before, .entry-meta .comments-link:before, .byline:before, .posted-on:before {
-  font-family: "Font Awesome 5 Free";
+.posted-on:before, .byline:before, .entry-meta .comments-link:before, .author-link a:before, .date-link a:before, .tags-links:before, .cat-links:before {
+  font-family: 'Font Awesome 5 Free';
   padding-right: 10px;
 }
 
 .posted-on:before {
-  content: "";
+  content: "\f133";
 }
 
 .byline:before {
-  content: "";
+  content: "\f007";
 }
 
 .entry-meta {
@@ -2231,15 +2259,15 @@ body.boxed .evt-masonry article {
   margin-bottom: 15px;
 }
 .entry-meta .comments-link:before {
-  content: "";
+  content: "\f075";
 }
 
 .author-link a:before {
-  content: "";
+  content: "\f007";
 }
 
 .date-link a:before {
-  content: "";
+  content: "\f133";
   padding-left: 10px;
 }
 
@@ -2262,7 +2290,7 @@ body.single .entry-meta {
 }
 
 .tags-links:before {
-  content: "";
+  content: "\f02c";
   font-weight: 900;
 }
 
@@ -2270,7 +2298,7 @@ body.single .entry-meta {
   display: inline-block;
 }
 .cat-links:before {
-  content: "";
+  content: "\f07c";
   padding-left: 0px;
 }
 
@@ -2323,6 +2351,7 @@ footer.site-footer .widget_nav_menu ul li {
   border-right: 1px solid #eee;
   text-align: center;
 }
+
 .widget_media_gallery figure.gallery-item {
   padding: 2px;
   margin: 0;
@@ -2437,7 +2466,7 @@ footer.site-footer .widget_nav_menu ul li {
   }
 }
 
-.evt-banner-image .evt-banner-caption, #evt-banner .coin-slider .cs-title, #evt-banner .metaslider .caption-wrap, #evt-banner .nivoSlider .nivo-caption {
+#evt-banner .nivoSlider .nivo-caption, #evt-banner .metaslider .caption-wrap, #evt-banner .coin-slider .cs-title, .evt-banner-image .evt-banner-caption {
   color: #ffffff;
   position: absolute;
   left: 0;
@@ -2459,33 +2488,33 @@ footer.site-footer .widget_nav_menu ul li {
   z-index: 99;
 }
 @media (max-width: 479px) {
-  .evt-banner-image .evt-banner-caption, #evt-banner .coin-slider .cs-title, #evt-banner .metaslider .caption-wrap, #evt-banner .nivoSlider .nivo-caption {
+  #evt-banner .nivoSlider .nivo-caption, #evt-banner .metaslider .caption-wrap, #evt-banner .coin-slider .cs-title, .evt-banner-image .evt-banner-caption {
     font-size: 0.875rem;
   }
 }
 @media (max-width: 767px) {
-  .evt-banner-image .evt-banner-caption, #evt-banner .coin-slider .cs-title, #evt-banner .metaslider .caption-wrap, #evt-banner .nivoSlider .nivo-caption {
+  #evt-banner .nivoSlider .nivo-caption, #evt-banner .metaslider .caption-wrap, #evt-banner .coin-slider .cs-title, .evt-banner-image .evt-banner-caption {
     margin-left: 30px;
     margin-right: 30px;
   }
 }
 
-.evt-banner-image .evt-banner-caption .evt-title, #evt-banner .metaslider .caption-wrap .caption h1, #evt-banner .nivoSlider .nivo-caption h1 {
+#evt-banner .nivoSlider .nivo-caption h1, #evt-banner .metaslider .caption-wrap .caption h1, .evt-banner-image .evt-banner-caption .evt-title {
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
   font-size: 1.5rem;
 }
 @media (min-width: 575px) {
-  .evt-banner-image .evt-banner-caption .evt-title, #evt-banner .metaslider .caption-wrap .caption h1, #evt-banner .nivoSlider .nivo-caption h1 {
+  #evt-banner .nivoSlider .nivo-caption h1, #evt-banner .metaslider .caption-wrap .caption h1, .evt-banner-image .evt-banner-caption .evt-title {
     font-size: 2.125rem;
   }
 }
 @media (min-width: 768px) {
-  .evt-banner-image .evt-banner-caption .evt-title, #evt-banner .metaslider .caption-wrap .caption h1, #evt-banner .nivoSlider .nivo-caption h1 {
+  #evt-banner .nivoSlider .nivo-caption h1, #evt-banner .metaslider .caption-wrap .caption h1, .evt-banner-image .evt-banner-caption .evt-title {
     font-size: 2.75rem;
   }
 }
 @media (max-width: 479px) {
-  .evt-banner-image .evt-banner-caption .evt-title, #evt-banner .metaslider .caption-wrap .caption h1, #evt-banner .nivoSlider .nivo-caption h1 {
+  #evt-banner .nivoSlider .nivo-caption h1, #evt-banner .metaslider .caption-wrap .caption h1, .evt-banner-image .evt-banner-caption .evt-title {
     font-size: 1.125rem;
     margin-bottom: 10px !important;
   }
@@ -2612,6 +2641,7 @@ footer.site-footer .widget_nav_menu ul li {
 #evt-banner .evt-banner-slider .evt-overlay:after, #evt-banner .evt-banner-slider .coin-slider:after {
   background-color: rgba(0, 0, 0, 0.2);
 }
+
 ul.slick-dots {
   margin-top: 30px;
   display: inline-block !important;
@@ -2629,6 +2659,7 @@ ul.slick-dots li button {
   height: 6px;
   width: 30px;
 }
+
 .wpcf7-form label {
   display: block;
 }
@@ -2648,6 +2679,7 @@ ul.slick-dots li button {
 .wpcf7-form label textarea.wpcf7-form-control {
   height: 150px;
 }
+
 .woocommerce .col2-set .col-1, .woocommerce-page .col2-set .col-1, .woocommerce .col2-set .col-2, .woocommerce-page .col2-set .col-2 {
   max-width: 48%;
 }
@@ -2677,9 +2709,9 @@ ul.slick-dots li button {
 
 @media (max-width: 991px) {
   .woocommerce-cart .evt-site-content #primary,
-.woocommerce-cart .evt-site-content #secondary,
-.woocommerce-checkout .evt-site-content #primary,
-.woocommerce-checkout .evt-site-content #secondary {
+  .woocommerce-cart .evt-site-content #secondary,
+  .woocommerce-checkout .evt-site-content #primary,
+  .woocommerce-checkout .evt-site-content #secondary {
     width: 100%;
   }
 }
@@ -2705,6 +2737,7 @@ ul.slick-dots li button {
 .woocommerce-MyAccount-navigation {
   padding-right: 20px;
 }
+
 .woocommerce-Addresses {
   margin-left: -15px;
   margin-right: -15px;
@@ -2824,13 +2857,13 @@ body.admin-bar.logo-center.big-logo-disable #big-logo-site-nav {
 }
 @media screen and (max-width: 782px) {
   body.admin-bar.fixed-header .site-header,
-body.admin-bar.logo-center.big-logo-disable #big-logo-site-nav {
+  body.admin-bar.logo-center.big-logo-disable #big-logo-site-nav {
     top: 46px;
   }
 }
 @media screen and (max-width: 600px) {
   body.admin-bar.fixed-header .site-header,
-body.admin-bar.logo-center.big-logo-disable #big-logo-site-nav {
+  body.admin-bar.logo-center.big-logo-disable #big-logo-site-nav {
     top: 0;
   }
 }
@@ -2852,6 +2885,7 @@ body.admin-bar .evt-mbl-menu {
     padding-top: 46px;
   }
 }
+
 body.admin-bar.search .readmore {
   margin-bottom: 10px;
 }
@@ -2988,7 +3022,7 @@ body.head-search-active .evt-head-search-toggler {
   background-color: #ffffff;
 }
 body.head-search-active .evt-head-search-toggler .fa-search:before {
-  content: "";
+  content: "\f00d";
 }
 body.head-search-active .evt-head-search {
   -moz-transform: translate(0, 0%);
@@ -3008,7 +3042,7 @@ body.head-search-active .evt-head-search {
   }
 }
 body.head-search-active .evt-search-mask {
-  content: "";
+  content: '';
   position: fixed;
   top: 0;
   bottom: 0;
@@ -3076,6 +3110,7 @@ body.head-search-active .evt-search-mask {
 .evt-carousel.slick-slider ul.slick-dots li button {
   background-color: #b3b3b3;
 }
+
 .evt-featured-item-wrap .evt-featured-item {
   padding: 20px 15px;
 }
@@ -3151,7 +3186,7 @@ body.head-search-active .evt-search-mask {
 nav#site-navigation ul li.menu-item-has-children > a:after,
 nav#site-navigation ul li.page_item_has_children > a:after {
   font-size: 12px;
-  content: "";
+  content: "\f107";
   position: absolute;
   right: 0px;
   top: 50%;
@@ -3221,6 +3256,7 @@ nav#site-navigation > ul > li > a {
   font-size: 1.25rem;
   font-weight: 600;
 }
+
 nav#site-navigation ul#menu ul,
 nav#site-navigation ul.nav-menu ul,
 nav#site-navigation ul.menu ul {
@@ -3361,7 +3397,7 @@ nav#site-navigation {
 }
 @media (min-width: 1199px) {
   #evt-top-header #evt-social-icons,
-#evt-top-header #evt-head-list-item {
+  #evt-top-header #evt-head-list-item {
     text-align: left;
   }
 }
@@ -3380,7 +3416,7 @@ nav#site-navigation {
   padding-top: 4px;
 }
 #evt-top-header .head-list-toggle:after {
-  content: "Contact";
+  content: 'Contact';
 }
 #evt-top-header .evt-head-list-item-wrap {
   display: none;
@@ -3391,7 +3427,7 @@ nav#site-navigation {
   }
 }
 #evt-top-header.show-evt-head-list .head-list-toggle:after {
-  content: "Hide";
+  content: 'Hide';
 }
 #evt-top-header.show-evt-head-list .evt-head-list-item-wrap {
   display: block;
@@ -3402,6 +3438,7 @@ header.site-header {
   border-width: 0;
   border-bottom-width: 1px;
 }
+
 body.logo-left .evt-logo-left-right-nav, body.logo-right .evt-logo-left-right-nav {
   display: block;
 }
@@ -3412,6 +3449,7 @@ body.fixed-header .site-header {
   width: 100%;
   z-index: 9997;
 }
+
 body #evt-buy-btn {
   display: none;
   margin-right: 50px;
@@ -3491,6 +3529,7 @@ body.logo-left .evt-header-row .evt-menu-toggler-manage {
 body.logo-left .evt-header-row #site-navigation {
   float: right;
 }
+
 body.logo-right #site-navigation {
   float: left;
 }
@@ -3558,22 +3597,22 @@ body.fullpage-enabled nav#site-navigation ul a:hover, body.fullpage-enabled nav#
     box-shadow: none;
   }
   body.home.transparent-header:not(.small-header) header.site-header .site-branding .site-description,
-body.home.transparent-header:not(.small-header) header.site-header .site-branding a {
+  body.home.transparent-header:not(.small-header) header.site-header .site-branding a {
     color: #ffffff;
   }
   body.home.transparent-header:not(.small-header) header.site-header .menu-toggler span {
     background: #ffffff;
   }
   body.home.transparent-header:not(.small-header) nav#site-navigation ul#menu > li > a,
-body.home.transparent-header:not(.small-header) nav#site-navigation ul.nav-menu > li > a,
-body.home.transparent-header:not(.small-header) nav#site-navigation ul.menu > li > a,
-body.home.transparent-header:not(.small-header) nav#site-navigation > ul > li > a {
+  body.home.transparent-header:not(.small-header) nav#site-navigation ul.nav-menu > li > a,
+  body.home.transparent-header:not(.small-header) nav#site-navigation ul.menu > li > a,
+  body.home.transparent-header:not(.small-header) nav#site-navigation > ul > li > a {
     color: #ffffff;
   }
   body.home.transparent-header:not(.small-header) nav#site-navigation ul#menu > li > a:hover,
-body.home.transparent-header:not(.small-header) nav#site-navigation ul.nav-menu > li > a:hover,
-body.home.transparent-header:not(.small-header) nav#site-navigation ul.menu > li > a:hover,
-body.home.transparent-header:not(.small-header) nav#site-navigation > ul > li > a:hover {
+  body.home.transparent-header:not(.small-header) nav#site-navigation ul.nav-menu > li > a:hover,
+  body.home.transparent-header:not(.small-header) nav#site-navigation ul.menu > li > a:hover,
+  body.home.transparent-header:not(.small-header) nav#site-navigation > ul > li > a:hover {
     color: #578ECF;
   }
   body.home.transparent-header:not(.small-header) nav#site-navigation ul a:hover, body.home.transparent-header:not(.small-header) nav#site-navigation ul#menu > li.current-menu-item > a, body.home.transparent-header:not(.small-header) nav#site-navigation ul.nav-menu > li.current-menu-item > a, body.home.transparent-header:not(.small-header) nav#site-navigation ul.menu > li.current-menu-item > a {
@@ -3634,8 +3673,8 @@ body.logo-left.small-header .evt-header-row .evt-logo-manage .site-branding .sit
   }
 
   .logo-center .site-branding,
-.logo-center .site-branding .site-title,
-.logo-center .site-branding .site-description {
+  .logo-center .site-branding .site-title,
+  .logo-center .site-branding .site-description {
     text-align: center;
   }
 
@@ -3713,7 +3752,7 @@ body.logo-left.small-header .evt-header-row .evt-logo-manage .site-branding .sit
 }
 
 #evt-portfolio .evt-img-overlay {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: transparent;
 }
 #evt-portfolio #filters button {
   background-color: transparent;
@@ -3794,6 +3833,7 @@ body.logo-left.small-header .evt-header-row .evt-logo-manage .site-branding .sit
 #evt-call-to-action .widget-title:before {
   display: none;
 }
+
 #evt-team .evt-box-item-wrap .evt-box-image {
   position: relative;
 }
@@ -3934,6 +3974,7 @@ body.logo-left.small-header .evt-header-row .evt-logo-manage .site-branding .sit
   list-style: none;
   line-height: 2em;
 }
+
 .site-footer {
   background: #1f1f1f;
 }
@@ -4006,6 +4047,7 @@ body.logo-left.small-header .evt-header-row .evt-logo-manage .site-branding .sit
 .site-footer .widget_contact ul li {
   line-height: 2em;
 }
+
 body.error404 #breadcrumb {
   display: none;
 }
@@ -4143,7 +4185,7 @@ body .elementor-social-icon {
 .diverse-newsletter label {
   display: none;
 }
-.diverse-newsletter input[type=submit] {
+.diverse-newsletter input[type="submit"] {
   position: absolute;
   top: 0;
   right: 0;
@@ -4298,7 +4340,7 @@ body {
   transform: translate(-50%, -50%);
 }
 .evt-arrow-box .evt-down-arrow:after, .evt-arrow-box .evt-down-arrow:before {
-  content: "";
+  content: '';
   position: absolute;
   height: 100%;
   width: 2px;
@@ -4449,6 +4491,86 @@ body {
   #evt-banner .evt-banner-image {
     height: auto;
   }
+}
+
+nav#site-navigation {
+  padding-top: 0;
+  padding-bottom: 0;
+  /* Mega Menu */
+  /* mega menu top border */
+}
+nav#site-navigation ul#menu > li > ul,
+nav#site-navigation ul.nav-menu > li > ul,
+nav#site-navigation ul.menu > li > ul {
+  border-top: 3px solid #000;
+}
+nav#site-navigation .mega-menu-wrap ul#menu > li ul,
+nav#site-navigation .mega-menu-wrap ul.nav-menu > li ul,
+nav#site-navigation .mega-menu-wrap ul.menu > li ul {
+  background: transparent;
+  box-shadow: none;
+  position: inherit;
+  margin-left: 0;
+  opacity: 1;
+  transform: translate(0, 0);
+  width: 100%;
+}
+nav#site-navigation .mega-menu-wrap ul#menu > li ul li,
+nav#site-navigation .mega-menu-wrap ul.nav-menu > li ul li,
+nav#site-navigation .mega-menu-wrap ul.menu > li ul li {
+  border-right: 1px solid #d3d3d3;
+  border-bottom: 1px solid #d3d3d3;
+}
+nav#site-navigation .mega-menu-wrap ul#menu > li ul li a,
+nav#site-navigation .mega-menu-wrap ul.nav-menu > li ul li a,
+nav#site-navigation .mega-menu-wrap ul.menu > li ul li a {
+  padding: 5px 10px;
+  font-weight: normal;
+}
+nav#site-navigation .mega-menu-wrap ul#menu > li.mega-toggle-on ul, nav#site-navigation .mega-menu-wrap ul#menu > li:hover ul,
+nav#site-navigation .mega-menu-wrap ul.nav-menu > li.mega-toggle-on ul,
+nav#site-navigation .mega-menu-wrap ul.nav-menu > li:hover ul,
+nav#site-navigation .mega-menu-wrap ul.menu > li.mega-toggle-on ul,
+nav#site-navigation .mega-menu-wrap ul.menu > li:hover ul {
+  visibility: visible;
+}
+nav#site-navigation [id^=mega-menu-wrap-menu] [id^=mega-menu-menu] {
+  /* mega menu title */
+}
+nav#site-navigation [id^=mega-menu-wrap-menu] [id^=mega-menu-menu] > li.mega-menu-item > a.mega-menu-link {
+  font-size: 16px !important;
+  font-weight: 600 !important;
+}
+nav#site-navigation [id^=mega-menu-wrap-menu] [id^=mega-menu-menu] > li.mega-menu-flyout ul.mega-sub-menu,
+nav#site-navigation [id^=mega-menu-wrap-menu] [id^=mega-menu-menu] > li.mega-menu-megamenu > ul.mega-sub-menu {
+  border-top: 3px solid #000 !important;
+}
+nav#site-navigation [id^=mega-menu-wrap-menu] [id^=mega-menu-menu] > li.mega-menu-flyout ul.mega-sub-menu li a,
+nav#site-navigation [id^=mega-menu-wrap-menu] [id^=mega-menu-menu] > li.mega-menu-megamenu > ul.mega-sub-menu li a {
+  font-size: 15px !important;
+}
+nav#site-navigation [id^=mega-menu-wrap-menu] [id^=mega-menu-menu] > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item h4.mega-block-title,
+nav#site-navigation [id^=mega-menu-wrap-menu] [id^=mega-menu-menu] > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-column > ul.mega-sub-menu > li.mega-menu-item h4.mega-block-title {
+  color: #333 !important;
+  text-transform: inherit !important;
+  padding: 10px !important;
+  border-right: 1px solid #d3d3d3 !important;
+  border-bottom: 1px solid #d3d3d3 !important;
+}
+nav#site-navigation [id^=mega-menu-wrap-menu] [id^=mega-menu-menu] > li.mega-menu-item > a.mega-menu-link {
+  padding-top: 23px !important;
+  padding-bottom: 22px !important;
+  height: auto !important;
+}
+nav#site-navigation [id^=mega-menu-wrap-menu] [id^=mega-menu-menu] > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item,
+nav#site-navigation [id^=mega-menu-wrap-menu] [id^=mega-menu-menu] > li.mega-menu-megamenu > ul.mega-sub-menu li.mega-menu-column > ul.mega-sub-menu > li.mega-menu-item {
+  padding: 0 !important;
+}
+nav#site-navigation [id^=mega-menu-wrap-menu] [id^=mega-menu-menu] > li.mega-menu-megamenu > ul.mega-sub-menu > li.mega-menu-item.widget_media_image {
+  padding: 15px !important;
+}
+nav#site-navigation [id^=mega-menu-wrap-menu] [id^=mega-menu-menu] ul.mega-sub-menu {
+  margin-top: 0 !important;
 }
 
 /*# sourceMappingURL=style.css.map */
