@@ -365,18 +365,6 @@ function business_click_customizer_remove_defualt_cat_author($title)
 }
 add_filter( 'get_the_archive_title', 'business_click_customizer_remove_defualt_cat_author' );
 
-/* fp menu */
-function business_click_fp_menu_item($title, $i) {
-	?>
-	<li data-menuanchor="section<?php echo esc_attr($i);?>">
-        <a href="#section<?php echo esc_attr($i);?>">
-            <span class="fp-menu-text"><?php echo esc_html($title);?></span>
-            <span class="fp-menu-indicator"><span></span></span>
-        </a>
-    </li>
-	<?php
-}
-
 // default slider
 if ( ! function_exists ( 'business_click_default_slider_value' ) ) {
 	function business_click_default_slider_value() {
