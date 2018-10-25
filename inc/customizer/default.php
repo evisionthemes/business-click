@@ -53,7 +53,7 @@ if(!function_exists('business_click_defauts_value') ) :
 		$defaults['business-click-enbale-slider']						= 1;
 		$defaults['business-click-excerpt-length']						= 30;
 		$defaults['business-click-select-post-form']					='form-category';
-		$defaults['business-click-select-from-cat']						= -1;
+		$defaults['business-click-select-from-cat']						= 1;
 		$defaults['business-click-select-from-page']					= 0;
 		$defaults['business-click-slider-enable-blog']					= 0;
 		$defaults['business-click-slider-button-text']					= esc_html__('Learn more','business-click');
@@ -63,7 +63,7 @@ if(!function_exists('business_click_defauts_value') ) :
 		$defaults['business-click-feature-section-title']  				= esc_html__('Feature Section','business-click');
 		$defaults['business-click-feature-excerpt-length']  			= 30;;
 		$defaults['business-click-feature-select-form']  				= 'form-category';
-		$defaults['business-click-feature-from-category']  				= -1;
+		$defaults['business-click-feature-from-category']  				= 1;
 		$defaults['business-click-feature-from-page']  					= 0;
 		$defaults['business-click-feature-page-icon']  					= '';
 		$defaults['business-click-feature-button-text']  				= '';
@@ -87,7 +87,7 @@ if(!function_exists('business_click_defauts_value') ) :
 		$defaults['business-click-testimonial-section-title']			= esc_html__('Testimonial','business-click');
 		$defaults['business-click-testimonial-excerpt-length']			= 30;
 		$defaults['business-click-testimonial-select-form']				= 'form-category';
-		$defaults['business-click-testimonial-from-category']			= -1;
+		$defaults['business-click-testimonial-from-category']			= 1;
 		$defaults['business-click-testimonial-select-for-page']			= 0;
 		$defaults['business-click-testimonial-designation']				= esc_html__('CEO','business-click');
 		$defaults['business-click-testimonial-background-image']		= '';
@@ -96,7 +96,7 @@ if(!function_exists('business_click_defauts_value') ) :
 		$defaults['business-click-blog-section-enable'] 				= 1;
 		$defaults['business-click-blog-section-title-text'] 			= esc_html__('Blog','business-click');
 		$defaults['business-click-blog-excerpt-length'] 				= 30;
-		$defaults['business-click-blog-select-category'] 				= -1;
+		$defaults['business-click-blog-select-category'] 				= 1;
 		$defaults['business-click-blog-button-text'] 					= esc_html__('Read More','business-click');
 		$defaults['business-click-blog-background-image'] 				= '';
 
