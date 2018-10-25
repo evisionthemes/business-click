@@ -158,6 +158,9 @@ Business Click themes includes support for Contact Form 7.
 
 == Changelog ==
 
+## 1.0.6 ##
+* Select category issue fixed in all section .
+
 ## 1.0.5 ##
 * Max Mega Menu CSS Support.
 
