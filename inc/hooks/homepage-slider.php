@@ -60,6 +60,12 @@ if ( !function_exists('business_click_feature_slider_array') ) :
                       $thumb = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'business-click-slider-banner-image' );
                       $url = $thumb['0'];
                   }
+                  else {
+                      // if no image is present, use default slider.jpg
+                      $default_feature_slider = business_click_default_slider_value();
+                      $url = $default_feature_slider[0]['business-click-feature-image'];
+                  }
+
                     $feature_slideer_array[]  =  array(
                       'business-click-feature-title'    => get_the_title(),
                       'business-click-feature-content'  => has_excerpt() ? get_the_excerpt() : business_click_words_count($slider_excerpt_length, get_the_content() ),
