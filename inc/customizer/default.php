@@ -124,6 +124,7 @@ if(!function_exists('business_click_defauts_value') ) :
 		//footer section
 		$defaults['business-click-copyright-text']						= esc_html__( 'Copyright &copy; All right reserved.', 'business-click' );
 		$defaults['business-click-enable-scroll-to-top']				= 1;
+		$defaults['business-click-enable-theme-name']     				= 1;
 
 
 		$defaults = apply_filters('business_click_get_all_options',$defaults);

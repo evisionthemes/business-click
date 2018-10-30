@@ -105,13 +105,17 @@ if ( ! function_exists( 'business_click_footer' ) ) :
                     }
                     ?>
                     </a>
+
+                     <?php
+                    if( 1 == $business_click_customizer_all_values['business-click-enable-theme-name']){
+                    ?>
                     
                     <span class="sep"> | </span>
                     
                     <?PHP    /* translators: 1: Theme name, 2: Theme author. */
                          printf( esc_html__( 'Theme: %1$s by %2$s', 'business-click' ), esc_html(business_click_theme_name()), sprintf('<a href="%s" target = "_blank" rel="designer">%s</a>', esc_url( 'http://evisionthemes.com/' ), esc_html__( 'eVisionThemes', 'business-click' ) )  ); 
 
-                    ?>
+                    } ?>
                  </div>
             </div><!-- .site-info -->
         </section><!-- #colophon -->     
