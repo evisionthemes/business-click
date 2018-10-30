@@ -1039,18 +1039,7 @@ a {
   color: #ffffff;
 }
 
-#evt-portfolio #filters button, #evt-contact a, body .elementor-widget-icon-box .elementor-icon-box-content .elementor-icon-box-title, body .elementor-widget-heading.elementor-widget-heading .elementor-heading-title,
-body .elementor-image-box-title,
-body .elementor-widget-icon-list .elementor-icon-list-text,
-body .elementor-widget-counter .elementor-counter-title,
-body caption,
-body .elementor-widget .elementor-testimonial-job,
-body .elementor-background-overlay + .elementor-container .elementor-widget-testimonial .elementor-testimonial-content,
-body .elementor-background-overlay + .elementor-container .elementor-widget-heading.elementor-widget-heading .elementor-heading-title,
-body .elementor-background-overlay + .elementor-container .elementor-widget-testimonial .elementor-testimonial-name,
-body .elementor-background-overlay + .elementor-container .elementor-widget-testimonial .elementor-testimonial-job,
-body .elementor-background-overlay + .elementor-container .elementor-widget-tabs .elementor-tab-content,
-body .elementor-background-overlay + .elementor-container .elementor-widget-tabs .elementor-tab-title, body:not(.dark-theme) .elementor-widget-image .widget-image-caption,
+#evt-portfolio #filters button, #evt-contact a, body .elementor-widget-icon-box .elementor-icon-box-content .elementor-icon-box-title, body:not(.dark-theme) .elementor-widget-image .widget-image-caption,
 body:not(.dark-theme) .elementor-widget-text-editor,
 body:not(.dark-theme) .elementor-widget-divider .elementor-divider-separator,
 body:not(.dark-theme) .elementor-widget-image-box .elementor-image-box-content .elementor-image-box-description,
@@ -1060,22 +1049,6 @@ body:not(.dark-theme) .elementor-widget-testimonial .elementor-testimonial-conte
 body:not(.dark-theme) .elementor-widget-tabs .elementor-tab-content,
 body:not(.dark-theme) .elementor-widget-accordion .elementor-accordion .elementor-tab-content,
 body:not(.dark-theme) .elementor-widget-toggle .elementor-toggle .elementor-tab-content {
-  color: #3e3e3e;
-}
-
-body.dark-theme .elementor-widget-heading.elementor-widget-heading .elementor-heading-title,
-body.dark-theme .elementor-widget-icon-box .elementor-icon-box-content .elementor-icon-box-title,
-body.dark-theme .elementor-image-box-title,
-body.dark-theme .elementor-widget-icon-list .elementor-icon-list-text,
-body.dark-theme .elementor-widget-counter .elementor-counter-title,
-body.dark-theme caption,
-body.dark-theme .elementor-widget .elementor-testimonial-job,
-body.dark-theme .elementor-background-overlay + .elementor-container .elementor-widget-testimonial .elementor-testimonial-content,
-body.dark-theme .elementor-background-overlay + .elementor-container .elementor-widget-heading.elementor-widget-heading .elementor-heading-title,
-body.dark-theme .elementor-background-overlay + .elementor-container .elementor-widget-testimonial .elementor-testimonial-name,
-body.dark-theme .elementor-background-overlay + .elementor-container .elementor-widget-testimonial .elementor-testimonial-job,
-body.dark-theme .elementor-background-overlay + .elementor-container .elementor-widget-tabs .elementor-tab-content,
-body.dark-theme .elementor-background-overlay + .elementor-container .elementor-widget-tabs .elementor-tab-title {
   color: #3e3e3e;
 }
 
@@ -1886,6 +1859,7 @@ table thead tr td {
   font-weight: 600;
 }
 table tr td {
+  border-right: 1px solid #d3d3d3;
   border-top: 1px solid #d3d3d3;
   padding: 3px 8px;
 }
@@ -4214,6 +4188,16 @@ body.dark-theme .content_countdown .time_description {
   margin-right: 0;
 }
 
+body.page-template-elementor_header_footer .site-content {
+  padding-top: 0 !important;
+}
+
+#btn-transparent:hover {
+  background-color: #ffffff !important;
+  color: #333 !important;
+  transform: scale(0.9);
+}
+
 /* fs = font size */
 .evt-mbl-menu ul {
   margin: 0;
@@ -4493,16 +4477,21 @@ body {
   }
 }
 
+body.logo-left nav#site-navigation ul#menu > li > a,
+body.logo-left nav#site-navigation ul.nav-menu > li > a,
+body.logo-left nav#site-navigation ul.menu > li > a,
+body.logo-right nav#site-navigation ul#menu > li > a,
+body.logo-right nav#site-navigation ul.nav-menu > li > a,
+body.logo-right nav#site-navigation ul.menu > li > a {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
 nav#site-navigation {
   padding-top: 0;
   padding-bottom: 0;
   /* Mega Menu */
   /* mega menu top border */
-}
-nav#site-navigation ul#menu > li > ul,
-nav#site-navigation ul.nav-menu > li > ul,
-nav#site-navigation ul.menu > li > ul {
-  border-top: 3px solid #000;
 }
 nav#site-navigation .mega-menu-wrap ul#menu > li ul,
 nav#site-navigation .mega-menu-wrap ul.nav-menu > li ul,

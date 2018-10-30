@@ -161,6 +161,7 @@ Business Click themes includes support for Contact Form 7.
 ## 1.0.6 ##
 * Default slider image if no image is present.
 * Select category issue fixed in all section.
+* Fixed: Design issues
 
 ## 1.0.5 ##
 * Max Mega Menu CSS Support.
