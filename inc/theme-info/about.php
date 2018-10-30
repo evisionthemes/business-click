@@ -111,6 +111,16 @@ $config = array(
 			'recommended_actions' 	=> false,
 			'is_new_tab'   			=> true,
 		),
+
+		'second' => array(
+			'title'        			=> esc_html__( 'Rate Us', 'business-click' ),
+			'text'         			=> esc_html__( 'If you liked this theme, please leave a &#9733;&#9733;&#9733;&#9733;&#9733; rating. We would appreaciate it!', 'business-click' ),
+			'button_label' 			=> esc_html__( 'Rate Us', 'business-click' ),
+			'button_link'  			=> esc_url( 'https://wordpress.org/support/theme/business-click/reviews?rate=5#new-post' ),
+			'is_button'    			=> false,
+			'recommended_actions' 	=> false,
+			'is_new_tab'   			=> true,
+		),
 	),
 
 	// Recommended actions.
