@@ -28,18 +28,18 @@ $business_click_settings_controls['business-click-copyright-text'] = array(
 );
 
 /*enable theme name*/
-$business_click_settings_controls['business-click-enable-theme-name'] =
-    array(
-        'setting' =>     array(
-            'default'              => $defaults['business-click-enable-theme-name'],
-        ),
-        'control' => array(
-            'label'                 =>  esc_html__( 'Show Theme Name', 'business-click' ),
-            'section'               => 'business-click-footer-options',
-            'type'                  => 'checkbox',
-            'priority'              => 50,
-        )
-    );
+$business_click_settings_controls['business-click-enable-theme-name'] = array(
+    'setting' =>     array(
+        'default'              => $defaults['business-click-enable-theme-name'],
+    ),
+    'control' => array(
+        'label'                 =>  esc_html__( 'Show Theme Name', 'business-click' ),
+        'section'               => 'business-click-footer-options',
+        'type'                  => 'checkbox',
+        'priority'              => 50,
+    )
+);
+
 
 /*scroll to top*/
 $business_click_settings_controls['business-click-enable-scroll-to-top'] = array(
@@ -50,6 +50,6 @@ $business_click_settings_controls['business-click-enable-scroll-to-top'] = array
         'label'                 =>  esc_html__( 'Show Scroll To Top', 'business-click' ),
         'section'               => 'business-click-footer-options',
         'type'                  => 'checkbox',
-        'priority'              => 60,
+        'priority'              => 80,
     )
 );

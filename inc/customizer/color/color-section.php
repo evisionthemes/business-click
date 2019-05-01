@@ -84,4 +84,17 @@ $business_click_settings_controls['business-click-footer-background-color'] = ar
     )
 );
 
+/*footer text color*/
+$business_click_settings_controls['business-click-footer-text-color'] = array(
+    'setting'   => array(
+        'defaults'          => $defaults['business-click-footer-text-color']
+    ),
+    'control' => array(
+        'label'                 =>  esc_html__( 'Footer Text Color', 'business-click' ),
+        'section'               => 'colors',
+        'type'                  => 'color',
+        'priority'              => 170,
+    )
+);   
+
 

@@ -140,12 +140,15 @@
 		
 
 		// banner
+		var Enable_Arrow		= customzier_values['business-click-slider-enable-arrow'];
+		var Enable_Pager		= customzier_values['business-click-slider-enable-pager'];
+
 		$(".evt-banner-slider").slick({
-			arrows: 		true,
+			arrows: 		(Enable_Arrow == 1 ) ? true : false,
 			autoplay: 		true,
 			autoplaySpeed: 	4000,
 			draggable: 		true,
-			dots: 			true,
+			dots: 			(Enable_Pager == 1) ? true : false,
 			fade: 			true,
 			infinite: 		true,
 			pauseOnFocus: 	false,

@@ -61,6 +61,21 @@ $business_click_settings_controls['business-click-link-extra-button']  =  array(
 
 );
 
+/*button opean in new tab*/
+$business_click_settings_controls['business-click-extra-button-open-new-tab']  =  array(
+	'setting'  => array(
+		'default'		=> $defaults['business-click-extra-button-open-new-tab']
+	),
+	'control' => array(
+		'label'			  => esc_html__('Button Open New Tab','business-click'),
+		'section'		  => 'business-click-header-section',
+		'type'			  => 'checkbox',
+		'priority'		  => 40,
+		'active_callback' => ''
+	)		
+
+);
+
 /*transparent-header*/
 $business_click_settings_controls['business-click-enable-transparent-header']  =  array(
 	'setting'  => array(
@@ -71,7 +86,7 @@ $business_click_settings_controls['business-click-enable-transparent-header']  =
 		'description'	  => esc_html__('Transparent Header works only when Feature Slider Section is enabled.','business-click'),
 		'section'		  => 'business-click-header-section',
 		'type'			  => 'checkbox',
-		'priority'		  => 40,
+		'priority'		  => 50,
 		'active_callback' => ''
 	)		
 

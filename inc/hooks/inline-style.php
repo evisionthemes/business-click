@@ -40,6 +40,7 @@ if( ! function_exists( 'business_click_inline_style' ) ) :
         $business_click_menu_header_background_color            = $business_click_customizer_all_values['business-click-menu-header-background-color'];
         $business_click_h1_h6                                   = $business_click_customizer_all_values['business-click-business-clcik-h1-h6'];
         $business_click_footer_background                       = $business_click_customizer_all_values['business-click-footer-background-color'];
+        $business_click_footer_text                             = $business_click_customizer_all_values['business-click-footer-text-color'];
         $business_click_contaner_width                          = $business_click_customizer_all_values['business-click-conatiner-width-layout'];
        
         ?>
@@ -180,6 +181,22 @@ if( ! function_exists( 'business_click_inline_style' ) ) :
             .site-footer
             {
                 background-color: <?php echo esc_attr($business_click_footer_background);?>;
+            }
+
+        <?php } 
+
+        if( !empty($business_click_footer_text) )
+        {?>
+            .site-footer,
+            .site-footer a,
+            .site-footer .evt-footer-widget,
+            .site-footer .widget-title,
+            .site-footer .widget tr ,
+            .site-footer .widget tr th,
+            .site-footer .widget tr td,
+            .site-footer caption
+            {
+                color: <?php echo esc_attr($business_click_footer_text);?>!important;
             }
 
         <?php } 

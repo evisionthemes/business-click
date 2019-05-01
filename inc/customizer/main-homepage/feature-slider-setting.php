@@ -114,6 +114,39 @@ $business_click_settings_controls['business-click-slider-button-text'] = array(
     )       
 );
 
+/*Show pager */
+$business_click_settings_controls['business-click-slider-enable-pager'] = array(
+    'setting' => array(
+        'default'          =>  $defaults['business-click-slider-enable-pager']  
+    ),
+    'control' => array(
+        'label'             => esc_html__('Show Pager','business-click'),
+        'section'           => 'business-click-slider-section',
+        'type'              => 'checkbox',
+        'priority'          => 80,
+        'acticve_callback'  => ''
+
+    )       
+);
+
+
+/*show arrow */
+$business_click_settings_controls['business-click-slider-enable-arrow'] = array(
+    'setting' => array(
+        'default'          =>  $defaults['business-click-slider-enable-arrow']  
+    ),
+    'control' => array(
+        'label'             => esc_html__('Show Arrow','business-click'),
+        'section'           => 'business-click-slider-section',
+        'type'              => 'checkbox',
+        'priority'          => 90,
+        'acticve_callback'  => ''
+
+    )       
+);
+
+
+
 /*for blog option */
 $business_click_settings_controls['business-click-slider-enable-blog'] = array(
     'setting' => array(
@@ -123,7 +156,7 @@ $business_click_settings_controls['business-click-slider-enable-blog'] = array(
         'label'             => esc_html__('Disable Slider on Blog Archive','business-click'),
         'section'           => 'business-click-slider-section',
         'type'              => 'checkbox',
-        'priority'          => 80,
+        'priority'          => 100,
         'acticve_callback'  => ''
 
     )       

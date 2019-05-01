@@ -28,6 +28,7 @@ if(!function_exists('business_click_defauts_value') ) :
 		$defaults['business-click-text-extra-button-text']				= esc_html__('More Demos','business-click');
 		$defaults['business-click-link-extra-button']					= 'https://demo.evisionthemes.com/business-click/multipage/';
 		$defaults['business-click-enable-transparent-header']		    = 1;
+		$defaults['business-click-extra-button-open-new-tab']		    = 0;
 
 
 		// color Section
@@ -36,6 +37,7 @@ if(!function_exists('business_click_defauts_value') ) :
 		$defaults['business-click-menu-header-background-color'] 		= '#FFFFFF';
 		$defaults['business-click-business-clcik-h1-h6'] 				= '#000000';
 		$defaults['business-click-footer-background-color'] 			= '#1F1F1F';
+		$defaults['business-click-footer-text-color']     				= '#fff';
 		$defaults['business-click-color-reset'] 						= '';
 
 		//font Section
@@ -57,6 +59,9 @@ if(!function_exists('business_click_defauts_value') ) :
 		$defaults['business-click-select-from-page']					= 0;
 		$defaults['business-click-slider-enable-blog']					= 0;
 		$defaults['business-click-slider-button-text']					= esc_html__('Learn more','business-click');
+		$defaults['business-click-slider-enable-pager']					= 1;
+		$defaults['business-click-slider-enable-arrow']					= 1;
+
 
 		//feature section
 		$defaults['business-click-feature-enable']  					= 1;
