@@ -163,6 +163,11 @@ Business Click themes includes support for Contact Form 7.
 * Select category issue fixed in all section.
 * Fixed: Design issues
 * Added setting feature for footer credit link.
+* Add footer text color option
+* Add enable/disable arrow option in slider
+* Add enable/disable pager option in slider
+* Add new open in new tab checkbox for header button 
+* Minor issue fixed
 
 ## 1.0.5 ##
 * Max Mega Menu CSS Support.
