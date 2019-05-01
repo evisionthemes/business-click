@@ -86,8 +86,6 @@ if ( !function_exists('business_click_feature_slider_array') ) :
         $feature_slideer_array =  business_click_default_slider_value();
       }
 
-      // var_dump($feature_slideer_array);die();
-
       return $feature_slideer_array;
     }
 endif;
