@@ -30,6 +30,9 @@ require get_template_directory().'/inc/customizer/main-homepage/call-to-action-s
 /*our-team*/
 require get_template_directory().'/inc/customizer/main-homepage/testimonial-section.php';
 
+/*shoetcode1-section*/
+require get_template_directory().'/inc/customizer/main-homepage/short-code1.php';
+
 /*Blog-section*/
 require get_template_directory().'/inc/customizer/main-homepage/blog-section.php';
 

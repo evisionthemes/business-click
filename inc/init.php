@@ -22,6 +22,8 @@ require trailingslashit(get_template_directory() ).'/inc/hooks/call-to-action.ph
 
 require trailingslashit(get_template_directory() ).'/inc/hooks/testimonial.php';
 
+require trailingslashit(get_template_directory() ).'/inc/hooks/short-code1.php';
+
 require trailingslashit(get_template_directory() ).'/inc/hooks/blog-section.php';
 
 require trailingslashit(get_template_directory() ).'/inc/hooks/contact-us.php';
