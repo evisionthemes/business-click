@@ -157,7 +157,7 @@ Business Click themes includes support for Contact Form 7.
 
 == Changelog ==
 
-## 1.0.6 ##
+## 1.0.7 ##
 * Add new short code section
 * Minor issue fixed and update
 
